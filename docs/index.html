@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>量子点器件前沿追踪</title>
+<meta name="description" content="自动汇总最新发表的量子点器件方向论文，并用中文说清每篇做了什么、创新点在哪。">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <h1>量子点器件前沿追踪</h1>
+      <p class="subtitle" id="subtitle">正在加载…</p>
+    </div>
+    <div class="header-actions">
+      <span class="stat" id="stat-count"></span>
+      <span class="stat" id="stat-updated"></span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="controls" aria-label="筛选">
+    <div class="control-row">
+      <input type="search" id="q" class="search" placeholder="搜索标题、摘要、中文总结、关键词、期刊…" autocomplete="off">
+      <select id="sort" class="select" aria-label="排序">
+        <option value="date">按日期（最新优先）</option>
+        <option value="novelty">按创新度</option>
+        <option value="citations">按引用数</option>
+      </select>
+      <select id="range" class="select" aria-label="时间范围">
+        <option value="0">全部时间</option>
+        <option value="7">最近 7 天</option>
+        <option value="30">最近 30 天</option>
+        <option value="90">最近 90 天</option>
+      </select>
+    </div>
+    <div class="control-row" id="direction-row"></div>
+    <div class="control-row small">
+      <label class="check"><input type="checkbox" id="hide-read"> 隐藏已读</label>
+      <label class="check"><input type="checkbox" id="only-high"> 只看高创新（≥4）</label>
+      <button type="button" id="reset" class="ghost">重置筛选</button>
+      <span class="hint" id="hint"></span>
+    </div>
+  </section>
+
+  <section id="list" class="list" aria-live="polite"></section>
+
+  <section id="empty" class="empty" hidden>
+    <p>没有符合条件的论文。</p>
+    <p class="muted">可以放宽时间范围，或点「重置筛选」。</p>
+  </section>
+
+  <section id="error" class="empty" hidden>
+    <p>数据加载失败。</p>
+    <p class="muted" id="error-detail"></p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="muted">论文元数据来自 <a href="https://openalex.org" target="_blank" rel="noopener">OpenAlex</a>，摘要缺失时回退 <a href="https://www.crossref.org" target="_blank" rel="noopener">Crossref</a>。</p>
+    <p class="muted">中文总结由 DeepSeek 依据原标题与摘要生成，可能存在偏差，重要结论请以原文为准。</p>
+  </div>
+</footer>
+
+<noscript>
+  <p class="wrap">这个页面需要启用 JavaScript 才能筛选与展开论文。</p>
+</noscript>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

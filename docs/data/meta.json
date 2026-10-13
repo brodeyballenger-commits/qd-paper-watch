@@ -1,0 +1,42 @@
+{
+  "project": "量子点器件前沿追踪",
+  "generated_at": "2026-10-13T15:54:47.592Z",
+  "count": 270,
+  "window_days": 90,
+  "directions": [
+    {
+      "id": "display",
+      "label": "显示与发光",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "detection",
+      "label": "光电探测与光伏",
+      "color": "#10b981"
+    },
+    {
+      "id": "quantuminfo",
+      "label": "量子信息器件",
+      "color": "#6366f1"
+    },
+    {
+      "id": "materials",
+      "label": "材料与合成",
+      "color": "#ec4899"
+    }
+  ],
+  "highNoveltyThreshold": 4,
+  "stats": {
+    "fetched": 1550,
+    "kept": 272,
+    "added": 0,
+    "updated": 0,
+    "unchanged": 270,
+    "preprint_merged": 2,
+    "llm_generated": 1,
+    "llm_failed": 0,
+    "pending_summary": 0
+  },
+  "source": "OpenAlex + Crossref",
+  "summary_engine": "deepseek-chat"
+}

@@ -1,0 +1,19 @@
+# 密钥 —— 绝对不要提交
+.env
+.env.local
+.env.*.local
+
+node_modules/
+npm-debug.log*
+*.log
+
+# 抓取过程的临时产物
+.tmp/
+*.tmp
+
+# 中文总结缓存（花钱买来的，不上线也不进仓库）
+.cache/
+
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,65 @@
+name: 更新论文列表
+
+# 每天 UTC 22:00（北京时间 06:00）自动抓取一次，也可以在 Actions 页面手动触发。
+on:
+  schedule:
+    - cron: '0 22 * * *'
+  workflow_dispatch:
+    inputs:
+      days:
+        description: '回填天数（默认 14）'
+        required: false
+        default: '14'
+      no_llm:
+        description: '只抓取不调用 DeepSeek（填 true 可省 API 费用）'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-papers
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+
+    steps:
+      - name: 拉取仓库
+        uses: actions/checkout@v4
+
+      - name: 准备 Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: 运行单元测试
+        run: node --test test/
+
+      - name: 抓取并生成站点
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: deepseek-chat
+          CONTACT_EMAIL: ${{ vars.CONTACT_EMAIL }}
+        run: |
+          DAYS="${{ github.event.inputs.days || '14' }}"
+          if [ "${{ github.event.inputs.no_llm }}" = "true" ]; then
+            node src/build.mjs --days="$DAYS" --no-llm
+          else
+            node src/build.mjs --days="$DAYS"
+          fi
+
+      - name: 提交数据变更
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          if git diff --cached --quiet; then
+            echo "本轮没有新内容，跳过提交。"
+          else
+            git commit -m "chore: 更新论文数据 $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
