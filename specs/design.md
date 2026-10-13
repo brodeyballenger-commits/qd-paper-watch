@@ -4,7 +4,8 @@
 
 **目标**
 
-1. 每天自动抓取新发表的**量子点器件**论文，范围覆盖期刊论文（不含综述以外的人工筛选）。
+1. 每天自动抓取新发表的**量子点器件**论文（**主方向：量子点发光二极管 QD-LED**），范围覆盖期刊论文（不含综述以外的人工筛选）。
+   主方向以叠加标签表达、站点默认聚焦，但**不排除**其它量子点器件论文（见 3.1.1）。
 2. 从抓取结果中提取 **DOI**，保证每条记录都能点回原文。
 3. 依据**摘要**生成中文的「做了什么 / 创新在哪」，让人 30 秒判断值不值得读。
 4. 提供一个**固定网址**的静态网站，作者和同学随时可看；同时产出可离线分享的单文件版本。
@@ -40,10 +41,15 @@ build.mjs
   evaluateRelevance()       # 逐篇闸门判定；必要时 Crossref 补摘要后重判
   makeRecord()              # 补齐派生字段（摘要哈希、排序日期、可疑日期标记）
   mergeRecords()            # 与旧账本合并去重
+  主方向补标（4.5）           # isQledDevice()：给全账本补 qled 标签（幂等、只增不减、不花钱）
   summarizePapers()         # DeepSeek 生成中文总结（无 key 时整段跳过）
   saveJsonAtomic()          # 原子写 docs/data/papers.json 与封面数据
   renderSite()              # 生成 docs/ 与 standalone.html
 ```
+
+### 3.0 文本归一化（`normalizeText`）
+
+期刊标题大量使用 Unicode 连字符/短横线（U+2010–U+2015、U+2212 减号、U+FF0D 全角、U+00AD 软连字符），而词表里写的是 ASCII `-`。实测 270 篇账本中**标题含这类字符的有 65 篇、标题或摘要含的有 123 篇**；不归一化会漏掉 *Ultrahigh‑resolution quantum dot light‑emitting diodes*、*Interfacial Dipole Engineering of NiO x …* 这类论文（标题级 LED 证据 +9 篇，QD 证据 +0）。因此 `src/util.mjs` 的 `normalizeText()` 把所有破折号折成 `-`、把 NBSP 折成普通空格，`buildSearchText()` 与 `evaluateRelevance()` 的标题判定都先过它，**词表里统一写 ASCII 连字符**。
 
 ### 3.1 相关性闸门（决定网站质量的核心）
 
@@ -62,6 +68,18 @@ build.mjs
 实测（2026-10-13）：14 天窗口 225 篇候选 → 保留 40 篇（约 3 篇/天）。
 
 调参工具：`node .tmp/debug-relevance.mjs 14 --rejected`（仓库外工具，不提交）。
+
+### 3.1.1 主方向：量子点发光二极管（QD-LED）
+
+本站主方向是 QD-LED，用**叠加式标签**表达：`directions` 里加一个 `qled`，**不是**硬过滤、不删数据，站点默认只看它（前端第一个勾选框默认打开）。
+
+判定（`src/relevance.mjs` 的 `qledFocus()` / `isQledDevice()`，词表在 `src/config.mjs`）：
+
+- `QLED_STRONG_PATTERNS` 命中任意一条即算：`QD-LED` / `Q-LED` / `quantum dot light-emitting` / `light-emitting diodes` / `electroluminescence`。
+- 否则 `QLED_SUPPORTING_PATTERNS` **必须至少两条同时命中**（裸 `LED` ＋ `microdisplay`／发光指标如 `luminance`/`cd/A`/`T50`／器件叠层如 `hole transport`、`emission layer`）。
+  「两条」是实测出来的阈值：只靠裸 `\bLEDs?\b` 才命中的 9 篇里有 8 篇确实是 QD-LED，唯一假阳性是 *High-Efficiency Novel Cu3InSnS5 Quantum Dot Photovoltaics*（摘要里只有「under indoor LED illumination (1250 lx)」）。要求两条后，该类论文被挡住，而 *Ultra-High-Resolution Quantum Dot Microdisplays* 靠 `LED + microdisplay` 仍能进来。
+- 标签由 `src/build.mjs` 的步骤 **4.5** 对**全账本**补标：幂等（已有 `qled` 就跳过）、只增不减、**不调用 LLM**（所以补标不花钱，也不改动已有中文总结），存量论文因此也能被正确筛出来。`mergeRecords` 与 `applySummary` 对 `directions` 都是取并集，历史标签不会被覆盖。
+- 实测：270 篇账本 → **63 篇**标为 QD-LED（strong 触发 48 篇的 `QD-LED` 缩写、49 篇的 `light-emitting diodes`、14 篇的 `electroluminescence`，可重叠；仅靠 supporting 通过的 1 篇 = microdisplay）。`meta.stats.qled_focus` 记录该数量。
 
 ### 3.2 去重与合并
 
@@ -101,7 +119,7 @@ build.mjs
       "pub_date": "2026-10-10", "pub_year": 2026, "date_suspect": false,
       "sort_date": "2026-10-10", "oa_status": "gold", "pdf_url": "…", "cited_by_count": 0,
       "abstract": "…", "abstract_hash": "…", "abstract_source": "openalex", "abstract_missing": false,
-      "directions": ["display"], "novelty_score": 5, "novelty_reason": "…",
+      "directions": ["qled", "display"], "novelty_score": 5, "novelty_reason": "…",
       "innovation_zh": "…", "method_zh": "…", "keywords_zh": ["…"],
       "summary_source": "llm", "llm_model": "deepseek-chat", "llm_at": "…",
       "pending_summary": false, "first_seen": "…", "last_updated": "…"
@@ -121,6 +139,7 @@ build.mjs
 - 内联 JSON 时把 `<` 转义成 `\u003c`，防止论文摘要里出现 `</script>` 截断脚本。
 - 前端零依赖、零构建，全部文本经 `escapeHtml` 转义。
 - 「已读」存 `localStorage['qd-paper-watch:read']`，因此每个人的已读状态互不干扰。
+- **默认只看主方向**：筛选行第一个勾选框 `#only-qled` 默认 `checked`，`state.onlyQled` 让 `matches()` 先按 `directions.includes('qled')` 过滤；`hint` 会显示「· 只看量子点发光二极管」，取消勾选即回到全部器件论文，「重置筛选」把默认值恢复。这样主方向突出，但其它方向的数据一条都没少。
 - 外链分两类，都只 `target="_blank" rel="noopener"`：
   - **指向原文**：`DOI 原文`（`doi_url`，回退 `https://doi.org/<doi>`，302 到出版社）与 `开放获取 PDF`（`pdf_url`，仅开放获取时出现）。
   - **跳转检索**：`在别处查：Google 学术 / X-MOL / 百度学术`，分别拼 `https://scholar.google.com/scholar?q=<标题>`、
@@ -142,14 +161,14 @@ build.mjs
 
 `npm test`（`node --test`，Node 自动发现 `test/*.test.mjs`）覆盖：
 
-- `util`：DOI 规范化、标题归一化、日期计算、标签清洗、截断；
+- `util`：DOI 规范化、标题归一化、Unicode 连字符归一化（`normalizeText`）、日期计算、标签清洗、截断；
 - `abstract`：倒排索引按 position 还原、Crossref JATS 清洗；
-- `relevance`：六类判定路径（通过 / 碳点 / 标题无量子点 / 无器件信号 / 噪音 / 弱证据兜底）、`CdS` 不误判、带 `g` 正则的稳定性；
+- `relevance`：六类判定路径（通过 / 碳点 / 标题无量子点 / 无器件信号 / 噪音 / 弱证据兜底）、`CdS` 不误判、带 `g` 正则的稳定性、`qledFocus`/`isQledDevice` 的强信号与「两条 supporting」阈值、U+2010 标题仍能认出 QD-LED、非发光器件论文不会被打上 `qled`；
 - `store`：记录生成、未来日期退回、摘要未变复用总结、摘要变化作废总结、预印本升级、重复条目合并、损坏文件抛错、原子写入；
 - `llm`：缓存键、JSON 容错解析、字段归一化、无 key 跳过、命中缓存、真实请求体与鉴权头（注入假 fetch）、单篇失败不影响整轮；
 - `privacy`：七条规则各自命中、白名单邮箱不误报、掩码不泄露原文、同行多处命中与行列号、正常内容（cron/长哈希/长数字/网址里的 `/home/`）不误报、非字符串输入、重复扫描一致、**仓库自己的源码通过自检**、`.gitignore` 必须包含密钥与缓存目录。
 
-共 60 个用例。敏感串在测试里一律用拼接构造（`'sk-' + 'a1b…'`），否则测试文件自己会被隐私自检判为泄露。
+共 68 个用例。敏感串在测试里一律用拼接构造（`'sk-' + 'a1b…'`），否则测试文件自己会被隐私自检判为泄露。
 
 DeepSeek 的真实调用不在单测里（需要用真 key），首次填好 key 后跑一次 `npm run update` 即可端到端验证。
 

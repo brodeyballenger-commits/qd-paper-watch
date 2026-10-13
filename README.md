@@ -145,12 +145,14 @@ pwsh -File scripts\register-task.ps1 -Unregister
 ## 6. 页面上能做什么
 
 - **搜索**：标题、英文摘要、中文总结、关键词、期刊、作者、DOI 都能搜
-- **方向筛选**：显示与发光 / 光电探测与光伏 / 量子信息器件 / 材料与合成（可多选）
+- **主方向：量子点发光二极管（QD-LED）**：筛选行第一个勾选框「只看量子点发光二极管」**默认打开**，打开时页面只显示 QD-LED 论文（当前 63 篇）；取消勾选就回到全部量子点器件论文（270 篇）。这条规则是纯关键词判定（见 `src/config.mjs` 的 `QLED_STRONG_PATTERNS` / `QLED_SUPPORTING_PATTERNS`），不重新调用 AI、不删数据
+- **方向筛选**：量子点发光二极管 / 显示与发光 / 光电探测与光伏 / 量子信息器件 / 材料与合成（可多选）
 - **只看高创新**：创新度 ≥ 4 分的论文
 - **时间范围**：全部 / 最近 7 天 / 30 天 / 90 天
 - **排序**：按发表时间 / 创新度 / 被引用次数
 - **已读标记**：点「标为已读」，可以「隐藏已读」。已读状态存在你自己浏览器的 localStorage 里，不影响别人
 - **外链**：每张卡片有「DOI 原文」（直达出版社，走 doi.org 解析）、有免费全文时多一个「开放获取 PDF」，以及「在别处查：Google 学术 / X-MOL / 百度学术」——按标题跳到这些平台的站内检索，确认同一篇论文在里面的收录情况
+- **重置筛选**：右上角「重置筛选」会清空搜索与筛选，并把「只看量子点发光二极管」重新打开（恢复本站默认视角）
 - **深色模式**：跟随系统
 - **手机可用**：窄屏会自动变成单列
 
@@ -161,18 +163,18 @@ pwsh -File scripts\register-task.ps1 -Unregister
 ```
 qd-paper-watch/
 ├── src/
-│   ├── build.mjs          # 唯一入口：抓取 → 过滤 → 合并 → 总结 → 渲染
-│   ├── config.mjs         # 主题、词表、噪音规则、方向定义（想调范围改这里）
+│   ├── build.mjs          # 唯一入口：抓取 → 过滤 → 合并 → 主方向补标 → 总结 → 渲染
+│   ├── config.mjs         # 主题、词表（含 QD-LED 主方向词表）、噪音规则、方向定义（想调范围改这里）
 │   ├── openalex.mjs       # OpenAlex 抓取（分页、字段选择、摘要还原）
 │   ├── crossref.mjs       # Crossref 补摘要（OpenAlex 缺摘要时）
-│   ├── relevance.mjs      # 相关性闸门（决定什么进站）
+│   ├── relevance.mjs      # 相关性闸门 + qledFocus/isQledDevice（决定什么进站、谁算 QD-LED）
 │   ├── store.mjs          # 主账本：去重、合并、原子写入
 │   ├── llm.mjs            # DeepSeek 调用、结果缓存、并发控制
 │   ├── prompt.mjs         # 提示词（改提示词记得同时改 PROMPT_VERSION）
 │   ├── render.mjs         # 生成 docs/ 与 standalone.html
 │   ├── abstract.mjs       # 摘要还原与清洗
 │   ├── http.mjs           # 带重试的 fetch
-│   ├── util.mjs           # 小工具
+│   ├── util.mjs           # 小工具（含 normalizeText：把标题里的 Unicode 连字符折成 ASCII）
 │   └── site/              # 站点源码（会被拷贝进 docs/）
 │       ├── index.html
 │       ├── app.js
@@ -235,6 +237,12 @@ npm run check:privacy:history    # 扫全部提交历史（历史上出现过的
 ---
 
 ## 9. 常见问题
+
+**Q：为什么页面默认只看「量子点发光二极管」？我不想限制怎么办？**
+你这个项目的主方向就是 QD-LED，所以筛选行第一个勾选框默认打开（当前命中 63 篇）。**取消勾选**即可看到全部 270 篇量子点器件论文；点「重置筛选」会恢复默认（重新打开）。判定规则在 `src/config.mjs`：
+- `QLED_STRONG_PATTERNS`：命中任意一条即算 QD-LED（`QD-LED` / `Q-LED` / `quantum dot light-emitting` / `light-emitting diodes` / `electroluminescence`）；
+- `QLED_SUPPORTING_PATTERNS`：只做辅助，**必须至少两条同时命中**（裸 `LED` ＋ `microdisplay`／发光指标／器件叠层关键词）。这条「两条」的限制是为了挡住「用 LED 灯照射样品」的光电探测/光伏论文——实测这类论文摘要里真的会出现 LED 字样。
+- 标签由**确定性关键词规则**给出（在 `src/build.mjs` 步骤「4.5 主方向标签」对全账本补标，幂等、只增不减），不依赖 AI，也不改动已有的中文总结，所以补标不会花钱。
 
 **Q：没有 API key 会怎样？**
 抓取、过滤、网站都正常工作，只是卡片上写着「中文总结待生成」。之后填上 key 再 `npm run update`，所有待生成的论文会一次性补齐；已经生成过的不会重复花钱（按 `提示词版本 + DOI + 摘要哈希` 缓存）。

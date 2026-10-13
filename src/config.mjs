@@ -109,6 +109,31 @@ export const DEVICE_PATTERNS = [
     re: re(String.raw`\bsensors?\b|\bsensing\b|\bdetection\b|\bimaging\b|\bSWIR\b|\bNIR\b|infrared`) },
 ];
 
+/**
+ * 「量子点发光二极管（QD-LED）」聚焦词表 —— 本站的主方向。
+ * strong 命中任意一条即认定为 QD-LED 论文；
+ * supporting 只做辅助：必须至少两条同时命中，才算 QD-LED
+ * （避免「用 LED 灯照射样品」这类光电探测/光伏论文被误判，实测这类论文摘要里确实会出现 LED 字样）。
+ * 注意：匹配前文本已经过 normalizeText 归一化，所以这里统一用 ASCII 连字符。
+ */
+export const QLED_STRONG_PATTERNS = [
+  { id: 'qled-acronym',
+    re: re(String.raw`\bQD[\s-]?LEDs?\b|\bQ-?LEDs?\b|quantum[\s._-]?dots?[\s-]?(?:LEDs?\b|light[\s-]emitting)`) },
+  { id: 'led-phrase',
+    re: re(String.raw`light[\s-]emitting\s+diodes?`) },
+  { id: 'electroluminescence',
+    re: re(String.raw`electroluminesc|electro[\s-]?luminesc`) },
+];
+
+export const QLED_SUPPORTING_PATTERNS = [
+  { id: 'led-word', re: re(String.raw`\bLEDs?\b`) },
+  { id: 'microdisplay', re: re(String.raw`\bmicro-?displays?\b`) },
+  { id: 'el-metrics',
+    re: re(String.raw`\bluminance\b|\bcd\s*\/\s*A\b|current efficiency|turn[\s-]on voltage|roll[\s-]off|\bT50\b|\bT95\b|device lifetime|operational lifetime`) },
+  { id: 'el-stack',
+    re: re(String.raw`hole transport|electron transport|\bHTL\b|\bETL\b|charge balance|emission layer|electron[\s-]hole recombination`) },
+];
+
 /** 噪音：命中且没有强器件证据时丢弃 */
 export const NOISE_PATTERNS = [
   { id: 'bio-medical',
@@ -126,8 +151,9 @@ export const MATERIALS_PATTERNS = [
   re(String.raw`\bsynthes[ie]|\bligand|passivation|doping|dopant|nucleation|epitax|core[\s/-]?shell|alloy|encapsulat|photostability|precursor|surface chemistry|colloidal|self[\s-]?assembl`),
 ];
 
-/** 界面上的方向定义。id 必须与上面 directions 里的取值一致。 */
+/** 界面上的方向定义。id 必须与上面 directions 里的取值一致。第一个是本站主方向。 */
 export const DIRECTIONS = [
+  { id: 'qled', label: '量子点发光二极管', color: '#e11d48' },
   { id: 'display', label: '显示与发光', color: '#f59e0b' },
   { id: 'detection', label: '光电探测与光伏', color: '#10b981' },
   { id: 'quantuminfo', label: '量子信息器件', color: '#6366f1' },

@@ -15,6 +15,9 @@
     rangeDays: 0,
     sort: 'date',
     hideRead: false,
+    // 本站主方向是量子点发光二极管（QD-LED），默认只看这一块；
+    // 取消勾选就能看到全部量子点器件论文。
+    onlyQled: true,
     read: loadRead(),
   };
 
@@ -104,6 +107,10 @@
   }
 
   function matches(paper) {
+    if (state.onlyQled) {
+      if ((paper.directions || []).indexOf('qled') === -1) return false;
+    }
+
     if (state.query) {
       var terms = state.query.split(/\s+/).filter(Boolean);
       var text = paper.__text || (paper.__text = paperText(paper));
@@ -267,6 +274,7 @@
     el.list.innerHTML = sorted.map(renderCard).join('');
     el.empty.hidden = sorted.length > 0;
     el.hint.textContent = '显示 ' + sorted.length + ' / ' + state.papers.length + ' 篇';
+    if (state.onlyQled) el.hint.textContent += ' · 只看量子点发光二极管';
 
     var unread = state.papers.filter(function (p) {
       return !state.read[p.doi];
@@ -330,6 +338,11 @@
       render();
     });
 
+    el.onlyQled.addEventListener('change', function (e) {
+      state.onlyQled = e.target.checked;
+      render();
+    });
+
     el.hideRead.addEventListener('change', function (e) {
       state.hideRead = e.target.checked;
       render();
@@ -346,10 +359,12 @@
       state.minNovelty = 0;
       state.rangeDays = 0;
       state.hideRead = false;
+      state.onlyQled = true; // 重置回本站默认：只看量子点发光二极管
       el.q.value = '';
       el.range.value = '0';
       el.hideRead.checked = false;
       el.onlyHigh.checked = false;
+      el.onlyQled.checked = true;
       var buttons = el.directionRow.querySelectorAll('.dir');
       for (var i = 0; i < buttons.length; i += 1) buttons[i].setAttribute('aria-pressed', 'false');
       render();
@@ -388,6 +403,7 @@
     el.sort = document.getElementById('sort');
     el.range = document.getElementById('range');
     el.hideRead = document.getElementById('hide-read');
+    el.onlyQled = document.getElementById('only-qled');
     el.onlyHigh = document.getElementById('only-high');
     el.reset = document.getElementById('reset');
     el.hint = document.getElementById('hint');

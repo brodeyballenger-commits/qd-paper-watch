@@ -33,7 +33,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "首次将 EETA 用于原位追踪 QD-LED 正向老化中的载流子动力学，并给出酸致 ZnMgO 缺陷钝化提升电子注入的机制解释，属新表征手段加明确机理。",
@@ -136,7 +137,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "用含氟 SAM 界面偶极调控 NiOx 能级并给出明确的深蓝 QLED 效率提升（EQE 19.68%），属有新策略且性能显著的工作，但机制仍是界面偶极工程的延伸。",
@@ -741,7 +743,8 @@
       "abstract_missing": true,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 1,
       "novelty_reason": "摘要缺失，无法判断创新性。",
@@ -1298,7 +1301,8 @@
       "directions": [
         "display",
         "detection",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 2,
       "novelty_reason": "属于领域综述，整合已有进展并梳理策略，没有提出新机制或新器件。",
@@ -1451,7 +1455,8 @@
       "abstract_source": "none",
       "abstract_missing": true,
       "directions": [
-        "display"
+        "display",
+        "qled"
       ],
       "novelty_score": 1,
       "novelty_reason": "无摘要信息，无法评估创新性。",
@@ -2466,7 +2471,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 5,
       "novelty_reason": "首次提出波长门控的可逆配体交联/解交联光刻机制，在恢复量子点功能的同时刷新了高亮度、高 EQE 与 21,000 PPI 高分辨率的综合水平。",
@@ -2620,7 +2626,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "提出高 π 共轭交联剂设计策略，在超低曝光剂量下实现 12,700 PPI 高分辨图案化并保持器件效率，属于明确的新策略且性能提升显著。",
@@ -2716,7 +2723,8 @@
       "abstract_source": "none",
       "abstract_missing": true,
       "directions": [
-        "display"
+        "display",
+        "qled"
       ],
       "novelty_score": 1,
       "novelty_reason": "仅有标题、无摘要，无法评估创新性。",
@@ -2965,7 +2973,8 @@
       "abstract_source": "none",
       "abstract_missing": true,
       "directions": [
-        "display"
+        "display",
+        "qled"
       ],
       "novelty_score": 1,
       "novelty_reason": "摘要缺失，无法评估创新性。",
@@ -3066,7 +3075,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "用同一分子同时实现量子点表面钝化与载流子注入平衡调控，并在无镉倒置红光 QLED 上给出 23.7% EQE 和 217.8 h 半寿命的明确性能数据。",
@@ -3220,7 +3230,8 @@
       "abstract_missing": true,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 1,
       "novelty_reason": "摘要缺失，无法判断创新性。",
@@ -3271,7 +3282,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "用熔盐合成路线做出无重金属蓝光 In1–xGaxP/ZnS 核壳量子点，并以计算解释 ZnS 壳带来的核壳态混合增强直接带隙特性，属明确的新材料策略。",
@@ -3629,7 +3641,8 @@
       "abstract_source": "none",
       "abstract_missing": true,
       "directions": [
-        "display"
+        "display",
+        "qled"
       ],
       "novelty_score": 1,
       "novelty_reason": "数据库未收录摘要，无法判断创新性。",
@@ -3679,7 +3692,8 @@
       "abstract_source": "none",
       "abstract_missing": true,
       "directions": [
-        "display"
+        "display",
+        "qled"
       ],
       "novelty_score": 1,
       "novelty_reason": "数据库未收录摘要，无法评估创新性。",
@@ -3729,7 +3743,8 @@
       "abstract_source": "openalex",
       "abstract_missing": false,
       "directions": [
-        "display"
+        "display",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "用LB技术构建QD-mCP杂化发光层属明确的新结构策略，且效率与寿命提升显著（EQE 36.7%、T95提升三倍以上）。",
@@ -3778,7 +3793,8 @@
       "abstract_source": "none",
       "abstract_missing": true,
       "directions": [
-        "display"
+        "display",
+        "qled"
       ],
       "novelty_score": 1,
       "novelty_reason": "摘要缺失，无法评估创新性。",
@@ -4127,7 +4143,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "提出桥接碳重构π共轭骨架的新策略，同时解决缺陷与表面非辐射复合问题，使无金属蓝光量子点QLED达到1.47%外量子效率。",
@@ -4529,7 +4546,8 @@
       "abstract_source": "none",
       "abstract_missing": true,
       "directions": [
-        "display"
+        "display",
+        "qled"
       ],
       "novelty_score": 1,
       "novelty_reason": "无摘要信息，无法判断创新性。",
@@ -4779,7 +4797,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "在 Si/SiGe 量子点体系中把残留弹性应变与两个数量级以上的发光增强联系起来，给出了明确的物理机制解释。",
@@ -5182,7 +5201,8 @@
       "abstract_source": "none",
       "abstract_missing": true,
       "directions": [
-        "display"
+        "display",
+        "qled"
       ],
       "novelty_score": 1,
       "novelty_reason": "摘要缺失，无法评估创新性。",
@@ -5489,7 +5509,8 @@
       "directions": [
         "display",
         "detection",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "提出 EA 表面修饰与 Mg 组分调控互补的双调控策略，在同一器件结构中实现 EQE 从 4.08% 到 9.23% 的显著提升，属明确的新策略加性能提升。",
@@ -5588,7 +5609,8 @@
       "abstract_source": "none",
       "abstract_missing": true,
       "directions": [
-        "display"
+        "display",
+        "qled"
       ],
       "novelty_score": 1,
       "novelty_reason": "无摘要信息，无法评估创新性。",
@@ -5742,7 +5764,8 @@
       "directions": [
         "display",
         "detection",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "用溶剂工程调控电子-声子耦合这一新策略显著提升环保量子点近红外 QLED 效率，EQE 达同类体系最高水平之一，但机制仍属缺陷抑制的已有框架。",
@@ -5896,7 +5919,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "提出一种简便的水溶液后处理策略同时调控金属氧化物 ETL 的表面与体相性质，并在无预老化条件下实现 EQE、寿命和亮度的成倍提升。",
@@ -5947,7 +5971,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "用 ZnS 纳米晶同时实现间距调控与能带工程，蓝光 QLED 效率达 21.2% 且寿命提升约 4.4 倍，策略明确且性能提升显著。",
@@ -6198,7 +6223,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 2,
       "novelty_reason": "属综述整合，未提出新机制或新器件，但给出了较系统的性能数据汇总与技术路线图。",
@@ -6400,7 +6426,8 @@
       "abstract_missing": true,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 1,
       "novelty_reason": "摘要缺失，无法评估创新性。",
@@ -6807,7 +6834,8 @@
       "abstract_source": "openalex",
       "abstract_missing": false,
       "directions": [
-        "display"
+        "display",
+        "qled"
       ],
       "novelty_score": 2,
       "novelty_reason": "属观点综述类文章，未提出新结构或新机制，也无具体性能指标，创新性主要体现在对技术路线的梳理与问题提炼。",
@@ -6856,7 +6884,8 @@
       "abstract_source": "openalex",
       "abstract_missing": false,
       "directions": [
-        "display"
+        "display",
+        "qled"
       ],
       "novelty_score": 3,
       "novelty_reason": "对已有瞬态电致发光手段的系统性变参测量，给出了延迟时间主导机制的新解释，但属于机理层面的渐进认识而非新器件或新纪录。",
@@ -7413,7 +7442,8 @@
       "abstract_source": "none",
       "abstract_missing": true,
       "directions": [
-        "display"
+        "display",
+        "qled"
       ],
       "novelty_score": 1,
       "novelty_reason": "摘要缺失，无法评估创新性。",
@@ -7566,7 +7596,8 @@
       "directions": [
         "display",
         "detection",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 3,
       "novelty_reason": "梯度合金双壳层是合理的壳层工程策略并给出了完整的发光与器件数据，但整体属于已有核/壳 NPL 思路在新波段上的渐进式优化，未见新机制或纪录级指标。",
@@ -7719,7 +7750,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 5,
       "novelty_reason": "首次将氘代分子振动工程用于QLED空穴注入层，刷新SnO2基QLED的EQE记录并消除正向老化。",
@@ -7923,7 +7955,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "用 Te 合金化 ZnTeSe 量子点作界面层同时解决钝化、电子泄漏和空穴注入三个问题，EQE 提升近 50 倍，属明确的新界面策略且性能提升显著。",
@@ -8026,7 +8059,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 3,
       "novelty_reason": "属于在 InP QLED 体系上验证「交联密度调控电荷平衡」这一已有思路的渐进式工艺优化，给出了明确的退火温度窗口和 EQE/寿命数据，但未提出新机制或新器件结构。",
@@ -8436,7 +8470,8 @@
       "directions": [
         "display",
         "detection",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 3,
       "novelty_reason": "用常见铵盐添加剂做表面钝化属已有思路在新体系上的验证，PLQY 与 EQE 提升明确但幅度有限。",
@@ -8487,7 +8522,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "提出无需电极和外加电场的微孔静电吸附自组装新策略，实现 42333 PPI 单色与 2540 PPI 全彩阵列并保持约 26% 的 EQE，属明确的新方法加显著性能提升。",
@@ -8589,7 +8625,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 3,
       "novelty_reason": "用 PEO-SH 配体交换实现水/醇加工 QLED 的思路较新，但器件效率（EQE 2.12%）偏低，属于概念验证性质的渐进式工作。",
@@ -8742,7 +8779,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "用超薄金属选择性淬灭 tandem 量子点叠层发光来实现 RGB 图案化，思路新且与现有 FMM 工艺兼容，但摘要只给出红、绿并排器件的可行性验证，未给出分辨率或效率的具体数字。",
@@ -9044,7 +9082,8 @@
       "abstract_source": "openalex",
       "abstract_missing": false,
       "directions": [
-        "display"
+        "display",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "把 SnO2/ZnO 的堆叠顺序反转（SnO2 贴 ITO、ZnO 贴 QD）以同时实现促进注入与限制供给，属于明确的新结构策略并带来显著效率提升。",
@@ -9096,7 +9135,8 @@
       "directions": [
         "display",
         "detection",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 5,
       "novelty_reason": "提出以有机金属卤化物网络构建 CQD 超晶格的新结构，同时解决载流子输运与缺陷密度矛盾，并在探测器与 LED 两类器件上给出具体性能指标。",
@@ -9451,7 +9491,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "用更安全的氨基膦前驱体路线配合光交联 HTL 与界面层协同优化，把绿光无镉 QLED 的 EQE 推到 10.5%，属于明确的新策略加显著性能提升。",
@@ -9502,7 +9543,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "用剥离技术直接给出 TFB 在工作应力下的化学降解路径与能级下移 0.21 eV 的定量证据，把蓝光 QLED 稳定性问题归因到 HTL 本征退化，属于机制层面的新认识。",
@@ -9859,7 +9901,8 @@
       "abstract_source": "none",
       "abstract_missing": true,
       "directions": [
-        "display"
+        "display",
+        "qled"
       ],
       "novelty_score": 1,
       "novelty_reason": "无摘要信息，无法评估创新性。",
@@ -10163,7 +10206,8 @@
       "abstract_missing": true,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 1,
       "novelty_reason": "摘要缺失，无法评估创新性。",
@@ -10317,7 +10361,8 @@
       "abstract_source": "openalex",
       "abstract_missing": false,
       "directions": [
-        "display"
+        "display",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "用 TADF 敏化层解决 FRET 给体寿命限制的思路明确，且 EQE 与寿命同时获得显著提升，但属于已有 FRET 策略在新材料体系上的优化而非全新机制。",
@@ -10523,7 +10568,8 @@
       "directions": [
         "display",
         "detection",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "用ZnS纳米晶作硫源的极性溶剂室温阳离子交换路线，把PbS CQD的PL调谐范围推到1650 nm并给出器件级验证，属于明确的新合成策略加显著性能提升，但并非全新物理机制。",
@@ -10623,7 +10669,8 @@
       "abstract_missing": true,
       "directions": [
         "display",
-        "detection"
+        "detection",
+        "qled"
       ],
       "novelty_score": 1,
       "novelty_reason": "无摘要信息，无法评估创新性。",
@@ -10724,7 +10771,8 @@
       "abstract_source": "openalex",
       "abstract_missing": false,
       "directions": [
-        "display"
+        "display",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "用简单界面修饰分子同时实现 HOMO 加深与空穴迁移率提升，并在深蓝 QLED 上拿到 23.16% 的 EQE 记录。",
@@ -10878,7 +10926,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "指出无镉 ZnSeTe 蓝光 QLED 与 Cd 基体系相反的电荷管理逻辑，并用 Mg 掺杂 ZnO + 浅 HOMO HTL 的组合把效率从 2.1% 提到 6.3%，策略明确且提升显著。",
@@ -11031,7 +11080,8 @@
       "directions": [
         "detection",
         "materials",
-        "display"
+        "display",
+        "qled"
       ],
       "novelty_score": 2,
       "novelty_reason": "属于对已有进展的系统性综述，没有提出新机制或新器件，创新性主要体现在组织框架和覆盖面而非研究本身。",
@@ -11182,7 +11232,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 2,
       "novelty_reason": "属于对已有退火工艺的系统性综述与观点整理，未提出新机制或新器件结构，也无具体性能数据刷新。",
@@ -11337,7 +11388,8 @@
       "directions": [
         "display",
         "detection",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "顶发射+低Q微腔+硅衬底散热是一套明确的新结构组合，并带来 >100 W sr⁻¹ m⁻² 的辐射亮度和实际 SWIR 成像演示，但物理机制本身并非全新。",
@@ -11542,7 +11594,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "提出了兼顾单层覆盖、有序排列与大面积扩展的连续自组装成膜新策略，并据此获得 23.85% EQE 与低滚降的高性能绿光 QLED。",
@@ -11644,7 +11697,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "体相掺杂与界面钝化协同策略明确，EQE从16.1%提升到24.3%且寿命提升2.1倍，性能提升显著，但属于已有思路的组合优化而非全新机制。",
@@ -11695,7 +11749,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 3,
       "novelty_reason": "属于方法学与标准化层面的工作，不涉及新物理机制或性能纪录，但对领域可复现性有实际价值。",
@@ -11948,7 +12003,8 @@
       "directions": [
         "display",
         "detection",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 2,
       "novelty_reason": "属综述性总结，未提出新机制或新器件，仅对已有材料优势与器件挑战做归纳。",
@@ -12051,7 +12107,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "用应变临时扩距的思路解决了窄间距纳米图案转印难题，并给出 33,400 PPI、270 nm 间隙和约 20.3% EQE 的具体指标，属于明确的新策略加显著性能提升。",
@@ -12360,7 +12417,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 3,
       "novelty_reason": "在已有纳米晶 LED 界面工程思路上，系统验证了 HT/EI 聚合物配对与膦酸酯侧链调控的协同作用，属于新体系上的策略验证与渐进式优化，性能指标未突破领域纪录。",
@@ -12606,7 +12664,8 @@
       "abstract_source": "none",
       "abstract_missing": true,
       "directions": [
-        "display"
+        "display",
+        "qled"
       ],
       "novelty_score": 1,
       "novelty_reason": "摘要缺失，无法评估创新性。",
@@ -13005,7 +13064,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "以自组装实现单层精度、单一取向的纳米片有源层厚度调控，并给出 EQE 12% 的红色 LED 结果，属于明确的新成膜策略加显著性能。",
@@ -13107,7 +13167,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 5,
       "novelty_reason": "提出裂纹辅助转印这一新图案化机制，并首次给出 600 nm 像素、341 ppi 无镉全彩及柔性蓝光有源矩阵显示器的具体结果。",
@@ -13259,7 +13320,8 @@
       "abstract_missing": false,
       "directions": [
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 4,
       "novelty_reason": "把 PN 结物理框架系统引入 QLED 的 I-V 分析，给出可拟合实验曲线的纳米 PN 结模型并解释高理想因子，属于新的理论分析框架而非单纯性能优化。",
@@ -13311,7 +13373,8 @@
       "directions": [
         "detection",
         "display",
-        "materials"
+        "materials",
+        "qled"
       ],
       "novelty_score": 5,
       "novelty_reason": "首次在单一 SWIR 量子点二极管上同时实现纳秒级探测与发光，并给出 2 ns 响应等纪录级指标。",

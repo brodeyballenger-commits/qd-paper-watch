@@ -26,6 +26,18 @@ export function normalizeDoi(input) {
 export const doiUrl = (doi) => (doi ? `https://doi.org/${doi}` : null);
 
 /**
+ * 把 Unicode 连字符/破折号与不换行空格归一化成 ASCII，
+ * 供词表匹配使用。期刊标题与摘要里大量使用 ‐(U+2010) ‑(U+2011) –(U+2013) —(U+2014) −(U+2212)，
+ * 而词表写的是 `[\s-]`（ASCII 连字符），不归一化就会漏判
+ * （实测 270 篇里 65 篇标题、123 篇标题或摘要含这类字符）。
+ */
+export function normalizeText(text) {
+  return String(text ?? '')
+    .replace(/[\u2010-\u2015\u2212\uff0d\u00ad]/g, '-')
+    .replace(/\u00a0/g, ' ');
+}
+
+/**
  * 标题归一化，用于「预印本 -> 正式版」的去重比较。
  * 只保留字母数字。
  */

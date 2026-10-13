@@ -10,7 +10,10 @@ import {
   PREPRINT_SOURCE_HINTS,
   QD_CORE_PATTERNS,
   QD_WEAK_PATTERNS,
+  QLED_STRONG_PATTERNS,
+  QLED_SUPPORTING_PATTERNS,
 } from './config.mjs';
+import { normalizeText } from './util.mjs';
 
 const CARBON_SOURCE = CARBON_DOT_PATTERNS.map((p) => `(?:${p.source})`).join('|');
 // 注意：带 g 的正则有 lastIndex 状态，必须区分「替换用」和「判断用」两个实例
@@ -27,7 +30,7 @@ export function hasCarbonDot(text) {
 }
 
 export function buildSearchText(paper) {
-  return [paper?.title, paper?.abstract, paper?.venue].filter(Boolean).join(' \n ');
+  return normalizeText([paper?.title, paper?.abstract, paper?.venue].filter(Boolean).join(' \n '));
 }
 
 function testAll(patterns, text) {
@@ -35,6 +38,23 @@ function testAll(patterns, text) {
 }
 
 const STRONG_DEVICE = DEVICE_PATTERNS.filter((p) => p.strength === 'strong');
+
+/**
+ * 判断一段文本是否属于本站主方向：量子点发光二极管（QD-LED）。
+ * 规则：strong 命中任意一条即算；否则 supporting 必须至少两条同时命中。
+ * 后者是为了挡住「用 LED 灯照射样品」这类光电探测/光伏论文（它们摘要里真的会出现 LED 字样）。
+ */
+export function qledFocus(text) {
+  const normalized = normalizeText(text);
+  const strong = testAll(QLED_STRONG_PATTERNS, normalized);
+  const supporting = testAll(QLED_SUPPORTING_PATTERNS, normalized);
+  return { focus: strong.length > 0 || supporting.length >= 2, strong, supporting };
+}
+
+/** 给主账本里的存量论文补打 qled 标签用：幂等、只增不减、不依赖摘要是否缺失 */
+export function isQledDevice(paper) {
+  return qledFocus([paper?.title, paper?.abstract].filter(Boolean).join(' \n ')).focus;
+}
 
 /** 判定是否预印本/仓储版本（不是正式期刊论文） */
 export function isPreprint(paper) {
@@ -68,7 +88,7 @@ export function tagDirections(text, deviceIds) {
 export function evaluateRelevance(paper) {
   const raw = buildSearchText(paper);
   const text = stripCarbonDots(raw);
-  const titleText = stripCarbonDots(String(paper?.title ?? ''));
+  const titleText = stripCarbonDots(normalizeText(paper?.title ?? ''));
   const hasAbstract = Boolean(paper?.abstract);
 
   const qdHits = testAll(QD_CORE_PATTERNS, text);
@@ -79,6 +99,7 @@ export function evaluateRelevance(paper) {
   const strongDeviceHits = testAll(STRONG_DEVICE, text);
   const noiseHits = testAll(NOISE_PATTERNS, text);
   const carbonDot = hasCarbonDot(raw);
+  const qled = qledFocus(text);
 
   const weakQdHits = titleQdHits.length === 0 ? testAll(QD_WEAK_PATTERNS, titleText) : [];
 
@@ -89,9 +110,14 @@ export function evaluateRelevance(paper) {
     deviceHits,
     strongDeviceHits,
     noiseHits,
+    qledHits: qled.strong.concat(qled.supporting),
     hasAbstract,
     carbonDot,
   };
+
+  /** 主方向标签是叠加的：不影响其它方向，也不影响已入库论文的历史标签 */
+  const directions = tagDirections(text, deviceHits);
+  if (qled.focus && !directions.includes('qled')) directions.push('qled');
 
   if (qdHits.length === 0 || titleQdHits.length === 0) {
     // 摘要缺失时用材料体系/光物理特征兜底，但必须同时具备强器件信号且不踩噪音词。
@@ -108,7 +134,7 @@ export function evaluateRelevance(paper) {
     return {
       pass: true,
       reason: `weak-qd:${weakQdHits.join('+')}`,
-      directions: tagDirections(text, deviceHits),
+      directions,
       detail,
     };
   }
@@ -120,5 +146,5 @@ export function evaluateRelevance(paper) {
     return { pass: false, reason: `noise:${noiseHits.join('+')}`, directions: [], detail };
   }
 
-  return { pass: true, reason: null, directions: tagDirections(text, deviceHits), detail };
+  return { pass: true, reason: null, directions, detail };
 }

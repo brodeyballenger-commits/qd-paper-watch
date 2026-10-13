@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>量子点器件前沿追踪</title>
-<meta name="description" content="自动汇总最新发表的量子点器件方向论文，并用中文说清每篇做了什么、创新点在哪。">
+<meta name="description" content="自动汇总最新发表的量子点器件论文，主方向是量子点发光二极管（QD-LED），并用中文说清每篇做了什么、创新点在哪。">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -39,6 +39,7 @@
     </div>
     <div class="control-row" id="direction-row"></div>
     <div class="control-row small">
+      <label class="check"><input type="checkbox" id="only-qled" checked> 只看量子点发光二极管</label>
       <label class="check"><input type="checkbox" id="hide-read"> 隐藏已读</label>
       <label class="check"><input type="checkbox" id="only-high"> 只看高创新（≥4）</label>
       <button type="button" id="reset" class="ghost">重置筛选</button>
@@ -50,7 +51,7 @@
 
   <section id="empty" class="empty" hidden>
     <p>没有符合条件的论文。</p>
-    <p class="muted">可以放宽时间范围，或点「重置筛选」。</p>
+    <p class="muted">可以放宽时间范围、取消勾选「只看量子点发光二极管」，或点「重置筛选」。</p>
   </section>
 
   <section id="error" class="empty" hidden>

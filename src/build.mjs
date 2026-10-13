@@ -20,7 +20,7 @@ import { fetchCrossrefAbstract } from './crossref.mjs';
 import { loadEnv } from './env.mjs';
 import { summarizePapers } from './llm.mjs';
 import { fetchWorks } from './openalex.mjs';
-import { evaluateRelevance, isPreprint } from './relevance.mjs';
+import { evaluateRelevance, isPreprint, isQledDevice } from './relevance.mjs';
 import { renderSite } from './render.mjs';
 import { loadJson, makeRecord, mergeRecords, saveJsonAtomic } from './store.mjs';
 import { daysBefore } from './util.mjs';
@@ -143,6 +143,20 @@ async function main() {
     `   合并：新增 ${stats.added}、摘要变更 ${stats.updated}、无变化 ${stats.unchanged}、预印本归并 ${stats.preprintMerged}`,
   );
 
+  // ---------- 4.5 主方向标签：量子点发光二极管（QD-LED） ----------
+  // 纯规则、幂等、只增不减：存量论文（早于本次词表）也会被补上标签，
+  // 所以站点的「只看量子点发光二极管」对老数据一样有效。
+  let qledTagged = 0;
+  for (const p of papers) {
+    if (!isQledDevice(p)) continue;
+    if (!Array.isArray(p.directions)) p.directions = [];
+    if (p.directions.includes('qled')) continue;
+    p.directions.push('qled');
+    qledTagged += 1;
+  }
+  const qledTotal = papers.filter((p) => (p.directions ?? []).includes('qled')).length;
+  console.log(`   主方向（量子点发光二极管）：${qledTotal} 篇${qledTagged ? `（本次补标 ${qledTagged} 篇）` : ''}`);
+
   // ---------- 5. 中文总结 ----------
   let llmReport = { stats: { pending: 0, generated: 0, fromCache: 0, failed: 0 }, skippedReason: 'dry-run' };
   if (!args.dryRun && !args.noLlm) {
@@ -199,6 +213,7 @@ async function main() {
       llm_generated: llmReport.stats.generated,
       llm_failed: llmReport.stats.failed,
       pending_summary: papers.filter((p) => p.pending_summary).length,
+      qled_focus: qledTotal,
     },
   };
 

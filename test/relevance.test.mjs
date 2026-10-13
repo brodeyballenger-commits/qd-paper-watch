@@ -6,6 +6,8 @@ import {
   evaluateRelevance,
   hasCarbonDot,
   isPreprint,
+  isQledDevice,
+  qledFocus,
   stripCarbonDots,
 } from '../src/relevance.mjs';
 
@@ -20,8 +22,9 @@ test('pass：标题与摘要都站在量子点器件上', () => {
   );
   assert.equal(r.pass, true, JSON.stringify(r));
   assert.equal(r.reason, null);
-  assert.deepEqual(r.directions, ['display']);
+  assert.deepEqual(r.directions, ['display', 'qled']);
   assert.ok(r.detail.titleQdHits.length > 0);
+  assert.ok(r.detail.qledHits.length > 0);
 });
 
 test('drop carbon-dot：碳点不是量子点，且整体抹掉后不再有量子点证据', () => {
@@ -115,4 +118,51 @@ test('isPreprint 识别仓储版本与预印本站点', () => {
   assert.equal(isPreprint({ venue: 'Nature Photonics', source_type: 'repository' }), true);
   assert.equal(isPreprint({ venue: 'Nature Photonics', source_type: 'journal' }), false);
   assert.equal(isPreprint({}), false);
+});
+
+test('qledFocus：强信号一条即算（QD-LED / light-emitting diodes / electroluminescence）', () => {
+  assert.equal(qledFocus('Blue QD-LEDs with 25% EQE').focus, true);
+  assert.deepEqual(qledFocus('Blue QD-LEDs with 25% EQE').strong, ['qled-acronym']);
+  assert.equal(qledFocus('Colloidal light-emitting diodes').focus, true);
+  assert.equal(qledFocus('Electroluminescence from nanocrystals').focus, true);
+  assert.equal(qledFocus('').focus, false);
+});
+
+test('qledFocus：只有裸 LED 时不算主方向（挡住「用 LED 灯照射样品」的光伏/探测论文）', () => {
+  const pv = 'The cell reaches 12% efficiency under indoor LED illumination (1250 lx).';
+  const f = qledFocus(pv);
+  assert.equal(f.focus, false);
+  assert.deepEqual(f.strong, []);
+  assert.deepEqual(f.supporting, ['led-word']);
+});
+
+test('qledFocus：裸 LED 加一条辅助信号才放行（microdisplay）', () => {
+  const f = qledFocus('Ultra-high-resolution quantum dot microdisplays driven by an LED backplane');
+  assert.equal(f.focus, true);
+  assert.deepEqual(f.strong, []);
+  assert.deepEqual(f.supporting, ['led-word', 'microdisplay']);
+});
+
+test('Unicode 连字符（U+2010）归一化后仍能认出 QD-LED', () => {
+  // 期刊标题里的 "light‐emitting" 用的是 U+2010，早期词表只写 ASCII 连字符时会被漏掉
+  const title = 'Ultrahigh\u2010resolution quantum dot light\u2010emitting diodes';
+  assert.equal(isQledDevice({ title }), true);
+  const r = evaluateRelevance(paper(title, 'The device shows electroluminescence at 12 V.'));
+  assert.equal(r.pass, true, JSON.stringify(r));
+  assert.ok(r.directions.includes('qled'), JSON.stringify(r.directions));
+});
+
+test('isQledDevice：器件与材料论文区分得开，且对空输入安全', () => {
+  assert.equal(isQledDevice({ title: 'Efficient InP Quantum Dot Light-Emitting Diodes' }), true);
+  assert.equal(isQledDevice({ title: 'Copper-Catalyzed Cation Exchange in CdSe/ZnSe Nanoplatelets' }), false);
+  assert.equal(isQledDevice({}), false);
+  assert.equal(isQledDevice(null), false);
+});
+
+test('evaluateRelevance：非发光器件论文不会被打上 qled 标签', () => {
+  const r = evaluateRelevance(
+    paper('PbS Quantum Dot Photodetector with High Detectivity', 'The quantum dot film is used as the absorber; no LED involved.', 'Nature Photonics'),
+  );
+  assert.equal(r.pass, true, JSON.stringify(r));
+  assert.equal(r.directions.includes('qled'), false, JSON.stringify(r.directions));
 });

@@ -7,6 +7,7 @@ import {
   doiUrl,
   isoDate,
   normalizeDoi,
+  normalizeText,
   normalizeTitle,
   sha256,
   stripMarkup,
@@ -71,4 +72,15 @@ test('truncate 超长时截断且不切断单词', () => {
   const out = truncate(long, 50);
   assert.ok(out.length <= 51, out);
   assert.ok(out.endsWith('…'));
+});
+
+test('normalizeText 把各种 Unicode 连字符/短横线折成 ASCII，并处理不换行空格', () => {
+  // \u2010 连字符、\u2011 不断行连字符、\u2012 \u2013 \u2014 \u2015 破折号、\u2212 减号、\uff0d 全角、\u00ad 软连字符
+  assert.equal(normalizeText('light\u2010emitting'), 'light-emitting');
+  assert.equal(normalizeText('a\u2011b\u2012c\u2013d\u2014e\u2015f\u2212g\uff0dh\u00adi'), 'a-b-c-d-e-f-g-h-i');
+  assert.equal(normalizeText('NiO\u00a0x'), 'NiO x');
+  assert.equal(normalizeText(null), '');
+  assert.equal(normalizeText(undefined), '');
+  assert.equal(normalizeText(12), '12');
+  assert.equal(normalizeText('already-ascii'), 'already-ascii');
 });

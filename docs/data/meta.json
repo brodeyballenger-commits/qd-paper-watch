@@ -5,6 +5,11 @@
   "window_days": 14,
   "directions": [
     {
+      "id": "qled",
+      "label": "量子点发光二极管",
+      "color": "#e11d48"
+    },
+    {
       "id": "display",
       "label": "显示与发光",
       "color": "#f59e0b"
@@ -35,7 +40,8 @@
     "preprint_merged": 1,
     "llm_generated": 0,
     "llm_failed": 0,
-    "pending_summary": 0
+    "pending_summary": 0,
+    "qled_focus": 63
   },
   "source": "OpenAlex + Crossref",
   "summary_engine": "deepseek-chat"
