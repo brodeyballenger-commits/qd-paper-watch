@@ -134,7 +134,7 @@ build.mjs
 
 ## 7. 测试
 
-`npm test`（`node --test test/`）覆盖：
+`npm test`（`node --test`，Node 自动发现 `test/*.test.mjs`）覆盖：
 
 - `util`：DOI 规范化、标题归一化、日期计算、标签清洗、截断；
 - `abstract`：倒排索引按 position 还原、Crossref JATS 清洗；
