@@ -30,11 +30,17 @@ jobs:
     steps:
       - name: 拉取仓库
         uses: actions/checkout@v4
+        with:
+          # 隐私自检要扫全部提交历史，必须拿完整历史而不是浅克隆
+          fetch-depth: 0
 
       - name: 准备 Node
         uses: actions/setup-node@v4
         with:
           node-version: '22'
+
+      - name: 隐私自检（密钥与个人信息不入库、不上线）
+        run: node scripts/check-privacy.mjs --history
 
       - name: 运行单元测试
         run: node --test

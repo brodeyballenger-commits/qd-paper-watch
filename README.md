@@ -73,6 +73,8 @@ npm run preview           # 打开 http://127.0.0.1:5173/
 | `npm run dry` | 只抓取和统计，不写文件、不调 LLM（省钱试跑） |
 | `npm run no-llm` | 抓取并更新站点，但跳过 DeepSeek |
 | `npm test` | 运行单元测试 |
+| `npm run check:privacy` | 隐私自检：扫工作区，确认没有密钥/个人信息会被提交 |
+| `npm run check:privacy:history` | 连全部提交历史一起扫（CI 每次都会跑这个） |
 
 底层 CLI 还支持：`--days=N`（窗口天数）、`--since=YYYY-MM-DD`、`--limit=N`（只处理前 N 篇，调试用）、`--llm-limit=N`（本轮最多只生成 N 篇中文总结，先花几分钱看质量）、`--quiet`。
 
@@ -188,7 +190,46 @@ qd-paper-watch/
 
 ---
 
-## 8. 常见问题
+## 8. 隐私与身份保护
+
+这个站是公开的，所以默认按「什么都不会泄露」来配置。已经生效的五条保障：
+
+1. **密钥永不进仓库**：`.env`（放 key）、`.cache/`（放花钱买来的总结缓存）、`.tmp/`（日志）都在 `.gitignore` 里。
+   GitHub Actions 里 key 只以 **Secret** 形式存在，打日志时自动变成 `***`；网站是纯静态页面，浏览器里没有 key，也没有后端。
+2. **提交身份是 noreply 邮箱**：历史里每个提交都是
+   `<账号ID>+<账号名>@users.noreply.github.com` 这种 GitHub 提供的免回复地址，没有真实邮箱。
+   （当前仓库的提交身份可以用 `git log -1 --format='%an <%ae>'` 查看。）
+3. **自带隐私自检兜底**：`src/privacy.mjs` + `scripts/check-privacy.mjs` 会扫 7 类东西 ——
+   `sk-` 密钥、`ghp_` 之类的 GitHub 令牌、`Bearer` 请求头、手机号、身份证号、本机路径（`C:\Users\...`、`/home/...`）、私人邮箱。
+   白名单只放 `example.com`、`github.com`、`users.noreply.github.com`、`deepseek.com`、`openalex.org`、`crossref.org`、`doi.org` 这类公共域名。
+   命中时**只打印掩码**（`***@qq.com`、`sk***`），所以即使 CI 失败，公开的 Actions 日志里也不会出现原文。
+4. **站点零追踪**：页面没有第三方脚本、外部字体、统计代码，也没有作者名和联系方式；只有 OpenAlex 与 Crossref 两个「点了才走」的外链。
+5. **CI 每次把关**：`.github/workflows/update.yml` 第一步就 `node scripts/check-privacy.mjs --history`
+   （用 `fetch-depth: 0` 拉完整历史），一旦扫出密钥或个人信息就直接失败、不发布。
+
+想自己再确认一遍：
+
+```powershell
+npm run check:privacy            # 扫工作区（会跳过 .env，它本来就只在你本机）
+npm run check:privacy:history    # 扫全部提交历史（历史上出现过的 .env 也会被扫出来）
+```
+
+### 身份匿名档位（按需选择）
+
+上面的配置解决的是「仓库内容泄露」。如果你还想把「论文站 → 托管账号 → 更广的网络身份」这条链也断开，有三档可选：
+
+| 档位 | 做法 | 代价 |
+| --- | --- | --- |
+| **A. 保持现状**（已经是当前状态） | 提交身份是 noreply、仓库内容无个人信息、页面零追踪 | 成本为零；但托管账号本身的公开资料、其他公开仓库仍可能被联想到你 |
+| **B. 重写历史为中性身份** | `git filter-repo` 改掉提交者姓名/邮箱后 `git push --force` | 会重写公开历史；若已有人克隆需重新克隆 |
+| **C. 换匿名账号托管** | 新建一个匿名 GitHub 账号，把这个仓库（内容本身干净）推过去 | 需要另建账号；旧仓库要删掉或转私有 |
+
+另外，如果**托管账号下还有别的公开仓库带有真实姓名/邮箱**，链路 A 的「其他公开仓库」就会真的连到你身上 ——
+建议把这些仓库改成 private，或把里面的联系方式换成 noreply 邮箱。
+
+---
+
+## 9. 常见问题
 
 **Q：没有 API key 会怎样？**
 抓取、过滤、网站都正常工作，只是卡片上写着「中文总结待生成」。之后填上 key 再 `npm run update`，所有待生成的论文会一次性补齐；已经生成过的不会重复花钱（按 `提示词版本 + DOI + 摘要哈希` 缓存）。

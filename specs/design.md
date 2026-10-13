@@ -140,12 +140,43 @@ build.mjs
 - `abstract`：倒排索引按 position 还原、Crossref JATS 清洗；
 - `relevance`：六类判定路径（通过 / 碳点 / 标题无量子点 / 无器件信号 / 噪音 / 弱证据兜底）、`CdS` 不误判、带 `g` 正则的稳定性；
 - `store`：记录生成、未来日期退回、摘要未变复用总结、摘要变化作废总结、预印本升级、重复条目合并、损坏文件抛错、原子写入；
-- `llm`：缓存键、JSON 容错解析、字段归一化、无 key 跳过、命中缓存、真实请求体与鉴权头（注入假 fetch）、单篇失败不影响整轮。
+- `llm`：缓存键、JSON 容错解析、字段归一化、无 key 跳过、命中缓存、真实请求体与鉴权头（注入假 fetch）、单篇失败不影响整轮；
+- `privacy`：七条规则各自命中、白名单邮箱不误报、掩码不泄露原文、同行多处命中与行列号、正常内容（cron/长哈希/长数字/网址里的 `/home/`）不误报、非字符串输入、重复扫描一致、**仓库自己的源码通过自检**、`.gitignore` 必须包含密钥与缓存目录。
+
+共 60 个用例。敏感串在测试里一律用拼接构造（`'sk-' + 'a1b…'`），否则测试文件自己会被隐私自检判为泄露。
 
 DeepSeek 的真实调用不在单测里（需要用真 key），首次填好 key 后跑一次 `npm run update` 即可端到端验证。
 
-## 8. 安全
+## 8. 安全与隐私
+
+### 8.1 密钥
 
 - `.env` 与任何含 key 的文件都在 `.gitignore` 中。
 - key 只在构建期读取，页面产物里只有总结文本，没有 key、没有请求头。
 - 交付前扫描 `docs/` 确认不含 `DEEPSEEK_API_KEY` / `sk-` 片段。
+- CI 里 key 只来自 GitHub Actions Secret，日志自动打码。
+
+### 8.2 隐私自检（`src/privacy.mjs` + `scripts/check-privacy.mjs`）
+
+因为站点是公开托管的，**每次构建前都必须能证明「仓库内容里没有密钥和个人信息」**，所以把这件事做成可执行的检查而不是靠人肉 review。
+
+- `src/privacy.mjs` 是纯函数层：`PRIVACY_RULES` 七条规则（`api-key` / `github-token` / `bearer` / `cn-mobile` / `cn-id` / `local-path` / `personal-email`），
+  `OK_EMAIL_DOMAINS` 白名单（example.*、github.com、users.noreply.github.com、githubusercontent.com、deepseek.com、openalex.org、crossref.org、doi.org），
+  `scanText(text, { id })` 逐行扫描并返回 `{file, rule, hint, line, column, masked}`。
+- **只输出掩码**（邮箱 `***@域名`，其余前 2 字符 + `***`）：CI 失败时日志是公开的，不能让「报警」本身变成泄露。
+- 每条规则重建一个带 `g` 的正则实例：带 `g` 的正则对象有 `lastIndex` 状态，跨行/跨次复用会漏报。
+- `scripts/check-privacy.mjs` 是 CLI 外壳：默认扫工作区（`SKIP_DIRS` 跳过 `.git`/`node_modules`/`.cache`/`.tmp`/`docs` —— `docs` 是生成物，
+  `SKIP_EXT` 跳过二进制，单文件超 2MB 跳过）；`--history` 用 `git log -p --all` 扫**全部提交历史**。
+- **`.env` 只在工作区模式下跳过**（本机私密文件、不可能被提交，否则自检永远失败）；历史模式不跳过，因为 `.env` 一旦进过历史就是真泄露。
+  `.env.example` 两种模式都要扫。
+- 白名单是**域名级**而不是整串：白名单域名（deepseek.com、github.com 这类）出现在邮箱里算正常引用；
+  同一个用户名换成私人邮箱域名（qq.com、163.com 这种）就必须报出来。
+- 假阳性是设计取舍：宁可让人工确认（把域名加进白名单要改代码、走 PR），也不放行一个真泄露。
+
+### 8.3 身份
+
+- 提交身份统一为 GitHub 的 noreply 邮箱，历史里不出现真实邮箱。
+- 页面零第三方脚本/字体/统计，无作者名与联系方式。
+- CI 第一步 `node scripts/check-privacy.mjs --history`（`actions/checkout` 带 `fetch-depth: 0` 才有完整历史）失败即不发布。
+- 剩余的「元数据侧」暴露面（托管账号的其他公开仓库等）属于账号层面的选择，见 README 第 8 节的三个档位。
+

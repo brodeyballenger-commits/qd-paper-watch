@@ -13,6 +13,8 @@
     "dry": "node src/build.mjs --days=30 --dry-run",
     "no-llm": "node src/build.mjs --days=14 --no-llm",
     "preview": "node scripts/serve.mjs",
-    "test": "node --test"
+    "test": "node --test",
+    "check:privacy": "node scripts/check-privacy.mjs",
+    "check:privacy:history": "node scripts/check-privacy.mjs --history"
   }
 }
