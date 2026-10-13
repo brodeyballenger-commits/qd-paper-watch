@@ -3,7 +3,7 @@
 // 铁律：任何解析失败都不要覆盖已有数据（宁可这轮什么都不做，也不能把线上数据写坏）。
 
 import fs from 'node:fs/promises';
-import { dayDiff, normalizeTitle, sha256, writeFileAtomic } from './util.mjs';
+import { dayDiff, normalizeDoi, normalizeTitle, sha256, writeFileAtomic } from './util.mjs';
 
 /** 没有 DOI 的记录对我们没有意义，调用方应先过滤掉。 */
 
@@ -57,7 +57,11 @@ export function makeRecord(raw, { now, directions = [], isPreprint = false } = {
     issn_l: raw.issn_l ?? null,
     source_type: raw.source_type ?? null,
     is_preprint: isPreprint,
-    alt_doi: null,
+    // 这一条记录是从哪些源发现的（多源去重后取并集），以及它是否已经见刊
+    sources: Array.isArray(raw.sources) && raw.sources.length ? [...new Set(raw.sources)] : ['openalex'],
+    published: typeof raw.published === 'boolean' ? raw.published : isPreprint !== true,
+    published_source: raw.published_source ?? null,
+    alt_doi: Array.isArray(raw.alt_dois) && raw.alt_dois.length ? normalizeDoi(raw.alt_dois[0]) ?? raw.alt_dois[0] : null,
     pub_date: raw.pub_date ?? null,
     pub_year: raw.pub_year ?? null,
     date_suspect: suspect,
@@ -129,6 +133,10 @@ export function mergeRecords(existing, incoming, { now }) {
         first_seen: prev.first_seen, // 首次发现时间不可变
         last_updated: now,
         directions: [...new Set([...(prev.directions ?? []), ...(rec.directions ?? [])])],
+        // 多源发现的痕迹只增不减；只要任一来源证明它已见刊，就算已见刊
+        sources: [...new Set([...(prev.sources ?? []), ...(rec.sources ?? [])])],
+        published: prev.published === true || rec.published === true,
+        published_source: rec.published_source ?? prev.published_source ?? null,
         alt_doi: prev.alt_doi ?? null,
       };
 
@@ -153,12 +161,22 @@ export function mergeRecords(existing, incoming, { now }) {
       const upgrading = twin.is_preprint === true && rec.is_preprint === false;
       if (upgrading) {
         // 正式版取代预印本，但保留最初的发现时间
-        const merged = { ...rec, first_seen: twin.first_seen, alt_doi: twin.doi };
+        const merged = {
+          ...rec,
+          first_seen: twin.first_seen,
+          alt_doi: twin.doi,
+          sources: [...new Set([...(twin.sources ?? []), ...(rec.sources ?? [])])],
+          published: true,
+          published_source: rec.published_source ?? twin.published_source ?? null,
+        };
         byDoi.delete(twin.doi);
         byDoi.set(merged.doi, merged);
         byTitle.set(merged.title_key, merged);
       } else {
-        twin.alt_doi = rec.doi;
+        twin.alt_doi = twin.alt_doi ?? rec.doi;
+        twin.sources = [...new Set([...(twin.sources ?? []), ...(rec.sources ?? [])])];
+        twin.published = twin.published === true || rec.published === true;
+        twin.published_source = rec.published_source ?? twin.published_source ?? null;
         twin.last_updated = now;
       }
       stats.preprintMerged += 1;

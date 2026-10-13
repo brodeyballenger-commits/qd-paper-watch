@@ -46,7 +46,12 @@ export async function renderSite({ papers, meta, outDir, log = console.log }) {
     directions: DIRECTIONS,
     highNoveltyThreshold: HIGH_NOVELTY_THRESHOLD,
     stats: meta.stats ?? {},
-    source: 'OpenAlex + Crossref',
+    source: meta.source ?? 'OpenAlex',
+    sources: meta.sources ?? ['openalex'],
+    source_stats: meta.source_stats ?? [],
+    include_preprints: meta.include_preprints === true,
+    published_count: papers.filter((p) => p.published === true).length,
+    preprint_count: papers.filter((p) => p.published === false).length,
     summary_engine: meta.summary_engine ?? null,
   };
 

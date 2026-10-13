@@ -184,6 +184,7 @@ export async function summarizePapers(papers, opts = {}) {
 
   if (!apiKey) {
     stats.pending = papers.filter((p) => p.pending_summary).length;
+    stats.stillPending = stats.pending;
     return { stats, skippedReason: 'no-api-key' };
   }
 
@@ -221,6 +222,10 @@ export async function summarizePapers(papers, opts = {}) {
       log(`   ⚠ 总结失败 [${paper.doi}]：${err.message}`);
     }
   });
+
+  // pending 是「本轮要处理的篇数」，别的统计容易误读成「还没生成」，
+  // 所以再给一个跑完之后仍待生成的数量（失败的论文会留在这里，下轮自动重试）。
+  stats.stillPending = papers.filter((p) => p.pending_summary).length;
 
   return { stats, skippedReason: null };
 }

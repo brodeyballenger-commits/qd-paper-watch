@@ -18,6 +18,10 @@ const backoffMs = (attempt) =>
  * - 429 / 5xx / 网络层错误 -> 重试
  * - 其它 4xx -> 立刻抛出（重试没有意义）
  *
+ * @param {string} url
+ * @param {object} [opts]
+ * @param {string} [opts.method='GET'] GET / POST（Semantic Scholar 批量端点要 POST）
+ * @param {any}    [opts.body] 需要 POST 时传对象，会自动 JSON 序列化
  * @returns {Promise<any>} expectJson 为 true 时返回解析后的 JSON，否则返回文本
  */
 export async function fetchWithRetry(url, opts = {}) {
@@ -27,7 +31,19 @@ export async function fetchWithRetry(url, opts = {}) {
     label = url,
     expectJson = true,
     timeoutMs = TIMEOUT_MS,
+    method = 'GET',
+    body,
   } = opts;
+
+  const init = {
+    method,
+    headers: { 'User-Agent': USER_AGENT, Accept: 'application/json', ...headers },
+    signal: AbortSignal.timeout(timeoutMs),
+  };
+  if (body !== undefined) {
+    init.body = typeof body === 'string' ? body : JSON.stringify(body);
+    init.headers['Content-Type'] = 'application/json';
+  }
 
   let lastErr;
 
@@ -40,10 +56,7 @@ export async function fetchWithRetry(url, opts = {}) {
 
     let res;
     try {
-      res = await fetch(url, {
-        headers: { 'User-Agent': USER_AGENT, Accept: 'application/json', ...headers },
-        signal: AbortSignal.timeout(timeoutMs),
-      });
+      res = await fetch(url, init);
     } catch (err) {
       // 网络层错误（DNS / TLS / 超时 / 连接重置）—— 可重试
       lastErr = err;

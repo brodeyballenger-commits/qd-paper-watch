@@ -132,6 +132,64 @@ test('mergeRecords 按 sort_date 倒序排列', () => {
   assert.deepEqual(papers.map((p) => p.doi), ['10.1/new', '10.1/old']);
 });
 
+test('makeRecord 记录收录来源与见刊状态（多源）', () => {
+  const plain = makeRecord(raw(), { now: NOW });
+  assert.deepEqual(plain.sources, ['openalex']);
+  assert.equal(plain.published, true);
+  assert.equal(plain.published_source, null);
+
+  // sources / published 由抓取层与见刊闸门写在 raw 上
+  const multi = makeRecord(raw({ sources: ['arxiv', 'semanticscholar'], published: true, published_source: 'semanticscholar' }), { now: NOW });
+  assert.deepEqual(multi.sources, ['arxiv', 'semanticscholar']);
+  assert.equal(multi.published, true);
+  assert.equal(multi.published_source, 'semanticscholar');
+});
+
+test('makeRecord 预印本标记为未见刊，并记住被取代的旧 DOI', () => {
+  const rec = makeRecord(raw({ sources: ['openalex'], published: false, alt_dois: ['10.48550/arXiv.2601.00001'] }), {
+    now: NOW,
+    isPreprint: true,
+  });
+  assert.equal(rec.is_preprint, true);
+  assert.equal(rec.published, false);
+  // normalizeDoi 会统一小写
+  assert.equal(rec.alt_doi, '10.48550/arxiv.2601.00001');
+});
+
+test('mergeRecords 合并收录来源（并集）并且只要见过刊就算已见刊', () => {
+  const earlier = makeRecord(raw({ sources: ['openalex'], published: false }), { now: NOW, isPreprint: true });
+  const later = makeRecord(raw({ sources: ['crossref'], published: true, published_source: 'crossref' }), { now: LATER });
+
+  const { papers } = mergeRecords([earlier], [later], { now: LATER });
+  assert.equal(papers.length, 1);
+  assert.deepEqual([...papers[0].sources].sort(), ['crossref', 'openalex']);
+  assert.equal(papers[0].published, true);
+  assert.equal(papers[0].published_source, 'crossref');
+});
+
+test('mergeRecords 预印本升级为正式版时同时转成已见刊', () => {
+  const preprint = makeRecord(
+    raw({
+      doi: '10.48550/arxiv.2601.00002',
+      doi_url: 'https://doi.org/10.48550/arxiv.2601.00002',
+      venue: 'arXiv (Cornell University)',
+      sources: ['arxiv'],
+      published: false,
+    }),
+    { now: NOW, isPreprint: true },
+  );
+  const journal = makeRecord(raw({ doi: '10.1002/adma.202600002', venue: 'Advanced Materials', sources: ['crossref'], published: true, published_source: 'crossref' }), {
+    now: LATER,
+  });
+
+  const { papers } = mergeRecords([preprint], [journal], { now: LATER });
+  assert.equal(papers.length, 1);
+  assert.equal(papers[0].published, true);
+  assert.equal(papers[0].is_preprint, false);
+  assert.equal(papers[0].alt_doi, '10.48550/arxiv.2601.00002');
+  assert.deepEqual([...papers[0].sources].sort(), ['arxiv', 'crossref']);
+});
+
 test('loadJson 对不存在的文件返回 fallback，对损坏文件抛错', async () => {
   const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'qd-store-'));
   const missing = path.join(dir, 'nope.json');

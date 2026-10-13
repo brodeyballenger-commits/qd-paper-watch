@@ -1,4 +1,4 @@
-// src/build.mjs —— 唯一入口：抓取 → 过滤 → 补摘要 → 合并 → LLM 中文总结 → 渲染站点
+// src/build.mjs —— 唯一入口：多源抓取 → 见刊闸门 → 过滤 → 补摘要 → 合并 → LLM 中文总结 → 渲染站点
 //
 // 用法：
 //   node src/build.mjs                     默认窗口（DEFAULT_WINDOW_DAYS 天）
@@ -6,6 +6,8 @@
 //   node src/build.mjs --days=30 --dry-run 只报告，不写任何文件、不调 LLM
 //   node src/build.mjs --no-llm            只抓取建站，跳过 DeepSeek
 //   node src/build.mjs --llm-limit=10      本轮最多只生成 10 篇中文总结（先花小钱看质量）
+//   node src/build.mjs --sources=openalex,crossref   只启用指定数据源
+//   node src/build.mjs --include-preprints           连预印本一起收（默认只收已见刊）
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -15,13 +17,15 @@ import {
   DEFAULT_WINDOW_DAYS,
   MAX_WINDOW_DAYS,
   PROJECT_NAME,
+  SOURCE_LABELS,
 } from './config.mjs';
-import { fetchCrossrefAbstract } from './crossref.mjs';
+import { backfillAbstracts } from './abstract-backfill.mjs';
 import { loadEnv } from './env.mjs';
 import { summarizePapers } from './llm.mjs';
-import { fetchWorks } from './openalex.mjs';
+import { applyPublishedFieldsToLedger, applyPublishedGate, isPublishedWork } from './published.mjs';
 import { evaluateRelevance, isPreprint, isQledDevice } from './relevance.mjs';
 import { renderSite } from './render.mjs';
+import { dedupeCandidates, fetchAllSources, resolveSources } from './sources.mjs';
 import { loadJson, makeRecord, mergeRecords, saveJsonAtomic } from './store.mjs';
 import { daysBefore } from './util.mjs';
 
@@ -31,20 +35,29 @@ const PAPERS_FILE = path.join(DOCS_DIR, 'data', 'papers.json');
 /** 中文总结缓存：即使本轮没跑完，已付费的总结也不会白花（不进仓库、不上线） */
 const CACHE_FILE = path.join(ROOT, '.cache', 'llm-cache.json');
 
-/** 单轮最多向 Crossref 补查多少次摘要，避免把对方 API 打爆 */
-const MAX_CROSSREF_LOOKUPS = 60;
-
 function parseArgs(argv) {
-  const args = { days: null, since: null, dryRun: false, noLlm: false, limit: 0, llmLimit: 0, quiet: false };
+  const args = {
+    days: null,
+    since: null,
+    dryRun: false,
+    noLlm: false,
+    limit: 0,
+    llmLimit: 0,
+    quiet: false,
+    sources: null,
+    includePreprints: false,
+  };
 
   for (const token of argv) {
     if (token === '--dry-run') args.dryRun = true;
     else if (token === '--no-llm') args.noLlm = true;
     else if (token === '--quiet') args.quiet = true;
+    else if (token === '--include-preprints') args.includePreprints = true;
     else if (token.startsWith('--days=')) args.days = Number(token.slice(7));
     else if (token.startsWith('--since=')) args.since = token.slice(8);
     else if (token.startsWith('--limit=')) args.limit = Number(token.slice(8));
     else if (token.startsWith('--llm-limit=')) args.llmLimit = Number(token.slice(12));
+    else if (token.startsWith('--sources=')) args.sources = token.slice(10);
     else throw new Error(`未知参数：${token}`);
   }
 
@@ -53,6 +66,8 @@ function parseArgs(argv) {
   if (args.days > MAX_WINDOW_DAYS) {
     throw new Error(`--days 最大 ${MAX_WINDOW_DAYS}（再往前 OpenAlex 单轮翻页拿不全）`);
   }
+  // 未知源名在这里就报错，不要等抓到一半才发现
+  args.sourceIds = resolveSources(args.sources);
   return args;
 }
 
@@ -80,40 +95,50 @@ async function main() {
   const existing = Array.isArray(store?.papers) ? store.papers : [];
   console.log(`   现有账本：${existing.length} 篇`);
 
-  // ---------- 2. 抓取 ----------
-  const { works, total } = await fetchWorks({ fromDate, log });
-  console.log(`   OpenAlex 命中 ${works.length} 篇（约 ${total} 篇，已按 DOI 收发）`);
+  // ---------- 2. 多源抓取 + 去重 ----------
+  const sourceLabels = args.sourceIds.map((id) => SOURCE_LABELS[id] ?? id).join('、');
+  console.log(`   数据源：${sourceLabels}`);
+  const { works, report } = await fetchAllSources({ fromDate, log, sources: args.sourceIds });
+  const candidates = dedupeCandidates(works);
+  console.log(`   多源合并去重：${works.length} → ${candidates.length} 篇`);
 
-  // ---------- 3. 相关性过滤 + 摘要补齐 ----------
+  // ---------- 2.6 见刊闸门：只留已经有正式期刊版本的论文 ----------
+  let screened = candidates;
+  const publishedStats = new Map();
+  if (args.includePreprints) {
+    // 连预印本一起收，但仍如实标注它是不是见刊版本
+    for (const raw of candidates) {
+      const verdict = isPublishedWork(raw);
+      raw.published = verdict.published;
+      raw.published_source = verdict.published_source;
+    }
+    console.log('   见刊闸门：--include-preprints，预印本也保留（会标注「预印本」）');
+  } else {
+    const gate = applyPublishedGate(candidates);
+    screened = gate.published;
+    for (const [reason, count] of [...gate.stats.entries()].sort((a, b) => b[1] - a[1])) {
+      publishedStats.set(reason, count);
+    }
+    console.log(`   见刊闸门：已见刊 ${gate.published.length} 篇，丢弃 ${gate.dropped} 篇`);
+    for (const [reason, count] of publishedStats) console.log(`      - ${reason}：${count}`);
+  }
+
+  // ---------- 2.8 摘要兜底（批量） ----------
+  // 多源合并后仍有相当一部分论文没有摘要（Crossref 常不给 abstract），
+  // 而没有摘要就只能写「数据库未收录摘要」并且创新度只能给 1★。
+  // 这里在进入相关性判定之前，用两个批量接口一次性补齐（每轮只需几次请求）。
+  await backfillAbstracts(screened, { log });
+
+  // ---------- 3. 相关性过滤 ----------
+  // 摘要已经在 2.8 用批量接口补过一轮，这里不再逐篇查 Crossref：
+  // 实测逐篇查 60 次 0 命中（Crossref 对这些出版商根本没有 abstract），纯浪费时间和配额。
   const rejectStats = new Map();
   const accepted = [];
-  let crossrefLookups = 0;
-  let crossrefFilled = 0;
 
-  // 上一轮已经查过 Crossref 但对方确实没有摘要的论文：不要每天重复查一遍
-  const alreadyTried = new Set(existing.filter((p) => p.abstract_missing).map((p) => p.doi));
-
-  for (const raw of works) {
+  for (const raw of screened) {
     if (args.limit && accepted.length >= args.limit) break;
 
-    let relevance = evaluateRelevance(raw);
-
-    // 没有摘要、但标题里已经有量子点证据 → 值得花一次 Crossref 查询
-    if (
-      !raw.abstract &&
-      relevance.detail.qdHits.length > 0 &&
-      !alreadyTried.has(raw.doi) &&
-      crossrefLookups < MAX_CROSSREF_LOOKUPS
-    ) {
-      crossrefLookups += 1;
-      const fetched = await fetchCrossrefAbstract(raw.doi);
-      if (fetched) {
-        raw.abstract = fetched;
-        raw.abstract_source = 'crossref';
-        crossrefFilled += 1;
-        relevance = evaluateRelevance(raw);
-      }
-    }
+    const relevance = evaluateRelevance(raw);
 
     if (!relevance.pass) {
       rejectStats.set(relevance.reason, (rejectStats.get(relevance.reason) ?? 0) + 1);
@@ -125,16 +150,16 @@ async function main() {
   }
 
   const dropped = [...rejectStats.entries()].sort((a, b) => b[1] - a[1]);
-  console.log(`   相关性过滤：保留 ${accepted.length} 篇，丢弃 ${works.length - accepted.length} 篇`);
+  console.log(`   相关性过滤：保留 ${accepted.length} 篇，丢弃 ${screened.length - accepted.length} 篇`);
   for (const [reason, count] of dropped) console.log(`      - ${reason}：${count}`);
-  if (crossrefLookups) console.log(`   Crossref 补摘要：查询 ${crossrefLookups} 次，命中 ${crossrefFilled} 篇`);
 
   // ---------- 4. 构造记录并合并 ----------
   const incoming = accepted.map(({ raw, relevance }) =>
     makeRecord(raw, {
       now,
       directions: relevance.directions,
-      isPreprint: isPreprint(raw),
+      // 已判定为见刊的就不该再打预印本标记；--include-preprints 时仍按源字段判断
+      isPreprint: raw.published === false ? true : isPreprint(raw),
     }),
   );
 
@@ -142,6 +167,11 @@ async function main() {
   console.log(
     `   合并：新增 ${stats.added}、摘要变更 ${stats.updated}、无变化 ${stats.unchanged}、预印本归并 ${stats.preprintMerged}`,
   );
+
+  // 存量自愈：老记录（多源改造之前）补 sources / published，幂等
+  const healed = applyPublishedFieldsToLedger(papers);
+  if (healed) console.log(`   存量补标：${healed} 篇补上来源/见刊字段`);
+  const publishedTotal = papers.filter((p) => p.published === true).length;
 
   // ---------- 4.5 主方向标签：量子点发光二极管（QD-LED） ----------
   // 纯规则、幂等、只增不减：存量论文（早于本次词表）也会被补上标签，
@@ -191,10 +221,16 @@ async function main() {
     if (llmReport.skippedReason === 'no-api-key') {
       console.log('   LLM：未配置 DEEPSEEK_API_KEY，跳过中文总结（论文仍会入库）');
     } else {
-      console.log(`   LLM：生成 ${s.generated}、复用缓存 ${s.fromCache}、失败 ${s.failed}、待处理 ${s.pending}`);
+      console.log(`   LLM：本轮待生成 ${s.pending}、生成 ${s.generated}、复用缓存 ${s.fromCache}、失败 ${s.failed}、仍未生成 ${s.stillPending ?? s.pending}`);
     }
   } else if (args.noLlm) {
     console.log('   LLM：--no-llm，跳过中文总结');
+  }
+
+  // LLM 也会自己补 qled 方向标签（applySummary 是并集），所以主方向数量以最终账本为准重算一次
+  const qledFinal = papers.filter((p) => (p.directions ?? []).includes('qled')).length;
+  if (qledFinal !== qledTotal) {
+    console.log(`   主方向（量子点发光二极管）：${qledFinal} 篇（含 LLM 补标 ${qledFinal - qledTotal} 篇）`);
   }
 
   // ---------- 6. 落盘 ----------
@@ -203,8 +239,15 @@ async function main() {
     window_days: args.since ? null : args.days,
     from_date: fromDate,
     summary_engine: llmReport.skippedReason ? null : (process.env.DEEPSEEK_MODEL || 'deepseek-chat'),
+    source: args.sourceIds.map((id) => SOURCE_LABELS[id] ?? id).join(' + '),
+    sources: args.sourceIds,
+    source_stats: report,
+    include_preprints: args.includePreprints,
     stats: {
       fetched: works.length,
+      deduped: candidates.length,
+      published: publishedTotal,
+      published_dropped: args.includePreprints ? 0 : candidates.length - screened.length,
       kept: accepted.length,
       added: stats.added,
       updated: stats.updated,
@@ -213,7 +256,7 @@ async function main() {
       llm_generated: llmReport.stats.generated,
       llm_failed: llmReport.stats.failed,
       pending_summary: papers.filter((p) => p.pending_summary).length,
-      qled_focus: qledTotal,
+      qled_focus: qledFinal,
     },
   };
 

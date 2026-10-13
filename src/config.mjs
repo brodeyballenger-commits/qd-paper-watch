@@ -30,6 +30,71 @@ export const CROSSREF_DELAY_MS = 1000;
 export const MAX_RETRIES = 4;
 export const TIMEOUT_MS = 30000;
 
+/* ------------------------------------------------------------------ *
+ * 数据源
+ * 五个源的分工：
+ *   openalex       主源（主题筛选 + 倒排摘要），覆盖面最广
+ *   crossref       期刊论文检索（type:journal-article），天然只有见刊版本
+ *   semanticscholar 期刊论文检索 + 把 arXiv ID 批量解析成期刊版本
+ *   arxiv          只用于「发现」——必须经 Semantic Scholar 解析出期刊 DOI 才入库
+ *   scholar        Google 学术，需要 SERPAPI_KEY，默认不启用
+ * ------------------------------------------------------------------ */
+
+export const SOURCE_IDS = ['openalex', 'crossref', 'semanticscholar', 'arxiv', 'scholar'];
+
+/** scholar 需要付费 key，所以不在默认列表里（有 key 时自动补上） */
+export const DEFAULT_SOURCES = ['openalex', 'crossref', 'semanticscholar', 'arxiv'];
+
+export const SOURCE_LABELS = {
+  openalex: 'OpenAlex',
+  crossref: 'Crossref',
+  semanticscholar: 'Semantic Scholar',
+  arxiv: 'arXiv',
+  scholar: 'Google 学术',
+};
+
+/**
+ * 关键词查询词：Crossref / Semantic Scholar / arXiv / Google 学术 共用。
+ * 主方向是量子点发光二极管，所以查询词围绕 EL 器件展开；
+ * OpenAlex 仍走 TOPIC_IDS 主题筛选，不用这里的词。
+ */
+export const SOURCE_QUERIES = [
+  'quantum dot light-emitting diode',
+  'QD-LED quantum dot display',
+  'quantum dot electroluminescence device',
+];
+
+/** arXiv 分类：材料科学 / 介观物理 / 应用物理 / 光学，覆盖量子点器件的主要投稿方向 */
+export const ARXIV_CATEGORIES = [
+  'cond-mat.mtrl-sci',
+  'cond-mat.mes-hall',
+  'physics.app-ph',
+  'physics.optics',
+];
+
+/** Semantic Scholar 批量端点一次最多 500 个 id */
+export const S2_BATCH_SIZE = 500;
+/** Semantic Scholar 未带 key 时是共享限流（约 1 req/s），必须自己节流 */
+export const S2_DELAY_MS = 1100;
+/** arXiv 官方要求的抓取间隔（同一连接不要连续快打） */
+export const ARXIV_DELAY_MS = 3000;
+/** 每个检索型数据源最多翻多少页 */
+export const MAX_SOURCE_PAGES = 3;
+/** 每个关键词最多取多少条（Crossref rows / S2 bulk 每次返回量） */
+export const SOURCE_PAGE_ROWS = 100;
+
+/**
+ * 预印本 / 仓储的 DOI 前缀：即使某篇被标成 journal-article，只要 DOI 是这些前缀也不收。
+ * 10.48550 是 arXiv 自己发的 DOI，10.5281 是 Zenodo，10.2139 是 SSRN，10.1101 是 bioRxiv/medRxiv。
+ */
+export const PREPRINT_DOI_PREFIXES = [
+  '10.48550/arxiv.',
+  '10.5281/zenodo.',
+  '10.2139/ssrn.',
+  '10.1101/',
+  '10.31219/osf.io',
+];
+
 /** LLM */
 export const LLM_CONCURRENCY = 4;
 export const LLM_MAX_RETRIES = 3;

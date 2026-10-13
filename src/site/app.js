@@ -6,6 +6,15 @@
 
   var READ_KEY = 'qd-paper-watch:read';
 
+  // 数据源显示名（与 src/config.mjs 的 SOURCE_LABELS 保持一致）
+  var SOURCE_NAMES = {
+    openalex: 'OpenAlex',
+    crossref: 'Crossref',
+    semanticscholar: 'Semantic Scholar',
+    arxiv: 'arXiv',
+    scholar: 'Google 学术',
+  };
+
   var state = {
     papers: [],
     meta: {},
@@ -15,6 +24,8 @@
     rangeDays: 0,
     sort: 'date',
     hideRead: false,
+    // 本站只收「已经见刊」的论文；存量的预印本记录默认隐藏，取消勾选才看得到。
+    onlyPublished: true,
     // 本站主方向是量子点发光二极管（QD-LED），默认只看这一块；
     // 取消勾选就能看到全部量子点器件论文。
     onlyQled: true,
@@ -107,6 +118,9 @@
   }
 
   function matches(paper) {
+    // 本站只收已见刊论文，默认就把预印本藏起来（存量的老预印本记录同样适用）
+    if (state.onlyPublished && paper.published === false) return false;
+
     if (state.onlyQled) {
       if ((paper.directions || []).indexOf('qled') === -1) return false;
     }
@@ -235,6 +249,12 @@
     var extra = [];
     if (paper.alt_doi) extra.push('同一论文的另一条记录：' + escapeHtml(paper.alt_doi));
     if (paper.date_suspect) extra.push('期刊给出的是未来出版日期，已按收录日期排序');
+    var sourceNames = (paper.sources || [])
+      .map(function (id) {
+        return SOURCE_NAMES[id] || id;
+      })
+      .join('、');
+    if (sourceNames) extra.push('收录来源：' + escapeHtml(sourceNames));
 
     return (
       '<article class="card' + (read ? ' is-read' : '') + '" data-doi="' + escapeHtml(paper.doi) + '">' +
@@ -250,6 +270,7 @@
       '<span class="dot">·</span><span>' + fmtDate(paper.pub_date) + '</span>' +
       (rel ? '<span class="dot">·</span><span class="rel">' + escapeHtml(rel) + '</span>' : '') +
       (isNew ? '<span class="badge badge-new">新收录</span>' : '') +
+      (paper.published === false ? '<span class="badge badge-preprint">预印本</span>' : '') +
       (paper.oa_status === 'gold' || paper.oa_status === 'hybrid' || paper.oa_status === 'green'
         ? '<span class="badge badge-oa">开放获取</span>'
         : '') +
@@ -274,6 +295,7 @@
     el.list.innerHTML = sorted.map(renderCard).join('');
     el.empty.hidden = sorted.length > 0;
     el.hint.textContent = '显示 ' + sorted.length + ' / ' + state.papers.length + ' 篇';
+    if (state.onlyPublished) el.hint.textContent += ' · 只看已见刊';
     if (state.onlyQled) el.hint.textContent += ' · 只看量子点发光二极管';
 
     var unread = state.papers.filter(function (p) {
@@ -338,6 +360,11 @@
       render();
     });
 
+    el.onlyPublished.addEventListener('change', function (e) {
+      state.onlyPublished = e.target.checked;
+      render();
+    });
+
     el.onlyQled.addEventListener('change', function (e) {
       state.onlyQled = e.target.checked;
       render();
@@ -359,11 +386,13 @@
       state.minNovelty = 0;
       state.rangeDays = 0;
       state.hideRead = false;
+      state.onlyPublished = true; // 重置回本站默认：只看已见刊
       state.onlyQled = true; // 重置回本站默认：只看量子点发光二极管
       el.q.value = '';
       el.range.value = '0';
       el.hideRead.checked = false;
       el.onlyHigh.checked = false;
+      el.onlyPublished.checked = true;
       el.onlyQled.checked = true;
       var buttons = el.directionRow.querySelectorAll('.dir');
       for (var i = 0; i < buttons.length; i += 1) buttons[i].setAttribute('aria-pressed', 'false');
@@ -403,6 +432,7 @@
     el.sort = document.getElementById('sort');
     el.range = document.getElementById('range');
     el.hideRead = document.getElementById('hide-read');
+    el.onlyPublished = document.getElementById('only-published');
     el.onlyQled = document.getElementById('only-qled');
     el.onlyHigh = document.getElementById('only-high');
     el.reset = document.getElementById('reset');

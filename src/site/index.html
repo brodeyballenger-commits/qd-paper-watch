@@ -39,6 +39,7 @@
     </div>
     <div class="control-row" id="direction-row"></div>
     <div class="control-row small">
+      <label class="check"><input type="checkbox" id="only-published" checked> 只看已见刊</label>
       <label class="check"><input type="checkbox" id="only-qled" checked> 只看量子点发光二极管</label>
       <label class="check"><input type="checkbox" id="hide-read"> 隐藏已读</label>
       <label class="check"><input type="checkbox" id="only-high"> 只看高创新（≥4）</label>
@@ -51,7 +52,7 @@
 
   <section id="empty" class="empty" hidden>
     <p>没有符合条件的论文。</p>
-    <p class="muted">可以放宽时间范围、取消勾选「只看量子点发光二极管」，或点「重置筛选」。</p>
+    <p class="muted">可以放宽时间范围、取消勾选「只看已见刊」或「只看量子点发光二极管」，或点「重置筛选」。</p>
   </section>
 
   <section id="error" class="empty" hidden>
@@ -62,7 +63,7 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="muted">论文元数据来自 <a href="https://openalex.org" target="_blank" rel="noopener">OpenAlex</a>，摘要缺失时回退 <a href="https://www.crossref.org" target="_blank" rel="noopener">Crossref</a>。</p>
+    <p class="muted">论文元数据来自 <a href="https://openalex.org" target="_blank" rel="noopener">OpenAlex</a>、<a href="https://www.crossref.org" target="_blank" rel="noopener">Crossref</a>、<a href="https://www.semanticscholar.org" target="_blank" rel="noopener">Semantic Scholar</a>、<a href="https://arxiv.org" target="_blank" rel="noopener">arXiv</a>（配置 SerpApi key 后还会加上 Google 学术）。<strong>只收录已经见刊（有正式期刊版本）的论文</strong>：arXiv 预印本必须先解析到期刊版 DOI 才会入库。</p>
     <p class="muted">每张卡片的「DOI 原文」直达出版社；「在别处查」按标题跳到 <a href="https://scholar.google.com" target="_blank" rel="noopener">Google 学术</a>、<a href="https://www.x-mol.com" target="_blank" rel="noopener">X-MOL</a>、<a href="https://xueshu.baidu.com" target="_blank" rel="noopener">百度学术</a> 检索同一篇论文（这些平台没有开放接口，只能跳转检索）。</p>
     <p class="muted">中文总结由 DeepSeek 依据原标题与摘要生成，可能存在偏差，重要结论请以原文为准。</p>
   </div>
