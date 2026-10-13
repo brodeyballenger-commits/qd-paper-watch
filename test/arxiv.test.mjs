@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { parseArxivFeed, buildArxivUrl, resolveArxivEntries } from '../src/arxiv.mjs';
+import { parseArxivFeed, buildArxivUrl, fetchArxivEntries, resolveArxivEntries } from '../src/arxiv.mjs';
 
 /** 一份最小的 arXiv Atom feed（两条：一条只有 journal_ref，一条带 <arxiv:doi>） */
 const FEED = `<?xml version="1.0" encoding="UTF-8"?>
@@ -62,6 +62,29 @@ test('buildArxivUrl 同时带关键词与分类过滤，并按投稿时间倒序
   assert.equal(parsed.searchParams.get('sortBy'), 'submittedDate');
   assert.equal(parsed.searchParams.get('sortOrder'), 'descending');
   assert.equal(parsed.searchParams.get('max_results'), '5');
+});
+
+test('fetchArxivEntries 按时间窗口过滤：窗口外的老预印本不能混进「最新论文」', async () => {
+  const originalFetch = globalThis.fetch;
+  globalThis.fetch = async () => ({
+    ok: true,
+    status: 200,
+    text: async () => FEED, // 两条：2026-07-30 与 2026-07-11
+    json: async () => ({}),
+  });
+
+  try {
+    const logs = [];
+    const kept = await fetchArxivEntries({ log: (m) => logs.push(m), queries: ['demo'], since: '2026-07-20', delayMs: 0 });
+    assert.deepEqual(kept.map((e) => e.arxivId), ['2501.00001']); // 07-11 那条被挡掉
+    assert.match(logs.join('\n'), /窗口内（2026-07-20 起）1 条/);
+
+    // 无窗口时两条都保留（老行为，供测试与手工调试使用）
+    const all = await fetchArxivEntries({ log: () => {}, queries: ['demo'], delayMs: 0 });
+    assert.equal(all.length, 2);
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
 });
 
 test('resolveArxivEntries：解析出期刊版本的保留，解析不出的丢弃', async () => {

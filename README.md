@@ -51,7 +51,7 @@ GitHub Pages（自动更新）/ 本机预览（npm run preview）
 | OpenAlex | ✅ | 主题命中 + 出版日期窗口，含摘要倒排索引、开放获取链接、被引数 | `primary_location.source.type === 'journal'` |
 | Crossref | ✅ | 按标题相关度检索的期刊论文（`type:journal-article`），含 JATS 摘要与作者 | 它本身就是期刊论文登记库，取到即见刊 |
 | Semantic Scholar | ✅ | 按关键词 bulk 检索（`publicationTypes=JournalArticle`）；**还负责把 arXiv 预印本解析成期刊版本** | `journal` 字段非空且类型为 JournalArticle |
-| arXiv | ✅ | 预印本（`cond-mat.mtrl-sci` / `cond-mat.mes-hall` / `physics.app-ph` / `physics.optics`） | 必须经 Semantic Scholar 批量解析出期刊 DOI 才入库，否则丢弃 |
+| arXiv | ✅ | 预印本（`cond-mat.mtrl-sci` / `cond-mat.mes-hall` / `physics.app-ph` / `physics.optics`） | 必须经 Semantic Scholar 批量解析出期刊 DOI 才入库，否则丢弃；**只取窗口内提交的预印本**（arXiv 的短语检索会命中几年前的旧文） |
 | Google 学术 | ⬜ 可选 | 走 SerpApi（`engine=google_scholar`，付费） | 用 Crossref 按标题回查，查到期刊论文才入库 |
 
 - **不填 `SERPAPI_KEY` 就自动只用前四个免费源**，管线不会报错。

@@ -31,7 +31,7 @@
 | Crossref `/works`（`src/crossref-works.mjs`） | ✅ | 按标题相关度检索的期刊论文，含 JATS 摘要与作者 | 它本身就是期刊论文登记库（filter 固定 `type:journal-article`） | **必须同时给 `from-pub-date` 与 `until-pub-date`**：只给下界时，`sort=published` 会把 2121 年的垃圾日期排在最前 |
 | Semantic Scholar `/paper/search/bulk` | ✅ | `publicationTypes=JournalArticle` 的期刊论文 | `journal` 非空且 `publicationTypes` 含 `JournalArticle` | 匿名可用（限流较严，429 时退避重试）；`search/bulk` 一次给 1000 条，`publicationDateOrYear=<since>:` |
 | Semantic Scholar `/paper/batch` | ✅ | **把 arXiv 预印本解析成期刊版本**（arXiv 源的必要依赖） | 返回的 `journal` + `externalIds.DOI` | 一次最多 500 个 ID，返回数组与入参**严格同序、未收录为 `null`**；单篇 DOI 直查对新论文会 404，所以只能用 bulk + batch |
-| arXiv Atom API（`src/arxiv.mjs`） | ✅ | 只用它**发现**新预印本（`cond-mat.mtrl-sci` / `cond-mat.mes-hall` / `physics.app-ph` / `physics.optics`） | 必须经 Semantic Scholar 解析出期刊 DOI；`<arxiv:doi>` 可兜底，两者都没有就丢弃 | `<arxiv:journal_ref>` 实测几乎为空（0/8），不可依赖；实测 20 条预印本 → 16 条解析出期刊版本 |
+| arXiv Atom API（`src/arxiv.mjs`） | ✅ | 只用它**发现**新预印本（`cond-mat.mtrl-sci` / `cond-mat.mes-hall` / `physics.app-ph` / `physics.optics`） | 必须经 Semantic Scholar 解析出期刊 DOI；`<arxiv:doi>` 可兜底，两者都没有就丢弃 | `<arxiv:journal_ref>` 实测几乎为空（0/8），不可依赖；实测 20 条预印本 → 16 条解析出期刊版本；**必须按窗口下界过滤 `published`**（`all:"…"` 短语检索会命中几年前的旧文，实测一次 20 条里混进 2018–2024 年的记录） |
 | Google 学术（`src/scholar.mjs`，经 SerpApi） | ⬜ | `engine=google_scholar` 检索，补足其它源漏掉的论文 | 用 Crossref 按标题回查，相似度 ≥ 0.7 且拿到期刊 DOI 才入库 | **需要付费 `SERPAPI_KEY`**；没有 key 时自动跳过，不报错 |
 
 抓取过滤条件（OpenAlex 分支）：`primary_topic.id` 命中 6 个量子点相关主题、`type:article`、`is_retracted:false`、`from_publication_date` 在窗口内，按 `publication_date:desc` 排序，游标分页，每页 200 条，最多 25 页。
@@ -232,7 +232,7 @@ CI 用到的 Secret：`DEEPSEEK_API_KEY`（中文总结，必需）；`SEMANTIC_
 - `relevance`：六类判定路径（通过 / 碳点 / 标题无量子点 / 无器件信号 / 噪音 / 弱证据兜底）、`CdS` 不误判、带 `g` 正则的稳定性、`qledFocus`/`isQledDevice` 的强信号与「两条 supporting」阈值、U+2010 标题仍能认出 QD-LED、非发光器件论文不会被打上 `qled`；
 - `store`：记录生成（含新字段 `sources`/`published`/`published_source`、`alt_doi` 归一化）、未来日期退回、摘要未变复用总结、摘要变化作废总结、预印本升级、`sources` 并集与 `published` 取或、重复条目合并、损坏文件抛错、原子写入；
 - `published`：预印本 DOI/仓储名被拒、四个源各自的见刊判定、`applyPublishedGate` 分组计数、`applyPublishedFieldsToLedger` 自愈与幂等；
-- `arxiv`：Atom feed 解析（含 `v1` 后缀剥离、`<arxiv:doi>`/`<arxiv:journal_ref>`/`primary_category`）、查询 URL 构造、预印本→期刊版本解析（S2 命中 / `<arxiv:doi>` 兜底 / 都没有则丢弃）；
+- `arxiv`：Atom feed 解析（含 `v1` 后缀剥离、`<arxiv:doi>`/`<arxiv:journal_ref>`/`primary_category`）、查询 URL 构造、**时间窗口过滤（窗口外的老预印本必须被挡掉，`delayMs: 0` 让用例不睡 3 秒）**、预印本→期刊版本解析（S2 命中 / `<arxiv:doi>` 兜底 / 都没有则丢弃）；
 - `semanticscholar`：bulk 检索 URL 参数、`x-api-key` 头、501 个 ID 分两块且**顺序严格对齐**、无 DOI 返回 `null`、**不预设 `published`**（交给闸门判定）；
 - `crossref-works`：`select` **不得含 `subtype`**（会 HTTP 400）、URL 必须同时带 `from-pub-date` 与 `until-pub-date`、`type:journal-article`、条目映射（日期补 1、作者 ≤3 + et al.、JATS 摘要）；
 - `scholar`：有无 `SERPAPI_KEY` 的行为、SerpApi URL、搜索结果解析、标题相似度阈值、用 Crossref 换期刊 DOI（`published_source='crossref'`）、无 key 不发请求；
@@ -241,7 +241,7 @@ CI 用到的 Secret：`DEEPSEEK_API_KEY`（中文总结，必需）；`SEMANTIC_
 - `llm`：缓存键、JSON 容错解析、字段归一化、无 key 跳过、命中缓存、真实请求体与鉴权头（注入假 fetch）、单篇失败不影响整轮；
 - `privacy`：七条规则各自命中、白名单邮箱不误报、掩码不泄露原文、同行多处命中与行列号、正常内容（cron/长哈希/长数字/网址里的 `/home/`）不误报、非字符串输入、重复扫描一致、**仓库自己的源码通过自检**、`.gitignore` 必须包含密钥与缓存目录。
 
-共 119 个用例。敏感串在测试里一律用拼接构造（`'sk-' + 'a1b…'`），否则测试文件自己会被隐私自检判为泄露。
+共 120 个用例。敏感串在测试里一律用拼接构造（`'sk-' + 'a1b…'`），否则测试文件自己会被隐私自检判为泄露。
 
 > 本机沙箱下 `node --test`（目录形式）会因为需要 spawn 子进程而 `EPERM`，可以用
 > `node --test --test-isolation=none test/util.test.mjs test/abstract.test.mjs …`（显式列出全部用例文件，**不能给目录**）在单进程里跑完整套。

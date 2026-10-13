@@ -85,8 +85,21 @@ export function buildArxivUrl({ query, categories = ARXIV_CATEGORIES, maxResults
   return `${API}?${params.toString()}`;
 }
 
-/** 拉取近期 arXiv 条目（只发现，不判定见刊） */
-export async function fetchArxivEntries({ log = console.log, queries = SOURCE_QUERIES, maxResults = MAX_RESULTS } = {}) {
+/**
+ * 拉取 arXiv 条目（只发现，不判定见刊）。
+ *
+ * `since`（YYYY-MM-DD）是**必须的**窗口下界：arXiv 的 `all:"…"` 检索会命中很久以前的老预印本
+ * （实测一次 20 条结果里混进 2018–2024 年的），不挡住就会让「最新论文」站混进几年前的旧文。
+ *
+ * @param {object} [opts] { log, queries, maxResults, since, delayMs }
+ */
+export async function fetchArxivEntries({
+  log = console.log,
+  queries = SOURCE_QUERIES,
+  maxResults = MAX_RESULTS,
+  since = null,
+  delayMs = ARXIV_DELAY_MS,
+} = {}) {
   const byId = new Map();
 
   for (const query of queries) {
@@ -96,9 +109,11 @@ export async function fetchArxivEntries({ log = console.log, queries = SOURCE_QU
       label: `arXiv「${query}」`,
     });
     const entries = parseArxivFeed(xml);
-    for (const e of entries) if (!byId.has(e.arxivId)) byId.set(e.arxivId, e);
-    log(`   arXiv「${query}」：${entries.length} 条`);
-    await sleep(ARXIV_DELAY_MS);
+    // 时间窗口：只保留窗口内提交的预印本；没写日期的保守丢弃
+    const kept = since ? entries.filter((e) => (e.pub_date ?? '') >= since) : entries;
+    for (const e of kept) if (!byId.has(e.arxivId)) byId.set(e.arxivId, e);
+    log(`   arXiv「${query}」：${entries.length} 条${since ? `，窗口内（${since} 起）${kept.length} 条` : ''}`);
+    await sleep(delayMs);
   }
 
   return [...byId.values()];
@@ -170,9 +185,9 @@ export async function resolveArxivEntries(entries, { log = console.log } = {}) {
   return { works, dropped, resolved: works.length };
 }
 
-/** 一步到位：发现 + 解析 */
-export async function fetchArxivPublished({ log = console.log, queries = SOURCE_QUERIES } = {}) {
-  const entries = await fetchArxivEntries({ log, queries });
+/** 一步到位：发现（带时间窗口）+ 解析 */
+export async function fetchArxivPublished({ log = console.log, queries = SOURCE_QUERIES, since = null } = {}) {
+  const entries = await fetchArxivEntries({ log, queries, since });
   const { works, dropped } = await resolveArxivEntries(entries, { log });
   return { works, total: entries.length, dropped };
 }

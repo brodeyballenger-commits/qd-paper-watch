@@ -24,8 +24,8 @@ const RUNNERS = {
     fetchCrossrefWorks({ fromDate, toDate, log }).then((r) => ({ works: r.works, total: r.total, dropped: 0 })),
   semanticscholar: ({ fromDate, log }) =>
     fetchS2Bulk({ since: fromDate, log }).then((r) => ({ works: r.works, total: r.total, dropped: 0 })),
-  arxiv: ({ log }) =>
-    fetchArxivPublished({ log }).then((r) => ({ works: r.works, total: r.total, dropped: r.dropped })),
+  arxiv: ({ fromDate, log }) =>
+    fetchArxivPublished({ since: fromDate, log }).then((r) => ({ works: r.works, total: r.total, dropped: r.dropped })),
   scholar: ({ log }) =>
     fetchScholarPublished({ log }).then((r) => ({ works: r.works, total: r.total, dropped: r.dropped })),
 };
