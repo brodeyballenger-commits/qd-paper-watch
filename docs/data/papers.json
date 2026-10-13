@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T16:31:11.875Z",
+  "generated_at": "2026-10-13T17:05:23.610Z",
   "count": 270,
   "papers": [
     {
@@ -51,7 +51,7 @@
       "llm_at": "2026-10-13T15:50:00.249Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.25073/2588-1124/vnumap.4989",
@@ -103,7 +103,7 @@
       "llm_at": "2026-10-13T15:50:00.641Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1002/lpor.72020",
@@ -154,7 +154,7 @@
       "llm_at": "2026-10-13T15:50:00.415Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1021/acsnano.6c10075",
@@ -206,7 +206,7 @@
       "llm_at": "2026-10-13T15:50:00.621Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1016/j.micrna.2026.208946",
@@ -255,7 +255,7 @@
       "llm_at": "2026-10-13T15:50:01.458Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1021/acs.chemmater.6c01903",
@@ -306,7 +306,7 @@
       "llm_at": "2026-10-13T15:51:36.279Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1002/anie.5306487",
@@ -358,7 +358,7 @@
       "llm_at": "2026-10-13T15:51:36.731Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1063/5.0295810",
@@ -409,7 +409,7 @@
       "llm_at": "2026-10-13T15:51:36.192Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1021/acs.jpcc.6c04042",
@@ -457,7 +457,7 @@
       "llm_at": "2026-10-13T15:51:37.235Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1021/acsomega.6c09360",
@@ -505,7 +505,7 @@
       "llm_at": "2026-10-13T15:51:39.075Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.3390/photochem6040039",
@@ -555,7 +555,7 @@
       "llm_at": "2026-10-13T15:51:38.468Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1021/acsami.6c05348",
@@ -606,7 +606,7 @@
       "llm_at": "2026-10-13T15:51:40.061Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1007/s44469-026-00025-6",
@@ -657,7 +657,7 @@
       "llm_at": "2026-10-13T15:51:40.165Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.5281/zenodo.23183491",
@@ -709,7 +709,7 @@
       "llm_at": "2026-10-13T15:51:41.263Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1016/j.ijleo.2026.172923",
@@ -759,7 +759,7 @@
       "llm_at": "2026-10-13T15:51:40.581Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1021/acs.chemmater.6c02191",
@@ -811,7 +811,7 @@
       "llm_at": "2026-10-13T15:51:42.744Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1021/acs.nanolett.6c03669",
@@ -862,7 +862,7 @@
       "llm_at": "2026-10-13T15:51:43.455Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.37394/232017.2026.17.3",
@@ -912,7 +912,7 @@
       "llm_at": "2026-10-13T15:51:43.371Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.4038/jsc.v16i2.76",
@@ -964,7 +964,7 @@
       "llm_at": "2026-10-13T15:51:44.424Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1016/j.optmat.2026.118561",
@@ -1015,7 +1015,7 @@
       "llm_at": "2026-10-13T15:51:45.734Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1021/acs.jpclett.6c02118",
@@ -1064,7 +1064,7 @@
       "llm_at": "2026-10-13T15:51:46.056Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1103/lfkt-wbb7",
@@ -1113,7 +1113,7 @@
       "llm_at": "2026-10-13T15:51:44.675Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1021/jacs.6c13849",
@@ -1164,7 +1164,7 @@
       "llm_at": "2026-10-13T15:51:47.186Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1021/jacs.6c15357",
@@ -1216,7 +1216,7 @@
       "llm_at": "2026-10-13T15:51:47.455Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1016/j.jallcom.2026.191578",
@@ -1264,7 +1264,7 @@
       "llm_at": "2026-10-13T15:51:46.969Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1016/j.xcrp.2026.103569",
@@ -1316,7 +1316,7 @@
       "llm_at": "2026-10-13T15:51:48.339Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1016/j.cej.2026.182899",
@@ -1368,7 +1368,7 @@
       "llm_at": "2026-10-13T15:51:48.390Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1016/j.mtcomm.2026.116331",
@@ -1419,7 +1419,7 @@
       "llm_at": "2026-10-13T15:51:50.767Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1016/j.cej.2026.182979",
@@ -1469,7 +1469,7 @@
       "llm_at": "2026-10-13T15:51:48.818Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1021/acs.jpclett.6c02515",
@@ -1520,7 +1520,7 @@
       "llm_at": "2026-10-13T15:51:51.685Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1007/s11814-026-00820-1",
@@ -1570,7 +1570,7 @@
       "llm_at": "2026-10-13T15:51:49.805Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.35517/jsh-aaup.v1.02.09",
@@ -1618,7 +1618,7 @@
       "llm_at": "2026-10-13T15:51:55.897Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1021/acsaelm.6c01215",
@@ -1670,7 +1670,7 @@
       "llm_at": "2026-10-13T15:51:52.374Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1021/acs.nanolett.6c03633",
@@ -1721,7 +1721,7 @@
       "llm_at": "2026-10-13T15:51:53.169Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1021/jacs.6c10386",
@@ -1772,7 +1772,7 @@
       "llm_at": "2026-10-13T15:51:55.320Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1117/1.apn.5.6.066010",
@@ -1823,7 +1823,7 @@
       "llm_at": "2026-10-13T15:51:54.583Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T16:31:11.875Z"
+      "last_updated": "2026-10-13T17:05:23.610Z"
     },
     {
       "id": "10.1021/acsami.6c18064",
