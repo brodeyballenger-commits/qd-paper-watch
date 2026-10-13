@@ -89,8 +89,11 @@ npm run preview           # 打开 http://127.0.0.1:5173/
 cd qd-paper-watch
 
 # 1) 配置 git 身份（只需一次）
-git config user.name  "你的名字"
-git config user.email "你的邮箱"
+#    建议用 GitHub 的 noreply 邮箱，别把真实邮箱写进公开仓库的提交历史：
+#    <账号ID>+<账号名>@users.noreply.github.com 里的两个值在
+#    https://github.com/settings/emails 页面能看到（账号 ID 也在 gh api user 里）
+git config user.name  "你的GitHub账号名"
+git config user.email "你的账号ID+你的GitHub账号名@users.noreply.github.com"
 
 # 2) 登录 GitHub（只需一次）
 gh auth login
@@ -105,6 +108,7 @@ gh repo create qd-paper-watch --public --source=. --remote=origin --push
 ```
 
 > 检查一下 `.env` 没有被加进仓库：`git status --short` 里不应该出现 `.env`（它已在 `.gitignore` 里）。
+> 更省事的做法是先跑一遍 `npm run check:privacy`，它会替你把工作区扫一遍。
 
 然后在 GitHub 网页上做两件事：
 

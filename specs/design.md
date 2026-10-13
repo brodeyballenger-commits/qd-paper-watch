@@ -127,7 +127,7 @@ build.mjs
 
 | 方式 | 触发 | 说明 |
 | --- | --- | --- |
-| GitHub Actions（`.github/workflows/update.yml`） | 每天 UTC 22:00（北京 06:00）或手动 | 先跑单测，再抓取渲染，只有 `docs/` 有变化才提交；key 来自仓库 Secret |
+| GitHub Actions（`.github/workflows/update.yml`） | 每天 UTC 22:00（北京 06:00）或手动 | 先跑隐私自检与单测，再抓取渲染，只有 `docs/` 有变化才提交；key 来自仓库 Secret；`checkout` 用 `fetch-depth: 0` 以便扫全历史 |
 | Windows 计划任务（`scripts/register-task.ps1`） | 每天指定时间 | 调用 `scripts/update.ps1`，日志写 `.tmp/update-YYYYMM.log`；可选 `-Push` |
 
 抓取必须由 Node 发起（本机 PowerShell 环境可能无法建立 TLS）。PowerShell 脚本只负责调度与日志。
