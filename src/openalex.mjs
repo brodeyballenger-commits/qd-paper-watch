@@ -73,6 +73,8 @@ export function mapWork(work) {
     issn_l: src?.issn_l ?? null,
     publisher: src?.host_organization_name ?? null,
     source_type: src?.type ?? null,
+    type: work?.type ?? null,
+    sources: ['openalex'],
     pub_date: work?.publication_date ?? null,
     pub_year: work?.publication_year ?? null,
     oa_status: work?.open_access?.oa_status ?? null,

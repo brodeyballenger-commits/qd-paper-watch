@@ -25,7 +25,7 @@ import { summarizePapers } from './llm.mjs';
 import { applyPublishedFieldsToLedger, applyPublishedGate, isPublishedWork } from './published.mjs';
 import { evaluateRelevance, isPreprint, isQledDevice } from './relevance.mjs';
 import { renderSite } from './render.mjs';
-import { dedupeCandidates, fetchAllSources, resolveSources } from './sources.mjs';
+import { dedupeCandidates, fetchAllSources, filterByWindow, resolveSources } from './sources.mjs';
 import { loadJson, makeRecord, mergeRecords, saveJsonAtomic } from './store.mjs';
 import { daysBefore } from './util.mjs';
 
@@ -99,8 +99,21 @@ async function main() {
   const sourceLabels = args.sourceIds.map((id) => SOURCE_LABELS[id] ?? id).join('、');
   console.log(`   数据源：${sourceLabels}`);
   const { works, report } = await fetchAllSources({ fromDate, log, sources: args.sourceIds });
-  const candidates = dedupeCandidates(works);
-  console.log(`   多源合并去重：${works.length} → ${candidates.length} 篇`);
+  const deduped = dedupeCandidates(works);
+  console.log(`   多源合并去重：${works.length} → ${deduped.length} 篇`);
+
+  // 通用窗口守卫：每个源自己都带窗口参数，但源内部检索式可能失效（实测 arXiv
+  // 的短语检索会吐出几年前的旧预印本），所以这里再加一道与源无关的下界检查。
+  const windowed = filterByWindow(deduped, fromDate);
+  const candidates = windowed.kept;
+  if (windowed.dropped.length > 0) {
+    console.log(
+      `   窗口守卫：丢弃 ${windowed.dropped.length} 篇发布日期早于 ${fromDate} 的记录（例：${windowed.dropped
+        .slice(0, 3)
+        .map((p) => `${p.pub_date} ${String(p.title).slice(0, 40)}`)
+        .join('；')}）`,
+    );
+  }
 
   // ---------- 2.6 见刊闸门：只留已经有正式期刊版本的论文 ----------
   let screened = candidates;
@@ -246,6 +259,7 @@ async function main() {
     stats: {
       fetched: works.length,
       deduped: candidates.length,
+      out_of_window: windowed.dropped.length,
       published: publishedTotal,
       published_dropped: args.includePreprints ? 0 : candidates.length - screened.length,
       kept: accepted.length,

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { DEFAULT_SOURCES } from '../src/config.mjs';
-import { dedupeCandidates, resolveSources } from '../src/sources.mjs';
+import { dedupeCandidates, filterByWindow, resolveSources } from '../src/sources.mjs';
 
 test('resolveSources：不传就用默认源，且没有 SERPAPI_KEY 时不掺入 Google 学术', () => {
   const original = process.env.SERPAPI_KEY;
@@ -101,3 +101,19 @@ test('dedupeCandidates：合并后按新 DOI 建索引，同一标题的第三�
   assert.deepEqual(merged[0].sources, ['openalex', 'crossref', 'semanticscholar']);
   assert.deepEqual([...merged[0].alt_dois].sort(), ['10.48550/arxiv.1', '10.9999/third']);
 });
+
+test('filterByWindow：窗口外的旧论文被丢掉，窗口内与无日期的保留', () => {
+  const old = { doi: '10.1002/old', title: 'Old Preprint', pub_date: '2021-11-23' };
+  const edge = { doi: '10.1002/edge', title: 'On the Boundary', pub_date: '2026-09-29' };
+  const fresh = { doi: '10.1002/new', title: 'Fresh', pub_date: '2026-10-10' };
+  const undated = { doi: '10.1002/undated', title: 'No Date' };
+
+  const { kept, dropped, undated: noDate } = filterByWindow([old, edge, fresh, undated], '2026-09-29');
+
+  assert.deepEqual(dropped.map((r) => r.doi), ['10.1002/old']);
+  assert.deepEqual(kept.map((r) => r.doi), ['10.1002/edge', '10.1002/new', '10.1002/undated']);
+  assert.deepEqual(noDate.map((r) => r.doi), ['10.1002/undated']);
+  // 非法输入不能让构建崩掉
+  assert.deepEqual(filterByWindow(null, '2026-09-29'), { kept: [], dropped: [], undated: [] });
+});
+

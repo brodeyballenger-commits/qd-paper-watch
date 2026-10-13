@@ -196,3 +196,32 @@ export function dedupeCandidates(raws) {
 
   return [...byDoi.values()];
 }
+
+/**
+ * 通用窗口守卫：无论哪个源，发布日期早于抓取窗口下界的一律丢掉。
+ *
+ * 每个源自己都会带窗口参数，但实测 arXiv 的 `all:"…"` 短语检索会把几年前的
+ * 旧预印本一起返回（20 条里混进 2018–2024 年的记录），一旦被 Semantic Scholar
+ * 解析出期刊 DOI 就会混进「最新论文」站。所以在多源合并之后再加一道与源无关
+ * 的守卫，任何源失效都不会让旧文漏进来。
+ *
+ * @param {object[]} raws 候选记录（每条应有 pub_date，形如 YYYY-MM-DD）
+ * @param {string} fromDate 窗口下界（YYYY-MM-DD）
+ * @returns {{ kept: object[], dropped: object[], undated: object[] }}
+ */
+export function filterByWindow(raws, fromDate) {
+  const kept = [];
+  const dropped = [];
+  const undated = [];
+  for (const raw of Array.isArray(raws) ? raws : []) {
+    const date = raw?.pub_date;
+    if (!date) {
+      undated.push(raw);
+      kept.push(raw);
+      continue;
+    }
+    if (date < fromDate) dropped.push(raw);
+    else kept.push(raw);
+  }
+  return { kept, dropped, undated };
+}

@@ -30,6 +30,20 @@ function sourceSet(raw) {
 }
 
 /**
+ * 判定通过时用来填 published_source 的兜底标签。
+ * 优先用来源自己写的值，其次用它的第一个数据源名——不要写死成没有信息量的
+ * 'source'，否则看统计时分不清这批记录到底是谁判进来的。
+ */
+function publishedLabel(raw) {
+  if (raw?.published_source) return raw.published_source;
+  if (Array.isArray(raw?.sources) && raw.sources.length > 0) return raw.sources[0];
+  return 'publisher';
+}
+
+/** published_source 允许出现的取值（其余一律视为历史遗留的无信息量标签，构建时自愈） */
+const KNOWN_PUBLISHED_SOURCES = new Set(['openalex', 'crossref', 'semanticscholar', 'arxiv', 'scholar']);
+
+/**
  * 判定一条候选记录是否已经见刊。
  *
  * @param {object} raw 与 openalex.mapWork 同形的候选记录（各源适配器都产出这个形状）
@@ -42,7 +56,7 @@ export function isPublishedWork(raw) {
 
   // 来源自己已经解析出期刊版本（例如 arXiv → Semantic Scholar 拿到了期刊 DOI）
   if (raw.published === true) {
-    return { published: true, published_source: raw.published_source ?? 'source', reason: null };
+    return { published: true, published_source: publishedLabel(raw), reason: null };
   }
 
   if (hasPreprintDoi(raw.doi)) {
@@ -74,7 +88,7 @@ export function isPublishedWork(raw) {
 
   // 兜底：源原生字段告诉我们它是期刊论文（例如没有 type 字段，但 source_type 是 journal）
   if (raw.source_type === 'journal' && (raw.type === 'article' || raw.type === 'journal-article' || !raw.type)) {
-    return { published: true, published_source: raw.published_source ?? 'source', reason: null };
+    return { published: true, published_source: publishedLabel(raw), reason: null };
   }
 
   return { published: false, published_source: null, reason: 'no-journal-evidence' };
@@ -132,6 +146,12 @@ export function applyPublishedFieldsToLedger(papers) {
 
     if (!('published_source' in p)) {
       p.published_source = p.published ? p.sources[0] ?? 'openalex' : null;
+      touched = true;
+    }
+
+    // 早期版本兜底写成了没有信息量的 'source' / 'publisher'，顺手改成真正的数据源名
+    if (p.published_source && !KNOWN_PUBLISHED_SOURCES.has(p.published_source)) {
+      p.published_source = p.published ? p.sources[0] ?? 'publisher' : null;
       touched = true;
     }
 
