@@ -208,6 +208,19 @@
       links.push('<a class="link" href="' + escapeHtml(paper.pdf_url) + '" target="_blank" rel="noopener">开放获取 PDF</a>');
     }
 
+    // 这些平台没有开放接口（Google 学术明确禁止抓取、X-MOL 只有前端渲染的检索页），
+    // 所以不能把它们的条目搬进本站，只能按标题一键跳到它们的站内检索。
+    var q = encodeURIComponent(paper.title || paper.doi || '');
+    var elsewhere = [
+      ['Google 学术', 'https://scholar.google.com/scholar?q=' + q],
+      ['X-MOL', 'https://www.x-mol.com/paper/search/q?option=' + q],
+      ['百度学术', 'https://xueshu.baidu.com/s?wd=' + q],
+    ]
+      .map(function (pair) {
+        return '<a href="' + escapeHtml(pair[1]) + '" target="_blank" rel="noopener">' + escapeHtml(pair[0]) + '</a>';
+      })
+      .join('');
+
     var abstractBlock = paper.abstract
       ? '<details class="abstract"><summary>查看英文摘要</summary><p>' + escapeHtml(cleanAbstract(paper.abstract)) + '</p></details>'
       : '<p class="muted small-text">数据库未收录摘要。</p>';
@@ -240,6 +253,7 @@
       (keywords ? '<div class="keywords">' + keywords + '</div>' : '') +
       abstractBlock +
       '<div class="card-foot">' + links.join('') +
+      '<span class="search-links" title="按标题跳转到该平台的站内检索（它们不提供开放接口，无法把条目直接搬过来）">在别处查：' + elsewhere + '</span>' +
       (extra.length ? '<span class="extra">' + extra.join('；') + '</span>' : '') +
       '</div>' +
       '</article>'

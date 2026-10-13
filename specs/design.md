@@ -121,6 +121,12 @@ build.mjs
 - 内联 JSON 时把 `<` 转义成 `\u003c`，防止论文摘要里出现 `</script>` 截断脚本。
 - 前端零依赖、零构建，全部文本经 `escapeHtml` 转义。
 - 「已读」存 `localStorage['qd-paper-watch:read']`，因此每个人的已读状态互不干扰。
+- 外链分两类，都只 `target="_blank" rel="noopener"`：
+  - **指向原文**：`DOI 原文`（`doi_url`，回退 `https://doi.org/<doi>`，302 到出版社）与 `开放获取 PDF`（`pdf_url`，仅开放获取时出现）。
+  - **跳转检索**：`在别处查：Google 学术 / X-MOL / 百度学术`，分别拼 `https://scholar.google.com/scholar?q=<标题>`、
+    `https://www.x-mol.com/paper/search/q?option=<标题>`、`https://xueshu.baidu.com/s?wd=<标题>`。
+    这三个平台**不能作为数据源**：Google 学术无公开接口且禁止抓取，X-MOL / 百度学术的检索页是前端渲染 + 反爬（实测 X-MOL 只返回 7KB 的 Next.js 外壳、百度学术直接 403）。
+    所以本站只做「按标题跳转检索」，不尝试搬运它们的条目，也不依赖它们做去重或补充元数据。
 - 样式使用 CSS 变量 + `prefers-color-scheme` 自动深色，620px 以下单列。
 
 ## 6. 自动化

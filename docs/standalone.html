@@ -276,6 +276,16 @@ a:hover { text-decoration: underline; }
 }
 .link { font-weight: 600; }
 .extra { font-size: 12px; color: var(--text-dim); }
+.search-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  font-size: 12px;
+  color: var(--text-dim);
+}
+.search-links a { font-weight: 600; color: var(--text-dim); }
+.search-links a:hover { color: var(--accent); }
 
 .empty {
   background: var(--surface);
@@ -362,6 +372,7 @@ a:hover { text-decoration: underline; }
 <footer class="site-footer">
   <div class="wrap">
     <p class="muted">论文元数据来自 <a href="https://openalex.org" target="_blank" rel="noopener">OpenAlex</a>，摘要缺失时回退 <a href="https://www.crossref.org" target="_blank" rel="noopener">Crossref</a>。</p>
+    <p class="muted">每张卡片的「DOI 原文」直达出版社；「在别处查」按标题跳到 <a href="https://scholar.google.com" target="_blank" rel="noopener">Google 学术</a>、<a href="https://www.x-mol.com" target="_blank" rel="noopener">X-MOL</a>、<a href="https://xueshu.baidu.com" target="_blank" rel="noopener">百度学术</a> 检索同一篇论文（这些平台没有开放接口，只能跳转检索）。</p>
     <p class="muted">中文总结由 DeepSeek 依据原标题与摘要生成，可能存在偏差，重要结论请以原文为准。</p>
   </div>
 </footer>
@@ -583,6 +594,19 @@ window.__META__ = {"project":"量子点器件前沿追踪","generated_at":"2026-
       links.push('<a class="link" href="' + escapeHtml(paper.pdf_url) + '" target="_blank" rel="noopener">开放获取 PDF</a>');
     }
 
+    // 这些平台没有开放接口（Google 学术明确禁止抓取、X-MOL 只有前端渲染的检索页），
+    // 所以不能把它们的条目搬进本站，只能按标题一键跳到它们的站内检索。
+    var q = encodeURIComponent(paper.title || paper.doi || '');
+    var elsewhere = [
+      ['Google 学术', 'https://scholar.google.com/scholar?q=' + q],
+      ['X-MOL', 'https://www.x-mol.com/paper/search/q?option=' + q],
+      ['百度学术', 'https://xueshu.baidu.com/s?wd=' + q],
+    ]
+      .map(function (pair) {
+        return '<a href="' + escapeHtml(pair[1]) + '" target="_blank" rel="noopener">' + escapeHtml(pair[0]) + '</a>';
+      })
+      .join('');
+
     var abstractBlock = paper.abstract
       ? '<details class="abstract"><summary>查看英文摘要</summary><p>' + escapeHtml(cleanAbstract(paper.abstract)) + '</p></details>'
       : '<p class="muted small-text">数据库未收录摘要。</p>';
@@ -615,6 +639,7 @@ window.__META__ = {"project":"量子点器件前沿追踪","generated_at":"2026-
       (keywords ? '<div class="keywords">' + keywords + '</div>' : '') +
       abstractBlock +
       '<div class="card-foot">' + links.join('') +
+      '<span class="search-links" title="按标题跳转到该平台的站内检索（它们不提供开放接口，无法把条目直接搬过来）">在别处查：' + elsewhere + '</span>' +
       (extra.length ? '<span class="extra">' + extra.join('；') + '</span>' : '') +
       '</div>' +
       '</article>'
