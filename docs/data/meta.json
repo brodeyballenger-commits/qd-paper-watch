@@ -1,6 +1,6 @@
 {
   "project": "量子点器件前沿追踪",
-  "generated_at": "2026-10-14T00:39:56.708Z",
+  "generated_at": "2026-10-14T04:24:39.761Z",
   "count": 330,
   "window_days": 14,
   "directions": [
@@ -32,20 +32,20 @@
   ],
   "highNoveltyThreshold": 4,
   "stats": {
-    "fetched": 1106,
-    "deduped": 671,
+    "fetched": 910,
+    "deduped": 494,
     "out_of_window": 0,
     "published": 322,
-    "published_dropped": 9,
-    "kept": 100,
-    "added": 2,
-    "updated": 0,
-    "unchanged": 98,
+    "published_dropped": 0,
+    "kept": 80,
+    "added": 0,
+    "updated": 25,
+    "unchanged": 55,
     "preprint_merged": 0,
-    "llm_generated": 2,
+    "llm_generated": 25,
     "llm_failed": 0,
     "pending_summary": 0,
-    "qled_focus": 86
+    "qled_focus": 87
   },
   "source": "OpenAlex + Crossref + Semantic Scholar + arXiv",
   "sources": [
@@ -57,27 +57,27 @@
   "source_stats": [
     {
       "source": "openalex",
-      "ok": true,
-      "count": 206,
-      "total": 210,
+      "ok": false,
+      "count": 0,
+      "total": 0,
       "dropped": 0,
-      "error": null
+      "error": "请求失败：OpenAlex works 第 1 页。已重试 4 次，最后一次错误：HTTP 429 :: {\"error\":\"Rate limit exceeded\",\"message\":\"Insufficient budget. This request has no API key, so it counts against the free daily budget shared by everyone on your network's IP address, and that budget is used up ($0 remai"
     },
     {
       "source": "crossref",
       "ok": true,
       "count": 900,
-      "total": 4846,
+      "total": 4852,
       "dropped": 0,
       "error": null
     },
     {
       "source": "semanticscholar",
-      "ok": false,
-      "count": 0,
-      "total": 0,
+      "ok": true,
+      "count": 10,
+      "total": 8,
       "dropped": 0,
-      "error": "请求失败：Semantic Scholar bulk「quantum dot light-emitting diode」第 1 页。已重试 4 次，最后一次错误：HTTP 429 :: {\"message\": \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form\", \"code\": \"429\"}"
+      "error": null
     },
     {
       "source": "arxiv",
