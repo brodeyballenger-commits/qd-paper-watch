@@ -50,10 +50,12 @@ jobs:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           DEEPSEEK_MODEL: deepseek-chat
           CONTACT_EMAIL: ${{ vars.CONTACT_EMAIL }}
-          # 两个都是可选的：没有 SEMANTIC_SCHOLAR_API_KEY 也能跑（只是 arXiv 解析更慢），
-          # 没有 SERPAPI_KEY 就自动跳过「Google 学术」这个源。
+          # 三个都是可选的：没有 SEMANTIC_SCHOLAR_API_KEY 也能跑（只是 arXiv 解析更慢），
+          # 没有 SERPAPI_KEY 就自动跳过「Google 学术」这个源；
+          # OPENALEX_API_KEY 能避免共享 IP 上的每日额度被用光（否则 source_stats.openalex.ok=false）。
           SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: |
           DAYS="${{ github.event.inputs.days || '14' }}"
           if [ "${{ github.event.inputs.no_llm }}" = "true" ]; then

@@ -1,7 +1,7 @@
 ﻿# scripts/sync-secrets.ps1
 #
 # 把本机 .env 里的密钥同步到 GitHub 仓库的 Actions Secrets。
-# 以后想补 DeepSeek / Semantic Scholar / SerpApi 的 key，只要改 .env 再跑一次这个脚本，
+# 以后想补 DeepSeek / Semantic Scholar / SerpApi / OpenAlex 的 key，只要改 .env 再跑一次这个脚本，
 # 不用去网页里一个个点。
 #
 # 用法：
@@ -41,7 +41,7 @@ foreach ($line in [System.IO.File]::ReadAllLines($envFile, [System.Text.Encoding
 }
 
 # 允许同步到仓库的密钥白名单（绝不会把其它变量推上去）
-$allowed = @('DEEPSEEK_API_KEY', 'SEMANTIC_SCHOLAR_API_KEY', 'SERPAPI_KEY')
+$allowed = @('DEEPSEEK_API_KEY', 'SEMANTIC_SCHOLAR_API_KEY', 'SERPAPI_KEY', 'OPENALEX_API_KEY')
 
 $targets = $allowed | Where-Object { $vars.ContainsKey($_) }
 if (-not $targets) {

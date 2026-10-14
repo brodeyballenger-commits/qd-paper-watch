@@ -66,6 +66,7 @@ export function buildOpenAlexDoiFilterUrl(dois) {
     'per-page': String(OPENALEX_BATCH),
   });
   if (process.env.CONTACT_EMAIL) params.set('mailto', process.env.CONTACT_EMAIL);
+  if (process.env.OPENALEX_API_KEY) params.set('api_key', process.env.OPENALEX_API_KEY);
   return `https://api.openalex.org/works?${params.toString()}`;
 }
 

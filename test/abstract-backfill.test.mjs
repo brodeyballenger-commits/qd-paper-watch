@@ -36,6 +36,27 @@ test('buildOpenAlexDoiFilterUrl：竖线连接、per-page=50、select 只取需�
   assert.match(url, /per-page=50/);
 });
 
+test('buildOpenAlexDoiFilterUrl：填了 OPENALEX_API_KEY 就带上 api_key', () => {
+  const saved = process.env.OPENALEX_API_KEY;
+  process.env.OPENALEX_API_KEY = 'oa-test-key';
+  try {
+    assert.match(buildOpenAlexDoiFilterUrl(['10.1000/aaa']), /api_key=oa-test-key/);
+  } finally {
+    if (saved === undefined) delete process.env.OPENALEX_API_KEY;
+    else process.env.OPENALEX_API_KEY = saved;
+  }
+});
+
+test('buildOpenAlexDoiFilterUrl：没填 key 时不出现 api_key', () => {
+  const saved = process.env.OPENALEX_API_KEY;
+  delete process.env.OPENALEX_API_KEY;
+  try {
+    assert.doesNotMatch(buildOpenAlexDoiFilterUrl(['10.1000/aaa']), /api_key=/);
+  } finally {
+    if (saved !== undefined) process.env.OPENALEX_API_KEY = saved;
+  }
+});
+
 test('backfillAbstracts：Semantic Scholar 补到的写 semanticscholar', async () => {
   const raws = [
     { doi: '10.1000/aaa', abstract: null },

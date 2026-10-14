@@ -44,6 +44,9 @@ export function buildWorksUrl({ fromDate, toDate, cursor = '*' } = {}) {
     select: SELECT,
   });
   if (process.env.CONTACT_EMAIL) params.set('mailto', process.env.CONTACT_EMAIL);
+  // 免费 API key 把每日额度提到 10 倍。不填时额度按出口 IP 共享，
+  // GitHub Actions 那种共享 IP 上经常被别人用光（实测 HTTP 429 Insufficient budget）。
+  if (process.env.OPENALEX_API_KEY) params.set('api_key', process.env.OPENALEX_API_KEY);
 
   return `https://api.openalex.org/works?${params.toString()}`;
 }

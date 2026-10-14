@@ -56,10 +56,11 @@ GitHub Pages（自动更新）/ 本机预览（npm run preview）
 
 - **不填 `SERPAPI_KEY` 就自动只用前四个免费源**，管线不会报错。
 - Semantic Scholar 的 `SEMANTIC_SCHOLAR_API_KEY` 也是可选的：不填时匿名可用，只是限流更严、arXiv 解析更慢。
+- OpenAlex 的 `OPENALEX_API_KEY` 同样可选：不填时每日额度按出口 IP 共享，共享 IP（例如 GitHub Actions 运行器）上容易被别的项目用光，于是线上出现 `source_stats.openalex.ok=false`。
 - 单源失败不会拖垮整轮：日志会写 `✗ 某某源 失败（其它源继续）`，只有全部源都失败才中止。
 - **摘要兜底**：Crossref 这类登记库经常不给摘要，所以抓完后还会用两个批量接口补一次（Semantic Scholar `/paper/batch` 一次最多 500 个 DOI，OpenAlex `filter=doi:` 一次 50 个），日志写 `摘要兜底：缺 N 篇 → 补上 M 篇`。补不到的那些会在卡片上如实写「数据库未收录摘要，建议直接查看原文」。
 
-**API key 永远不会进入浏览器**：DeepSeek / SerpApi / Semantic Scholar 的密钥只在构建时（你的电脑或 GitHub Actions 里）使用，页面里只有结果文本。
+**API key 永远不会进入浏览器**：DeepSeek / SerpApi / Semantic Scholar / OpenAlex 的密钥只在构建时（你的电脑或 GitHub Actions 里）使用，页面里只有结果文本。
 
 ---
 
@@ -76,6 +77,7 @@ GitHub Pages（自动更新）/ 本机预览（npm run preview）
 | --- | --- | --- | --- |
 | `SERPAPI_KEY` | 启用第 5 个来源「Google 学术」 | <https://serpapi.com/manage-api-key>（注册后免费额度 100 次/月，够本站一天一次） | 自动跳过该源，其余四源照常跑 |
 | `SEMANTIC_SCHOLAR_API_KEY` | 提高 Semantic Scholar 配额，arXiv 解析与摘要兜底更快 | <https://www.semanticscholar.org/product/api>（免费申请） | 匿名也能跑，只是限流更严、更容易超时 |
+| `OPENALEX_API_KEY` | 把 OpenAlex 每日额度提到 10 倍（主力源） | <https://openalex.org/settings/api>（注册 <https://openalex.org/> 后免费领取） | 额度按出口 IP 共享；GitHub Actions 共享 IP 上被别人用光时，线上 `source_stats.openalex.ok=false`、错误写 `HTTP 429 / Insufficient budget` |
 | `DEEPSEEK_API_KEY` | 生成中文创新点总结 | <https://platform.deepseek.com/> | 卡片显示「中文总结待生成」，账本照常更新 |
 | `CONTACT_EMAIL` | OpenAlex/Crossref 的礼貌联系邮箱 | 你自己的邮箱 | 配额略紧 |
 
@@ -85,6 +87,7 @@ GitHub Pages（自动更新）/ 本机预览（npm run preview）
 # 1) 本地：把 key 写进 .env（这个文件已被 .gitignore 忽略，永远不进仓库）
 #    SERPAPI_KEY=你的key
 #    SEMANTIC_SCHOLAR_API_KEY=你的key
+#    OPENALEX_API_KEY=你的key
 
 # 2) 线上：一键同步到 GitHub 仓库的 Actions Secrets
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\sync-secrets.ps1           # 先预览，只列出名字和长度
