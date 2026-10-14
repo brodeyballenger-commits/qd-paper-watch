@@ -1,4 +1,4 @@
-# scripts/update.ps1 —— 本机更新入口（供 Windows 计划任务调用，也可手动运行）
+﻿# scripts/update.ps1 —— 本机更新入口（供 Windows 计划任务调用，也可手动运行）
 #
 # 用法：
 #   pwsh -File scripts\update.ps1                 # 抓取 14 天并生成站点

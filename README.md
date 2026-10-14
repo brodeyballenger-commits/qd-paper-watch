@@ -70,6 +70,37 @@ GitHub Pages（自动更新）/ 本机预览（npm run preview）
 - 想生成中文总结需要 DeepSeek 的 API key（<https://platform.deepseek.com/>）。**没有 key 也能正常运行**，只是卡片上会显示「中文总结待生成」。
 - 抓取本身**不需要任何 key**：OpenAlex / Crossref / Semantic Scholar / arXiv 都是免费公开接口。想启用 Google 学术源才需要 SerpApi 的付费 key（见 `.env.example`）。
 
+### 2.1 可选密钥怎么补（想加大来源或提高配额才需要）
+
+| 变量 | 作用 | 去哪申请 | 不填的后果 |
+| --- | --- | --- | --- |
+| `SERPAPI_KEY` | 启用第 5 个来源「Google 学术」 | <https://serpapi.com/manage-api-key>（注册后免费额度 100 次/月，够本站一天一次） | 自动跳过该源，其余四源照常跑 |
+| `SEMANTIC_SCHOLAR_API_KEY` | 提高 Semantic Scholar 配额，arXiv 解析与摘要兜底更快 | <https://www.semanticscholar.org/product/api>（免费申请） | 匿名也能跑，只是限流更严、更容易超时 |
+| `DEEPSEEK_API_KEY` | 生成中文创新点总结 | <https://platform.deepseek.com/> | 卡片显示「中文总结待生成」，账本照常更新 |
+| `CONTACT_EMAIL` | OpenAlex/Crossref 的礼貌联系邮箱 | 你自己的邮箱 | 配额略紧 |
+
+补的方式（本地 + 线上各一次）：
+
+```powershell
+# 1) 本地：把 key 写进 .env（这个文件已被 .gitignore 忽略，永远不进仓库）
+#    SERPAPI_KEY=你的key
+#    SEMANTIC_SCHOLAR_API_KEY=你的key
+
+# 2) 线上：一键同步到 GitHub 仓库的 Actions Secrets
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\sync-secrets.ps1           # 先预览，只列出名字和长度
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\sync-secrets.ps1 -Apply    # 真正写入
+```
+
+不想跑脚本也行：GitHub 仓库 → **Settings → Secrets and variables → Actions → New repository secret**，名字照抄上表，值粘贴 key。
+
+补完怎么确认生效：
+
+- 本地 `npm run dry`，日志里应出现 `✓ Google 学术：取回 N 条`（不填时这一行不出现，只在 `--sources=…,scholar` 时才报错提示）。
+- 线上跑一轮 Actions 后看 `docs/data/meta.json` 的 `source_stats`，每个源有 `ok: true/false`、`count`、`error`。
+- **填错了也不会毁掉整轮**：单源失败会被隔离（实测假 key 会打印 `✗ Google 学术 失败（其它源继续）：HTTP 401（不可重试）`），其余源继续抓取。
+
+> 网络提示：本机实测 OpenAlex / Crossref **直连可用**；arXiv 与 Semantic Scholar 需要连着代理（雪莲Pro 的 `127.0.0.1:7890`）才稳，否则容易 `timeout`。给 git/gh 用的命令见 §4。
+
 ---
 
 ## 3. 首次使用（本机）
@@ -174,7 +205,15 @@ pwsh -File scripts\register-task.ps1 -Time 08:30 -Push
 pwsh -File scripts\register-task.ps1 -Unregister
 ```
 
+只有 Windows PowerShell 5.1（没有 `pwsh` 7）时，命令换成：
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\register-task.ps1
+```
+
 日志写在 `.tmp\update-YYYYMM.log`。
+
+> `scripts\*.ps1` 必须保存为 **UTF-8 with BOM**。Windows PowerShell 5.1 默认按系统 ANSI 解码 `.ps1`，没有 BOM 时中文注释会让脚本直接报 `The string is missing the terminator`。用编辑器改完脚本后如果报这个错，就先补回 BOM 再跑。
 
 ---
 
@@ -232,7 +271,8 @@ qd-paper-watch/
 ├── scripts/
 │   ├── serve.mjs          # 本地预览服务器
 │   ├── update.ps1         # 本机更新脚本（供计划任务调用）
-│   └── register-task.ps1  # 注册/卸载 Windows 计划任务
+│   ├── register-task.ps1  # 注册/卸载 Windows 计划任务
+│   └── sync-secrets.ps1   # 把 .env 里的可选密钥同步到 GitHub Actions Secrets
 ├── .github/workflows/update.yml   # 每天自动更新 + 提交
 ├── specs/design.md        # 设计说明
 ├── .env                   # 你的密钥（已被 .gitignore 忽略）

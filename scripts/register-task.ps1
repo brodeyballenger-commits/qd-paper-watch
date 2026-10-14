@@ -1,4 +1,4 @@
-# scripts/register-task.ps1 —— 注册/卸载 Windows 计划任务（本机每天自动更新）
+﻿# scripts/register-task.ps1 —— 注册/卸载 Windows 计划任务（本机每天自动更新）
 #
 #   pwsh -File scripts\register-task.ps1                  # 每天 06:00 更新（不推送）
 #   pwsh -File scripts\register-task.ps1 -Time 08:30 -Push
