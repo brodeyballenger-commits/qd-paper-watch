@@ -1,6 +1,6 @@
 {
   "project": "量子点器件前沿追踪",
-  "generated_at": "2026-10-14T04:24:39.761Z",
+  "generated_at": "2026-10-14T04:43:12.268Z",
   "count": 330,
   "window_days": 14,
   "directions": [
@@ -32,17 +32,17 @@
   ],
   "highNoveltyThreshold": 4,
   "stats": {
-    "fetched": 910,
-    "deduped": 494,
+    "fetched": 1116,
+    "deduped": 673,
     "out_of_window": 0,
     "published": 322,
-    "published_dropped": 0,
-    "kept": 80,
+    "published_dropped": 9,
+    "kept": 100,
     "added": 0,
-    "updated": 25,
-    "unchanged": 55,
+    "updated": 23,
+    "unchanged": 77,
     "preprint_merged": 0,
-    "llm_generated": 25,
+    "llm_generated": 3,
     "llm_failed": 0,
     "pending_summary": 0,
     "qled_focus": 87
@@ -57,11 +57,11 @@
   "source_stats": [
     {
       "source": "openalex",
-      "ok": false,
-      "count": 0,
-      "total": 0,
+      "ok": true,
+      "count": 206,
+      "total": 210,
       "dropped": 0,
-      "error": "请求失败：OpenAlex works 第 1 页。已重试 4 次，最后一次错误：HTTP 429 :: {\"error\":\"Rate limit exceeded\",\"message\":\"Insufficient budget. This request has no API key, so it counts against the free daily budget shared by everyone on your network's IP address, and that budget is used up ($0 remai"
+      "error": null
     },
     {
       "source": "crossref",
