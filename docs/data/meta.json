@@ -1,7 +1,7 @@
 {
   "project": "量子点器件前沿追踪",
-  "generated_at": "2026-10-13T18:03:17.054Z",
-  "count": 328,
+  "generated_at": "2026-10-14T00:39:56.708Z",
+  "count": 330,
   "window_days": 14,
   "directions": [
     {
@@ -32,20 +32,20 @@
   ],
   "highNoveltyThreshold": 4,
   "stats": {
-    "fetched": 1137,
-    "deduped": 690,
+    "fetched": 1106,
+    "deduped": 671,
     "out_of_window": 0,
-    "published": 320,
-    "published_dropped": 11,
-    "kept": 106,
-    "added": 0,
+    "published": 322,
+    "published_dropped": 9,
+    "kept": 100,
+    "added": 2,
     "updated": 0,
-    "unchanged": 106,
+    "unchanged": 98,
     "preprint_merged": 0,
-    "llm_generated": 0,
+    "llm_generated": 2,
     "llm_failed": 0,
     "pending_summary": 0,
-    "qled_focus": 85
+    "qled_focus": 86
   },
   "source": "OpenAlex + Crossref + Semantic Scholar + arXiv",
   "sources": [
@@ -58,8 +58,8 @@
     {
       "source": "openalex",
       "ok": true,
-      "count": 225,
-      "total": 229,
+      "count": 206,
+      "total": 210,
       "dropped": 0,
       "error": null
     },
@@ -67,17 +67,17 @@
       "source": "crossref",
       "ok": true,
       "count": 900,
-      "total": 4934,
+      "total": 4846,
       "dropped": 0,
       "error": null
     },
     {
       "source": "semanticscholar",
-      "ok": true,
-      "count": 12,
-      "total": 10,
+      "ok": false,
+      "count": 0,
+      "total": 0,
       "dropped": 0,
-      "error": null
+      "error": "请求失败：Semantic Scholar bulk「quantum dot light-emitting diode」第 1 页。已重试 4 次，最后一次错误：HTTP 429 :: {\"message\": \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form\", \"code\": \"429\"}"
     },
     {
       "source": "arxiv",
@@ -89,7 +89,7 @@
     }
   ],
   "include_preprints": false,
-  "published_count": 320,
+  "published_count": 322,
   "preprint_count": 8,
   "summary_engine": "deepseek-chat"
 }
