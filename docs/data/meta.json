@@ -1,7 +1,7 @@
 {
   "project": "量子点器件前沿追踪",
-  "generated_at": "2026-10-15T00:09:34.278Z",
-  "count": 333,
+  "generated_at": "2026-10-15T23:56:30.220Z",
+  "count": 336,
   "window_days": 14,
   "directions": [
     {
@@ -33,19 +33,19 @@
   "highNoveltyThreshold": 4,
   "stats": {
     "fetched": 912,
-    "deduped": 491,
+    "deduped": 492,
     "out_of_window": 0,
-    "published": 325,
+    "published": 328,
     "published_dropped": 0,
-    "kept": 82,
+    "kept": 84,
     "added": 3,
-    "updated": 7,
-    "unchanged": 72,
+    "updated": 1,
+    "unchanged": 80,
     "preprint_merged": 0,
-    "llm_generated": 10,
+    "llm_generated": 4,
     "llm_failed": 0,
     "pending_summary": 0,
-    "qled_focus": 89
+    "qled_focus": 90
   },
   "source": "OpenAlex + Crossref + Semantic Scholar + arXiv",
   "sources": [
@@ -67,7 +67,7 @@
       "source": "crossref",
       "ok": true,
       "count": 900,
-      "total": 4787,
+      "total": 4978,
       "dropped": 0,
       "error": null
     },
@@ -81,15 +81,15 @@
     },
     {
       "source": "arxiv",
-      "ok": false,
+      "ok": true,
       "count": 0,
       "total": 0,
       "dropped": 0,
-      "error": "请求失败：arXiv「quantum dot light-emitting diode」。已重试 4 次，最后一次错误：The operation was aborted due to timeout"
+      "error": null
     }
   ],
   "include_preprints": false,
-  "published_count": 325,
+  "published_count": 328,
   "preprint_count": 8,
   "summary_engine": "deepseek-chat"
 }

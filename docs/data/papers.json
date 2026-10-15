@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-15T00:09:34.278Z",
-  "count": 333,
+  "generated_at": "2026-10-15T23:56:30.220Z",
+  "count": 336,
   "papers": [
     {
       "id": "10.1016/j.cej.2026.182223",
@@ -113,7 +113,7 @@
       "llm_at": "2026-10-13T17:49:42.323Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:48:09.761Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1109/jstqe.2026.3662809",
@@ -170,7 +170,7 @@
       "llm_at": "2026-10-14T04:43:46.270Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.physleta.2026.132088",
@@ -225,7 +225,7 @@
       "llm_at": "2026-10-13T17:44:41.913Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.aop.2026.170628",
@@ -277,7 +277,7 @@
       "llm_at": "2026-10-13T17:44:41.521Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.saa.2026.128045",
@@ -390,7 +390,7 @@
       "llm_at": "2026-10-13T17:44:43.021Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.optlastec.2026.115543",
@@ -444,7 +444,7 @@
       "llm_at": "2026-10-13T17:44:42.952Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.apsusc.2026.167625",
@@ -500,7 +500,7 @@
       "llm_at": "2026-10-14T04:43:46.270Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.cej.2026.180540",
@@ -556,7 +556,7 @@
       "llm_at": "2026-10-13T17:44:42.974Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.physb.2026.419386",
@@ -667,7 +667,7 @@
       "llm_at": "2026-10-13T17:44:44.132Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.nanoen.2026.112321",
@@ -724,7 +724,7 @@
       "llm_at": "2026-10-13T17:44:44.825Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.cej.2026.181979",
@@ -775,7 +775,7 @@
       "llm_at": "2026-10-13T15:52:16.964Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref",
         "semanticscholar"
@@ -828,7 +828,7 @@
       "llm_at": "2026-10-13T15:52:26.975Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref"
       ],
@@ -883,7 +883,7 @@
       "llm_at": "2026-10-13T15:52:28.292Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref"
       ],
@@ -937,7 +937,7 @@
       "llm_at": "2026-10-13T15:52:55.608Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref"
       ],
@@ -993,7 +993,7 @@
       "llm_at": "2026-10-13T15:54:24.952Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref"
       ],
@@ -1049,13 +1049,180 @@
       "llm_at": "2026-10-13T15:53:35.418Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "openalex",
         "crossref"
       ],
       "published": true,
       "published_source": "crossref"
+    },
+    {
+      "id": "10.1021/acsnanoscienceau.6c00120",
+      "doi": "10.1021/acsnanoscienceau.6c00120",
+      "doi_url": "https://doi.org/10.1021/acsnanoscienceau.6c00120",
+      "title": "Anomalous EL–PL Lifetime Inversion in Silicon Quantum-Dot Light-Emitting Diodes",
+      "title_zh": "硅量子点发光二极管中异常的 EL–PL 寿命反转现象",
+      "title_key": "anomalouselpllifetimeinversioninsiliconquantumdotlightemittingdiodes",
+      "authors": [
+        "Hiroyuki Yamada",
+        "Tadaaki Nagao",
+        "Naoto Shirahata"
+      ],
+      "venue": "ACS Nanoscience Au",
+      "issn_l": "2694-2496",
+      "source_type": "journal",
+      "is_preprint": false,
+      "sources": [
+        "crossref"
+      ],
+      "published": true,
+      "published_source": "crossref",
+      "alt_doi": null,
+      "pub_date": "2026-10-15",
+      "pub_year": 2026,
+      "date_suspect": false,
+      "sort_date": "2026-10-15",
+      "oa_status": null,
+      "pdf_url": null,
+      "cited_by_count": 0,
+      "abstract": "Diamond-cubic silicon is a promising quantum-dot material for sustainable optoelectronics owing to its abundance, nontoxicity, and size-tunable photoluminescence (PL). However, silicon quantum-dot light-emitting diodes (Si-QLEDs) suffer from severe efficiency roll-off at high current densities, and the underlying electroluminescence (EL) dynamics remain poorly understood. Here, transient EL measurements using time-correlated single-photon counting reveal that the EL lifetime of Si-QLEDs remains nearly constant at ∼13 μs under varied off-bias conditions and is approximately 8.7 times shorter than the corresponding PL lifetime (∼114 μs). In contrast, CdSe/ZnS QLEDs exhibit the conventional relationship in which the EL lifetime exceeds the PL lifetime. This anomalous EL–PL lifetime inversion in Si-QLEDs is accompanied by a pronounced EQE roll-off at high current densities. Time-resolved current analysis reveals a slow relaxation component possibly associated with trap-related carrier dynamics, while the EL peak energy shows a stronger dependence on current density than on applied voltage. Carrier imbalance and Auger recombination remain possible nonradiative mechanisms under electrical excitation, although their individual contributions to the shortened EL lifetime and efficiency roll-off cannot be independently quantified from the present measurements. In addition, increasing reverse off-bias markedly prolongs the EL delay time, indicating that charge accumulation and trap filling primarily govern the carrier-preparation stage preceding radiative recombination. These findings reveal distinct carrier dynamics in Si-QLEDs and highlight charge-balance control and trap-state reduction as important strategies for mitigating efficiency roll-off.",
+      "abstract_hash": "9a48d38132373417b14e08f7b3d856a31f52cc3ece9909bb997cee187f18aa7e",
+      "abstract_source": "crossref",
+      "abstract_missing": false,
+      "directions": [
+        "display",
+        "quantuminfo",
+        "qled"
+      ],
+      "novelty_score": 4,
+      "novelty_reason": "首次在 Si-QLED 中报道 EL 寿命短于 PL 寿命的反常反转现象，并把它与 EQE roll-off 关联起来，属于明确的新现象与新认识。",
+      "innovation_zh": "这篇工作用时间相关单光子计数做瞬态 EL 测量，发现 Si-QLED 的 EL 寿命在不同关断偏压下基本恒定在约 13 μs，比对应的 PL 寿命（约 114 μs）短约 8.7 倍，而 CdSe/ZnS QLED 则表现为 EL 寿命长于 PL 寿命的常规关系。这种 EL–PL 寿命反转与高电流密度下明显的 EQE roll-off 同时出现，作者还观察到 EL 峰能量对电流密度的依赖强于对电压的依赖，并指出载流子不平衡与俄歇复合都可能是电激发下的非辐射通道，但现有测量无法独立区分二者贡献。",
+      "method_zh": "采用时间相关单光子计数的瞬态 EL 测量，对比 Si-QLED 与 CdSe/ZnS QLED 的 EL/PL 寿命，并结合时间分辨电流分析和不同反向关断偏压下的 EL 延迟时间测量。",
+      "keywords_zh": [
+        "硅量子点",
+        "QLED",
+        "电致发光寿命",
+        "效率滚降",
+        "瞬态EL"
+      ],
+      "summary_source": "llm",
+      "llm_model": "deepseek-chat",
+      "llm_at": "2026-10-15T23:56:52.477Z",
+      "pending_summary": false,
+      "first_seen": "2026-10-15T23:56:30.220Z",
+      "last_updated": "2026-10-15T23:56:30.220Z"
+    },
+    {
+      "id": "10.1088/1361-648x/aeb520",
+      "doi": "10.1088/1361-648x/aeb520",
+      "doi_url": "https://doi.org/10.1088/1361-648x/aeb520",
+      "title": "Light-induced non-resonant spin reversal in quantum dot and in quantum ring",
+      "title_zh": "量子点与量子环中光致非共振自旋翻转",
+      "title_key": "lightinducednonresonantspinreversalinquantumdotandinquantumring",
+      "authors": [
+        "Grzegorz Dziembaj",
+        "Tomasz Chwiej"
+      ],
+      "venue": "Journal of Physics: Condensed Matter",
+      "issn_l": "0953-8984",
+      "source_type": "journal",
+      "is_preprint": false,
+      "sources": [
+        "crossref"
+      ],
+      "published": true,
+      "published_source": "crossref",
+      "alt_doi": null,
+      "pub_date": "2026-10-15",
+      "pub_year": 2026,
+      "date_suspect": false,
+      "sort_date": "2026-10-15",
+      "oa_status": null,
+      "pdf_url": null,
+      "cited_by_count": 0,
+      "abstract": "Nanostructures like quantum dots and quantum rings subjected to non-resonant laser beam of circular polarization &#xD;and moderate intensity exhibit characteristic changes in the orbital and in the spin degrees of freedom of the confined &#xD;electrons. The coupling of the charge density to the electric field component of the light modifies the energy spectrum &#xD;and, in the presence of spin-orbit interaction, may lead to high polarization of the electron spin. These observations &#xD;were inferred from the analysis of the Floquet states which are the approximated stationary eigensolutions of the &#xD;time-periodic Hamiltonian. Here, we study this problem solving numerically the &#xD;time-dependent Schr\"odinger equation for the electron confined in quantum dot and quantum ring and taking &#xD;into account both, the light-matter coupling and its influence on spin-orbital degrees of freedom. Our results show that &#xD;the adiabatically switched light pulse would gently settle the system in one of the Floquet states with the reversed &#xD;spin as compared to the initial state. &#xD;The reversibility of this process is observed only for moderate intensities of light, however, this requires of about &#xD;$10^{3}$ optical cycles which enormously elongates the spin reversal protocol. &#xD;Therefore we next have looked for the time-optimized shapes of the light pulse and we found that the &#xD;duration of the non-resonant pulse can be shorten to below $10^{2}$ optical cycles (corresponding to several pico &#xD;seconds). Such optimized pulse can stimulate the selective transition between &#xD;two electron states which are highly polarized in opposite direction. We show that switching between these states can &#xD;be realized with fidelity exceeding 99.9%.",
+      "abstract_hash": "b60d6219905e795d4c6edc2e7fc1bd0f8c8724b921f09afcd7e8f07e284f61ba",
+      "abstract_source": "crossref",
+      "abstract_missing": false,
+      "directions": [
+        "display",
+        "quantuminfo",
+        "materials"
+      ],
+      "novelty_score": 4,
+      "novelty_reason": "提出了时间优化的非共振光脉冲方案，把自旋翻转从约 10^3 个光周期缩短到 100 个以下并保持 99.9% 以上保真度，属于明确的新策略且性能提升显著。",
+      "innovation_zh": "作者用数值求解含时薛定谔方程的方法，研究了圆偏振非共振激光脉冲下量子点和量子环中受限电子的自旋翻转过程，同时考虑光-物质耦合与自旋-轨道相互作用。他们发现绝热开关的光脉冲可以把系统温和地置于自旋翻转后的 Floquet 态，但可逆性只在中等光强下成立，且需要约 10^3 个光周期，导致翻转协议过长。为此他们优化了光脉冲的时间形状，把非共振脉冲时长压缩到 100 个光周期以下（对应几皮秒），并在两个高度反向极化的电子态之间实现保真度超过 99.9% 的选择性跃迁。",
+      "method_zh": "对量子点和量子环中受限电子数值求解含时薛定谔方程，同时计入光-物质耦合和自旋-轨道相互作用，并在此基础上寻找时间优化的光脉冲形状。",
+      "keywords_zh": [
+        "量子点",
+        "量子环",
+        "自旋翻转",
+        "Floquet 态",
+        "含时薛定谔方程"
+      ],
+      "summary_source": "llm",
+      "llm_model": "deepseek-chat",
+      "llm_at": "2026-10-15T23:56:52.646Z",
+      "pending_summary": false,
+      "first_seen": "2026-10-15T23:56:30.220Z",
+      "last_updated": "2026-10-15T23:56:30.220Z"
+    },
+    {
+      "id": "10.1021/acsami.6c16069",
+      "doi": "10.1021/acsami.6c16069",
+      "doi_url": "https://doi.org/10.1021/acsami.6c16069",
+      "title": "Solution-Processed, High-Performance, Transparent Near-Infrared Photodetectors Based on Ag x Te Colloidal Quantum Dot–Decorated SnO2 Channels",
+      "title_zh": "溶液法制备的高性能透明近红外光电探测器：基于 AgxTe 胶体量子点修饰的 SnO2 沟道",
+      "title_key": "solutionprocessedhighperformancetransparentnearinfraredphotodetectorsbasedonagxtecolloidalquantumdotdecoratedsno2channels",
+      "authors": [
+        "Won-Yong Lee",
+        "Jongmin Yoon",
+        "Taesu Kim",
+        "et al."
+      ],
+      "venue": "ACS Applied Materials &amp; Interfaces",
+      "issn_l": "1944-8244",
+      "source_type": "journal",
+      "is_preprint": false,
+      "sources": [
+        "crossref"
+      ],
+      "published": true,
+      "published_source": "crossref",
+      "alt_doi": null,
+      "pub_date": "2026-10-15",
+      "pub_year": 2026,
+      "date_suspect": false,
+      "sort_date": "2026-10-15",
+      "oa_status": null,
+      "pdf_url": null,
+      "cited_by_count": 0,
+      "abstract": "In this study, high-performance near-infrared (NIR) phototransistors were developed based on tin dioxide (SnO2) thin films decorated with AgxTe colloidal quantum dots (CQDs). The hybrid SnO2/AgxTe architecture was designed to overcome the intrinsic limitations imposed by the wide bandgap of SnO2, enabling NIR photodetection beyond its native absorption range. Structural and morphological characterizations confirmed the formation of polycrystalline SnO2 and the homogeneous dispersion of AgxTe CQDs across the film surface. Optical analyses revealed a significant reduction in the effective optical bandgap to ∼1.3 eV upon AgxTe CQD incorporation, accompanied by enhanced NIR absorption. Electrical measurements demonstrated that devices decorated with 0.3 and 0.5 wt % AgxTe CQDs exhibited strong NIR photoresponses. Notably, the device containing 0.3 wt % AgxTe achieved comparable or, for some metrics, superior performance, including detectivity (∼3.77 × 1011 Jones), responsivity, and photosensitivity, despite its lower CQD loading. The AgxTe CQDs were well distributed on the SnO2 films, occupying a relatively small surface area fraction. These findings indicate that optimized NIR photodetection can be achieved with a minimal quantum dot content, offering a promising route toward cost-effective, transparent, and high-performance phototransistor applications without compromising visible-range transparency.",
+      "abstract_hash": "8d889447b912410229a39391fd09ee031aff2e6abc13589c5f6e3df63d4eb1c5",
+      "abstract_source": "crossref",
+      "abstract_missing": false,
+      "directions": [
+        "detection",
+        "materials"
+      ],
+      "novelty_score": 4,
+      "novelty_reason": "用极低负载的 AgxTe 量子点修饰 SnO2 沟道实现近红外探测并兼顾可见透明性，属于明确的新结构策略且给出具体探测率指标。",
+      "innovation_zh": "用 AgxTe 胶体量子点修饰宽带隙 SnO2 薄膜，把原本只响应可见/紫外的 SnO2 沟道扩展到近红外探测。引入量子点后有效光学带隙降到约 1.3 eV，近红外吸收明显增强；0.3 wt% 和 0.5 wt% 修饰的器件都表现出强近红外光响应，其中 0.3 wt% 样品在探测率（约 3.77×10^11 Jones）、响应度和光敏性上达到与更高负载相当甚至更优的水平，说明只需极少量量子点即可实现优化探测，同时不牺牲可见光透明性。",
+      "method_zh": "在溶液法制备的多晶 SnO2 薄膜表面修饰 AgxTe 胶体量子点，构成 SnO2/AgxTe 混合结构光电晶体管，并对比不同量子点负载量（0.3 与 0.5 wt%）的器件性能。",
+      "keywords_zh": [
+        "近红外光电探测器",
+        "AgxTe 胶体量子点",
+        "SnO2 光电晶体管",
+        "透明器件",
+        "溶液法"
+      ],
+      "summary_source": "llm",
+      "llm_model": "deepseek-chat",
+      "llm_at": "2026-10-15T23:56:52.701Z",
+      "pending_summary": false,
+      "first_seen": "2026-10-15T23:56:30.220Z",
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.saa.2026.128090",
@@ -1111,7 +1278,7 @@
       "llm_at": "2026-10-13T17:49:42.531Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:48:09.761Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1109/lpt.2026.3733672",
@@ -1168,7 +1335,7 @@
       "llm_at": "2026-10-13T17:49:45.415Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:48:09.761Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.jcis.2026.141247",
@@ -1225,7 +1392,7 @@
       "llm_at": "2026-10-14T04:45:41.375Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.cej.2026.182859",
@@ -1283,7 +1450,7 @@
       "llm_at": "2026-10-13T17:44:45.446Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.optmat.2026.118573",
@@ -1338,7 +1505,7 @@
       "llm_at": "2026-10-13T17:44:45.592Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.apradiso.2026.112879",
@@ -1394,7 +1561,7 @@
       "llm_at": "2026-10-14T04:45:41.427Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.chphi.2026.101134",
@@ -1451,7 +1618,7 @@
       "llm_at": "2026-10-14T04:43:46.271Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.optlastec.2026.116003",
@@ -1508,7 +1675,7 @@
       "llm_at": "2026-10-14T04:43:46.271Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.physe.2026.116666",
@@ -1562,7 +1729,7 @@
       "llm_at": "2026-10-13T17:44:46.693Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.optlastec.2026.116147",
@@ -1618,7 +1785,7 @@
       "llm_at": "2026-10-13T17:44:46.859Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.rineng.2026.111690",
@@ -1674,7 +1841,7 @@
       "llm_at": "2026-10-14T04:43:46.271Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.matchemphys.2026.133204",
@@ -1730,7 +1897,7 @@
       "llm_at": "2026-10-13T17:44:48.115Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.cej.2026.182520",
@@ -1787,7 +1954,7 @@
       "llm_at": "2026-10-13T17:44:48.505Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.optcom.2026.133614",
@@ -1843,7 +2010,7 @@
       "llm_at": "2026-10-13T17:44:48.383Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.optcom.2026.133800",
@@ -1898,7 +2065,119 @@
       "llm_at": "2026-10-13T17:44:48.671Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
+    },
+    {
+      "id": "10.1088/1402-4896/aeb192",
+      "doi": "10.1088/1402-4896/aeb192",
+      "doi_url": "https://doi.org/10.1088/1402-4896/aeb192",
+      "title": "Basis-independent coherence and quantum correlations in two dipole-dipole-coupled electrons in double quantum-dot molecules",
+      "title_zh": "双量子点分子中两个偶极-偶极耦合电子的基无关相干性与量子关联",
+      "title_key": "basisindependentcoherenceandquantumcorrelationsintwodipoledipolecoupledelectronsindoublequantumdotmolecules",
+      "authors": [
+        "Zakaria Bouafia",
+        "Neha Pathania",
+        "Mostafa Mansour"
+      ],
+      "venue": "Physica Scripta",
+      "issn_l": "0031-8949",
+      "source_type": "journal",
+      "is_preprint": false,
+      "sources": [
+        "crossref"
+      ],
+      "published": true,
+      "published_source": "crossref",
+      "alt_doi": null,
+      "pub_date": "2026-10-15",
+      "pub_year": 2026,
+      "date_suspect": false,
+      "sort_date": "2026-10-15",
+      "oa_status": null,
+      "pdf_url": null,
+      "cited_by_count": 0,
+      "abstract": "This work examines the thermal dynamics of basis-independent quantum coherence and correlation-based quantum resources for two dipole-dipole-coupled electrons confined in spatially separated quantum-dot (QD) molecules. Localized quantum properties and inter-subsystem coherence are characterized using the basis-independent localized coherence and collective coherence measures, respectively. Quantum correlations between the two double quantum dots are quantified by employing Bures distance entanglement, Local quantum uncertainty (LQU), and local quantum Fisher information (LQFI). The findings show that the dipole–dipole coupling K plays an important role in the system by extending the entanglement sudden-death temperature, reducing localized coherence, and enhancing collective coherence. The Coulomb interaction J provides a complementary contribution by enhancing collective coherence and extending the temperature range over which entanglement, LQU, and LQFI remain appreciable. Energy detuning ε can enhance localized coherence but accelerates the entanglement sudden death and quenches LQU and LQFI by weakening two-body correlations. Inter-dot tunneling Γ enhances the localized coherence measure C L at low temperature, but it reduces collective coherence, lowers the entanglement sudden death temperature, and disrupts other nonclassical correlations.",
+      "abstract_hash": "5ac96b5c63988cbb3a9e7967ae6a851ab14ae23c04e0ca2a4777b37a7669fa20",
+      "abstract_source": "crossref",
+      "abstract_missing": false,
+      "directions": [
+        "quantuminfo",
+        "materials"
+      ],
+      "novelty_score": 3,
+      "novelty_reason": "属于在双量子点分子体系上系统验证并比较已有相干性与量子关联度量的热行为，参数分析较全面但未提出新机制或新器件。",
+      "innovation_zh": "这篇工作把基无关相干性（局域相干性与集体相干性）和多种量子关联度量（Bures 距离纠缠、LQU、LQFI）放在同一个双量子点分子体系里做热动力学分析，考察两个偶极-偶极耦合电子。主要发现是各参数分工明确：偶极耦合 K 能抬高纠缠突然死亡温度、压低局域相干但增强集体相干；库仑相互作用 J 增强集体相干并拓宽纠缠/LQU/LQFI 保持可观测的温度区间；能量失谐 ε 提升局域相干却加速纠缠突然死亡并抑制 LQU 和 LQFI；隧穿 Γ 在低温下增强局域相干 C_L，但削弱集体相干、降低纠缠突然死亡温度并破坏其他非经典关联。创新点主要在于用基无关的相干性框架系统比较这几类量子资源的温度行为，而非提出新器件。",
+      "method_zh": "以空间分离的双量子点分子中两个偶极-偶极耦合电子为模型，用基无关局域相干与集体相干度量刻画相干性，用 Bures 距离纠缠、LQU 和 LQFI 量化两体量子关联，并分析偶极耦合 K、库仑作用 J、能量失谐 ε 和点间隧穿 Γ 对热动力学的影响。",
+      "keywords_zh": [
+        "双量子点分子",
+        "偶极-偶极耦合",
+        "基无关相干性",
+        "量子关联",
+        "纠缠突然死亡"
+      ],
+      "summary_source": "llm",
+      "llm_model": "deepseek-chat",
+      "llm_at": "2026-10-15T23:56:53.267Z",
+      "pending_summary": false,
+      "first_seen": "2026-10-13T17:43:05.287Z",
+      "last_updated": "2026-10-15T23:56:30.220Z"
+    },
+    {
+      "id": "10.1016/j.optmat.2026.118591",
+      "doi": "10.1016/j.optmat.2026.118591",
+      "doi_url": "https://doi.org/10.1016/j.optmat.2026.118591",
+      "title": "A surface post-treatment strategy enables synchronous ligand removal and defect passivation for efficient perovskite nanocrystal light-emitting diodes",
+      "title_zh": "一种表面后处理策略实现配体去除与缺陷钝化同步进行，用于高效钙钛矿纳米晶发光二极管",
+      "title_key": "asurfaceposttreatmentstrategyenablessynchronousligandremovalanddefectpassivationforefficientperovskitenanocrystallightemittingdiodes",
+      "authors": [
+        "Linlin Xu",
+        "Jiayi Zhang",
+        "Dalin Yang",
+        "et al."
+      ],
+      "venue": "Optical Materials",
+      "issn_l": "0925-3467",
+      "source_type": "journal",
+      "is_preprint": false,
+      "sources": [
+        "crossref"
+      ],
+      "published": true,
+      "published_source": "crossref",
+      "alt_doi": null,
+      "pub_date": "2027-01-01",
+      "pub_year": 2027,
+      "date_suspect": true,
+      "sort_date": "2026-10-15",
+      "oa_status": null,
+      "pdf_url": null,
+      "cited_by_count": 0,
+      "abstract": null,
+      "abstract_hash": null,
+      "abstract_source": "none",
+      "abstract_missing": true,
+      "directions": [
+        "display",
+        "materials",
+        "qled"
+      ],
+      "novelty_score": 1,
+      "novelty_reason": "数据库未收录摘要，无法评估创新性。",
+      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
+      "method_zh": "数据库未收录摘要，建议直接查看原文。",
+      "keywords_zh": [
+        "钙钛矿纳米晶",
+        "表面后处理",
+        "配体去除",
+        "缺陷钝化",
+        "发光二极管"
+      ],
+      "summary_source": "llm",
+      "llm_model": "deepseek-chat",
+      "llm_at": "2026-10-13T17:45:00.905Z",
+      "pending_summary": false,
+      "first_seen": "2026-10-13T17:43:05.287Z",
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.solmat.2026.114733",
@@ -1949,7 +2228,7 @@
       "llm_at": "2026-10-14T04:43:46.271Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref"
       ],
@@ -2004,7 +2283,7 @@
       "llm_at": "2026-10-13T15:52:02.439Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref"
       ],
@@ -2061,7 +2340,7 @@
       "llm_at": "2026-10-13T15:52:12.972Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref"
       ],
@@ -2115,7 +2394,7 @@
       "llm_at": "2026-10-13T15:52:19.315Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref"
       ],
@@ -2171,7 +2450,7 @@
       "llm_at": "2026-10-14T04:43:46.271Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref"
       ],
@@ -2227,7 +2506,7 @@
       "llm_at": "2026-10-13T15:52:53.243Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref"
       ],
@@ -2281,7 +2560,7 @@
       "llm_at": "2026-10-14T04:43:46.271Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref"
       ],
@@ -2335,7 +2614,7 @@
       "llm_at": "2026-10-13T15:50:01.458Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref",
         "openalex"
@@ -2392,10 +2671,68 @@
       "llm_at": "2026-10-13T15:51:40.581Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref",
         "openalex"
+      ],
+      "published": true,
+      "published_source": "crossref"
+    },
+    {
+      "id": "10.1016/j.cej.2026.182979",
+      "doi": "10.1016/j.cej.2026.182979",
+      "doi_url": "https://doi.org/10.1016/j.cej.2026.182979",
+      "title": "Strain-promoted double-click cross-linking enables robust charge transport networks for high-performance quantum dot light-emitting diodes",
+      "title_zh": "应变促进的双点击交联构建稳固电荷传输网络，实现高性能量子点发光二极管",
+      "title_key": "strainpromoteddoubleclickcrosslinkingenablesrobustchargetransportnetworksforhighperformancequantumdotlightemittingdiodes",
+      "authors": [
+        "Youngjun Hwang",
+        "Jaehyeon Kim",
+        "Christian Abeilekpor",
+        "et al."
+      ],
+      "venue": "Chemical Engineering Journal",
+      "issn_l": "1385-8947",
+      "source_type": "journal",
+      "is_preprint": false,
+      "alt_doi": null,
+      "pub_date": "2026-12-01",
+      "pub_year": 2026,
+      "date_suspect": true,
+      "sort_date": "2026-10-15",
+      "oa_status": null,
+      "pdf_url": null,
+      "cited_by_count": 0,
+      "abstract": null,
+      "abstract_hash": null,
+      "abstract_source": "none",
+      "abstract_missing": true,
+      "directions": [
+        "display",
+        "qled"
+      ],
+      "novelty_score": 1,
+      "novelty_reason": "无摘要信息，无法评估创新性。",
+      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
+      "method_zh": "数据库未收录摘要，无法确认具体方法与器件结构。",
+      "keywords_zh": [
+        "量子点发光二极管",
+        "交联",
+        "电荷传输",
+        "应变促进",
+        "QLED"
+      ],
+      "summary_source": "llm",
+      "llm_model": "deepseek-chat",
+      "llm_at": "2026-10-13T15:51:48.818Z",
+      "pending_summary": false,
+      "first_seen": "2026-10-13T15:36:21.792Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
+      "sources": [
+        "crossref",
+        "openalex",
+        "semanticscholar"
       ],
       "published": true,
       "published_source": "crossref"
@@ -2455,7 +2792,7 @@
       "llm_at": "2026-10-15T00:10:26.738Z",
       "pending_summary": false,
       "first_seen": "2026-10-15T00:09:34.278Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1063/5.0352323",
@@ -2512,7 +2849,7 @@
       "llm_at": "2026-10-13T17:44:51.417Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.3390/nano16201291",
@@ -2569,7 +2906,7 @@
       "llm_at": "2026-10-13T17:44:52.526Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1021/acs.nanolett.6c03813",
@@ -2621,7 +2958,7 @@
       "llm_at": "2026-10-15T00:10:25.789Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref",
         "openalex",
@@ -2737,7 +3074,7 @@
       "llm_at": "2026-10-15T00:10:26.146Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref",
         "semanticscholar",
@@ -2802,7 +3139,7 @@
       "llm_at": "2026-10-13T17:44:52.501Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1021/acsnano.6c10075",
@@ -2855,7 +3192,7 @@
       "llm_at": "2026-10-15T00:10:26.221Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref",
         "openalex"
@@ -3032,61 +3369,7 @@
       "llm_at": "2026-10-13T17:49:47.883Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:48:09.761Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
-    },
-    {
-      "id": "10.1088/1402-4896/aeb192",
-      "doi": "10.1088/1402-4896/aeb192",
-      "doi_url": "https://doi.org/10.1088/1402-4896/aeb192",
-      "title": "Basis-independent coherence and quantum correlations in two dipole-dipole-coupled electrons in double quantum-dot molecules",
-      "title_zh": "双量子点分子中两个偶极-偶极耦合电子的基无关相干性与量子关联",
-      "title_key": "basisindependentcoherenceandquantumcorrelationsintwodipoledipolecoupledelectronsindoublequantumdotmolecules",
-      "authors": [
-        "Zakaria Bouafia",
-        "Neha Pathania",
-        "Mostafa Mansour"
-      ],
-      "venue": "Physica Scripta",
-      "issn_l": "0031-8949",
-      "source_type": "journal",
-      "is_preprint": false,
-      "sources": [
-        "crossref"
-      ],
-      "published": true,
-      "published_source": "crossref",
-      "alt_doi": null,
-      "pub_date": "2026-10-07",
-      "pub_year": 2026,
-      "date_suspect": false,
-      "sort_date": "2026-10-07",
-      "oa_status": null,
-      "pdf_url": null,
-      "cited_by_count": 0,
-      "abstract": "This work examines the thermal dynamics of basis-independent quantum coherence and correlation-based quantum resources for two dipole-dipole-coupled electrons confined in spatially separated quantum-dot (QD) molecules. Localized quantum properties and inter-subsystem coherence are characterized using the basis-independent localized coherence and collective coherence measures, respectively. Quantum correlations between the two double quantum dots are quantified by employing Bures distance entanglement, Local quantum uncertainty (LQU), and local quantum Fisher information (LQFI). The findings show that the dipole–dipole coupling (K) plays an important role in the system by extending the entanglement sudden-death temperature, reducing localized coherence, and enhancing collective coherence. The Coulomb interaction $J$ provides a complementary contribution by enhancing collective coherence and extending the temperature range over which entanglement, LQU, and LQFI remain appreciable. Energy detuning $\\varepsilon$ can enhance localized coherence but accelerates the entanglement sudden death and quenches LQU and LQFI by weakening two-body correlations. Inter-dot tunneling $\\Gamma$ enhances the localized coherence measure $C_L$ at low temperature, but it reduces collective coherence, lowers the entanglement sudden death temperature, and disrupts other nonclassical correlations.",
-      "abstract_hash": "58ee2140e322e8b07598f62133e2852adfc0be2463bf429846e3e236e8cd423a",
-      "abstract_source": "crossref",
-      "abstract_missing": false,
-      "directions": [
-        "quantuminfo"
-      ],
-      "novelty_score": 3,
-      "novelty_reason": "属于在双量子点分子体系上系统比较多种基无关相干与关联度量的理论研究，思路和结论是已有框架的扩展而非新机制或新器件。",
-      "innovation_zh": "这篇工作把基无关的相干性度量（局域相干 C_L 与集体相干）和多种量子关联度量（Bures 距离纠缠、LQU、LQFI）一起用到双量子点分子中两个偶极-偶极耦合电子的热态上，系统考察了偶极耦合 K、库仑相互作用 J、能量失谐 ε 和点间隧穿 Γ 对它们的影响。结论上，K 能延长纠缠突然死亡温度、压低局域相干但增强集体相干；J 则增强集体相干并拓宽纠缠/LQU/LQFI 保持可观测的温度区间；ε 提升局域相干却加速纠缠突然死亡并抑制 LQU 和 LQFI；Γ 在低温下提升 C_L，但削弱集体相干、降低纠缠突然死亡温度并破坏其他非经典关联。",
-      "method_zh": "以空间分离的双量子点分子中两个偶极-偶极耦合电子为模型，在热态下用基无关的局域相干与集体相干度量刻画相干性，并用 Bures 距离纠缠、局域量子不确定性（LQU）和局域量子 Fisher 信息（LQFI）量化两体量子关联，逐一扫描 K、J、ε、Γ 的影响。",
-      "keywords_zh": [
-        "双量子点分子",
-        "偶极-偶极耦合",
-        "基无关相干性",
-        "局域量子不确定性",
-        "纠缠突然死亡"
-      ],
-      "summary_source": "llm",
-      "llm_model": "deepseek-chat",
-      "llm_at": "2026-10-13T17:44:54.398Z",
-      "pending_summary": false,
-      "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1063/5.0295810",
@@ -3298,7 +3581,7 @@
       "llm_at": "2026-10-13T15:51:38.468Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref",
         "openalex"
@@ -3356,7 +3639,7 @@
       "llm_at": "2026-10-15T00:10:29.708Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref",
         "openalex"
@@ -3534,7 +3817,7 @@
       "llm_at": "2026-10-13T17:44:54.945Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1021/acsami.6c05348",
@@ -3585,7 +3868,7 @@
       "llm_at": "2026-10-13T15:51:40.061Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref",
         "openalex"
@@ -3815,7 +4098,7 @@
       "llm_at": "2026-10-13T17:44:56.265Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.optmat.2026.118561",
@@ -3920,7 +4203,7 @@
       "llm_at": "2026-10-15T00:10:29.763Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref",
         "openalex"
@@ -3983,7 +4266,7 @@
       "llm_at": "2026-10-13T17:44:55.429Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1039/d6nr02603f",
@@ -4035,7 +4318,7 @@
       "llm_at": "2026-10-13T17:44:57.353Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1103/lfkt-wbb7",
@@ -4145,7 +4428,7 @@
       "llm_at": "2026-10-15T00:10:28.985Z",
       "pending_summary": false,
       "first_seen": "2026-10-15T00:09:34.278Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.surfin.2026.111005",
@@ -4201,7 +4484,7 @@
       "llm_at": "2026-10-15T00:10:29.186Z",
       "pending_summary": false,
       "first_seen": "2026-10-15T00:09:34.278Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1038/s41565-026-02285-z",
@@ -4254,7 +4537,7 @@
       "llm_at": "2026-10-14T00:40:17.254Z",
       "pending_summary": false,
       "first_seen": "2026-10-14T00:39:56.708Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.nxmate.2026.103324",
@@ -4308,7 +4591,7 @@
       "llm_at": "2026-10-13T17:49:48.460Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:48:09.761Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.cej.2026.180104",
@@ -4365,7 +4648,7 @@
       "llm_at": "2026-10-13T17:44:56.569Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1109/lpt.2026.3691133",
@@ -4422,7 +4705,7 @@
       "llm_at": "2026-10-14T04:45:41.121Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.cej.2026.179852",
@@ -4479,7 +4762,7 @@
       "llm_at": "2026-10-14T04:43:46.272Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.physleta.2026.131915",
@@ -4531,7 +4814,7 @@
       "llm_at": "2026-10-13T17:44:58.008Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.physb.2026.418954",
@@ -4586,7 +4869,7 @@
       "llm_at": "2026-10-13T17:44:57.793Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1021/acs.nanolett.6c03990",
@@ -4642,7 +4925,7 @@
       "llm_at": "2026-10-13T17:44:59.767Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.jlumin.2026.122073",
@@ -4698,7 +4981,7 @@
       "llm_at": "2026-10-13T17:44:59.060Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.35848/1882-0786/aeaf43",
@@ -4753,7 +5036,7 @@
       "llm_at": "2026-10-13T17:45:00.104Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.solmat.2026.114495",
@@ -4809,7 +5092,7 @@
       "llm_at": "2026-10-13T17:44:59.099Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.cjph.2026.04.019",
@@ -4864,7 +5147,7 @@
       "llm_at": "2026-10-13T17:45:00.408Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1016/j.aca.2026.345869",
@@ -4923,63 +5206,6 @@
       "last_updated": "2026-10-14T04:43:12.268Z"
     },
     {
-      "id": "10.1016/j.optmat.2026.118591",
-      "doi": "10.1016/j.optmat.2026.118591",
-      "doi_url": "https://doi.org/10.1016/j.optmat.2026.118591",
-      "title": "A surface post-treatment strategy enables synchronous ligand removal and defect passivation for efficient perovskite nanocrystal light-emitting diodes",
-      "title_zh": "一种表面后处理策略实现配体去除与缺陷钝化同步进行，用于高效钙钛矿纳米晶发光二极管",
-      "title_key": "asurfaceposttreatmentstrategyenablessynchronousligandremovalanddefectpassivationforefficientperovskitenanocrystallightemittingdiodes",
-      "authors": [
-        "Linlin Xu",
-        "Jiayi Zhang",
-        "Dalin Yang",
-        "et al."
-      ],
-      "venue": "Optical Materials",
-      "issn_l": "0925-3467",
-      "source_type": "journal",
-      "is_preprint": false,
-      "sources": [
-        "crossref"
-      ],
-      "published": true,
-      "published_source": "crossref",
-      "alt_doi": null,
-      "pub_date": "2026-10-01",
-      "pub_year": 2026,
-      "date_suspect": false,
-      "sort_date": "2026-10-01",
-      "oa_status": null,
-      "pdf_url": null,
-      "cited_by_count": 0,
-      "abstract": null,
-      "abstract_hash": null,
-      "abstract_source": "none",
-      "abstract_missing": true,
-      "directions": [
-        "display",
-        "materials",
-        "qled"
-      ],
-      "novelty_score": 1,
-      "novelty_reason": "数据库未收录摘要，无法评估创新性。",
-      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
-      "method_zh": "数据库未收录摘要，建议直接查看原文。",
-      "keywords_zh": [
-        "钙钛矿纳米晶",
-        "表面后处理",
-        "配体去除",
-        "缺陷钝化",
-        "发光二极管"
-      ],
-      "summary_source": "llm",
-      "llm_model": "deepseek-chat",
-      "llm_at": "2026-10-13T17:45:00.905Z",
-      "pending_summary": false,
-      "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
-    },
-    {
       "id": "10.1016/j.bios.2026.118849",
       "doi": "10.1016/j.bios.2026.118849",
       "doi_url": "https://doi.org/10.1016/j.bios.2026.118849",
@@ -5033,7 +5259,7 @@
       "llm_at": "2026-10-14T04:45:41.749Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-15T00:09:34.278Z"
+      "last_updated": "2026-10-15T23:56:30.220Z"
     },
     {
       "id": "10.1021/jacs.6c13849",
@@ -5143,7 +5369,7 @@
       "llm_at": "2026-10-15T00:10:32.802Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref",
         "openalex"
@@ -5255,7 +5481,7 @@
       "llm_at": "2026-10-14T04:43:46.272Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref",
         "openalex"
@@ -5377,64 +5603,6 @@
       "published_source": "openalex"
     },
     {
-      "id": "10.1016/j.cej.2026.182979",
-      "doi": "10.1016/j.cej.2026.182979",
-      "doi_url": "https://doi.org/10.1016/j.cej.2026.182979",
-      "title": "Strain-promoted double-click cross-linking enables robust charge transport networks for high-performance quantum dot light-emitting diodes",
-      "title_zh": "应变促进的双点击交联构建稳固电荷传输网络，实现高性能量子点发光二极管",
-      "title_key": "strainpromoteddoubleclickcrosslinkingenablesrobustchargetransportnetworksforhighperformancequantumdotlightemittingdiodes",
-      "authors": [
-        "Youngjun Hwang",
-        "Jaehyeon Kim",
-        "Christian Abeilekpor",
-        "et al."
-      ],
-      "venue": "Chemical Engineering Journal",
-      "issn_l": "1385-8947",
-      "source_type": "journal",
-      "is_preprint": false,
-      "alt_doi": null,
-      "pub_date": "2026-10-01",
-      "pub_year": 2026,
-      "date_suspect": false,
-      "sort_date": "2026-10-01",
-      "oa_status": null,
-      "pdf_url": null,
-      "cited_by_count": 0,
-      "abstract": null,
-      "abstract_hash": null,
-      "abstract_source": "none",
-      "abstract_missing": true,
-      "directions": [
-        "display",
-        "qled"
-      ],
-      "novelty_score": 1,
-      "novelty_reason": "无摘要信息，无法评估创新性。",
-      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
-      "method_zh": "数据库未收录摘要，无法确认具体方法与器件结构。",
-      "keywords_zh": [
-        "量子点发光二极管",
-        "交联",
-        "电荷传输",
-        "应变促进",
-        "QLED"
-      ],
-      "summary_source": "llm",
-      "llm_model": "deepseek-chat",
-      "llm_at": "2026-10-13T15:51:48.818Z",
-      "pending_summary": false,
-      "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
-      "sources": [
-        "crossref",
-        "openalex",
-        "semanticscholar"
-      ],
-      "published": true,
-      "published_source": "crossref"
-    },
-    {
       "id": "10.1016/j.jmmm.2026.174510",
       "doi": "10.1016/j.jmmm.2026.174510",
       "doi_url": "https://doi.org/10.1016/j.jmmm.2026.174510",
@@ -5483,7 +5651,7 @@
       "llm_at": "2026-10-13T15:53:10.828Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref"
       ],
@@ -5538,7 +5706,7 @@
       "llm_at": "2026-10-14T04:43:46.272Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref"
       ],
@@ -5595,7 +5763,7 @@
       "llm_at": "2026-10-13T15:53:41.573Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref"
       ],
@@ -5651,7 +5819,7 @@
       "llm_at": "2026-10-13T15:52:30.952Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "openalex",
         "crossref"
@@ -5709,7 +5877,7 @@
       "llm_at": "2026-10-15T00:10:32.900Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-15T00:09:34.278Z",
+      "last_updated": "2026-10-15T23:56:30.220Z",
       "sources": [
         "crossref",
         "openalex"
