@@ -51,13 +51,15 @@ GitHub Pages（自动更新）/ 本机预览（npm run preview）
 | OpenAlex | ✅ | 主题命中 + 出版日期窗口，含摘要倒排索引、开放获取链接、被引数 | `primary_location.source.type === 'journal'` |
 | Crossref | ✅ | 按标题相关度检索的期刊论文（`type:journal-article`），含 JATS 摘要与作者 | 它本身就是期刊论文登记库，取到即见刊 |
 | Semantic Scholar | ✅ | 按关键词 bulk 检索（`publicationTypes=JournalArticle`）；**还负责把 arXiv 预印本解析成期刊版本** | `journal` 字段非空且类型为 JournalArticle |
-| arXiv | ✅ | 预印本（`cond-mat.mtrl-sci` / `cond-mat.mes-hall` / `physics.app-ph` / `physics.optics`） | 必须经 Semantic Scholar 批量解析出期刊 DOI 才入库，否则丢弃；**只取窗口内提交的预印本**（arXiv 的短语检索会命中几年前的旧文） |
+| arXiv | ✅ | 预印本（`cond-mat.mtrl-sci` / `cond-mat.mes-hall` / `physics.app-ph` / `physics.optics`），检索式见 `ARXIV_QUERIES` | 必须经 Semantic Scholar 批量解析出期刊 DOI（或 arXiv 自带 `<arxiv:doi>`）才入库，否则丢弃；**只取窗口内提交的预印本** |
 | Google 学术 | ⬜ 可选 | 走 SerpApi（`engine=google_scholar`，付费） | 用 Crossref 按标题回查，查到期刊论文才入库 |
 
 - **不填 `SERPAPI_KEY` 就自动只用前四个免费源**，管线不会报错。
 - Semantic Scholar 的 `SEMANTIC_SCHOLAR_API_KEY` 也是可选的：不填时匿名可用，只是限流更严、arXiv 解析更慢。
-- OpenAlex 的 `OPENALEX_API_KEY` 同样可选：不填时每日额度按出口 IP 共享，共享 IP（例如 GitHub Actions 运行器）上容易被别的项目用光，于是线上出现 `source_stats.openalex.ok=false`。
-- 单源失败不会拖垮整轮：日志会写 `✗ 某某源 失败（其它源继续）`，只有全部源都失败才中止。
+- OpenAlex 的 `OPENALEX_API_KEY` 同样可选：不填时每日额度按出口 IP 共享，共享 IP（例如 GitHub Actions 运行器）上容易被别的项目用光。
+- **OpenAlex 没有 key 也不会把主源打空**：2026-10 起 OpenAlex 对不带 `api_key` 的请求禁用了游标翻页（第 2 页返回 `HTTP 401 {"error":"API key required for cursor paging"}`）。现在遇到这种错误会**自动改用 7 天一片的日期切片**把窗口内结果分片取回（`sliceWindows()`），日志写 `OpenAlex：日期切片 N 片，累计 X 条`；若某一片仍旧失败，则保留已经取到的部分并在 `source_stats.openalex.partial` 里标 `true`（页面日志写「翻页中断，结果可能不完整」），而不是整源 `count=0`。
+- **arXiv 的检索式是原生表达式**：arXiv 的 `all:"…"` 要求严格相邻，单复数/连字符都会漏。实测（2026-10-16）旧的三条短语分别只有 20 / 0 / 0 条命中，换成 `ARXIV_QUERIES` 里的 `all:"quantum dot" AND all:"light-emitting"` 等布尔组合后是 100+ / 30 / 14 条。同时提醒：这四类 arXiv 分类里**近期确实几乎没有 QD-LED 预印本**，所以 arXiv 源经常显示「窗口内 0 条」——这是真实结果，不是故障。
+- 单源失败不会拖垮整轮：日志会写 `✗ 某某源 失败（其它源继续）`，只有全部源都失败才中止。Semantic Scholar 的 `/paper/batch` 匿名调用实测必 `429`，此时 arXiv 条目不会被一刀切丢弃——带 `<arxiv:doi>` 的照样入库，日志写 `Semantic Scholar 不可用，未能核对期刊版本`。
 - **摘要兜底**：Crossref 这类登记库经常不给摘要，所以抓完后还会用两个批量接口补一次（Semantic Scholar `/paper/batch` 一次最多 500 个 DOI，OpenAlex `filter=doi:` 一次 50 个），日志写 `摘要兜底：缺 N 篇 → 补上 M 篇`。补不到的那些会在卡片上如实写「数据库未收录摘要，建议直接查看原文」。
 
 **API key 永远不会进入浏览器**：DeepSeek / SerpApi / Semantic Scholar / OpenAlex 的密钥只在构建时（你的电脑或 GitHub Actions 里）使用，页面里只有结果文本。
@@ -102,7 +104,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts\sync-secrets.ps1 -Ap
 - 线上跑一轮 Actions 后看 `docs/data/meta.json` 的 `source_stats`，每个源有 `ok: true/false`、`count`、`error`。
 - **填错了也不会毁掉整轮**：单源失败会被隔离（实测假 key 会打印 `✗ Google 学术 失败（其它源继续）：HTTP 401（不可重试）`），其余源继续抓取。
 
-> 网络提示：本机实测 OpenAlex / Crossref **直连可用**；arXiv 与 Semantic Scholar 需要连着代理（雪莲Pro 的 `127.0.0.1:7890`）才稳，否则容易 `timeout`。给 git/gh 用的命令见 §4。
+> 网络提示：本机实测 OpenAlex / Crossref / arXiv **直连可用**；Semantic Scholar 直连常被限流（`429 Too Many Requests`），GitHub（`github.com`、`api.github.com`）在本机经常只有 API 直连可用、网页直连被 DNS 污染。需要代理时用雪莲Pro 的 `127.0.0.1:7890`（Node 记得加 `NODE_USE_ENV_PROXY=1`，详见 §4）。
 
 ---
 

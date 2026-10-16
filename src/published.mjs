@@ -40,8 +40,19 @@ function publishedLabel(raw) {
   return 'publisher';
 }
 
-/** published_source 允许出现的取值（其余一律视为历史遗留的无信息量标签，构建时自愈） */
-const KNOWN_PUBLISHED_SOURCES = new Set(['openalex', 'crossref', 'semanticscholar', 'arxiv', 'scholar']);
+/**
+ * published_source 允许出现的取值（其余一律视为历史遗留的无信息量标签，构建时自愈）。
+ * 'arxiv-doi' 是 arXiv 自己 <arxiv:doi> 里给的**期刊 DOI**（作者投稿时回填的正式版 DOI），
+ * 比泛泛的 'arxiv' 更能说明「是谁判进来的」，所以保留这个取值。
+ */
+const KNOWN_PUBLISHED_SOURCES = new Set([
+  'openalex',
+  'crossref',
+  'semanticscholar',
+  'arxiv',
+  'arxiv-doi',
+  'scholar',
+]);
 
 /**
  * 判定一条候选记录是否已经见刊。

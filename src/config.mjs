@@ -64,6 +64,25 @@ export const SOURCE_QUERIES = [
   'quantum dot electroluminescence device',
 ];
 
+/**
+ * arXiv 专用检索式（原生 arXiv 语法，不走上面三条短语）。
+ *
+ * 原因：arXiv 的 `all:"…"` 是**严格相邻**匹配，单复数与连字符都会漏。实测（2026-10-16 探针）：
+ *   all:"quantum dot light-emitting diode"      → 总命中 20，最新 2026-03-24
+ *   all:"QD-LED quantum dot display"            → 总命中 0
+ *   all:"quantum dot electroluminescence device"→ 总命中 0
+ * 换成下面「字段限定 + 布尔组合」后：
+ *   all:"quantum dot" AND all:"light-emitting"                → 115
+ *   abs:"quantum dot" AND (electroluminescence|electroluminescent) → 30
+ *   abs:"quantum dot" AND (QLED|quantum dot LED)              → 17
+ * 命中量提升一个量级，同时仍锁定量子点 + 发光/器件语义（相关性闸门会再筛一遍）。
+ */
+export const ARXIV_QUERIES = [
+  'all:"quantum dot" AND all:"light-emitting"',
+  'abs:"quantum dot" AND (abs:electroluminescence OR abs:electroluminescent)',
+  'abs:"quantum dot" AND (abs:QLED OR abs:"quantum dot LED")',
+];
+
 /** arXiv 分类：材料科学 / 介观物理 / 应用物理 / 光学，覆盖量子点器件的主要投稿方向 */
 export const ARXIV_CATEGORIES = [
   'cond-mat.mtrl-sci',

@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { parseArxivFeed, buildArxivUrl, fetchArxivEntries, resolveArxivEntries } from '../src/arxiv.mjs';
+import { parseArxivFeed, buildArxivUrl, fetchArxivEntries, fetchArxivPublished, resolveArxivEntries } from '../src/arxiv.mjs';
+import { ARXIV_QUERIES } from '../src/config.mjs';
 
 /** 一份最小的 arXiv Atom feed（两条：一条只有 journal_ref，一条带 <arxiv:doi>） */
 const FEED = `<?xml version="1.0" encoding="UTF-8"?>
@@ -87,6 +88,47 @@ test('fetchArxivEntries 按时间窗口过滤：窗口外的老预印本不能�
   }
 });
 
+test('buildArxivUrl：raw 模式保留原生检索式（AND/OR/字段前缀），不擅自加引号', () => {
+  const url = buildArxivUrl({ query: ARXIV_QUERIES, raw: true, categories: ['physics.optics'], maxResults: 5 });
+  const q = new URL(url).searchParams.get('search_query');
+  assert.match(q, /\(all:"quantum dot" AND all:"light-emitting"\)/);
+  assert.match(q, /\(abs:"quantum dot" AND \(abs:electroluminescence OR abs:electroluminescent\)\)/);
+  assert.match(q, /cat:physics\.optics/);
+  assert.ok(!q.includes('all:"all:'), '不能把原生表达式再包一层 all:"…"');
+
+  // 默认行为不变：普通关键词仍然包成短语
+  const plain = new URL(buildArxivUrl({ query: 'quantum dot LED' })).searchParams.get('search_query');
+  assert.match(plain, /all:"quantum dot LED"/);
+});
+
+test('fetchArxivPublished：默认参数能跑通（回归：曾因默认值引用已删除的 SOURCE_QUERIES 而整源报错）', async () => {
+  const originalFetch = globalThis.fetch;
+  const urls = [];
+  globalThis.fetch = async (url) => {
+    const u = String(url);
+    urls.push(u);
+    if (u.includes('/paper/batch')) {
+      const payload = [
+        { paperId: 's2-1', externalIds: { DOI: '10.1002/adma.202500999' }, journal: { name: 'Advanced Materials' }, publicationDate: '2026-10-01', publicationTypes: ['JournalArticle'] },
+      ];
+      return { ok: true, status: 200, json: async () => payload, text: async () => JSON.stringify(payload) };
+    }
+    return { ok: true, status: 200, text: async () => FEED, json: async () => ({}) };
+  };
+
+  try {
+    const result = await fetchArxivPublished({ log: () => {}, since: '2026-07-20', delayMs: 0 });
+    assert.equal(result.works.length, 1, 'arXiv 自带 DOI 或 S2 解析出的期刊版本应当入库');
+    assert.equal(result.works[0].doi, '10.1002/adma.202500999');
+    // 默认检索式是原生表达式（带 AND/字段前缀），证明走的是 ARXIV_QUERIES 而不是旧短语
+    const feedCall = urls.find((u) => u.includes('export.arxiv.org'));
+    const q = new URL(feedCall).searchParams.get('search_query');
+    assert.match(q, /AND all:"light-emitting"/);
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+});
+
 test('resolveArxivEntries：解析出期刊版本的保留，解析不出的丢弃', async () => {
   const originalFetch = globalThis.fetch;
   const calls = [];
@@ -141,6 +183,39 @@ test('resolveArxivEntries：解析出期刊版本的保留，解析不出的丢�
     assert.equal(fromArxivDoi.doi, '10.1002/adts.202500570');
     assert.equal(fromArxivDoi.venue, 'Advanced Theory and Simulations');
     assert.equal(fromArxivDoi.published_source, 'arxiv-doi');
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+});
+
+test('resolveArxivEntries：Semantic Scholar 挂掉（匿名 batch 会被限流）时，仍保留 arXiv 自带期刊 DOI 的条目', async () => {
+  const originalFetch = globalThis.fetch;
+  globalThis.fetch = async () => {
+    // 复刻匿名 /paper/batch 的真实表现：请求被拒（生产里是 429，这里用不可重试的 403 以免测试里空等 16 秒重试）
+    return {
+      ok: false,
+      status: 403,
+      text: async () => '{"message":"Too Many Requests. Please wait and try again or apply for a key for higher rate limits."}',
+    };
+  };
+
+  const logs = [];
+  try {
+    const entries = [
+      { arxivId: '2501.00011', title: 'No Doi', authors: ['A'], pub_date: '2026-07-30', abstract: 'a', arxivDoi: null, journalRef: null },
+      { arxivId: '2501.00012', title: 'Has Doi', authors: ['B'], pub_date: '2026-07-29', abstract: 'b', arxivDoi: '10.1021/acsnano.5c01234', journalRef: 'ACS Nano' },
+    ];
+
+    const result = await resolveArxivEntries(entries, { log: (m) => logs.push(m) });
+
+    assert.equal(result.works.length, 1, 'S2 挂了也要把 arxiv:doi 的条目留下');
+    assert.equal(result.works[0].doi, '10.1021/acsnano.5c01234');
+    assert.equal(result.works[0].published_source, 'arxiv-doi');
+    assert.equal(result.works[0].venue, 'ACS Nano');
+    assert.equal(result.dropped, 1);
+    assert.equal(result.s2_failed, true);
+    assert.match(logs.join('\n'), /Semantic Scholar 批量解析失败/);
+    assert.match(logs.join('\n'), /Semantic Scholar 不可用/);
   } finally {
     globalThis.fetch = originalFetch;
   }

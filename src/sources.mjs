@@ -19,7 +19,12 @@ import { normalizeDoi, normalizeTitle } from './util.mjs';
 /** 每个源的执行器：统一返回 { works, total, dropped } */
 const RUNNERS = {
   openalex: ({ fromDate, toDate, log }) =>
-    fetchWorks({ fromDate, toDate, log }).then((r) => ({ works: r.works, total: r.total, dropped: 0 })),
+    fetchWorks({ fromDate, toDate, log }).then((r) => ({
+      works: r.works,
+      total: r.total,
+      dropped: 0,
+      partial: r.partial === true,
+    })),
   crossref: ({ fromDate, toDate, log }) =>
     fetchCrossrefWorks({ fromDate, toDate, log }).then((r) => ({ works: r.works, total: r.total, dropped: 0 })),
   semanticscholar: ({ fromDate, log }) =>
@@ -66,9 +71,18 @@ export async function fetchAllSources({ fromDate, toDate, log = console.log, sou
     const collect = (msg) => lines.push(String(msg));
     try {
       const result = await RUNNERS[id]({ fromDate, toDate, log: collect });
-      return { source: id, ok: true, works: result.works ?? [], total: result.total ?? 0, dropped: result.dropped ?? 0, error: null, lines };
+      return {
+        source: id,
+        ok: true,
+        works: result.works ?? [],
+        total: result.total ?? 0,
+        dropped: result.dropped ?? 0,
+        partial: result.partial === true,
+        error: null,
+        lines,
+      };
     } catch (err) {
-      return { source: id, ok: false, works: [], total: 0, dropped: 0, error: err, lines };
+      return { source: id, ok: false, works: [], total: 0, dropped: 0, partial: false, error: err, lines };
     }
   });
 
@@ -81,7 +95,9 @@ export async function fetchAllSources({ fromDate, toDate, log = console.log, sou
     for (const line of r.lines) log(line);
     const label = SOURCE_LABELS[r.source] ?? r.source;
     if (r.ok) {
-      log(`   ✓ ${label}：取回 ${r.works.length} 条${r.dropped ? `（另丢弃未达门槛 ${r.dropped} 条）` : ''}`);
+      const suffix = r.dropped ? `（另丢弃未达门槛 ${r.dropped} 条）` : '';
+      const incomplete = r.partial ? '（翻页中断，结果可能不完整）' : '';
+      log(`   ✓ ${label}：取回 ${r.works.length} 条${suffix}${incomplete}`);
     } else {
       log(`   ✗ ${label} 失败（其它源继续）：${r.error?.message ?? r.error}`);
     }
@@ -91,6 +107,7 @@ export async function fetchAllSources({ fromDate, toDate, log = console.log, sou
       count: r.works.length,
       total: r.total,
       dropped: r.dropped,
+      partial: r.partial === true,
       error: r.ok ? null : String(r.error?.message ?? r.error),
     });
     works.push(...r.works);

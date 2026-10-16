@@ -6,7 +6,7 @@
 // 这样既借助了 arXiv 的时效性（很多论文先挂 arXiv），又满足「只收已见刊」的要求。
 // 实测：8 条 arXiv 结果里 6 条能在 S2 解析出期刊版本（Nature Photonics / JACS / ACS Nano…）。
 
-import { ARXIV_CATEGORIES, ARXIV_DELAY_MS, SOURCE_QUERIES } from './config.mjs';
+import { ARXIV_CATEGORIES, ARXIV_DELAY_MS, ARXIV_QUERIES } from './config.mjs';
 import { fetchWithRetry } from './http.mjs';
 import { s2LookupBatch } from './semanticscholar.mjs';
 import { doiUrl, normalizeDoi, sleep, stripMarkup } from './util.mjs';
@@ -70,8 +70,14 @@ export function parseArxivFeed(xml) {
     .filter(Boolean);
 }
 
-export function buildArxivUrl({ query, categories = ARXIV_CATEGORIES, maxResults = MAX_RESULTS } = {}) {
-  const terms = (Array.isArray(query) ? query : [query]).filter(Boolean).map((q) => `all:"${q}"`).join(' OR ');
+/**
+ * @param {object} [opts] { query, categories, maxResults, raw }
+ *   `raw: true` 时把 query 当成 arXiv 原生检索式（可含 `AND`/`OR`/字段前缀），
+ *   否则按老行为把每个词包成 `all:"…"` 短语。
+ */
+export function buildArxivUrl({ query, categories = ARXIV_CATEGORIES, maxResults = MAX_RESULTS, raw = false } = {}) {
+  const list = (Array.isArray(query) ? query : [query]).filter(Boolean);
+  const terms = (raw ? list.map((q) => `(${q})`) : list.map((q) => `all:"${q}"`)).join(' OR ');
   const cats = categories.map((c) => `cat:${c}`).join(' OR ');
   const searchQuery = terms && cats ? `(${terms}) AND (${cats})` : terms || cats;
 
@@ -95,7 +101,8 @@ export function buildArxivUrl({ query, categories = ARXIV_CATEGORIES, maxResults
  */
 export async function fetchArxivEntries({
   log = console.log,
-  queries = SOURCE_QUERIES,
+  queries = ARXIV_QUERIES,
+  raw = true,
   maxResults = MAX_RESULTS,
   since = null,
   delayMs = ARXIV_DELAY_MS,
@@ -103,7 +110,7 @@ export async function fetchArxivEntries({
   const byId = new Map();
 
   for (const query of queries) {
-    const url = buildArxivUrl({ query, maxResults });
+    const url = buildArxivUrl({ query, maxResults, raw });
     const xml = await fetchWithRetry(url, {
       expectJson: false,
       label: `arXiv「${query}」`,
@@ -130,7 +137,18 @@ export async function resolveArxivEntries(entries, { log = console.log } = {}) {
   if (list.length === 0) return { works: [], dropped: 0, resolved: 0 };
 
   const ids = list.map((e) => `ARXIV:${e.arxivId}`);
-  const resolved = await s2LookupBatch(ids);
+  let s2Failed = null;
+  let resolved;
+  try {
+    resolved = await s2LookupBatch(ids);
+  } catch (err) {
+    // S2 批量端点未带 key 时实测必 429（Too Many Requests）。它挂了不代表 arXiv 没用：
+    // 不少作者会把正式版 DOI 回填到 <arxiv:doi>，这批条目照样能判定为已见刊。
+    s2Failed = err;
+    resolved = new Array(list.length).fill(null);
+    log(`   ⚠ arXiv：Semantic Scholar 批量解析失败（${err?.message ?? err}），本轮只保留 arXiv 自带期刊 DOI 的条目`);
+  }
+
   const works = [];
   let dropped = 0;
 
@@ -181,13 +199,14 @@ export async function resolveArxivEntries(entries, { log = console.log } = {}) {
     });
   }
 
-  log(`   arXiv：${list.length} 条预印本 → 解析出期刊版本 ${works.length} 条，丢弃 ${dropped} 条（尚未见刊）`);
-  return { works, dropped, resolved: works.length };
+  const reason = s2Failed ? '（Semantic Scholar 不可用，未能核对期刊版本）' : '（尚未见刊）';
+  log(`   arXiv：${list.length} 条预印本 → 解析出期刊版本 ${works.length} 条，丢弃 ${dropped} 条${reason}`);
+  return { works, dropped, resolved: works.length, s2_failed: Boolean(s2Failed) };
 }
 
 /** 一步到位：发现（带时间窗口）+ 解析 */
-export async function fetchArxivPublished({ log = console.log, queries = SOURCE_QUERIES, since = null } = {}) {
-  const entries = await fetchArxivEntries({ log, queries, since });
-  const { works, dropped } = await resolveArxivEntries(entries, { log });
-  return { works, total: entries.length, dropped };
+export async function fetchArxivPublished({ log = console.log, queries = ARXIV_QUERIES, since = null, delayMs = ARXIV_DELAY_MS } = {}) {
+  const entries = await fetchArxivEntries({ log, queries, since, delayMs });
+  const { works, dropped, s2_failed: s2Failed } = await resolveArxivEntries(entries, { log });
+  return { works, total: entries.length, dropped, s2_failed: s2Failed };
 }
