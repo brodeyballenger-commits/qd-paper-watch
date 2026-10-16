@@ -1,6 +1,6 @@
 {
   "project": "量子点器件前沿追踪",
-  "generated_at": "2026-10-16T10:47:46.990Z",
+  "generated_at": "2026-10-16T10:56:53.936Z",
   "count": 338,
   "window_days": 14,
   "directions": [
@@ -68,7 +68,7 @@
       "source": "crossref",
       "ok": true,
       "count": 900,
-      "total": 3488,
+      "total": 3493,
       "dropped": 0,
       "partial": false,
       "error": null
