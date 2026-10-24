@@ -1,7 +1,7 @@
 {
   "project": "量子点器件前沿追踪",
-  "generated_at": "2026-10-24T00:05:49.578Z",
-  "count": 372,
+  "generated_at": "2026-10-24T23:49:28.258Z",
+  "count": 375,
   "window_days": 14,
   "directions": [
     {
@@ -32,17 +32,17 @@
   ],
   "highNoveltyThreshold": 4,
   "stats": {
-    "fetched": 1090,
-    "deduped": 637,
+    "fetched": 1097,
+    "deduped": 652,
     "out_of_window": 0,
-    "published": 364,
+    "published": 367,
     "published_dropped": 12,
-    "kept": 90,
-    "added": 5,
-    "updated": 0,
+    "kept": 93,
+    "added": 3,
+    "updated": 5,
     "unchanged": 85,
     "preprint_merged": 0,
-    "llm_generated": 5,
+    "llm_generated": 8,
     "llm_failed": 0,
     "pending_summary": 0,
     "qled_focus": 100
@@ -58,8 +58,8 @@
     {
       "source": "openalex",
       "ok": true,
-      "count": 180,
-      "total": 182,
+      "count": 197,
+      "total": 199,
       "dropped": 0,
       "partial": false,
       "error": null
@@ -68,32 +68,32 @@
       "source": "crossref",
       "ok": true,
       "count": 900,
-      "total": 3685,
+      "total": 3741,
       "dropped": 0,
       "partial": false,
       "error": null
     },
     {
       "source": "semanticscholar",
-      "ok": true,
-      "count": 10,
-      "total": 9,
-      "dropped": 0,
-      "partial": false,
-      "error": null
-    },
-    {
-      "source": "arxiv",
       "ok": false,
       "count": 0,
       "total": 0,
       "dropped": 0,
       "partial": false,
-      "error": "请求失败：arXiv「all:\"quantum dot\" AND all:\"light-emitting\"」。已重试 4 次，最后一次错误：The operation was aborted due to timeout"
+      "error": "请求失败：Semantic Scholar bulk「QD-LED quantum dot display」第 1 页。已重试 4 次，最后一次错误：HTTP 429 :: {\"message\": \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form\", \"code\": \"429\"}"
+    },
+    {
+      "source": "arxiv",
+      "ok": true,
+      "count": 0,
+      "total": 0,
+      "dropped": 0,
+      "partial": false,
+      "error": null
     }
   ],
   "include_preprints": false,
-  "published_count": 364,
+  "published_count": 367,
   "preprint_count": 8,
   "summary_engine": "deepseek-chat"
 }
