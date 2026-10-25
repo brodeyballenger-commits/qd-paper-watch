@@ -1,7 +1,7 @@
 {
   "project": "量子点器件前沿追踪",
-  "generated_at": "2026-10-24T23:49:28.258Z",
-  "count": 375,
+  "generated_at": "2026-10-25T23:38:20.620Z",
+  "count": 376,
   "window_days": 14,
   "directions": [
     {
@@ -32,20 +32,20 @@
   ],
   "highNoveltyThreshold": 4,
   "stats": {
-    "fetched": 1097,
-    "deduped": 652,
+    "fetched": 1103,
+    "deduped": 649,
     "out_of_window": 0,
-    "published": 367,
+    "published": 368,
     "published_dropped": 12,
     "kept": 93,
-    "added": 3,
-    "updated": 5,
-    "unchanged": 85,
+    "added": 1,
+    "updated": 2,
+    "unchanged": 90,
     "preprint_merged": 0,
-    "llm_generated": 8,
+    "llm_generated": 3,
     "llm_failed": 0,
     "pending_summary": 0,
-    "qled_focus": 100
+    "qled_focus": 101
   },
   "source": "OpenAlex + Crossref + Semantic Scholar + arXiv",
   "sources": [
@@ -58,8 +58,8 @@
     {
       "source": "openalex",
       "ok": true,
-      "count": 197,
-      "total": 199,
+      "count": 191,
+      "total": 193,
       "dropped": 0,
       "partial": false,
       "error": null
@@ -68,19 +68,19 @@
       "source": "crossref",
       "ok": true,
       "count": 900,
-      "total": 3741,
+      "total": 3728,
       "dropped": 0,
       "partial": false,
       "error": null
     },
     {
       "source": "semanticscholar",
-      "ok": false,
-      "count": 0,
-      "total": 0,
+      "ok": true,
+      "count": 12,
+      "total": 11,
       "dropped": 0,
       "partial": false,
-      "error": "请求失败：Semantic Scholar bulk「QD-LED quantum dot display」第 1 页。已重试 4 次，最后一次错误：HTTP 429 :: {\"message\": \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form\", \"code\": \"429\"}"
+      "error": null
     },
     {
       "source": "arxiv",
@@ -93,7 +93,7 @@
     }
   ],
   "include_preprints": false,
-  "published_count": 367,
+  "published_count": 368,
   "preprint_count": 8,
   "summary_engine": "deepseek-chat"
 }
