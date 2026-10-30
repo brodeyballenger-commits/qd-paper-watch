@@ -1,7 +1,7 @@
 {
   "project": "量子点器件前沿追踪",
-  "generated_at": "2026-10-29T01:19:07.187Z",
-  "count": 393,
+  "generated_at": "2026-10-30T01:23:10.245Z",
+  "count": 397,
   "window_days": 14,
   "directions": [
     {
@@ -35,17 +35,17 @@
     "fetched": 1096,
     "deduped": 643,
     "out_of_window": 0,
-    "published": 385,
+    "published": 389,
     "published_dropped": 21,
-    "kept": 104,
-    "added": 8,
-    "updated": 3,
-    "unchanged": 93,
+    "kept": 102,
+    "added": 4,
+    "updated": 2,
+    "unchanged": 96,
     "preprint_merged": 0,
-    "llm_generated": 11,
+    "llm_generated": 6,
     "llm_failed": 0,
     "pending_summary": 0,
-    "qled_focus": 107
+    "qled_focus": 108
   },
   "source": "OpenAlex + Crossref + Semantic Scholar + arXiv",
   "sources": [
@@ -58,8 +58,8 @@
     {
       "source": "openalex",
       "ok": true,
-      "count": 183,
-      "total": 183,
+      "count": 182,
+      "total": 182,
       "dropped": 0,
       "partial": false,
       "error": null
@@ -68,7 +68,7 @@
       "source": "crossref",
       "ok": true,
       "count": 900,
-      "total": 3852,
+      "total": 3907,
       "dropped": 0,
       "partial": false,
       "error": null
@@ -76,7 +76,7 @@
     {
       "source": "semanticscholar",
       "ok": true,
-      "count": 13,
+      "count": 14,
       "total": 10,
       "dropped": 0,
       "partial": false,
@@ -84,16 +84,16 @@
     },
     {
       "source": "arxiv",
-      "ok": true,
+      "ok": false,
       "count": 0,
       "total": 0,
       "dropped": 0,
       "partial": false,
-      "error": null
+      "error": "请求失败：arXiv「all:\"quantum dot\" AND all:\"light-emitting\"」。已重试 4 次，最后一次错误：The operation was aborted due to timeout"
     }
   ],
   "include_preprints": false,
-  "published_count": 385,
+  "published_count": 389,
   "preprint_count": 8,
   "summary_engine": "deepseek-chat"
 }
