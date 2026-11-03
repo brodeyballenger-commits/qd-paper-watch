@@ -1,7 +1,7 @@
 {
   "project": "量子点器件前沿追踪",
-  "generated_at": "2026-11-02T01:04:18.102Z",
-  "count": 416,
+  "generated_at": "2026-11-03T03:06:37.434Z",
+  "count": 417,
   "window_days": 14,
   "directions": [
     {
@@ -32,20 +32,20 @@
   ],
   "highNoveltyThreshold": 4,
   "stats": {
-    "fetched": 1121,
-    "deduped": 658,
+    "fetched": 1091,
+    "deduped": 646,
     "out_of_window": 0,
-    "published": 408,
-    "published_dropped": 24,
-    "kept": 117,
-    "added": 3,
-    "updated": 1,
-    "unchanged": 113,
+    "published": 409,
+    "published_dropped": 23,
+    "kept": 104,
+    "added": 1,
+    "updated": 4,
+    "unchanged": 99,
     "preprint_merged": 0,
-    "llm_generated": 4,
+    "llm_generated": 5,
     "llm_failed": 0,
     "pending_summary": 0,
-    "qled_focus": 113
+    "qled_focus": 114
   },
   "source": "OpenAlex + Crossref + Semantic Scholar + arXiv",
   "sources": [
@@ -58,42 +58,42 @@
     {
       "source": "openalex",
       "ok": true,
-      "count": 202,
-      "total": 203,
+      "count": 191,
+      "total": 192,
       "dropped": 0,
-      "partial": true,
+      "partial": false,
       "error": null
     },
     {
       "source": "crossref",
       "ok": true,
       "count": 900,
-      "total": 4058,
+      "total": 4137,
       "dropped": 0,
       "partial": false,
       "error": null
     },
     {
       "source": "semanticscholar",
-      "ok": true,
-      "count": 19,
-      "total": 15,
-      "dropped": 0,
-      "partial": false,
-      "error": null
-    },
-    {
-      "source": "arxiv",
       "ok": false,
       "count": 0,
       "total": 0,
       "dropped": 0,
       "partial": false,
-      "error": "请求失败：arXiv「all:\"quantum dot\" AND all:\"light-emitting\"」。已重试 4 次，最后一次错误：The operation was aborted due to timeout"
+      "error": "请求失败：Semantic Scholar bulk「quantum dot electroluminescence device」第 1 页。已重试 4 次，最后一次错误：HTTP 429 :: {\"message\": \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form\", \"code\": \"429\"}"
+    },
+    {
+      "source": "arxiv",
+      "ok": true,
+      "count": 0,
+      "total": 0,
+      "dropped": 0,
+      "partial": false,
+      "error": null
     }
   ],
   "include_preprints": false,
-  "published_count": 408,
+  "published_count": 409,
   "preprint_count": 8,
   "summary_engine": "deepseek-chat"
 }
