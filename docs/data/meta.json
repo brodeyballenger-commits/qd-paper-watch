@@ -1,7 +1,7 @@
 {
   "project": "量子点器件前沿追踪",
-  "generated_at": "2026-11-03T03:06:37.434Z",
-  "count": 417,
+  "generated_at": "2026-11-04T01:43:57.739Z",
+  "count": 419,
   "window_days": 14,
   "directions": [
     {
@@ -32,20 +32,20 @@
   ],
   "highNoveltyThreshold": 4,
   "stats": {
-    "fetched": 1091,
-    "deduped": 646,
+    "fetched": 1104,
+    "deduped": 654,
     "out_of_window": 0,
-    "published": 409,
-    "published_dropped": 23,
+    "published": 411,
+    "published_dropped": 22,
     "kept": 104,
-    "added": 1,
+    "added": 2,
     "updated": 4,
-    "unchanged": 99,
+    "unchanged": 98,
     "preprint_merged": 0,
-    "llm_generated": 5,
+    "llm_generated": 6,
     "llm_failed": 0,
     "pending_summary": 0,
-    "qled_focus": 114
+    "qled_focus": 115
   },
   "source": "OpenAlex + Crossref + Semantic Scholar + arXiv",
   "sources": [
@@ -58,17 +58,17 @@
     {
       "source": "openalex",
       "ok": true,
-      "count": 191,
-      "total": 192,
+      "count": 204,
+      "total": 204,
       "dropped": 0,
-      "partial": false,
+      "partial": true,
       "error": null
     },
     {
       "source": "crossref",
       "ok": true,
       "count": 900,
-      "total": 4137,
+      "total": 4288,
       "dropped": 0,
       "partial": false,
       "error": null
@@ -80,7 +80,7 @@
       "total": 0,
       "dropped": 0,
       "partial": false,
-      "error": "请求失败：Semantic Scholar bulk「quantum dot electroluminescence device」第 1 页。已重试 4 次，最后一次错误：HTTP 429 :: {\"message\": \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form\", \"code\": \"429\"}"
+      "error": "请求失败：Semantic Scholar bulk「QD-LED quantum dot display」第 1 页。已重试 4 次，最后一次错误：HTTP 429 :: {\"message\": \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form\", \"code\": \"429\"}"
     },
     {
       "source": "arxiv",
@@ -93,7 +93,7 @@
     }
   ],
   "include_preprints": false,
-  "published_count": 409,
+  "published_count": 411,
   "preprint_count": 8,
   "summary_engine": "deepseek-chat"
 }
