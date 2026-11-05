@@ -1,7 +1,7 @@
 {
   "project": "量子点器件前沿追踪",
-  "generated_at": "2026-11-04T01:43:57.739Z",
-  "count": 419,
+  "generated_at": "2026-11-05T01:52:11.066Z",
+  "count": 427,
   "window_days": 14,
   "directions": [
     {
@@ -32,20 +32,20 @@
   ],
   "highNoveltyThreshold": 4,
   "stats": {
-    "fetched": 1104,
-    "deduped": 654,
+    "fetched": 1128,
+    "deduped": 671,
     "out_of_window": 0,
-    "published": 411,
-    "published_dropped": 22,
-    "kept": 104,
-    "added": 2,
-    "updated": 4,
+    "published": 419,
+    "published_dropped": 21,
+    "kept": 112,
+    "added": 8,
+    "updated": 6,
     "unchanged": 98,
     "preprint_merged": 0,
-    "llm_generated": 6,
+    "llm_generated": 14,
     "llm_failed": 0,
     "pending_summary": 0,
-    "qled_focus": 115
+    "qled_focus": 117
   },
   "source": "OpenAlex + Crossref + Semantic Scholar + arXiv",
   "sources": [
@@ -58,8 +58,8 @@
     {
       "source": "openalex",
       "ok": true,
-      "count": 204,
-      "total": 204,
+      "count": 210,
+      "total": 210,
       "dropped": 0,
       "partial": true,
       "error": null
@@ -68,19 +68,19 @@
       "source": "crossref",
       "ok": true,
       "count": 900,
-      "total": 4288,
+      "total": 4373,
       "dropped": 0,
       "partial": false,
       "error": null
     },
     {
       "source": "semanticscholar",
-      "ok": false,
-      "count": 0,
-      "total": 0,
+      "ok": true,
+      "count": 18,
+      "total": 14,
       "dropped": 0,
       "partial": false,
-      "error": "请求失败：Semantic Scholar bulk「QD-LED quantum dot display」第 1 页。已重试 4 次，最后一次错误：HTTP 429 :: {\"message\": \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form\", \"code\": \"429\"}"
+      "error": null
     },
     {
       "source": "arxiv",
@@ -93,7 +93,7 @@
     }
   ],
   "include_preprints": false,
-  "published_count": 411,
+  "published_count": 419,
   "preprint_count": 8,
   "summary_engine": "deepseek-chat"
 }
