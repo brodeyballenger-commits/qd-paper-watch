@@ -1,6 +1,6 @@
 {
   "project": "量子点器件前沿追踪",
-  "generated_at": "2026-11-08T00:56:46.049Z",
+  "generated_at": "2026-11-09T01:15:28.364Z",
   "count": 443,
   "window_days": 14,
   "directions": [
@@ -32,17 +32,17 @@
   ],
   "highNoveltyThreshold": 4,
   "stats": {
-    "fetched": 1171,
-    "deduped": 692,
+    "fetched": 1170,
+    "deduped": 697,
     "out_of_window": 0,
     "published": 435,
-    "published_dropped": 20,
-    "kept": 114,
-    "added": 3,
-    "updated": 4,
-    "unchanged": 107,
+    "published_dropped": 21,
+    "kept": 112,
+    "added": 0,
+    "updated": 0,
+    "unchanged": 112,
     "preprint_merged": 0,
-    "llm_generated": 7,
+    "llm_generated": 0,
     "llm_failed": 0,
     "pending_summary": 0,
     "qled_focus": 123
@@ -58,8 +58,8 @@
     {
       "source": "openalex",
       "ok": true,
-      "count": 253,
-      "total": 253,
+      "count": 252,
+      "total": 252,
       "dropped": 0,
       "partial": true,
       "error": null
@@ -68,7 +68,7 @@
       "source": "crossref",
       "ok": true,
       "count": 900,
-      "total": 4607,
+      "total": 4605,
       "dropped": 0,
       "partial": false,
       "error": null
@@ -84,12 +84,12 @@
     },
     {
       "source": "arxiv",
-      "ok": true,
+      "ok": false,
       "count": 0,
       "total": 0,
       "dropped": 0,
       "partial": false,
-      "error": null
+      "error": "请求失败：arXiv「all:\"quantum dot\" AND all:\"light-emitting\"」。已重试 4 次，最后一次错误：The operation was aborted due to timeout"
     }
   ],
   "include_preprints": false,
