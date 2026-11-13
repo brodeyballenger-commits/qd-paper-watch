@@ -1,7 +1,7 @@
 {
   "project": "量子点器件前沿追踪",
-  "generated_at": "2026-11-12T02:34:00.760Z",
-  "count": 456,
+  "generated_at": "2026-11-13T02:11:00.383Z",
+  "count": 457,
   "window_days": 14,
   "directions": [
     {
@@ -32,15 +32,15 @@
   ],
   "highNoveltyThreshold": 4,
   "stats": {
-    "fetched": 1133,
-    "deduped": 652,
+    "fetched": 1132,
+    "deduped": 643,
     "out_of_window": 0,
-    "published": 448,
-    "published_dropped": 10,
-    "kept": 107,
-    "added": 2,
-    "updated": 1,
-    "unchanged": 104,
+    "published": 449,
+    "published_dropped": 13,
+    "kept": 103,
+    "added": 1,
+    "updated": 2,
+    "unchanged": 100,
     "preprint_merged": 0,
     "llm_generated": 3,
     "llm_failed": 0,
@@ -58,8 +58,8 @@
     {
       "source": "openalex",
       "ok": true,
-      "count": 220,
-      "total": 222,
+      "count": 219,
+      "total": 221,
       "dropped": 0,
       "partial": true,
       "error": null
@@ -68,7 +68,7 @@
       "source": "crossref",
       "ok": true,
       "count": 900,
-      "total": 4724,
+      "total": 4805,
       "dropped": 0,
       "partial": false,
       "error": null
@@ -93,7 +93,7 @@
     }
   ],
   "include_preprints": false,
-  "published_count": 448,
+  "published_count": 449,
   "preprint_count": 8,
   "summary_engine": "deepseek-chat"
 }
