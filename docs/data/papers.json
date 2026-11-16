@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-15T01:21:49.072Z",
-  "count": 470,
+  "generated_at": "2026-11-16T01:27:08.674Z",
+  "count": 471,
   "papers": [
     {
       "id": "10.1016/j.cej.2026.183542",
@@ -56,7 +56,7 @@
       "llm_at": "2026-11-06T01:51:09.348Z",
       "pending_summary": false,
       "first_seen": "2026-11-06T01:50:52.967Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.optlastec.2026.116862",
@@ -110,7 +110,7 @@
       "llm_at": "2026-11-02T01:05:11.800Z",
       "pending_summary": false,
       "first_seen": "2026-11-02T01:04:18.102Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.cej.2026.183722",
@@ -167,7 +167,7 @@
       "llm_at": "2026-11-02T01:05:11.639Z",
       "pending_summary": false,
       "first_seen": "2026-11-02T01:04:18.102Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.cej.2026.183486",
@@ -224,7 +224,7 @@
       "llm_at": "2026-10-29T01:19:25.596Z",
       "pending_summary": false,
       "first_seen": "2026-10-29T01:19:07.187Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.nxnano.2026.100881",
@@ -279,7 +279,7 @@
       "llm_at": "2026-10-23T00:13:50.701Z",
       "pending_summary": false,
       "first_seen": "2026-10-22T00:16:35.339Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.cej.2026.183143",
@@ -335,7 +335,7 @@
       "llm_at": "2026-10-20T00:45:45.005Z",
       "pending_summary": false,
       "first_seen": "2026-10-20T00:45:30.263Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.saa.2026.128090",
@@ -391,7 +391,7 @@
       "llm_at": "2026-10-13T17:49:42.531Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:48:09.761Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1109/lpt.2026.3733672",
@@ -448,7 +448,7 @@
       "llm_at": "2026-11-05T01:52:35.662Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:48:09.761Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.jcis.2026.141247",
@@ -505,7 +505,7 @@
       "llm_at": "2026-11-05T01:52:35.960Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.cej.2026.182859",
@@ -563,7 +563,7 @@
       "llm_at": "2026-10-13T17:44:45.446Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.apradiso.2026.112879",
@@ -619,7 +619,7 @@
       "llm_at": "2026-11-05T01:52:36.142Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.chphi.2026.101134",
@@ -676,7 +676,7 @@
       "llm_at": "2026-10-14T04:43:46.271Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.optlastec.2026.116003",
@@ -733,7 +733,7 @@
       "llm_at": "2026-10-24T23:49:51.518Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.optlastec.2026.116147",
@@ -789,7 +789,7 @@
       "llm_at": "2026-10-13T17:44:46.859Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.rineng.2026.111690",
@@ -845,7 +845,7 @@
       "llm_at": "2026-10-14T04:43:46.271Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.cej.2026.182520",
@@ -902,7 +902,7 @@
       "llm_at": "2026-10-13T17:44:48.505Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.optcom.2026.133614",
@@ -958,7 +958,7 @@
       "llm_at": "2026-10-13T17:44:48.383Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.physb.2026.419385",
@@ -1008,7 +1008,7 @@
       "llm_at": "2026-10-13T15:52:02.439Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-11-15T01:21:49.072Z",
+      "last_updated": "2026-11-16T01:27:08.674Z",
       "sources": [
         "crossref"
       ],
@@ -1065,7 +1065,7 @@
       "llm_at": "2026-10-13T15:52:12.972Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-11-15T01:21:49.072Z",
+      "last_updated": "2026-11-16T01:27:08.674Z",
       "sources": [
         "crossref"
       ],
@@ -1119,7 +1119,7 @@
       "llm_at": "2026-10-13T15:52:19.315Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-11-15T01:21:49.072Z",
+      "last_updated": "2026-11-16T01:27:08.674Z",
       "sources": [
         "crossref"
       ],
@@ -1175,7 +1175,7 @@
       "llm_at": "2026-10-14T04:43:46.271Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-11-15T01:21:49.072Z",
+      "last_updated": "2026-11-16T01:27:08.674Z",
       "sources": [
         "crossref"
       ],
@@ -1231,7 +1231,7 @@
       "llm_at": "2026-10-13T15:52:53.243Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-11-15T01:21:49.072Z",
+      "last_updated": "2026-11-16T01:27:08.674Z",
       "sources": [
         "crossref"
       ],
@@ -1285,7 +1285,7 @@
       "llm_at": "2026-10-14T04:43:46.271Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-11-15T01:21:49.072Z",
+      "last_updated": "2026-11-16T01:27:08.674Z",
       "sources": [
         "crossref"
       ],
@@ -1341,7 +1341,7 @@
       "llm_at": "2026-10-13T15:51:40.581Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-11-15T01:21:49.072Z",
+      "last_updated": "2026-11-16T01:27:08.674Z",
       "sources": [
         "crossref",
         "openalex"
@@ -1398,7 +1398,7 @@
       "llm_at": "2026-10-13T15:51:48.818Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-11-15T01:21:49.072Z",
+      "last_updated": "2026-11-16T01:27:08.674Z",
       "sources": [
         "crossref",
         "openalex"
@@ -1432,7 +1432,7 @@
       "pub_date": "2027-02-01",
       "pub_year": 2027,
       "date_suspect": true,
-      "sort_date": "2026-11-15",
+      "sort_date": "2026-11-16",
       "oa_status": null,
       "pdf_url": null,
       "cited_by_count": 0,
@@ -1460,7 +1460,7 @@
       "llm_at": "2026-11-07T01:20:37.345Z",
       "pending_summary": false,
       "first_seen": "2026-11-05T01:52:11.066Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.optcom.2026.133919",
@@ -1488,7 +1488,7 @@
       "pub_date": "2027-02-01",
       "pub_year": 2027,
       "date_suspect": true,
-      "sort_date": "2026-11-15",
+      "sort_date": "2026-11-16",
       "oa_status": null,
       "pdf_url": null,
       "cited_by_count": 0,
@@ -1516,7 +1516,7 @@
       "llm_at": "2026-11-01T00:30:49.468Z",
       "pending_summary": false,
       "first_seen": "2026-11-01T00:30:28.464Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.talanta.2026.130830",
@@ -1545,7 +1545,7 @@
       "pub_date": "2027-04-01",
       "pub_year": 2027,
       "date_suspect": true,
-      "sort_date": "2026-11-15",
+      "sort_date": "2026-11-16",
       "oa_status": null,
       "pdf_url": null,
       "cited_by_count": 0,
@@ -1573,7 +1573,7 @@
       "llm_at": "2026-11-05T01:52:43.687Z",
       "pending_summary": false,
       "first_seen": "2026-11-01T00:30:28.464Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.solener.2026.115283",
@@ -1602,7 +1602,7 @@
       "pub_date": "2027-01-01",
       "pub_year": 2027,
       "date_suspect": true,
-      "sort_date": "2026-11-15",
+      "sort_date": "2026-11-16",
       "oa_status": null,
       "pdf_url": null,
       "cited_by_count": 0,
@@ -1629,7 +1629,7 @@
       "llm_at": "2026-10-31T01:08:05.132Z",
       "pending_summary": false,
       "first_seen": "2026-10-31T01:07:37.189Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.optmat.2026.118573",
@@ -1657,7 +1657,7 @@
       "pub_date": "2027-01-01",
       "pub_year": 2027,
       "date_suspect": true,
-      "sort_date": "2026-11-15",
+      "sort_date": "2026-11-16",
       "oa_status": null,
       "pdf_url": null,
       "cited_by_count": 0,
@@ -1684,7 +1684,7 @@
       "llm_at": "2026-10-13T17:44:45.592Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.physe.2026.116666",
@@ -1710,7 +1710,7 @@
       "pub_date": "2027-01-01",
       "pub_year": 2027,
       "date_suspect": true,
-      "sort_date": "2026-11-15",
+      "sort_date": "2026-11-16",
       "oa_status": null,
       "pdf_url": null,
       "cited_by_count": 0,
@@ -1738,7 +1738,7 @@
       "llm_at": "2026-10-13T17:44:46.693Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.matchemphys.2026.133204",
@@ -1766,7 +1766,7 @@
       "pub_date": "2027-01-01",
       "pub_year": 2027,
       "date_suspect": true,
-      "sort_date": "2026-11-15",
+      "sort_date": "2026-11-16",
       "oa_status": null,
       "pdf_url": null,
       "cited_by_count": 0,
@@ -1794,7 +1794,7 @@
       "llm_at": "2026-10-13T17:44:48.115Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.optcom.2026.133800",
@@ -1821,7 +1821,7 @@
       "pub_date": "2027-01-01",
       "pub_year": 2027,
       "date_suspect": true,
-      "sort_date": "2026-11-15",
+      "sort_date": "2026-11-16",
       "oa_status": null,
       "pdf_url": null,
       "cited_by_count": 0,
@@ -1849,7 +1849,7 @@
       "llm_at": "2026-10-13T17:44:48.671Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.optmat.2026.118591",
@@ -1877,7 +1877,7 @@
       "pub_date": "2027-01-01",
       "pub_year": 2027,
       "date_suspect": true,
-      "sort_date": "2026-11-15",
+      "sort_date": "2026-11-16",
       "oa_status": null,
       "pdf_url": null,
       "cited_by_count": 0,
@@ -1906,7 +1906,7 @@
       "llm_at": "2026-10-13T17:45:00.905Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.solmat.2026.114733",
@@ -1929,7 +1929,7 @@
       "pub_date": "2027-01-01",
       "pub_year": 2027,
       "date_suspect": true,
-      "sort_date": "2026-11-15",
+      "sort_date": "2026-11-16",
       "oa_status": null,
       "pdf_url": null,
       "cited_by_count": 0,
@@ -1957,7 +1957,7 @@
       "llm_at": "2026-10-14T04:43:46.271Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-11-15T01:21:49.072Z",
+      "last_updated": "2026-11-16T01:27:08.674Z",
       "sources": [
         "crossref"
       ],
@@ -1983,7 +1983,7 @@
       "pub_date": "2027-01-01",
       "pub_year": 2027,
       "date_suspect": true,
-      "sort_date": "2026-11-15",
+      "sort_date": "2026-11-16",
       "oa_status": null,
       "pdf_url": null,
       "cited_by_count": 0,
@@ -2011,13 +2011,68 @@
       "llm_at": "2026-10-13T15:50:01.458Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-11-15T01:21:49.072Z",
+      "last_updated": "2026-11-16T01:27:08.674Z",
       "sources": [
         "crossref",
         "openalex"
       ],
       "published": true,
       "published_source": "crossref"
+    },
+    {
+      "id": "10.1038/s41467-026-79672-6",
+      "doi": "10.1038/s41467-026-79672-6",
+      "doi_url": "https://doi.org/10.1038/s41467-026-79672-6",
+      "title": "Directly visualizing the energy level structure of quantum dot molecules",
+      "title_zh": "直接可视化量子点分子的能级结构",
+      "title_key": "directlyvisualizingtheenergylevelstructureofquantumdotmolecules",
+      "authors": [
+        "Heun Mo Yoo",
+        "Tanner M. Janda",
+        "Connor Nasseraddin",
+        "et al."
+      ],
+      "venue": "Nature Communications",
+      "issn_l": "2041-1723",
+      "source_type": "journal",
+      "is_preprint": false,
+      "sources": [
+        "crossref"
+      ],
+      "published": true,
+      "published_source": "crossref",
+      "alt_doi": null,
+      "pub_date": "2026-11-15",
+      "pub_year": 2026,
+      "date_suspect": false,
+      "sort_date": "2026-11-15",
+      "oa_status": null,
+      "pdf_url": null,
+      "cited_by_count": 0,
+      "abstract": "The orbital, spin and valley degrees of freedom in silicon quantum dots (QDs) support many modes of spin qubit operation. However, it is generally challenging to probe the energy level spectrum over a large parameter space. We demonstrate a spectroscopic technique capable of mapping the energy level structure of a double quantum dot as a function of level detuning, interdot tunnel coupling, and magnetic field. In the one-electron regime, we directly observe the transition from the atom-like energy levels of isolated QDs to molecular-like bonding and anti-bonding states with increasing interdot tunnel coupling. We also resolve the Zeeman splitting of ground and excited valley states in a magnetic field. In the two-electron regime, we gain access to the detuning dependent singlet-triplet splitting. Our work may be extended to a broader class of systems, such as strong spin-orbit materials or proximitized QDs, allowing the direct extraction of various energy gaps.",
+      "abstract_hash": "67842595817184d8eae7d078f4cb7a4ea45a4578005b1db38eb29c29784657b9",
+      "abstract_source": "crossref",
+      "abstract_missing": false,
+      "directions": [
+        "quantuminfo"
+      ],
+      "novelty_score": 4,
+      "novelty_reason": "在大参数空间直接成像双量子点能级结构并观察到原子-分子态过渡，方法学上有明确新意，但属于测量手段而非新器件机制。",
+      "innovation_zh": "在硅双量子点中实现了一种光谱技术，能够把能级结构作为能级失谐、点间隧穿耦合和磁场的函数进行成像。单电子区直接观察到随隧穿耦合增大，孤立量子点的原子式能级过渡到分子式的成键/反键态；并分辨出基态与激发谷态在磁场下的塞曼劈裂。双电子区则测到了依赖失谐的单-三重态劈裂。相比以往难以在大参数空间探测能级谱的做法，这里把能级随多个控制参数的演化直接画了出来。",
+      "method_zh": "基于硅双量子点器件的谱学测量，扫描能级失谐、点间隧穿耦合与磁场，从测量中提取能级位置与劈裂。",
+      "keywords_zh": [
+        "硅量子点",
+        "双量子点",
+        "能级谱",
+        "谷态",
+        "自旋量子比特"
+      ],
+      "summary_source": "llm",
+      "llm_model": "deepseek-chat",
+      "llm_at": "2026-11-16T01:28:01.561Z",
+      "pending_summary": false,
+      "first_seen": "2026-11-16T01:27:08.674Z",
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1021/acsaelm.6c01668",
@@ -2037,7 +2092,8 @@
       "source_type": "journal",
       "is_preprint": false,
       "sources": [
-        "crossref"
+        "crossref",
+        "openalex"
       ],
       "published": true,
       "published_source": "crossref",
@@ -2046,12 +2102,12 @@
       "pub_year": 2026,
       "date_suspect": false,
       "sort_date": "2026-11-14",
-      "oa_status": null,
+      "oa_status": "green",
       "pdf_url": null,
       "cited_by_count": 0,
-      "abstract": "In inverted blue quantum-dot light-emitting diodes (QLEDs), a more uniform electric field across the quantum dots (QDs) layer reduces QD degradation. However, the surface traps of QDs and the large bandgap offset between the QD emissive layer (EML) and the hole-transport layers (HTLs) still impairs overall device performance, especially for the blue QLEDs. Herein, we introduced an interface engineering by embedding a [2-(9H-carbazol-9-yl)ethyl]phosphonic acid (2PACz) interlayer between the QDs and the HTL in an inverted device architecture. The best performance device with 2 nm of 2PACz can achieve a turn-on voltage (Von) of 3.13 V, a maximum brightness of 38,475 cd m–2, a current efficiency (CE) of 11.69 cd A–1, and an external quantum efficiency (EQE) of 19.13%. Further analysis reveals that 2PACz enhances performance through a dual mechanism: passivating the QD surface by binding to free Zn2+ and S2– ions in the ZnS shell and forming a bridge between QDs and TCTA to improve hole injection by enhancing energy level alignment with the HTL.",
-      "abstract_hash": "8ce0f122e69fa6991f29fa8b0fd3c1c06f53322e3570b574092830fa50c5ac0b",
-      "abstract_source": "crossref",
+      "abstract": "Abstract In inverted blue quantum-dot light-emitting diodes (QLEDs), a more uniform electric field across the quantum dots (QDs) layer reduces QD degradation. However, the surface traps of QDs and the large bandgap offset between the QD emissive layer (EML) and the hole-transport layers (HTLs) still impairs overall device performance, especially for the blue QLEDs. Herein, we introduced an interface engineering by embedding a [2-(9H-carbazol-9-yl)ethyl]phosphonic acid (2PACz) interlayer between the QDs and the HTL in an inverted device architecture. The best performance device with 2 nm of 2PACz can achieve a turn-on voltage (Von) of 3.13 V, a maximum brightness of 38,475 cd m–2, a current efficiency (CE) of 11.69 cd A–1, and an external quantum efficiency (EQE) of 19.13%. Further analysis reveals that 2PACz enhances performance through a dual mechanism: passivating the QD surface by binding to free Zn2+ and S2– ions in the ZnS shell and forming a bridge between QDs and TCTA to improve hole injection by enhancing energy level alignment with the HTL.",
+      "abstract_hash": "59e37a285ac542bcfe609da0388c9de17ee83d48d48c52a240c99b8dae7faa2f",
+      "abstract_source": "openalex",
       "abstract_missing": false,
       "directions": [
         "display",
@@ -2059,11 +2115,11 @@
         "qled"
       ],
       "novelty_score": 4,
-      "novelty_reason": "用 2PACz 界面层同时实现 QD 表面钝化和与 TCTA 的能级桥接，蓝光倒置 QLED 的 EQE 达到 19.13%，属于明确的新界面策略并带来显著性能提升。",
-      "innovation_zh": "针对倒置蓝光 QLED 中 QD 表面陷阱和 QD 发光层与空穴传输层之间带隙偏移过大的问题，作者在 QD 与 HTL 之间插入 2PACz 界面层。2 nm 厚的 2PACz 使器件达到 Von 3.13 V、最大亮度 38,475 cd m–2、电流效率 11.69 cd A–1、EQE 19.13%。机理上，2PACz 一方面与 ZnS 壳层中的自由 Zn2+ 和 S2– 结合，钝化 QD 表面；另一方面在 QD 与 TCTA 之间形成桥接，改善能级匹配，从而提升空穴注入。",
-      "method_zh": "在倒置器件结构的 QD 发光层与空穴传输层之间旋涂 2PACz 界面层，并优化其厚度（最优 2 nm），通过表面钝化与能级桥接的双重作用改善器件性能。",
+      "novelty_reason": "用同一分子同时实现表面钝化和界面能级桥接的双功能策略，并在蓝光倒置 QLED 上给出 EQE 19.13% 的明确性能数据。",
+      "innovation_zh": "在倒置蓝光 QLED 的量子点层与空穴传输层之间插入 2PACz 界面层，同时解决两个问题：一是钝化 ZnS 壳层中游离的 Zn2+ 和 S2– 表面陷阱，二是作为桥接层改善量子点与 TCTA 的能级匹配、提升空穴注入。2 nm 厚 2PACz 的最优器件实现 Von 3.13 V、最大亮度 38,475 cd m–2、电流效率 11.69 cd A–1、EQE 19.13%，对蓝光倒置器件来说是不错的水平。",
+      "method_zh": "倒置器件结构中在 QDs/HTL 界面旋涂 [2-(9H-咔唑-9-基)乙基]膦酸（2PACz）作为超薄界面层，厚度优化到 2 nm；通过膦酸基团与 ZnS 壳层结合实现钝化，咔唑端与 TCTA 形成能级桥接。",
       "keywords_zh": [
-        "蓝光QLED",
+        "蓝色量子点发光二极管",
         "倒置结构",
         "2PACz",
         "界面钝化",
@@ -2071,17 +2127,17 @@
       ],
       "summary_source": "llm",
       "llm_model": "deepseek-chat",
-      "llm_at": "2026-11-15T01:22:20.309Z",
+      "llm_at": "2026-11-16T01:28:01.533Z",
       "pending_summary": false,
       "first_seen": "2026-11-15T01:21:49.072Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1007/s10825-026-02671-9",
       "doi": "10.1007/s10825-026-02671-9",
       "doi_url": "https://doi.org/10.1007/s10825-026-02671-9",
       "title": "Current analysis of a single-electron transistor based on a double carbon nanotube quantum dot Iisland",
-      "title_zh": "基于双碳纳米管量子点岛的单电子晶体管的电流分析",
+      "title_zh": "基于双碳纳米管量子点岛的単电子晶体管电流分析",
       "title_key": "currentanalysisofasingleelectrontransistorbasedonadoublecarbonnanotubequantumdotiisland",
       "authors": [
         "Vahideh Khademhosseini"
@@ -2103,30 +2159,31 @@
       "oa_status": null,
       "pdf_url": null,
       "cited_by_count": 0,
-      "abstract": null,
-      "abstract_hash": null,
-      "abstract_source": "none",
-      "abstract_missing": true,
+      "abstract": "The single-electron transistor (SET) a fast electronic device operates with tunneling of single electrons. It contains a quantum dot island whose material properties impacts the speed of SET operation. In this study, carbon nanotube (CNT) as low dimensional carbon based materials with high electron mobility are selected the for island material. Moreover, increasing the number of islands affects the probability of electron tunneling. Therefore, SETs with CNT double quantum dot (DQD) islands are modeled. Furthermore, the impacts of CNT length, temperature and applied gate voltage on CNT DQD SET performance are investigated. Additionally, the impact of the number of islands the on SET current is evaluated with comparison of charge stability diagrams of two SETs. Finally, a SET with better and faster operation is proposed.",
+      "abstract_hash": "89926fd80bf479f5a11fd0437b6ceb843797cb737e30cfa76e1811d4855c486c",
+      "abstract_source": "semanticscholar",
+      "abstract_missing": false,
       "directions": [
         "materials",
         "quantuminfo"
       ],
-      "novelty_score": 1,
-      "novelty_reason": "数据库未收录摘要，无法评估创新性。",
-      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
-      "method_zh": "数据库未收录摘要，无法确定关键方法或器件结构。",
+      "novelty_score": 3,
+      "novelty_reason": "将 CNT 双量子点岛引入 SET 并做参数化电流分析，属于已有思路在新体系上的验证与渐进优化，摘要未给出量化突破。",
+      "innovation_zh": "把碳纳米管双量子点（DQD）用作 SET 的岛材料，并系统考察 CNT 长度、温度与栅压对器件电流的影响，同时通过对比两种 SET 的库仑稳定性图来评估岛数目对电流的作用，最终给出一个操作更快更好的 SET 方案。创新点主要在于用 CNT DQD 替代常规岛结构并做参数化电流分析，但摘要没有给出任何具体性能数字或量化提升幅度。",
+      "method_zh": "建立以 CNT 双量子点岛为核心的 SET 模型，改变 CNT 长度、温度和栅压进行电流特性仿真，并用电荷稳定性图比较不同岛数目下的 SET 行为。",
       "keywords_zh": [
         "单电子晶体管",
-        "碳纳米管",
+        "碳纳米管量子点",
         "双量子点",
-        "电流分析"
+        "库仑稳定性图",
+        "电流特性"
       ],
       "summary_source": "llm",
       "llm_model": "deepseek-chat",
-      "llm_at": "2026-11-15T01:22:19.052Z",
+      "llm_at": "2026-11-16T01:28:01.430Z",
       "pending_summary": false,
       "first_seen": "2026-11-15T01:21:49.072Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1021/acs.nanolett.6c04076",
@@ -2182,7 +2239,7 @@
       "llm_at": "2026-11-15T01:22:20.427Z",
       "pending_summary": false,
       "first_seen": "2026-11-15T01:21:49.072Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1007/s11814-026-00871-4",
@@ -2237,7 +2294,7 @@
       "llm_at": "2026-11-14T01:52:56.337Z",
       "pending_summary": false,
       "first_seen": "2026-11-14T01:52:41.701Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1002/adom.72026",
@@ -2268,7 +2325,7 @@
       "date_suspect": false,
       "sort_date": "2026-11-13",
       "oa_status": "hybrid",
-      "pdf_url": null,
+      "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/adom.72026",
       "cited_by_count": 0,
       "abstract": "ABSTRACT III‐V group colloidal quantum dots (CQDs) are promising semiconductors for short‐wavelength infrared optoelectronic devices because of their narrow bandgaps and size tunability. Furthermore, their composition complies with the ‘Restriction of Hazardous Substances’ directive of the European Union, making them attractive for consumer electronics, including photodetectors and light‐emitting diodes. However, achieving surface passivation comparable to that of well‐studied Pb chalcogenides demonstrated to be challenging. Currently, the device performance of InAs CQDs with InBr 3 ‐based ligands obtained via solution‐phase ligand exchange is limited, indicating insufficient surface passivation. In this study, we introduce for InAs CQDs with excitonic peak centered at approximately 1200 nm, a novel AlBr 3 ‐ligand with methylammonium acetate (MAAc) as co‐ligand. The resulting CQDs show enhanced photoluminescence intensity indicating better surface passivation, attributed to the reduced steric hindrance of Al cations. The transport properties of the films obtained from inks yield a maximum field‐effect mobility of 0.26 cm 2 V − 1 s − 1 with ion gel gating. The CQD films obtained with the new inks also maintain stable optoelectronic properties at temperatures up to 200°C. This enhanced thermal stability represents a crucial step toward Pb‐free CQD‐based optoelectronics for consumer applications.",
       "abstract_hash": "890662fc92872f3ef303f6341fb58dee5777d2d95197ed6393de08db33cffb19",
@@ -2296,7 +2353,7 @@
       "llm_at": "2026-11-15T01:22:20.637Z",
       "pending_summary": false,
       "first_seen": "2026-11-14T01:52:41.701Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1103/7572-brsj",
@@ -2351,7 +2408,7 @@
       "llm_at": "2026-11-14T01:52:58.395Z",
       "pending_summary": false,
       "first_seen": "2026-11-14T01:52:41.701Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1002/adom.71977",
@@ -2407,7 +2464,7 @@
       "llm_at": "2026-11-14T01:52:57.694Z",
       "pending_summary": false,
       "first_seen": "2026-11-14T01:52:41.701Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1021/acsnanoscienceau.6c00154",
@@ -2463,7 +2520,7 @@
       "llm_at": "2026-11-14T01:52:59.224Z",
       "pending_summary": false,
       "first_seen": "2026-11-14T01:52:41.701Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.3390/nano16221461",
@@ -2520,7 +2577,7 @@
       "llm_at": "2026-11-13T02:11:27.087Z",
       "pending_summary": false,
       "first_seen": "2026-11-13T02:11:00.383Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1038/s41467-026-78984-x",
@@ -2578,7 +2635,7 @@
       "llm_at": "2026-11-13T02:11:26.216Z",
       "pending_summary": false,
       "first_seen": "2026-11-12T02:34:00.760Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.20517/energymater.2026.259",
@@ -2632,7 +2689,7 @@
       "llm_at": "2026-11-11T01:30:58.495Z",
       "pending_summary": false,
       "first_seen": "2026-11-11T01:30:18.323Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1002/adfm.79607",
@@ -2691,7 +2748,7 @@
       "llm_at": "2026-11-12T02:34:16.941Z",
       "pending_summary": false,
       "first_seen": "2026-11-11T01:30:18.323Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1364/optica.616733",
@@ -2749,7 +2806,7 @@
       "llm_at": "2026-11-11T01:30:58.566Z",
       "pending_summary": false,
       "first_seen": "2026-11-11T01:30:18.323Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1002/lpor.72186",
@@ -2805,7 +2862,7 @@
       "llm_at": "2026-11-11T01:30:59.859Z",
       "pending_summary": false,
       "first_seen": "2026-11-11T01:30:18.323Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1103/sym2-vxjl",
@@ -2862,7 +2919,7 @@
       "llm_at": "2026-10-22T00:17:29.725Z",
       "pending_summary": false,
       "first_seen": "2026-10-21T00:11:52.103Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1063/5.0353917",
@@ -2918,7 +2975,7 @@
       "llm_at": "2026-11-14T01:53:00.772Z",
       "pending_summary": false,
       "first_seen": "2026-11-14T01:52:41.701Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1021/acs.nanolett.6c04351",
@@ -2973,7 +3030,7 @@
       "llm_at": "2026-11-11T01:31:01.551Z",
       "pending_summary": false,
       "first_seen": "2026-11-11T01:30:18.323Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1002/rpm2.70090",
@@ -3030,7 +3087,7 @@
       "llm_at": "2026-11-11T01:31:01.927Z",
       "pending_summary": false,
       "first_seen": "2026-11-11T01:30:18.323Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1139/cjc-2026-0153",
@@ -3086,7 +3143,7 @@
       "llm_at": "2026-11-11T01:31:03.218Z",
       "pending_summary": false,
       "first_seen": "2026-11-11T01:30:18.323Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1063/5.0353502",
@@ -3140,7 +3197,7 @@
       "llm_at": "2026-11-10T03:51:34.165Z",
       "pending_summary": false,
       "first_seen": "2026-11-10T03:51:00.657Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1007/s10825-026-02668-4",
@@ -3197,7 +3254,7 @@
       "llm_at": "2026-11-10T03:51:34.721Z",
       "pending_summary": false,
       "first_seen": "2026-11-10T03:51:00.657Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1002/apxr.70215",
@@ -3256,7 +3313,7 @@
       "llm_at": "2026-11-11T01:31:02.661Z",
       "pending_summary": false,
       "first_seen": "2026-11-10T03:51:00.657Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1088/2515-7655/aebfc8",
@@ -3314,7 +3371,7 @@
       "llm_at": "2026-11-11T01:31:04.671Z",
       "pending_summary": false,
       "first_seen": "2026-11-10T03:51:00.657Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1021/acsnano.6c16809",
@@ -3372,7 +3429,7 @@
       "llm_at": "2026-11-08T00:57:03.535Z",
       "pending_summary": false,
       "first_seen": "2026-11-08T00:56:46.049Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1142/s1793292026501870",
@@ -3430,7 +3487,7 @@
       "llm_at": "2026-11-08T00:57:03.274Z",
       "pending_summary": false,
       "first_seen": "2026-11-08T00:56:46.049Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1002/smll.76472",
@@ -3487,7 +3544,7 @@
       "llm_at": "2026-11-07T01:20:36.896Z",
       "pending_summary": false,
       "first_seen": "2026-11-07T01:20:06.089Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1002/lpor.72191",
@@ -3545,7 +3602,7 @@
       "llm_at": "2026-11-08T00:57:02.925Z",
       "pending_summary": false,
       "first_seen": "2026-11-07T01:20:06.089Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.35848/1347-4065/aebf3f",
@@ -3602,7 +3659,7 @@
       "llm_at": "2026-11-08T00:57:03.107Z",
       "pending_summary": false,
       "first_seen": "2026-11-07T01:20:06.089Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1021/acs.jpcc.6c05310",
@@ -3655,7 +3712,7 @@
       "llm_at": "2026-11-08T00:57:05.705Z",
       "pending_summary": false,
       "first_seen": "2026-11-07T01:20:06.089Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1002/adom.72025",
@@ -3680,7 +3737,7 @@
         "semanticscholar"
       ],
       "published": true,
-      "published_source": "crossref",
+      "published_source": "semanticscholar",
       "alt_doi": null,
       "pub_date": "2026-11-05",
       "pub_year": 2026,
@@ -3715,7 +3772,7 @@
       "llm_at": "2026-11-07T01:20:40.991Z",
       "pending_summary": false,
       "first_seen": "2026-11-06T01:50:52.967Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.3390/inorganics14110283",
@@ -3773,7 +3830,7 @@
       "llm_at": "2026-11-06T01:51:10.371Z",
       "pending_summary": false,
       "first_seen": "2026-11-06T01:50:52.967Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1103/7qbs-778n",
@@ -3830,7 +3887,7 @@
       "llm_at": "2026-11-06T01:51:10.938Z",
       "pending_summary": false,
       "first_seen": "2026-11-06T01:50:52.967Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1007/s44562-026-00009-2",
@@ -3888,7 +3945,7 @@
       "llm_at": "2026-11-06T01:51:12.283Z",
       "pending_summary": false,
       "first_seen": "2026-11-06T01:50:52.967Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1021/acs.inorgchem.6c04285",
@@ -3944,7 +4001,7 @@
       "llm_at": "2026-11-06T01:51:12.870Z",
       "pending_summary": false,
       "first_seen": "2026-11-06T01:50:52.967Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1038/s41566-026-02041-8",
@@ -4001,7 +4058,7 @@
       "llm_at": "2026-11-05T01:52:34.661Z",
       "pending_summary": false,
       "first_seen": "2026-11-05T01:52:11.066Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1021/acsanm.6c02454",
@@ -4060,7 +4117,7 @@
       "llm_at": "2026-11-06T01:51:13.175Z",
       "pending_summary": false,
       "first_seen": "2026-11-05T01:52:11.066Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.cej.2026.183862",
@@ -4116,7 +4173,7 @@
       "llm_at": "2026-11-05T01:52:40.475Z",
       "pending_summary": false,
       "first_seen": "2026-11-05T01:52:11.066Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1021/acs.jpcc.6c06480",
@@ -4170,7 +4227,7 @@
       "llm_at": "2026-11-05T01:52:38.148Z",
       "pending_summary": false,
       "first_seen": "2026-11-05T01:52:11.066Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1002/adma.75563",
@@ -4227,7 +4284,7 @@
       "llm_at": "2026-11-06T01:51:14.304Z",
       "pending_summary": false,
       "first_seen": "2026-11-05T01:52:11.066Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1002/nap2.70353",
@@ -4286,7 +4343,7 @@
       "llm_at": "2026-11-07T01:20:40.277Z",
       "pending_summary": false,
       "first_seen": "2026-11-05T01:52:11.066Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1103/4bhn-q6sj",
@@ -4343,7 +4400,7 @@
       "llm_at": "2026-11-06T01:51:16.153Z",
       "pending_summary": false,
       "first_seen": "2026-11-05T01:52:11.066Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1002/adom.72002",
@@ -4402,7 +4459,7 @@
       "llm_at": "2026-11-05T01:52:40.708Z",
       "pending_summary": false,
       "first_seen": "2026-11-04T01:43:57.739Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1088/1361-648x/aebd56",
@@ -4459,7 +4516,7 @@
       "llm_at": "2026-11-04T01:44:52.182Z",
       "pending_summary": false,
       "first_seen": "2026-11-04T01:43:57.739Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1103/3v5w-1k38",
@@ -4511,7 +4568,7 @@
       "llm_at": "2026-11-04T01:44:51.248Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-11-15T01:21:49.072Z",
+      "last_updated": "2026-11-16T01:27:08.674Z",
       "sources": [
         "openalex",
         "crossref"
@@ -4575,7 +4632,7 @@
       "llm_at": "2026-11-04T01:44:53.991Z",
       "pending_summary": false,
       "first_seen": "2026-11-03T03:06:37.434Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-16T01:27:08.674Z"
     },
     {
       "id": "10.1016/j.jlumin.2026.122308",
