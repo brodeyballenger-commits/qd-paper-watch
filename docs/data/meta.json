@@ -1,7 +1,7 @@
 {
   "project": "量子点器件前沿追踪",
-  "generated_at": "2026-11-16T01:27:08.674Z",
-  "count": 471,
+  "generated_at": "2026-11-17T04:12:53.856Z",
+  "count": 474,
   "window_days": 14,
   "directions": [
     {
@@ -32,20 +32,20 @@
   ],
   "highNoveltyThreshold": 4,
   "stats": {
-    "fetched": 1086,
-    "deduped": 629,
+    "fetched": 1074,
+    "deduped": 622,
     "out_of_window": 0,
-    "published": 463,
-    "published_dropped": 9,
-    "kept": 82,
-    "added": 1,
-    "updated": 2,
-    "unchanged": 79,
+    "published": 466,
+    "published_dropped": 10,
+    "kept": 84,
+    "added": 3,
+    "updated": 0,
+    "unchanged": 81,
     "preprint_merged": 0,
     "llm_generated": 3,
     "llm_failed": 0,
     "pending_summary": 0,
-    "qled_focus": 128
+    "qled_focus": 129
   },
   "source": "OpenAlex + Crossref + Semantic Scholar + arXiv",
   "sources": [
@@ -58,8 +58,8 @@
     {
       "source": "openalex",
       "ok": true,
-      "count": 176,
-      "total": 176,
+      "count": 174,
+      "total": 174,
       "dropped": 0,
       "partial": false,
       "error": null
@@ -68,32 +68,32 @@
       "source": "crossref",
       "ok": true,
       "count": 900,
-      "total": 3446,
+      "total": 3508,
       "dropped": 0,
       "partial": false,
       "error": null
     },
     {
       "source": "semanticscholar",
-      "ok": true,
-      "count": 10,
-      "total": 9,
-      "dropped": 0,
-      "partial": false,
-      "error": null
-    },
-    {
-      "source": "arxiv",
       "ok": false,
       "count": 0,
       "total": 0,
       "dropped": 0,
       "partial": false,
-      "error": "请求失败：arXiv「all:\"quantum dot\" AND all:\"light-emitting\"」。已重试 4 次，最后一次错误：The operation was aborted due to timeout"
+      "error": "请求失败：Semantic Scholar bulk「quantum dot electroluminescence device」第 1 页。已重试 4 次，最后一次错误：HTTP 429 :: {\"message\": \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form\", \"code\": \"429\"}"
+    },
+    {
+      "source": "arxiv",
+      "ok": true,
+      "count": 0,
+      "total": 0,
+      "dropped": 0,
+      "partial": false,
+      "error": null
     }
   ],
   "include_preprints": false,
-  "published_count": 463,
+  "published_count": 466,
   "preprint_count": 8,
   "summary_engine": "deepseek-chat"
 }
