@@ -1,7 +1,7 @@
 {
   "project": "量子点器件前沿追踪",
-  "generated_at": "2026-11-19T02:51:33.170Z",
-  "count": 482,
+  "generated_at": "2026-11-20T02:41:31.477Z",
+  "count": 490,
   "window_days": 14,
   "directions": [
     {
@@ -32,20 +32,20 @@
   ],
   "highNoveltyThreshold": 4,
   "stats": {
-    "fetched": 1095,
-    "deduped": 637,
+    "fetched": 1097,
+    "deduped": 646,
     "out_of_window": 0,
-    "published": 474,
-    "published_dropped": 8,
-    "kept": 82,
-    "added": 7,
-    "updated": 1,
-    "unchanged": 74,
+    "published": 482,
+    "published_dropped": 13,
+    "kept": 84,
+    "added": 8,
+    "updated": 4,
+    "unchanged": 72,
     "preprint_merged": 0,
-    "llm_generated": 8,
+    "llm_generated": 12,
     "llm_failed": 0,
     "pending_summary": 0,
-    "qled_focus": 132
+    "qled_focus": 134
   },
   "source": "OpenAlex + Crossref + Semantic Scholar + arXiv",
   "sources": [
@@ -58,8 +58,8 @@
     {
       "source": "openalex",
       "ok": true,
-      "count": 186,
-      "total": 186,
+      "count": 197,
+      "total": 197,
       "dropped": 0,
       "partial": false,
       "error": null
@@ -68,19 +68,19 @@
       "source": "crossref",
       "ok": true,
       "count": 900,
-      "total": 3580,
+      "total": 3587,
       "dropped": 0,
       "partial": false,
       "error": null
     },
     {
       "source": "semanticscholar",
-      "ok": true,
-      "count": 9,
-      "total": 7,
+      "ok": false,
+      "count": 0,
+      "total": 0,
       "dropped": 0,
       "partial": false,
-      "error": null
+      "error": "请求失败：Semantic Scholar bulk「quantum dot electroluminescence device」第 1 页。已重试 4 次，最后一次错误：HTTP 429 :: {\"message\": \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form\", \"code\": \"429\"}"
     },
     {
       "source": "arxiv",
@@ -93,7 +93,7 @@
     }
   ],
   "include_preprints": false,
-  "published_count": 474,
+  "published_count": 482,
   "preprint_count": 8,
   "summary_engine": "deepseek-chat"
 }
