@@ -1,7 +1,7 @@
 {
   "project": "量子点器件前沿追踪",
-  "generated_at": "2026-11-21T02:52:32.057Z",
-  "count": 492,
+  "generated_at": "2026-11-22T01:43:09.840Z",
+  "count": 493,
   "window_days": 14,
   "directions": [
     {
@@ -32,20 +32,20 @@
   ],
   "highNoveltyThreshold": 4,
   "stats": {
-    "fetched": 1110,
-    "deduped": 653,
+    "fetched": 1126,
+    "deduped": 660,
     "out_of_window": 0,
-    "published": 484,
+    "published": 485,
     "published_dropped": 13,
-    "kept": 83,
-    "added": 2,
-    "updated": 17,
-    "unchanged": 64,
+    "kept": 82,
+    "added": 1,
+    "updated": 2,
+    "unchanged": 79,
     "preprint_merged": 0,
-    "llm_generated": 19,
+    "llm_generated": 3,
     "llm_failed": 0,
     "pending_summary": 0,
-    "qled_focus": 135
+    "qled_focus": 136
   },
   "source": "OpenAlex + Crossref + Semantic Scholar + arXiv",
   "sources": [
@@ -58,8 +58,8 @@
     {
       "source": "openalex",
       "ok": true,
-      "count": 210,
-      "total": 210,
+      "count": 213,
+      "total": 213,
       "dropped": 0,
       "partial": true,
       "error": null
@@ -68,19 +68,19 @@
       "source": "crossref",
       "ok": true,
       "count": 900,
-      "total": 3612,
+      "total": 3641,
       "dropped": 0,
       "partial": false,
       "error": null
     },
     {
       "source": "semanticscholar",
-      "ok": false,
-      "count": 0,
-      "total": 0,
+      "ok": true,
+      "count": 13,
+      "total": 10,
       "dropped": 0,
       "partial": false,
-      "error": "请求失败：Semantic Scholar bulk「quantum dot electroluminescence device」第 1 页。已重试 4 次，最后一次错误：HTTP 429 :: {\"message\": \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form\", \"code\": \"429\"}"
+      "error": null
     },
     {
       "source": "arxiv",
@@ -93,7 +93,7 @@
     }
   ],
   "include_preprints": false,
-  "published_count": 484,
+  "published_count": 485,
   "preprint_count": 8,
   "summary_engine": "deepseek-chat"
 }
