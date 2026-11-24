@@ -1,7 +1,7 @@
 {
   "project": "量子点器件前沿追踪",
-  "generated_at": "2026-11-23T02:01:55.397Z",
-  "count": 493,
+  "generated_at": "2026-11-24T05:37:10.355Z",
+  "count": 497,
   "window_days": 14,
   "directions": [
     {
@@ -32,20 +32,20 @@
   ],
   "highNoveltyThreshold": 4,
   "stats": {
-    "fetched": 1130,
-    "deduped": 663,
+    "fetched": 1113,
+    "deduped": 651,
     "out_of_window": 0,
-    "published": 485,
-    "published_dropped": 12,
-    "kept": 83,
-    "added": 0,
-    "updated": 1,
-    "unchanged": 82,
+    "published": 489,
+    "published_dropped": 13,
+    "kept": 76,
+    "added": 4,
+    "updated": 9,
+    "unchanged": 63,
     "preprint_merged": 0,
-    "llm_generated": 1,
+    "llm_generated": 13,
     "llm_failed": 0,
     "pending_summary": 0,
-    "qled_focus": 136
+    "qled_focus": 137
   },
   "source": "OpenAlex + Crossref + Semantic Scholar + arXiv",
   "sources": [
@@ -58,17 +58,17 @@
     {
       "source": "openalex",
       "ok": true,
-      "count": 217,
-      "total": 217,
+      "count": 200,
+      "total": 200,
       "dropped": 0,
-      "partial": true,
+      "partial": false,
       "error": null
     },
     {
       "source": "crossref",
       "ok": true,
       "count": 900,
-      "total": 3665,
+      "total": 3679,
       "dropped": 0,
       "partial": false,
       "error": null
@@ -84,16 +84,16 @@
     },
     {
       "source": "arxiv",
-      "ok": false,
+      "ok": true,
       "count": 0,
       "total": 0,
       "dropped": 0,
       "partial": false,
-      "error": "请求失败：arXiv「abs:\"quantum dot\" AND (abs:electroluminescence OR abs:electroluminescent)」。已重试 4 次，最后一次错误：The operation was aborted due to timeout"
+      "error": null
     }
   ],
   "include_preprints": false,
-  "published_count": 485,
+  "published_count": 489,
   "preprint_count": 8,
   "summary_engine": "deepseek-chat"
 }
