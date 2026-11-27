@@ -1,7 +1,7 @@
 {
   "project": "量子点器件前沿追踪",
-  "generated_at": "2026-11-26T03:48:50.102Z",
-  "count": 512,
+  "generated_at": "2026-11-27T03:50:22.549Z",
+  "count": 523,
   "window_days": 14,
   "directions": [
     {
@@ -32,20 +32,20 @@
   ],
   "highNoveltyThreshold": 4,
   "stats": {
-    "fetched": 1114,
-    "deduped": 658,
+    "fetched": 1135,
+    "deduped": 674,
     "out_of_window": 0,
-    "published": 504,
-    "published_dropped": 14,
-    "kept": 86,
-    "added": 8,
-    "updated": 2,
-    "unchanged": 76,
+    "published": 515,
+    "published_dropped": 12,
+    "kept": 96,
+    "added": 11,
+    "updated": 3,
+    "unchanged": 82,
     "preprint_merged": 0,
-    "llm_generated": 10,
+    "llm_generated": 14,
     "llm_failed": 0,
     "pending_summary": 0,
-    "qled_focus": 143
+    "qled_focus": 148
   },
   "source": "OpenAlex + Crossref + Semantic Scholar + arXiv",
   "sources": [
@@ -58,8 +58,8 @@
     {
       "source": "openalex",
       "ok": true,
-      "count": 214,
-      "total": 214,
+      "count": 217,
+      "total": 217,
       "dropped": 0,
       "partial": true,
       "error": null
@@ -68,19 +68,19 @@
       "source": "crossref",
       "ok": true,
       "count": 900,
-      "total": 3888,
+      "total": 3922,
       "dropped": 0,
       "partial": false,
       "error": null
     },
     {
       "source": "semanticscholar",
-      "ok": false,
-      "count": 0,
-      "total": 0,
+      "ok": true,
+      "count": 18,
+      "total": 15,
       "dropped": 0,
       "partial": false,
-      "error": "请求失败：Semantic Scholar bulk「quantum dot light-emitting diode」第 1 页。已重试 4 次，最后一次错误：HTTP 429 :: {\"message\": \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form\", \"code\": \"429\"}"
+      "error": null
     },
     {
       "source": "arxiv",
@@ -93,7 +93,7 @@
     }
   ],
   "include_preprints": false,
-  "published_count": 504,
+  "published_count": 515,
   "preprint_count": 8,
   "summary_engine": "deepseek-chat"
 }
