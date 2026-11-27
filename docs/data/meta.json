@@ -1,7 +1,7 @@
 {
   "project": "量子点器件前沿追踪",
   "generated_at": "2026-11-27T03:50:22.549Z",
-  "count": 523,
+  "count": 520,
   "window_days": 14,
   "directions": [
     {
@@ -88,7 +88,7 @@
     }
   ],
   "include_preprints": false,
-  "published_count": 515,
+  "published_count": 512,
   "preprint_count": 8,
   "summary_engine": "deepseek-chat",
   "must_read": {

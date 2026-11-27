@@ -7,7 +7,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { DIRECTIONS, HIGH_NOVELTY_THRESHOLD, PROJECT_NAME } from './config.mjs';
-import { applyJournalMetrics, CAS_TIER_YEAR, JCR_YEAR, MUST_READ } from './journal-metrics.mjs';
+import { applyJournalMetrics, CAS_TIER_YEAR, JCR_YEAR, MUST_READ, nonResearchReason } from './journal-metrics.mjs';
 import { writeFileAtomic } from './util.mjs';
 
 const SITE_SRC = path.join(path.dirname(fileURLToPath(import.meta.url)), 'site');
@@ -40,8 +40,16 @@ export async function renderSite({ papers, meta, outDir, log = console.log }) {
   ]);
 
   // 账本可能来自旧版本的构建脚本（例如 GitHub Actions 用旧代码生成的
-  // docs/data/papers.json，里面没有 journal_if / journal_tier）。这里补一次打标：
-  // 只依赖刊名、幂等，命中不了的刊会清掉这两个字段。
+  // docs/data/papers.json），里面没有 journal_if / journal_tier，也没有剔除
+  // Nature 的 News & Views 这类非研究性条目。这里补做一次，幂等：
+  // 期刊指标只依赖刊名；非研究性判定只依赖标题 + 一小份手工 DOI 名单。
+  const researchPapers = papers.filter((p) => !nonResearchReason(p));
+  const pruned = papers.length - researchPapers.length;
+  if (pruned > 0) {
+    papers.length = 0;
+    papers.push(...researchPapers);
+    log(`   剔除非研究性条目：${pruned} 篇（评论/社论/勘误等）`);
+  }
   applyJournalMetrics(papers);
 
   const fullMeta = {

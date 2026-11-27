@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-11-27T03:50:22.549Z",
-  "count": 523,
+  "count": 520,
   "papers": [
     {
       "id": "10.1016/j.jallcom.2026.192499",
@@ -6877,61 +6877,6 @@
       "last_updated": "2026-11-19T02:51:33.170Z",
       "journal_if": 6.7,
       "journal_tier": 2
-    },
-    {
-      "id": "10.1021/acs.jpcc.6c05310",
-      "doi": "10.1021/acs.jpcc.6c05310",
-      "doi_url": "https://doi.org/10.1021/acs.jpcc.6c05310",
-      "title": "Comment on “Rewriting the Microscopic Framework for Optical Gain in Colloidal Quantum Dots”",
-      "title_zh": "评《重写胶体量子点光学增益的微观框架》",
-      "title_key": "commentonrewritingthemicroscopicframeworkforopticalgainincolloidalquantumdots",
-      "authors": [
-        "Victor I. Klimov"
-      ],
-      "venue": "The Journal of Physical Chemistry C",
-      "issn_l": "1932-7447",
-      "source_type": "journal",
-      "is_preprint": false,
-      "sources": [
-        "openalex"
-      ],
-      "published": true,
-      "published_source": "openalex",
-      "alt_doi": null,
-      "pub_date": "2026-11-05",
-      "pub_year": 2026,
-      "date_suspect": false,
-      "sort_date": "2026-11-05",
-      "oa_status": "bronze",
-      "pdf_url": "https://pubs.acs.org/jpccck/article-pdf/doi/10.1021/acs.jpcc.6c05310/69096403/acs.jpcc.6c05310.pdf",
-      "cited_by_count": 0,
-      "abstract": "reassesses what the authors term the \"conventional twolevel biexciton model\" of optical gain in colloidal quantum dots (CQDs) 2-5 and proposes an alternative \"Simple Model\" based on three-, four-, and five-level laser schemes.The purpose of this Comment is not to dispute the authors' right to propose an alternative theoretical framework.Rather, it documents multiple instances in which the Article misrepresents the established biexciton framework and the prior literature through incorrect attribution of scientific claims, altered figure captions, and factual errors.Throughout the Article, conclusions are repeatedly attributed to the biexciton model that are absent from both its original formulation and its subsequent development.As a result, the Article presents an inaccurate account of both the historical development and the physical foundations of CQD optical gain.",
-      "abstract_hash": "e0084195bafd9c693ac18017627729942fbe207622c90f85f1067396a8c9ea0f",
-      "abstract_source": "openalex",
-      "abstract_missing": false,
-      "directions": [
-        "display",
-        "materials"
-      ],
-      "novelty_score": 2,
-      "novelty_reason": "属于学术评论与纠错，不涉及新器件、新机制或新性能数据。",
-      "innovation_zh": "这是一篇 Comment（评论文章），不是原创研究。它针对原文提出的、用三/四/五能级激光方案替代所谓“传统双能级双激子模型”的“Simple Model”，逐条指出原文对既有双激子框架和前人文献的曲解：包括错误归因科学论断、改动图注、事实性错误，以及把双激子模型原本没有的结论反复算在它头上。评论本身不提出新理论，只是纠正原文对 CQD 光学增益历史发展和物理基础的失实叙述。",
-      "method_zh": "以文献考证和文本比对的方式，核查原文对双激子模型原始表述及后续发展的引用与图注是否准确。",
-      "keywords_zh": [
-        "胶体量子点",
-        "光学增益",
-        "双激子模型",
-        "学术评论",
-        "文献纠错"
-      ],
-      "summary_source": "llm",
-      "llm_model": "deepseek-chat",
-      "llm_at": "2026-11-08T00:57:05.705Z",
-      "pending_summary": false,
-      "first_seen": "2026-11-07T01:20:06.089Z",
-      "last_updated": "2026-11-19T02:51:33.170Z",
-      "journal_if": 3.3,
-      "journal_tier": 3
     },
     {
       "id": "10.1002/adom.72025",
@@ -15686,61 +15631,6 @@
       "journal_tier": 2
     },
     {
-      "id": "10.1038/s41565-026-02285-z",
-      "doi": "10.1038/s41565-026-02285-z",
-      "doi_url": "https://doi.org/10.1038/s41565-026-02285-z",
-      "title": "How display technology adopted quantum dots",
-      "title_zh": "显示技术如何采纳量子点",
-      "title_key": "howdisplaytechnologyadoptedquantumdots",
-      "authors": [
-        "Eunjoo Jang"
-      ],
-      "venue": "Nature Nanotechnology",
-      "issn_l": "1748-3387",
-      "source_type": "journal",
-      "is_preprint": false,
-      "sources": [
-        "crossref"
-      ],
-      "published": true,
-      "published_source": "crossref",
-      "alt_doi": null,
-      "pub_date": "2026-10-01",
-      "pub_year": 2026,
-      "date_suspect": false,
-      "sort_date": "2026-10-01",
-      "oa_status": null,
-      "pdf_url": null,
-      "cited_by_count": 0,
-      "abstract": null,
-      "abstract_hash": null,
-      "abstract_source": "none",
-      "abstract_missing": true,
-      "directions": [
-        "display",
-        "qled",
-        "materials"
-      ],
-      "novelty_score": 1,
-      "novelty_reason": "无摘要，无法评估创新性。",
-      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
-      "method_zh": "数据库未收录摘要，无法判断关键方法或器件结构。",
-      "keywords_zh": [
-        "量子点",
-        "显示技术",
-        "QLED",
-        "综述"
-      ],
-      "summary_source": "llm",
-      "llm_model": "deepseek-chat",
-      "llm_at": "2026-10-14T00:40:17.254Z",
-      "pending_summary": false,
-      "first_seen": "2026-10-14T00:39:56.708Z",
-      "last_updated": "2026-10-14T04:43:12.268Z",
-      "journal_if": 38.1,
-      "journal_tier": 1
-    },
-    {
       "id": "10.1016/j.nxmate.2026.103324",
       "doi": "10.1016/j.nxmate.2026.103324",
       "doi_url": "https://doi.org/10.1016/j.nxmate.2026.103324",
@@ -19883,59 +19773,6 @@
       "summary_source": "llm",
       "llm_model": "deepseek-chat",
       "llm_at": "2026-10-13T15:52:20.598Z",
-      "pending_summary": false,
-      "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-10-13T15:54:47.592Z",
-      "sources": [
-        "openalex"
-      ],
-      "published": true,
-      "published_source": "openalex",
-      "journal_if": 38.1,
-      "journal_tier": 1
-    },
-    {
-      "id": "10.1038/s41565-026-02278-y",
-      "doi": "10.1038/s41565-026-02278-y",
-      "doi_url": "https://doi.org/10.1038/s41565-026-02278-y",
-      "title": "Stretchable quantum dot displays achieve high definition",
-      "title_zh": "可拉伸量子点显示实现高分辨率",
-      "title_key": "stretchablequantumdotdisplaysachievehighdefinition",
-      "authors": [
-        "Feng Wang"
-      ],
-      "venue": "Nature Nanotechnology",
-      "issn_l": "1748-3387",
-      "source_type": "journal",
-      "is_preprint": false,
-      "alt_doi": null,
-      "pub_date": "2026-09-14",
-      "pub_year": 2026,
-      "date_suspect": false,
-      "sort_date": "2026-09-14",
-      "oa_status": "closed",
-      "pdf_url": null,
-      "cited_by_count": 0,
-      "abstract": null,
-      "abstract_hash": null,
-      "abstract_source": "none",
-      "abstract_missing": true,
-      "directions": [
-        "display"
-      ],
-      "novelty_score": 1,
-      "novelty_reason": "数据库未收录摘要，无法评估创新性。",
-      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
-      "method_zh": "数据库未收录摘要，无法判断关键方法或器件结构。",
-      "keywords_zh": [
-        "可拉伸显示",
-        "量子点",
-        "高分辨率",
-        "QLED"
-      ],
-      "summary_source": "llm",
-      "llm_model": "deepseek-chat",
-      "llm_at": "2026-10-13T15:52:21.064Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
       "last_updated": "2026-10-13T15:54:47.592Z",
