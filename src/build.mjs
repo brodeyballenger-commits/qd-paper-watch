@@ -21,6 +21,7 @@ import {
 } from './config.mjs';
 import { backfillAbstracts } from './abstract-backfill.mjs';
 import { loadEnv } from './env.mjs';
+import { applyJournalMetrics, nonResearchReason } from './journal-metrics.mjs';
 import { summarizePapers } from './llm.mjs';
 import { applyPublishedFieldsToLedger, applyPublishedGate, isPublishedWork } from './published.mjs';
 import { evaluateRelevance, isPreprint, isQledDevice } from './relevance.mjs';
@@ -184,6 +185,28 @@ async function main() {
   // 存量自愈：老记录（多源改造之前）补 sources / published，幂等
   const healed = applyPublishedFieldsToLedger(papers);
   if (healed) console.log(`   存量补标：${healed} 篇补上来源/见刊字段`);
+
+  // ---------- 4.4 剔除非研究性条目（评论 / 勘误 / 编者按） ----------
+  // 这类条目在 OpenAlex 和 Crossref 里都只是普通的 journal-article，没有任何结构化标记，
+  // 只能靠标题规则 + 手工黑名单识别。不剔除的话「必读栏」会挂上 Nature 的 News & Views。
+  // 注意这一步必须在 LLM 之前，否则会花钱给评论文章写总结。
+  let nonResearchPruned = 0;
+  const researchPapers = [];
+  const prunedPapers = [];
+  for (const p of papers) {
+    if (nonResearchReason(p)) prunedPapers.push(p);
+    else researchPapers.push(p);
+  }
+  if (prunedPapers.length) {
+    nonResearchPruned = prunedPapers.length;
+    papers.length = 0;
+    papers.push(...researchPapers);
+    console.log(`   剔除非研究性条目：${nonResearchPruned} 篇`);
+    for (const p of prunedPapers.slice(0, 5)) {
+      console.log(`      · ${p.doi ?? '?'} | ${String(p.title ?? '').slice(0, 64)}`);
+    }
+  }
+
   const publishedTotal = papers.filter((p) => p.published === true).length;
 
   // ---------- 4.5 主方向标签：量子点发光二极管（QD-LED） ----------
@@ -199,6 +222,24 @@ async function main() {
   }
   const qledTotal = papers.filter((p) => (p.directions ?? []).includes('qled')).length;
   console.log(`   主方向（量子点发光二极管）：${qledTotal} 篇${qledTagged ? `（本次补标 ${qledTagged} 篇）` : ''}`);
+
+  // ---------- 4.6 期刊指标：影响因子 / 分区（幂等、纯规则、不调 LLM、不花钱） ----------
+  // 只查 src/journal-metrics.mjs 的静态表（精确全等匹配）；表里没有的刊不打标。
+  // 前端「必读栏」直接读 journal_if / journal_tier 两个字段，改门槛不用重新抓取。
+  const journalTagged = applyJournalMetrics(papers);
+  const journalHit = papers.filter((p) => p.journal_if != null).length;
+  const tier1Total = papers.filter((p) => p.journal_tier === 1).length;
+  console.log(
+    `   期刊指标：命中 ${journalHit}/${papers.length} 篇（一区 ${tier1Total} 篇）${journalTagged ? `，本次补标 ${journalTagged} 篇` : ''}`,
+  );
+  if (journalTagged) {
+    const topIf = papers
+      .filter((p) => p.journal_if != null && p.journal_if >= 20)
+      .sort((a, b) => b.journal_if - a.journal_if)
+      .slice(0, 3)
+      .map((p) => `${p.venue} IF${p.journal_if}`);
+    if (topIf.length) console.log(`      本期影响因子最高的刊：${topIf.join('、')}`);
+  }
 
   // ---------- 5. 中文总结 ----------
   let llmReport = { stats: { pending: 0, generated: 0, fromCache: 0, failed: 0 }, skippedReason: 'dry-run' };
@@ -271,6 +312,9 @@ async function main() {
       llm_failed: llmReport.stats.failed,
       pending_summary: papers.filter((p) => p.pending_summary).length,
       qled_focus: qledFinal,
+      non_research_pruned: nonResearchPruned,
+      journal_metrics_hit: journalHit,
+      tier1_total: tier1Total,
     },
   };
 

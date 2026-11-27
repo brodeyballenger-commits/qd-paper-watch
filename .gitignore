@@ -17,3 +17,9 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# 设计技能（hallmark / tasteskill）的本地产物，不提交
+.hallmark/
+.taste-skill/
+src/site/.hallmark/
+docs/.hallmark/

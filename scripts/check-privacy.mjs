@@ -23,7 +23,7 @@ import { fileURLToPath } from 'node:url';
 import { scanText } from '../src/privacy.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const SKIP_DIRS = new Set(['.git', 'node_modules', '.cache', '.tmp', 'docs']);
+const SKIP_DIRS = new Set(['.git', 'node_modules', '.cache', '.tmp', 'docs', '.taste-skill', '.hallmark']);
 const SKIP_EXT = new Set([
   '.png', '.jpg', '.jpeg', '.gif', '.webp', '.ico', '.bmp', '.svgz',
   '.pdf', '.zip', '.gz', '.7z', '.woff', '.woff2', '.ttf', '.eot',

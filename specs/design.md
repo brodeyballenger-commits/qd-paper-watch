@@ -15,7 +15,7 @@
 **非目标**
 
 - 不做登录、不做多人协同标注（「已读」只存在各自浏览器里）。
-- 不做全文解析、不做影响因子/分区计算。
+- 不做全文解析。**影响因子与分区只用于「必读栏」的入选判定**（见 5.1），取自一张人工维护的静态表，不做实时查询、不做引文指标推算。
 - 不做论文推荐算法，只做「按时间 + 方向 + 创新度」的浏览与筛选。
 - 不收录与器件无关的量子点材料学、生物成像、化学传感论文。
 - 不收录**尚未见刊**的预印本（默认行为；`--include-preprints` 可手动放开）。
@@ -184,13 +184,14 @@ build.mjs
       "directions": ["qled", "display"], "novelty_score": 5, "novelty_reason": "…",
       "innovation_zh": "…", "method_zh": "…", "keywords_zh": ["…"],
       "summary_source": "llm", "llm_model": "deepseek-chat", "llm_at": "…",
+      "journal_if": 27.4, "journal_tier": 1,
       "pending_summary": false, "first_seen": "…", "last_updated": "…"
     }
   ]
 }
 ```
 
-`docs/data/meta.json` 供页面使用：`project` / `generated_at` / `count` / `window_days` / `directions` / `highNoveltyThreshold` / `stats` / `source` / `sources` / `source_stats` / `include_preprints` / `published_count` / `preprint_count` / `summary_engine`。
+`docs/data/meta.json` 供页面使用：`project` / `generated_at` / `count` / `window_days` / `directions` / `highNoveltyThreshold` / `stats` / `source` / `sources` / `source_stats` / `include_preprints` / `published_count` / `preprint_count` / `summary_engine` / `must_read`（必读栏规则，含 `windowDays` / `topMinIf` / `fallbackMinIf` / `fallbackMinNovelty` / `limit` / `jcr_year` / `cas_tier_year`）。
 
 ## 5. 站点
 
@@ -210,7 +211,54 @@ build.mjs
     `https://www.x-mol.com/paper/search/q?option=<标题>`、`https://xueshu.baidu.com/s?wd=<标题>`。
     这三个平台**不能作为数据源**：Google 学术无公开接口且禁止抓取，X-MOL / 百度学术的检索页是前端渲染 + 反爬（实测 X-MOL 只返回 7KB 的 Next.js 外壳、百度学术直接 403）。
     所以本站只做「按标题跳转检索」，不尝试搬运它们的条目，也不依赖它们做去重或补充元数据。
-- 样式使用 CSS 变量 + `prefers-color-scheme` 自动深色，620px 以下单列。
+- 界面是 2026-11 移植进来的 QD Paper Watch 版本（Tailwind CSS 构建），见 §5.2。
+- 每张卡片显示：期刊 + 日期 + 引用数 + 开放获取徽章 → **中文标题**（副标题给英文原标题）→ 作者 → 关键词条 → AI 创新点 / 研究方法 → `暂无公开摘要，可点击标题前往 DOI 原文查看` → 收藏 / 标记已读 / 引用 / 笔记 / `DOI 原文`。
+- 收藏、已读、笔记存 `localStorage`（键 `qd_watch_starred` / `qd_watch_read` / `qd_watch_notes`），主题偏好存 `qd_watch_theme`；三者都只在本机，不上传。
+
+### 5.1 必读栏（本期必读）
+
+顶部固定高亮的一栏，**收录近期高创新 + 顶刊论文**，插在 `section.controls` 之前，**不受下方任何筛选影响**（不参与 `matches()`）。
+
+**入选规则**（用户拍板：顶刊优先 + 高创新补足，永远有 6 张）
+
+1. 时间窗：锚点 + 往前 90 天。锚点取**账本里最大的 `first_seen`**，不是浏览器 `Date.now()`，也**不是 `sort_date`**——
+   - 用 `Date.now()`：站点几天不重建就整栏空掉；
+   - 用 `sort_date`：期刊常把「期号日期」填成未来某天（如 `2026-12-01`），锚点会被推到未来，窗口整体错位；
+   - `first_seen` 是本站第一次见到它的日期，永远 ≤ 当天，只有重新构建才前进。
+2. 优先池：`journal_tier === 1 && journal_if >= 20`，按 IF 降序 → 创新度降序 → 日期降序排序，取前 6。
+3. 补足池：优先池不足 6 张时，用 `journal_tier === 1 && journal_if >= 15 && novelty_score >= 4` 按创新度补足。
+4. 两个池都空时整栏 `hidden`，不占位、不显示空壳。
+
+**期刊指标从哪来**：`src/journal-metrics.mjs` 里一张**人工维护的静态表** `JOURNAL_METRICS`（约 132 条，`JCR_YEAR = 2023`、`CAS_TIER_YEAR = 2023`）。中科院分区表和 JCR 都没有开放 API，官方查询需要机构登录，所以只能静态维护；每年 6～7 月新 IF 发布后改 `JCR_YEAR` / `CAS_TIER_YEAR` 和数值即可，其余代码不动。表里没有的刊一律视为「未收录」，宁可漏收不可错收。
+
+**为什么必须精确全等匹配**：`Advanced Materials Technologies` 会被 `advanced materials` 前缀吞成 IF 27.4 混进必读栏；`Materials Today Communications` / `Materials Today Nano` 同理会被 `materials today` 吞掉。所以 `lookupJournal()` 只做 `normalizeVenue()` 之后的**精确全等**，唯一例外是刊名含 `/` 时按 `/` 切开逐段重试（兼容脏数据 `Physical review. B./Physical review. B`）。`normalizeVenue()` 负责解码 HTML 实体（`&amp;`）、把各种 Unicode 连字符折成 ASCII `-`、**把冒号折成空格**、压缩空白、去尾部 `[.,;]`。
+
+**排除非研究性条目**：Nature 系的 News & Views / Commentary 也带 `type: journal-article`，OpenAlex 与 Crossref 都没有任何结构化字段能区分评论与研究论文，只能靠标题规则 `NON_RESEARCH_TITLE_PATTERNS` + 手工 DOI 黑名单 `MANUAL_EXCLUDE_DOIS`。过滤放在**调 LLM 之前**（build.mjs 4.4），否则会花钱给评论写中文总结。标题规则故意**不含 `review` / `perspective`**——综述对追踪领域有价值，保留。
+
+**数据流**：`applyJournalMetrics()`（build.mjs 4.6）幂等补标 `journal_if` / `journal_tier`，不调 LLM、不花钱；`MUST_READ` 规则经 `render.mjs` 写进 `meta.must_read`（含 `jcr_year` / `cas_tier_year`），前端只读，**改门槛只需重建站点，不用重新抓取**。面板本身由 `renderMustReadRow()` 渲染成一行目次（`.must-row`：排行号 + 中文标题 + 英文原标题 + 一行创新点摘要 + 右侧等宽 IF 数字与刊名；顶刊行的 IF 用 `--accent-ink`，补足行用 `--muted`，颜色只落在数据上）。
+
+**摘要是摘录不是全文**：无摘要的条目在英文原标题后接一句 `· 未收录摘要`（不额外占一行，避免把论文列表挤出首屏）；有摘要的两行摘录用 `clipText(why, 120)` **在 JS 里截断**，不用 `-webkit-line-clamp` 或 `max-height` 裁剪——CSS 裁剪会让被裁掉的行仍然参与 `Range.getBoundingClientRect()`，被 Hallmark 的 gate 73 判成「文字压到别的元素上」。
+
+**已知取舍**：近 30 天 IF>20 的论文实测是 **0 篇**（该领域顶刊大多 IF 在 10–20：Nano Letters 9.6、JACS 14.4、ACS Nano 15.8、AFM 18.5、Angew 16.1），90 天也只有 6 篇，所以必须靠补足池兜底，否则这一栏大多数时候是空的。
+
+### 5.2 界面（QD Paper Watch，2026-11 改版）
+
+界面由用户重写的一版移植进来（Tailwind CSS 构建），**数据仍由 `src/build.mjs` 生成，`src/site/` 仍是唯一真源**。移植时做三件事：数据源从「浏览器直连 OpenAlex」换成读 `data/papers.json`、把本项目独有的字段接进卡片、把过滤 / 排序 / 中文总结 / 必读栏接回管线。
+
+**技术栈**：Tailwind Play CDN（`cdn.tailwindcss.com`）+ Lucide 图标（`unpkg.com/lucide@latest`）+ Google Fonts（Inter / Noto Sans SC）。`src/site/style.css` 只剩约 60 行补充：`.line-clamp-*` 的 `-webkit-box` 兜底、系统字体兜底、细滚动条、打印时隐藏 header / footer / 数据源面板 / 必读栏。这三处第三方请求是 §8.3 的**显式豁免**；实测均可达（677ms / 1007ms / 354ms）。
+
+**数据入口**：`loadSiteData()` 用 `Promise.all` 拉 `data/papers.json` 与 `data/meta.json`（meta 失败不阻断），徽章显示「本地构建数据 · N 篇 · 更新于 MM/DD HH:mm」。**页面不直连任何数据库**——早先那版在浏览器里直连 OpenAlex，实测拉回来的是 EOM-CCSD、X 射线散射、辣木叶提取物之类与量子点无关的论文，日期还全是 `2027-01-01`。这正是相关性闸门必须在构建期跑、不能挪到浏览器的原因。
+
+**页面结构**：顶栏（标记 + 产品名 + 数据源徽章 + 导出）→ 四张 KPI（当前文库 / 收藏待读 / 阅读进度 / 顶刊精选）→ 本期必读（§5.1）→ 搜索与筛选（搜索框、状态切换「全部 / 收藏待读 / 未读 / 已读」、排序、8 个方向胶囊）→ 论文卡片流 → 页脚数据源链接。
+
+**保留下来的管线能力**：六源合并、相关性闸门、见刊闸门、摘要兜底、中文总结、顶刊 IF 与分区、本期必读栏。**没有搬过来的**：那版自带的 5 条演示数据（DOI 是编的，如 `10.1038/s41566-026-00001-x`，已整块删除）、浏览器直连 OpenAlex 的检索面板、以及它不做任何相关性 / 见刊过滤的行为。
+
+**移植时修掉的三个数据层问题**：
+- **日期落到未来**：期刊把期号日期填到未来（`2027-01-01`），照原样显示会让人以为论文来自未来。新增 `display_date`：`date_suspect` 为真时用 `sort_date`，否则 `pub_date || sort_date`。
+- **摘要套话**：无摘要的论文，模型会把 `innovation_zh` 写成「数据库未收录摘要，建议直接查看原文。」。`isRealSummary()` 把这类句子判为假，卡片改显「暂无公开摘要，可点击标题前往 DOI 原文查看」。
+- **一次渲染过重**：408 张卡一次 `innerHTML` 约 4.5MB。列表默认只渲染 60 张，底部「再显示 60 篇（还有 N 篇）」按钮追加；筛选签名变化时重置回 60。实测 DOM 从 4.56MB 降到 0.60MB。
+
+**旧设计已移除**：上一版（Hallmark 重设计，commit `cef9d0b`）的 `:root` token 系统、日期栏、必读目次面板随这次改版整份删除，`style.css` 里的 Hallmark stamp 也一并删掉——页面已不符合那套 floor，留着 stamp 才是不诚实的。
 
 ## 6. 自动化
 
@@ -239,9 +287,10 @@ CI 用到的 Secret：`DEEPSEEK_API_KEY`（中文总结，必需）；`SEMANTIC_
 - `sources`：`resolveSources` 默认/显式/自动追加 scholar/未知源报错/空列表报错、`dedupeCandidates` 的同 DOI 合并、摘要取长、预印本 DOI 让位、缺字段丢弃、合并后索引修正；
 - `abstract-backfill`：缺摘要候选的收集（去重、短摘要视为缺、缺 DOI 跳过）、OpenAlex `filter=doi:` URL 构造、S2 命中写 `semanticscholar`、剩下交给 OpenAlex 倒排索引、两接口都失败不崩、没有候选时不发请求、同一 DOI 的多条记录一起补；
 - `llm`：缓存键、JSON 容错解析、字段归一化、无 key 跳过、命中缓存、真实请求体与鉴权头（注入假 fetch）、单篇失败不影响整轮；
+- `journal-metrics`：`normalizeVenue` 的实体解码 / 连字符归一 / 冒号折空格 / 尾部标点与空格、`lookupJournal` 常见刊与大小写空格差异、**绝不前缀匹配**（`Advanced Materials Technologies` 必须是 6.8 而不是 27.4）、脏数据 `A./A.` 按 `/` 切开重试、仓储名（Zenodo / 大学机构库）不算刊、表键必须等于自身归一化结果、`MUST_READ` 数值自洽、`nonResearchReason` 正反例、`applyJournalMetrics` 的幂等与「查不到就删字段」；
 - `privacy`：七条规则各自命中、白名单邮箱不误报、掩码不泄露原文、同行多处命中与行列号、正常内容（cron/长哈希/长数字/网址里的 `/home/`）不误报、非字符串输入、重复扫描一致、**仓库自己的源码通过自检**、`.gitignore` 必须包含密钥与缓存目录。
 
-共 120 个用例。敏感串在测试里一律用拼接构造（`'sk-' + 'a1b…'`），否则测试文件自己会被隐私自检判为泄露。
+共 148 个用例。敏感串在测试里一律用拼接构造（`'sk-' + 'a1b…'`），否则测试文件自己会被隐私自检判为泄露。
 
 > 本机沙箱下 `node --test`（目录形式）会因为需要 spawn 子进程而 `EPERM`，可以用
 > `node --test --test-isolation=none test/util.test.mjs test/abstract.test.mjs …`（显式列出全部用例文件，**不能给目录**）在单进程里跑完整套。
@@ -277,7 +326,7 @@ DeepSeek 的真实调用不在单测里（需要用真 key），首次填好 key
 ### 8.3 身份
 
 - 提交身份统一为 GitHub 的 noreply 邮箱，历史里不出现真实邮箱。
-- 页面零第三方脚本/字体/统计，无作者名与联系方式。
+- 页面只允许三处第三方请求：Tailwind Play CDN、Lucide 图标、Google Fonts（Inter / Noto Sans SC），见 §5.2。**不引入任何分析 / 统计 / 追踪脚本**，无作者名与联系方式。
 - CI 第一步 `node scripts/check-privacy.mjs --history`（`actions/checkout` 带 `fetch-depth: 0` 才有完整历史）失败即不发布。
 - 剩余的「元数据侧」暴露面（托管账号的其他公开仓库等）属于账号层面的选择，见 README 第 8 节的三个档位。
 

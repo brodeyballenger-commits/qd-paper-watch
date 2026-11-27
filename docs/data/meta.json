@@ -6,28 +6,23 @@
   "directions": [
     {
       "id": "qled",
-      "label": "量子点发光二极管",
-      "color": "#e11d48"
+      "label": "量子点发光二极管"
     },
     {
       "id": "display",
-      "label": "显示与发光",
-      "color": "#f59e0b"
+      "label": "显示与发光"
     },
     {
       "id": "detection",
-      "label": "光电探测与光伏",
-      "color": "#10b981"
+      "label": "光电探测与光伏"
     },
     {
       "id": "quantuminfo",
-      "label": "量子信息器件",
-      "color": "#6366f1"
+      "label": "量子信息器件"
     },
     {
       "id": "materials",
-      "label": "材料与合成",
-      "color": "#ec4899"
+      "label": "材料与合成"
     }
   ],
   "highNoveltyThreshold": 4,
@@ -95,5 +90,14 @@
   "include_preprints": false,
   "published_count": 515,
   "preprint_count": 8,
-  "summary_engine": "deepseek-chat"
+  "summary_engine": "deepseek-chat",
+  "must_read": {
+    "windowDays": 90,
+    "topMinIf": 20,
+    "fallbackMinIf": 15,
+    "fallbackMinNovelty": 4,
+    "limit": 6,
+    "jcr_year": 2023,
+    "cas_tier_year": 2023
+  }
 }

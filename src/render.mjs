@@ -7,6 +7,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { DIRECTIONS, HIGH_NOVELTY_THRESHOLD, PROJECT_NAME } from './config.mjs';
+import { applyJournalMetrics, CAS_TIER_YEAR, JCR_YEAR, MUST_READ } from './journal-metrics.mjs';
 import { writeFileAtomic } from './util.mjs';
 
 const SITE_SRC = path.join(path.dirname(fileURLToPath(import.meta.url)), 'site');
@@ -38,12 +39,18 @@ export async function renderSite({ papers, meta, outDir, log = console.log }) {
     readSiteFile('style.css'),
   ]);
 
+  // 账本可能来自旧版本的构建脚本（例如 GitHub Actions 用旧代码生成的
+  // docs/data/papers.json，里面没有 journal_if / journal_tier）。这里补一次打标：
+  // 只依赖刊名、幂等，命中不了的刊会清掉这两个字段。
+  applyJournalMetrics(papers);
+
   const fullMeta = {
     project: PROJECT_NAME,
     generated_at: meta.generated_at ?? new Date().toISOString(),
     count: papers.length,
     window_days: meta.window_days ?? null,
-    directions: DIRECTIONS,
+    // 只下发前端用得到的字段：配色在设计系统里，不在数据里。
+    directions: DIRECTIONS.map(({ id, label }) => ({ id, label })),
     highNoveltyThreshold: HIGH_NOVELTY_THRESHOLD,
     stats: meta.stats ?? {},
     source: meta.source ?? 'OpenAlex',
@@ -53,6 +60,13 @@ export async function renderSite({ papers, meta, outDir, log = console.log }) {
     published_count: papers.filter((p) => p.published === true).length,
     preprint_count: papers.filter((p) => p.published === false).length,
     summary_engine: meta.summary_engine ?? null,
+    // 「必读栏」的筛选规则随数据一起发布，前端只读不算：
+    // 改门槛只改 src/journal-metrics.mjs，不用重新抓取，重建一次站点即可。
+    must_read: {
+      ...MUST_READ,
+      jcr_year: JCR_YEAR,
+      cas_tier_year: CAS_TIER_YEAR,
+    },
   };
 
   // 1) GitHub Pages 版（外链资源）

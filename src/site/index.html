@@ -1,78 +1,428 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" class="antialiased">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>量子点器件前沿追踪</title>
-<meta name="description" content="自动汇总最新发表的量子点器件论文，主方向是量子点发光二极管（QD-LED），并用中文说清每篇做了什么、创新点在哪。">
-<link rel="stylesheet" href="assets/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QD Paper Watch · 量子点文献追踪站</title>
+
+  <!-- Google Fonts: Inter & Noto Sans SC -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // 配置 Tailwind 主题与深色模式策略
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', '"Noto Sans SC"', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace']
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body>
-<header class="site-header">
-  <div class="wrap header-inner">
-    <div class="brand">
-      <h1>量子点器件前沿追踪</h1>
-      <p class="subtitle" id="subtitle">正在加载…</p>
+<body class="bg-[#F8FAFC] text-slate-900 dark:bg-slate-950 dark:text-slate-100 font-sans min-h-screen transition-colors duration-200 selection:bg-indigo-100 selection:text-indigo-900 dark:selection:bg-indigo-900/60 dark:selection:text-indigo-100">
+
+  <!-- ==================== 顶部极简导航栏 ==================== -->
+  <header class="sticky top-0 z-30 bg-white/85 dark:bg-slate-900/85 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+      <!-- 左侧品牌标识 -->
+      <div class="flex items-center gap-3 min-w-0">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-indigo-600 via-violet-600 to-emerald-500 p-[1px] shadow-sm shrink-0">
+          <div class="w-full h-full rounded-[11px] bg-white dark:bg-slate-900 flex items-center justify-center">
+            <!-- 量子点发光核壳结构极简 SVG 图标 -->
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="9" class="stroke-indigo-500/30 dark:stroke-indigo-400/30" stroke-width="1.5" stroke-dasharray="3 2" />
+              <circle cx="12" cy="12" r="5.5" class="stroke-indigo-600 dark:stroke-indigo-400" stroke-width="1.75" />
+              <circle cx="12" cy="12" r="2.2" class="fill-emerald-500" />
+            </svg>
+          </div>
+        </div>
+        <div class="truncate">
+          <div class="flex items-center gap-2">
+            <h1 class="text-base sm:text-lg font-bold tracking-tight text-slate-900 dark:text-white truncate">QD Paper Watch</h1>
+            <span class="hidden sm:inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-medium bg-indigo-50 text-indigo-700 border border-indigo-200/60 dark:bg-indigo-950/60 dark:text-indigo-300 dark:border-indigo-800/60">
+              量子点文献追踪站
+            </span>
+          </div>
+          <p id="dataSourceBadge" class="text-[11px] text-slate-500 dark:text-slate-400 truncate flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block"></span>
+            <span>正在初始化文献源...</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- 右侧操作按钮组 -->
+      <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
+        <!-- 展开/收起同步与导入面板 -->
+        <button id="toggleSyncPanelBtn" type="button" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs sm:text-sm font-medium text-slate-700 dark:text-slate-200 bg-slate-100/80 hover:bg-slate-200/70 dark:bg-slate-800 dark:hover:bg-slate-700/80 border border-slate-200/80 dark:border-slate-700 transition-colors cursor-pointer">
+          <i data-lucide="refresh-cw" class="w-4 h-4 text-indigo-600 dark:text-indigo-400"></i>
+          <span class="hidden sm:inline">检索 / 导入</span>
+        </button>
+
+        <!-- 导出中心 -->
+        <button id="openExportBtn" type="button" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs sm:text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 shadow-sm transition-colors cursor-pointer">
+          <i data-lucide="download" class="w-4 h-4"></i>
+          <span class="hidden sm:inline">导出文献</span>
+        </button>
+
+        <!-- 浅色/深色主题切换 -->
+        <button id="themeToggleBtn" type="button" aria-label="切换深浅色主题" class="p-2 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 border border-transparent hover:border-slate-200 dark:hover:border-slate-700 transition-colors cursor-pointer">
+          <i data-lucide="moon" class="w-4 h-4 block dark:hidden"></i>
+          <i data-lucide="sun" class="w-4 h-4 hidden dark:block text-amber-400"></i>
+        </button>
+      </div>
     </div>
-    <div class="header-actions">
-      <span class="stat" id="stat-count"></span>
-      <span class="stat" id="stat-updated"></span>
+  </header>
+
+  <!-- ==================== 主内容容器 ==================== -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-6 space-y-5">
+
+    <!-- 1. 紧凑型 KPI 统计栏 -->
+    <section aria-label="文献统计概览" class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+      <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/80 dark:border-slate-800 p-4 shadow-sm flex items-center justify-between">
+        <div>
+          <p class="text-xs font-medium text-slate-500 dark:text-slate-400">当前文献库</p>
+          <div class="mt-1 flex items-baseline gap-1.5">
+            <span id="statTotal" class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">0</span>
+            <span id="statFilteredHint" class="text-xs text-slate-400 dark:text-slate-500">篇</span>
+          </div>
+        </div>
+        <div class="w-10 h-10 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 flex items-center justify-center text-indigo-600 dark:text-indigo-400">
+          <i data-lucide="library" class="w-5 h-5"></i>
+        </div>
+      </div>
+
+      <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/80 dark:border-slate-800 p-4 shadow-sm flex items-center justify-between">
+        <div>
+          <p class="text-xs font-medium text-slate-500 dark:text-slate-400">收藏待读</p>
+          <div class="mt-1 flex items-baseline gap-1.5">
+            <span id="statStarred" class="text-2xl font-bold tracking-tight text-amber-600 dark:text-amber-400">0</span>
+            <span class="text-xs text-slate-400 dark:text-slate-500">篇星标</span>
+          </div>
+        </div>
+        <div class="w-10 h-10 rounded-xl bg-amber-50 dark:bg-amber-950/50 flex items-center justify-center text-amber-500">
+          <i data-lucide="star" class="w-5 h-5"></i>
+        </div>
+      </div>
+
+      <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/80 dark:border-slate-800 p-4 shadow-sm flex flex-col justify-between">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="text-xs font-medium text-slate-500 dark:text-slate-400">阅读进度</p>
+            <div class="mt-1 flex items-baseline gap-1.5">
+              <span id="statRead" class="text-2xl font-bold tracking-tight text-emerald-600 dark:text-emerald-400">0</span>
+              <span id="statReadPct" class="text-xs text-slate-400 dark:text-slate-500">0%</span>
+            </div>
+          </div>
+          <div class="w-10 h-10 rounded-xl bg-emerald-50 dark:bg-emerald-950/50 flex items-center justify-center text-emerald-600 dark:text-emerald-400">
+            <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+          </div>
+        </div>
+        <div class="mt-2.5 w-full bg-slate-100 dark:bg-slate-800 rounded-full h-1.5 overflow-hidden">
+          <div id="statReadBar" class="bg-emerald-500 h-1.5 rounded-full transition-all duration-300" style="width: 0%"></div>
+        </div>
+      </div>
+
+      <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/80 dark:border-slate-800 p-4 shadow-sm flex items-center justify-between">
+        <div>
+          <p class="text-xs font-medium text-slate-500 dark:text-slate-400">顶刊精选</p>
+          <div class="mt-1 flex items-baseline gap-1.5">
+            <span id="statTopJournal" class="text-2xl font-bold tracking-tight text-violet-600 dark:text-violet-400">0</span>
+            <span class="text-xs text-slate-400 dark:text-slate-500">Nature/AM 等</span>
+          </div>
+        </div>
+        <div class="w-10 h-10 rounded-xl bg-violet-50 dark:bg-violet-950/50 flex items-center justify-center text-violet-600 dark:text-violet-400">
+          <i data-lucide="award" class="w-5 h-5"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1.5 本期必读 -->
+    <section id="mustReadSection" class="hidden bg-gradient-to-br from-indigo-50/70 via-white to-white dark:from-indigo-950/30 dark:via-slate-900 dark:to-slate-900 rounded-2xl border border-indigo-200/70 dark:border-indigo-900/60 shadow-sm overflow-hidden" aria-label="本期必读">
+      <div class="flex flex-wrap items-baseline justify-between gap-2 px-4 pt-4 pb-3 border-b border-indigo-100/80 dark:border-indigo-900/50">
+        <h2 class="text-sm font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+          <i data-lucide="star" class="w-4 h-4 text-amber-500"></i>
+          本期必读
+        </h2>
+        <p id="mustReadNote" class="text-[11px] text-slate-500 dark:text-slate-400"></p>
+      </div>
+      <ol id="mustReadList" class="divide-y divide-indigo-100/80 dark:divide-indigo-900/50"></ol>
+    </section>
+
+    <!-- 2. 数据源说明与本地 JSON 导入面板 -->
+    <section id="syncPanel" class="hidden bg-white dark:bg-slate-900 rounded-2xl border border-indigo-200/80 dark:border-indigo-900/70 p-4 sm:p-5 shadow-sm space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800 pb-3">
+        <div>
+          <h2 class="text-sm font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+            <i data-lucide="globe" class="w-4 h-4 text-indigo-600 dark:text-indigo-400"></i>
+            数据源与本地导入
+          </h2>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+            本页读取 GitHub Actions（或本机 <code class="px-1 py-0.5 rounded bg-slate-100 dark:bg-slate-800 font-mono text-[11px]">npm run update</code>）生成的 <code class="px-1 py-0.5 rounded bg-slate-100 dark:bg-slate-800 font-mono text-[11px]">data/papers.json</code>，不直连任何数据库。
+          </p>
+        </div>
+        <button id="closeSyncPanelBtn" type="button" class="self-end sm:self-auto text-xs text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1 rounded-lg cursor-pointer">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <!-- 本地构建数据操作 -->
+      <div class="flex flex-wrap items-center justify-between gap-3 pt-1">
+        <p class="text-xs text-slate-500 dark:text-slate-400">
+          页面只展示 <code class="px-1 py-0.5 rounded bg-slate-100 dark:bg-slate-800 font-mono text-[11px]">data/papers.json</code>：这份数据已经过六源合并、去重、见刊闸门、相关性过滤与 AI 中文总结。
+        </p>
+        <div class="flex flex-wrap items-center gap-2 shrink-0">
+          <button id="reloadDataBtn" type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-medium text-slate-700 dark:text-slate-200 bg-slate-100 hover:bg-slate-200/80 dark:bg-slate-800 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 transition-colors cursor-pointer">
+            <i data-lucide="file-json" class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400"></i>
+            <span>重新读取 data/papers.json</span>
+          </button>
+          <label class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-medium text-slate-700 dark:text-slate-200 bg-slate-100 hover:bg-slate-200/80 dark:bg-slate-800 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 transition-colors cursor-pointer">
+            <i data-lucide="upload" class="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400"></i>
+            <span>上传本地 JSON</span>
+            <input id="localJsonFileInput" type="file" accept=".json,application/json" class="hidden" />
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 智能搜索、领域快捷标签与状态筛选栏 -->
+    <section class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/80 dark:border-slate-800 p-4 shadow-sm space-y-3.5">
+      <!-- 第一行：本地实时搜索 + 状态筛选 + 排序 -->
+      <div class="flex flex-col lg:flex-row gap-3">
+        <!-- 实时关键词过滤 -->
+        <div class="relative flex-1">
+          <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+          <input
+            id="searchInput"
+            type="text"
+            placeholder="实时筛选标题、作者、期刊、摘要或个人笔记（如 EQE, ZnMgO, Nature）..."
+            class="w-full pl-10 pr-9 py-2.5 rounded-xl text-sm bg-slate-50 dark:bg-slate-800/70 border border-slate-200/90 dark:border-slate-700/80 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/30 focus:border-indigo-500 transition-all"
+          />
+          <button id="clearSearchBtn" type="button" aria-label="清空搜索" class="hidden absolute right-2.5 top-1/2 -translate-y-1/2 p-1 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 cursor-pointer">
+            <i data-lucide="x" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+        <!-- 阅读状态切换 + 排序选择 -->
+        <div class="flex flex-wrap sm:flex-nowrap items-center gap-2.5">
+          <div class="inline-flex p-1 rounded-xl bg-slate-100 dark:bg-slate-800/90 border border-slate-200/60 dark:border-slate-700/60 w-full sm:w-auto justify-between sm:justify-start">
+            <button type="button" data-status="all" class="status-filter-btn flex-1 sm:flex-none px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer">全部</button>
+            <button type="button" data-status="starred" class="status-filter-btn flex-1 sm:flex-none px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer">收藏待读</button>
+            <button type="button" data-status="unread" class="status-filter-btn flex-1 sm:flex-none px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer">未读</button>
+            <button type="button" data-status="read" class="status-filter-btn flex-1 sm:flex-none px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer">已读</button>
+          </div>
+
+          <div class="relative w-full sm:w-auto">
+            <select id="sortSelect" aria-label="排序方式" class="w-full sm:w-auto appearance-none pl-3.5 pr-9 py-2.5 rounded-xl text-xs font-medium bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500/30 cursor-pointer">
+              <option value="date_desc">按最新发表排序</option>
+              <option value="citations_desc">按最多引用排序</option>
+            </select>
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-slate-400 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- 第二行：量子点细分方向快捷筛选胶囊 -->
+      <div id="topicPillsContainer" class="flex flex-wrap items-center gap-2 pt-1 border-t border-slate-100 dark:border-slate-800/80">
+        <!-- 由 JS 动态渲染 -->
+      </div>
+    </section>
+
+    <!-- 4. 加载骨架屏 -->
+    <section id="loadingSkeleton" class="hidden space-y-4">
+      <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/80 dark:border-slate-800 p-5 animate-pulse space-y-3">
+        <div class="flex gap-2">
+          <div class="h-5 w-28 bg-slate-200 dark:bg-slate-800 rounded-full"></div>
+          <div class="h-5 w-20 bg-slate-200 dark:bg-slate-800 rounded-full"></div>
+        </div>
+        <div class="h-6 w-3/4 bg-slate-200 dark:bg-slate-800 rounded-lg"></div>
+        <div class="h-4 w-1/2 bg-slate-100 dark:bg-slate-800/70 rounded-lg"></div>
+        <div class="h-12 w-full bg-slate-100 dark:bg-slate-800/60 rounded-xl"></div>
+      </div>
+      <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/80 dark:border-slate-800 p-5 animate-pulse space-y-3">
+        <div class="flex gap-2">
+          <div class="h-5 w-32 bg-slate-200 dark:bg-slate-800 rounded-full"></div>
+          <div class="h-5 w-24 bg-slate-200 dark:bg-slate-800 rounded-full"></div>
+        </div>
+        <div class="h-6 w-4/5 bg-slate-200 dark:bg-slate-800 rounded-lg"></div>
+        <div class="h-4 w-2/5 bg-slate-100 dark:bg-slate-800/70 rounded-lg"></div>
+        <div class="h-12 w-full bg-slate-100 dark:bg-slate-800/60 rounded-xl"></div>
+      </div>
+    </section>
+
+    <!-- 5. 文献卡片列表容器 -->
+    <section id="paperList" class="space-y-4" aria-live="polite">
+      <!-- 文献卡片由 JS 动态渲染 -->
+    </section>
+
+    <!-- 6. 空状态提示 -->
+    <section id="emptyState" class="hidden bg-white dark:bg-slate-900 rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 p-10 text-center space-y-3">
+      <div class="w-12 h-12 mx-auto rounded-2xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-400">
+        <i data-lucide="search-x" class="w-6 h-6"></i>
+      </div>
+      <h3 class="text-base font-semibold text-slate-800 dark:text-slate-200">未找到匹配的文献</h3>
+      <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 max-w-md mx-auto">
+        请尝试清空搜索关键词、切换研究方向标签，或点击顶部「检索 / 导入」拉取其他主题的实时论文。
+      </p>
+      <button id="resetFiltersBtn" type="button" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-medium text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/60 hover:bg-indigo-100 dark:hover:bg-indigo-900/60 transition-colors cursor-pointer">
+        <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i>
+        <span>重置所有筛选条件</span>
+      </button>
+    </section>
+
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="max-w-6xl mx-auto px-4 sm:px-6 py-8 text-center text-xs text-slate-400 dark:text-slate-500">
+    <p>QD Paper Watch · 专为量子点与光电器件研究者打造的轻量级文献追踪工作台 · 数据源自 OpenAlex / 本地 JSON</p>
+        <p class="text-[11px] text-slate-400 dark:text-slate-500">
+        数据源
+        <a class="underline hover:text-slate-600 dark:hover:text-slate-300" href="https://api.openalex.org" target="_blank" rel="noopener">OpenAlex</a>
+        <a class="underline hover:text-slate-600 dark:hover:text-slate-300" href="https://www.crossref.org" target="_blank" rel="noopener">Crossref</a>
+        <a class="underline hover:text-slate-600 dark:hover:text-slate-300" href="https://api.semanticscholar.org" target="_blank" rel="noopener">Semantic Scholar</a>
+        <a class="underline hover:text-slate-600 dark:hover:text-slate-300" href="https://arxiv.org" target="_blank" rel="noopener">arXiv</a>
+        · 在别处查
+        <a class="underline hover:text-slate-600 dark:hover:text-slate-300" href="https://scholar.google.com" target="_blank" rel="noopener">Google 学术</a>
+        <a class="underline hover:text-slate-600 dark:hover:text-slate-300" href="https://www.x-mol.com" target="_blank" rel="noopener">X-MOL</a>
+        <a class="underline hover:text-slate-600 dark:hover:text-slate-300" href="https://xueshu.baidu.com" target="_blank" rel="noopener">百度学术</a>
+      </p>
+  </footer>
+
+  <!-- ==================== 模态框 1：一键引用复制 ==================== -->
+  <div id="citationModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/50 dark:bg-black/70 backdrop-blur-xs">
+    <div class="bg-white dark:bg-slate-900 w-full max-w-2xl rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl overflow-hidden flex flex-col max-h-[90vh]">
+      <div class="px-5 py-4 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between gap-3">
+        <div class="flex items-center gap-2 min-w-0">
+          <div class="w-8 h-8 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0">
+            <i data-lucide="quote" class="w-4 h-4"></i>
+          </div>
+          <div class="truncate">
+            <h3 class="text-sm font-semibold text-slate-900 dark:text-white">导出文献引用格式</h3>
+            <p id="citationModalTitle" class="text-xs text-slate-500 dark:text-slate-400 truncate"></p>
+          </div>
+        </div>
+        <button id="closeCitationModalBtn" type="button" class="p-1.5 rounded-xl text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 cursor-pointer">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <div class="p-5 overflow-y-auto space-y-4">
+        <!-- GB/T 7714 -->
+        <div class="space-y-1.5">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-700 dark:text-slate-300">GB/T 7714（中文学位论文 / 国标常用）</span>
+            <button type="button" data-copy-target="citeGbtText" class="copy-cite-btn inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/60 hover:bg-indigo-100 dark:hover:bg-indigo-900/60 transition-colors cursor-pointer">
+              <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+              <span>复制</span>
+            </button>
+          </div>
+          <pre id="citeGbtText" class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800 text-xs text-slate-700 dark:text-slate-300 whitespace-pre-wrap break-words font-sans leading-relaxed"></pre>
+        </div>
+
+        <!-- ACS / Nature -->
+        <div class="space-y-1.5">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-700 dark:text-slate-300">ACS / Nature 英文期刊格式</span>
+            <button type="button" data-copy-target="citeAcsText" class="copy-cite-btn inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/60 hover:bg-indigo-100 dark:hover:bg-indigo-900/60 transition-colors cursor-pointer">
+              <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+              <span>复制</span>
+            </button>
+          </div>
+          <pre id="citeAcsText" class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800 text-xs text-slate-700 dark:text-slate-300 whitespace-pre-wrap break-words font-sans leading-relaxed"></pre>
+        </div>
+
+        <!-- BibTeX -->
+        <div class="space-y-1.5">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-700 dark:text-slate-300">BibTeX（LaTeX / Zotero / JabRef）</span>
+            <button type="button" data-copy-target="citeBibtexText" class="copy-cite-btn inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/60 hover:bg-indigo-100 dark:hover:bg-indigo-900/60 transition-colors cursor-pointer">
+              <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+              <span>复制</span>
+            </button>
+          </div>
+          <pre id="citeBibtexText" class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800 text-xs text-slate-700 dark:text-slate-300 whitespace-pre-wrap break-all font-mono leading-relaxed"></pre>
+        </div>
+      </div>
     </div>
   </div>
-</header>
 
-<main class="wrap">
-  <section class="controls" aria-label="筛选">
-    <div class="control-row">
-      <input type="search" id="q" class="search" placeholder="搜索标题、摘要、中文总结、关键词、期刊…" autocomplete="off">
-      <select id="sort" class="select" aria-label="排序">
-        <option value="date">按日期（最新优先）</option>
-        <option value="novelty">按创新度</option>
-        <option value="citations">按引用数</option>
-      </select>
-      <select id="range" class="select" aria-label="时间范围">
-        <option value="0">全部时间</option>
-        <option value="7">最近 7 天</option>
-        <option value="30">最近 30 天</option>
-        <option value="90">最近 90 天</option>
-      </select>
+  <!-- ==================== 模态框 2：批量导出中心 ==================== -->
+  <div id="exportModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/50 dark:bg-black/70 backdrop-blur-xs">
+    <div class="bg-white dark:bg-slate-900 w-full max-w-md rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl overflow-hidden">
+      <div class="px-5 py-4 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
+            <i data-lucide="folder-output" class="w-4 h-4"></i>
+          </div>
+          <h3 class="text-sm font-semibold text-slate-900 dark:text-white">文献与笔记导出中心</h3>
+        </div>
+        <button id="closeExportModalBtn" type="button" class="p-1.5 rounded-xl text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 cursor-pointer">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <div class="p-5 space-y-4">
+        <div class="space-y-2">
+          <label class="text-xs font-semibold text-slate-700 dark:text-slate-300">选择导出范围</label>
+          <div class="grid grid-cols-1 gap-2">
+            <label class="flex items-center justify-between p-3 rounded-xl border border-slate-200 dark:border-slate-700 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800/50">
+              <div class="flex items-center gap-2.5">
+                <input type="radio" name="exportScope" value="starred" checked class="text-indigo-600 focus:ring-indigo-500" />
+                <span class="text-sm text-slate-800 dark:text-slate-200">仅导出收藏待读 (Starred)</span>
+              </div>
+              <span id="exportCountStarred" class="text-xs font-medium px-2 py-0.5 rounded-full bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300">0 篇</span>
+            </label>
+            <label class="flex items-center justify-between p-3 rounded-xl border border-slate-200 dark:border-slate-700 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800/50">
+              <div class="flex items-center gap-2.5">
+                <input type="radio" name="exportScope" value="filtered" class="text-indigo-600 focus:ring-indigo-500" />
+                <span class="text-sm text-slate-800 dark:text-slate-200">当前筛选结果</span>
+              </div>
+              <span id="exportCountFiltered" class="text-xs font-medium px-2 py-0.5 rounded-full bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300">0 篇</span>
+            </label>
+            <label class="flex items-center justify-between p-3 rounded-xl border border-slate-200 dark:border-slate-700 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800/50">
+              <div class="flex items-center gap-2.5">
+                <input type="radio" name="exportScope" value="all" class="text-indigo-600 focus:ring-indigo-500" />
+                <span class="text-sm text-slate-800 dark:text-slate-200">当前库全部文献</span>
+              </div>
+              <span id="exportCountAll" class="text-xs font-medium px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">0 篇</span>
+            </label>
+          </div>
+        </div>
+
+        <label class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/70 dark:border-slate-700/70 cursor-pointer">
+          <input id="exportIncludeNotes" type="checkbox" checked class="rounded text-indigo-600 focus:ring-indigo-500" />
+          <span class="text-xs text-slate-700 dark:text-slate-300">导出 Markdown 时附带个人科研笔记（器件结构/EQE 等）</span>
+        </label>
+
+        <div class="grid grid-cols-2 gap-3 pt-1">
+          <button id="downloadMarkdownBtn" type="button" class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 transition-colors cursor-pointer">
+            <i data-lucide="file-text" class="w-4 h-4"></i>
+            <span>Markdown (.md)</span>
+          </button>
+          <button id="downloadBibtexBtn" type="button" class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium text-slate-800 dark:text-slate-100 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 transition-colors cursor-pointer">
+            <i data-lucide="book-marked" class="w-4 h-4"></i>
+            <span>BibTeX (.bib)</span>
+          </button>
+        </div>
+      </div>
     </div>
-    <div class="control-row" id="direction-row"></div>
-    <div class="control-row small">
-      <label class="check"><input type="checkbox" id="only-published" checked> 只看已见刊</label>
-      <label class="check"><input type="checkbox" id="only-qled" checked> 只看量子点发光二极管</label>
-      <label class="check"><input type="checkbox" id="hide-read"> 隐藏已读</label>
-      <label class="check"><input type="checkbox" id="only-high"> 只看高创新（≥4）</label>
-      <button type="button" id="reset" class="ghost">重置筛选</button>
-      <span class="hint" id="hint"></span>
-    </div>
-  </section>
-
-  <section id="list" class="list" aria-live="polite"></section>
-
-  <section id="empty" class="empty" hidden>
-    <p>没有符合条件的论文。</p>
-    <p class="muted">可以放宽时间范围、取消勾选「只看已见刊」或「只看量子点发光二极管」，或点「重置筛选」。</p>
-  </section>
-
-  <section id="error" class="empty" hidden>
-    <p>数据加载失败。</p>
-    <p class="muted" id="error-detail"></p>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <p class="muted">论文元数据来自 <a href="https://openalex.org" target="_blank" rel="noopener">OpenAlex</a>、<a href="https://www.crossref.org" target="_blank" rel="noopener">Crossref</a>、<a href="https://www.semanticscholar.org" target="_blank" rel="noopener">Semantic Scholar</a>、<a href="https://arxiv.org" target="_blank" rel="noopener">arXiv</a>（配置 SerpApi key 后还会加上 Google 学术）。<strong>只收录已经见刊（有正式期刊版本）的论文</strong>：arXiv 预印本必须先解析到期刊版 DOI 才会入库。</p>
-    <p class="muted">每张卡片的「DOI 原文」直达出版社；「在别处查」按标题跳到 <a href="https://scholar.google.com" target="_blank" rel="noopener">Google 学术</a>、<a href="https://www.x-mol.com" target="_blank" rel="noopener">X-MOL</a>、<a href="https://xueshu.baidu.com" target="_blank" rel="noopener">百度学术</a> 检索同一篇论文（这些平台没有开放接口，只能跳转检索）。</p>
-    <p class="muted">中文总结由 DeepSeek 依据原标题与摘要生成，可能存在偏差，重要结论请以原文为准。</p>
   </div>
-</footer>
 
-<noscript>
-  <p class="wrap">这个页面需要启用 JavaScript 才能筛选与展开论文。</p>
-</noscript>
+  <!-- ==================== 悬浮 Toast 提示 ==================== -->
+  <div id="toastContainer" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 pointer-events-none"></div>
 
-<script src="assets/app.js"></script>
+  <!-- ==================== 核心交互与业务逻辑 ==================== -->
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js"></script>
 </body>
 </html>

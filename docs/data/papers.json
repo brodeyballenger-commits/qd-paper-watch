@@ -56,7 +56,9 @@
       "llm_at": "2026-11-27T03:50:39.568Z",
       "pending_summary": false,
       "first_seen": "2026-11-27T03:50:22.549Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 5.8,
+      "journal_tier": 2
     },
     {
       "id": "10.1109/led.2026.3745894",
@@ -113,7 +115,9 @@
       "llm_at": "2026-11-27T03:50:40.791Z",
       "pending_summary": false,
       "first_seen": "2026-11-27T03:50:22.549Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 4.1,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.nanoms.2025.03.002",
@@ -285,7 +289,9 @@
       "llm_at": "2026-11-25T04:38:24.625Z",
       "pending_summary": false,
       "first_seen": "2026-11-25T04:38:09.250Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 5.8,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.nxnano.2026.100934",
@@ -456,7 +462,9 @@
       "llm_at": "2026-11-06T01:51:09.348Z",
       "pending_summary": false,
       "first_seen": "2026-11-06T01:50:52.967Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 13.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.optlastec.2026.116862",
@@ -510,7 +518,9 @@
       "llm_at": "2026-11-02T01:05:11.800Z",
       "pending_summary": false,
       "first_seen": "2026-11-02T01:04:18.102Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 5,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.cej.2026.183722",
@@ -567,7 +577,9 @@
       "llm_at": "2026-11-02T01:05:11.639Z",
       "pending_summary": false,
       "first_seen": "2026-11-02T01:04:18.102Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 13.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.cej.2026.183486",
@@ -624,7 +636,9 @@
       "llm_at": "2026-10-29T01:19:25.596Z",
       "pending_summary": false,
       "first_seen": "2026-10-29T01:19:07.187Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 13.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.nxnano.2026.100881",
@@ -735,7 +749,9 @@
       "llm_at": "2026-10-20T00:45:45.005Z",
       "pending_summary": false,
       "first_seen": "2026-10-20T00:45:30.263Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 13.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.saa.2026.128090",
@@ -791,7 +807,9 @@
       "llm_at": "2026-10-13T17:49:42.531Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:48:09.761Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 4.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1109/lpt.2026.3733672",
@@ -848,7 +866,9 @@
       "llm_at": "2026-11-25T04:38:26.770Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:48:09.761Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 2.3,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.jcis.2026.141247",
@@ -905,7 +925,9 @@
       "llm_at": "2026-11-25T04:38:26.297Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 9.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.cej.2026.182859",
@@ -963,7 +985,9 @@
       "llm_at": "2026-10-13T17:44:45.446Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 13.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.apradiso.2026.112879",
@@ -1019,7 +1043,9 @@
       "llm_at": "2026-11-25T04:38:26.333Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 1.5,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.chphi.2026.101134",
@@ -1076,7 +1102,9 @@
       "llm_at": "2026-10-14T04:43:46.271Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 4.5,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.optlastec.2026.116003",
@@ -1133,7 +1161,9 @@
       "llm_at": "2026-10-24T23:49:51.518Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 5,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.optlastec.2026.116147",
@@ -1189,7 +1219,9 @@
       "llm_at": "2026-10-13T17:44:46.859Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 5,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.rineng.2026.111690",
@@ -1245,7 +1277,9 @@
       "llm_at": "2026-10-14T04:43:46.271Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 6,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.cej.2026.182520",
@@ -1302,7 +1336,9 @@
       "llm_at": "2026-10-13T17:44:48.505Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 13.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.optcom.2026.133614",
@@ -1358,7 +1394,9 @@
       "llm_at": "2026-10-13T17:44:48.383Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 2.2,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.physb.2026.419385",
@@ -1413,7 +1451,9 @@
         "crossref"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 2.8,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.cej.2026.182104",
@@ -1470,7 +1510,9 @@
         "crossref"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 13.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.optmat.2026.118522",
@@ -1524,7 +1566,9 @@
         "crossref"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 3.8,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.chphi.2026.101165",
@@ -1580,7 +1624,9 @@
         "crossref"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 4.5,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.jpcs.2026.114102",
@@ -1636,7 +1682,9 @@
         "crossref"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 4,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.nxnano.2026.100712",
@@ -1747,7 +1795,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 3,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.cej.2026.182979",
@@ -1804,7 +1854,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 13.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.mseb.2026.119986",
@@ -1861,7 +1913,9 @@
       "llm_at": "2026-11-27T03:50:39.656Z",
       "pending_summary": false,
       "first_seen": "2026-11-27T03:50:22.549Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 3.9,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.jcis.2026.142062",
@@ -1916,7 +1970,9 @@
       "llm_at": "2026-11-27T03:50:39.492Z",
       "pending_summary": false,
       "first_seen": "2026-11-27T03:50:22.549Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 9.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.jcis.2026.142043",
@@ -1973,7 +2029,9 @@
       "llm_at": "2026-11-26T03:49:27.769Z",
       "pending_summary": false,
       "first_seen": "2026-11-26T03:48:50.102Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 9.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1039/d6qm00874g",
@@ -2139,7 +2197,9 @@
       "llm_at": "2026-11-15T01:22:21.882Z",
       "pending_summary": false,
       "first_seen": "2026-11-15T01:21:49.072Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 3.3,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.saa.2026.129063",
@@ -2195,7 +2255,9 @@
       "llm_at": "2026-11-25T04:38:29.376Z",
       "pending_summary": false,
       "first_seen": "2026-11-05T01:52:11.066Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 4.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.optcom.2026.133919",
@@ -2251,7 +2313,9 @@
       "llm_at": "2026-11-01T00:30:49.468Z",
       "pending_summary": false,
       "first_seen": "2026-11-01T00:30:28.464Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 2.2,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.talanta.2026.130830",
@@ -2419,7 +2483,9 @@
       "llm_at": "2026-10-13T17:44:45.592Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 3.8,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.physe.2026.116666",
@@ -2473,7 +2539,9 @@
       "llm_at": "2026-10-13T17:44:46.693Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 2.9,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.matchemphys.2026.133204",
@@ -2529,7 +2597,9 @@
       "llm_at": "2026-10-13T17:44:48.115Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 4.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.optcom.2026.133800",
@@ -2584,7 +2654,9 @@
       "llm_at": "2026-10-13T17:44:48.671Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 2.2,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.optmat.2026.118591",
@@ -2641,7 +2713,9 @@
       "llm_at": "2026-10-13T17:45:00.905Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 3.8,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.solmat.2026.114733",
@@ -2697,7 +2771,9 @@
         "crossref"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 6.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.micrna.2026.208946",
@@ -2752,7 +2828,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 5.2,
+      "journal_tier": 2
     },
     {
       "id": "10.3390/nano16231540",
@@ -2808,7 +2886,9 @@
       "llm_at": "2026-11-27T03:50:42.964Z",
       "pending_summary": false,
       "first_seen": "2026-11-27T03:50:22.549Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 4.4,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acsami.6c14179",
@@ -2865,7 +2945,9 @@
       "llm_at": "2026-11-27T03:50:41.645Z",
       "pending_summary": false,
       "first_seen": "2026-11-27T03:50:22.549Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 8.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.nantod.2026.103244",
@@ -2977,7 +3059,9 @@
       "llm_at": "2026-11-27T03:50:42.989Z",
       "pending_summary": false,
       "first_seen": "2026-11-27T03:50:22.549Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 8.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1364/ol.619932",
@@ -3148,7 +3232,9 @@
       "llm_at": "2026-11-26T03:49:28.196Z",
       "pending_summary": false,
       "first_seen": "2026-11-26T03:48:50.102Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 3.9,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acsanm.6c03569",
@@ -3204,7 +3290,9 @@
       "llm_at": "2026-11-26T03:49:32.088Z",
       "pending_summary": false,
       "first_seen": "2026-11-26T03:48:50.102Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 5.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acsomega.6c09682",
@@ -3261,7 +3349,9 @@
       "llm_at": "2026-11-26T03:49:31.439Z",
       "pending_summary": false,
       "first_seen": "2026-11-26T03:48:50.102Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 3.8,
+      "journal_tier": 3
     },
     {
       "id": "10.1149/2162-8777/aec66a",
@@ -3374,7 +3464,9 @@
       "llm_at": "2026-11-25T04:38:28.845Z",
       "pending_summary": false,
       "first_seen": "2026-11-25T04:38:09.250Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 9.6,
+      "journal_tier": 1
     },
     {
       "id": "10.62292/njap-v2i4-2026-124",
@@ -3657,7 +3749,9 @@
       "llm_at": "2026-11-25T04:38:32.228Z",
       "pending_summary": false,
       "first_seen": "2026-11-25T04:38:09.250Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 4.7,
+      "journal_tier": 3
     },
     {
       "id": "10.1063/5.0354740",
@@ -3714,7 +3808,9 @@
       "llm_at": "2026-11-24T05:37:44.856Z",
       "pending_summary": false,
       "first_seen": "2026-11-24T05:37:10.355Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 3.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1103/c2c3-tdbs",
@@ -3825,7 +3921,9 @@
       "llm_at": "2026-11-24T05:37:47.636Z",
       "pending_summary": false,
       "first_seen": "2026-11-24T05:37:10.355Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 3.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1063/5.0349222",
@@ -3883,7 +3981,9 @@
       "llm_at": "2026-11-24T05:37:46.015Z",
       "pending_summary": false,
       "first_seen": "2026-11-24T05:37:10.355Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 3.5,
+      "journal_tier": 2
     },
     {
       "id": "10.3390/photonics13121098",
@@ -4054,7 +4154,9 @@
       "llm_at": "2026-11-21T02:52:55.427Z",
       "pending_summary": false,
       "first_seen": "2026-11-21T02:52:32.057Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 27.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acsphotonics.6c02388",
@@ -4113,7 +4215,9 @@
       "llm_at": "2026-11-20T02:41:56.638Z",
       "pending_summary": false,
       "first_seen": "2026-11-20T02:41:31.477Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 6.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acsami.6c18681",
@@ -4171,7 +4275,9 @@
       "llm_at": "2026-11-21T02:52:55.048Z",
       "pending_summary": false,
       "first_seen": "2026-11-20T02:41:31.477Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 8.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1103/jgms-y7w2",
@@ -4284,7 +4390,9 @@
       "llm_at": "2026-11-26T03:49:33.797Z",
       "pending_summary": false,
       "first_seen": "2026-11-20T02:41:31.477Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 14.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1364/ol.619740",
@@ -4452,7 +4560,9 @@
       "llm_at": "2026-11-21T02:52:58.321Z",
       "pending_summary": false,
       "first_seen": "2026-11-19T02:51:33.170Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 13,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acsami.6c13055",
@@ -4509,7 +4619,9 @@
       "llm_at": "2026-11-20T02:42:02.009Z",
       "pending_summary": false,
       "first_seen": "2026-11-19T02:51:33.170Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 8.3,
+      "journal_tier": 2
     },
     {
       "id": "10.54254/2755-2721/2027.ad39210",
@@ -4620,7 +4732,9 @@
       "llm_at": "2026-11-20T02:42:03.424Z",
       "pending_summary": false,
       "first_seen": "2026-11-19T02:51:33.170Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 2.9,
+      "journal_tier": 3
     },
     {
       "id": "10.1002/adom.72041",
@@ -4677,7 +4791,9 @@
       "llm_at": "2026-11-27T03:50:45.705Z",
       "pending_summary": false,
       "first_seen": "2026-11-19T02:51:33.170Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 8,
+      "journal_tier": 2
     },
     {
       "id": "10.1002/sys3.70051",
@@ -4905,7 +5021,9 @@
       "llm_at": "2026-11-21T02:52:58.602Z",
       "pending_summary": false,
       "first_seen": "2026-11-18T03:10:43.529Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 9.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acsami.6c12818",
@@ -4965,7 +5083,9 @@
       "llm_at": "2026-11-18T03:11:00.026Z",
       "pending_summary": false,
       "first_seen": "2026-11-17T04:12:53.856Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 8.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1038/s41467-026-79672-6",
@@ -5020,7 +5140,9 @@
       "llm_at": "2026-11-16T01:28:01.561Z",
       "pending_summary": false,
       "first_seen": "2026-11-16T01:27:08.674Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 14.7,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acsaelm.6c01668",
@@ -5079,7 +5201,9 @@
       "llm_at": "2026-11-21T02:53:01.032Z",
       "pending_summary": false,
       "first_seen": "2026-11-15T01:21:49.072Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 4.7,
+      "journal_tier": 3
     },
     {
       "id": "10.1007/s10825-026-02671-9",
@@ -5189,7 +5313,9 @@
       "llm_at": "2026-11-25T04:38:35.006Z",
       "pending_summary": false,
       "first_seen": "2026-11-15T01:21:49.072Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 3.3,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acs.nanolett.6c04076",
@@ -5245,7 +5371,9 @@
       "llm_at": "2026-11-27T03:50:48.333Z",
       "pending_summary": false,
       "first_seen": "2026-11-15T01:21:49.072Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 9.6,
+      "journal_tier": 1
     },
     {
       "id": "10.1007/s11814-026-00871-4",
@@ -5300,7 +5428,9 @@
       "llm_at": "2026-11-14T01:52:56.337Z",
       "pending_summary": false,
       "first_seen": "2026-11-14T01:52:41.701Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 2.5,
+      "journal_tier": 3
     },
     {
       "id": "10.1002/adom.72026",
@@ -5355,7 +5485,9 @@
       "llm_at": "2026-11-22T01:43:27.822Z",
       "pending_summary": false,
       "first_seen": "2026-11-14T01:52:41.701Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-27T03:50:22.549Z",
+      "journal_if": 8,
+      "journal_tier": 2
     },
     {
       "id": "10.1103/7572-brsj",
@@ -5523,7 +5655,9 @@
       "llm_at": "2026-11-21T02:53:01.017Z",
       "pending_summary": false,
       "first_seen": "2026-11-14T01:52:41.701Z",
-      "last_updated": "2026-11-21T02:52:32.057Z"
+      "last_updated": "2026-11-21T02:52:32.057Z",
+      "journal_if": 8,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acsnanoscienceau.6c00154",
@@ -5579,7 +5713,9 @@
       "llm_at": "2026-11-21T02:53:03.695Z",
       "pending_summary": false,
       "first_seen": "2026-11-14T01:52:41.701Z",
-      "last_updated": "2026-11-26T03:48:50.102Z"
+      "last_updated": "2026-11-26T03:48:50.102Z",
+      "journal_if": 3.2,
+      "journal_tier": 3
     },
     {
       "id": "10.3390/nano16221461",
@@ -5636,7 +5772,9 @@
       "llm_at": "2026-11-13T02:11:27.087Z",
       "pending_summary": false,
       "first_seen": "2026-11-13T02:11:00.383Z",
-      "last_updated": "2026-11-26T03:48:50.102Z"
+      "last_updated": "2026-11-26T03:48:50.102Z",
+      "journal_if": 4.4,
+      "journal_tier": 3
     },
     {
       "id": "10.1038/s41467-026-78984-x",
@@ -5694,7 +5832,9 @@
       "llm_at": "2026-11-21T02:53:03.403Z",
       "pending_summary": false,
       "first_seen": "2026-11-12T02:34:00.760Z",
-      "last_updated": "2026-11-25T04:38:09.250Z"
+      "last_updated": "2026-11-25T04:38:09.250Z",
+      "journal_if": 14.7,
+      "journal_tier": 1
     },
     {
       "id": "10.20517/energymater.2026.259",
@@ -5807,7 +5947,9 @@
       "llm_at": "2026-11-21T02:53:03.547Z",
       "pending_summary": false,
       "first_seen": "2026-11-11T01:30:18.323Z",
-      "last_updated": "2026-11-24T05:37:10.355Z"
+      "last_updated": "2026-11-24T05:37:10.355Z",
+      "journal_if": 18.5,
+      "journal_tier": 1
     },
     {
       "id": "10.1364/optica.616733",
@@ -5865,7 +6007,9 @@
       "llm_at": "2026-11-11T01:30:58.566Z",
       "pending_summary": false,
       "first_seen": "2026-11-11T01:30:18.323Z",
-      "last_updated": "2026-11-24T05:37:10.355Z"
+      "last_updated": "2026-11-24T05:37:10.355Z",
+      "journal_if": 8.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/lpor.72186",
@@ -5921,7 +6065,9 @@
       "llm_at": "2026-11-11T01:30:59.859Z",
       "pending_summary": false,
       "first_seen": "2026-11-11T01:30:18.323Z",
-      "last_updated": "2026-11-24T05:37:10.355Z"
+      "last_updated": "2026-11-24T05:37:10.355Z",
+      "journal_if": 9.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1103/sym2-vxjl",
@@ -6033,7 +6179,9 @@
       "llm_at": "2026-11-20T02:42:04.716Z",
       "pending_summary": false,
       "first_seen": "2026-11-20T02:41:31.477Z",
-      "last_updated": "2026-11-23T02:01:55.397Z"
+      "last_updated": "2026-11-23T02:01:55.397Z",
+      "journal_if": 3.7,
+      "journal_tier": 2
     },
     {
       "id": "10.1063/5.0353917",
@@ -6089,7 +6237,9 @@
       "llm_at": "2026-11-14T01:53:00.772Z",
       "pending_summary": false,
       "first_seen": "2026-11-14T01:52:41.701Z",
-      "last_updated": "2026-11-23T02:01:55.397Z"
+      "last_updated": "2026-11-23T02:01:55.397Z",
+      "journal_if": 3.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acs.nanolett.6c04351",
@@ -6144,7 +6294,9 @@
       "llm_at": "2026-11-21T02:53:03.867Z",
       "pending_summary": false,
       "first_seen": "2026-11-11T01:30:18.323Z",
-      "last_updated": "2026-11-23T02:01:55.397Z"
+      "last_updated": "2026-11-23T02:01:55.397Z",
+      "journal_if": 9.6,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/rpm2.70090",
@@ -6311,7 +6463,9 @@
       "llm_at": "2026-11-10T03:51:34.165Z",
       "pending_summary": false,
       "first_seen": "2026-11-10T03:51:00.657Z",
-      "last_updated": "2026-11-23T02:01:55.397Z"
+      "last_updated": "2026-11-23T02:01:55.397Z",
+      "journal_if": 3.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1007/s10825-026-02668-4",
@@ -6543,7 +6697,9 @@
       "llm_at": "2026-11-08T00:57:03.535Z",
       "pending_summary": false,
       "first_seen": "2026-11-08T00:56:46.049Z",
-      "last_updated": "2026-11-21T02:52:32.057Z"
+      "last_updated": "2026-11-21T02:52:32.057Z",
+      "journal_if": 15.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/smll.76472",
@@ -6600,7 +6756,9 @@
       "llm_at": "2026-11-07T01:20:36.896Z",
       "pending_summary": false,
       "first_seen": "2026-11-07T01:20:06.089Z",
-      "last_updated": "2026-11-20T02:41:31.477Z"
+      "last_updated": "2026-11-20T02:41:31.477Z",
+      "journal_if": 13,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/lpor.72191",
@@ -6658,7 +6816,9 @@
       "llm_at": "2026-11-08T00:57:02.925Z",
       "pending_summary": false,
       "first_seen": "2026-11-07T01:20:06.089Z",
-      "last_updated": "2026-11-20T02:41:31.477Z"
+      "last_updated": "2026-11-20T02:41:31.477Z",
+      "journal_if": 9.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1039/d6nr02565j",
@@ -6714,7 +6874,9 @@
       "llm_at": "2026-11-17T04:13:21.118Z",
       "pending_summary": false,
       "first_seen": "2026-11-17T04:12:53.856Z",
-      "last_updated": "2026-11-19T02:51:33.170Z"
+      "last_updated": "2026-11-19T02:51:33.170Z",
+      "journal_if": 6.7,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acs.jpcc.6c05310",
@@ -6767,7 +6929,9 @@
       "llm_at": "2026-11-08T00:57:05.705Z",
       "pending_summary": false,
       "first_seen": "2026-11-07T01:20:06.089Z",
-      "last_updated": "2026-11-19T02:51:33.170Z"
+      "last_updated": "2026-11-19T02:51:33.170Z",
+      "journal_if": 3.3,
+      "journal_tier": 3
     },
     {
       "id": "10.1002/adom.72025",
@@ -6822,7 +6986,9 @@
       "llm_at": "2026-11-18T03:11:02.585Z",
       "pending_summary": false,
       "first_seen": "2026-11-06T01:50:52.967Z",
-      "last_updated": "2026-11-19T02:51:33.170Z"
+      "last_updated": "2026-11-19T02:51:33.170Z",
+      "journal_if": 8,
+      "journal_tier": 2
     },
     {
       "id": "10.3390/inorganics14110283",
@@ -6880,7 +7046,9 @@
       "llm_at": "2026-11-06T01:51:10.371Z",
       "pending_summary": false,
       "first_seen": "2026-11-06T01:50:52.967Z",
-      "last_updated": "2026-11-19T02:51:33.170Z"
+      "last_updated": "2026-11-19T02:51:33.170Z",
+      "journal_if": 3,
+      "journal_tier": 3
     },
     {
       "id": "10.1103/7qbs-778n",
@@ -7051,7 +7219,9 @@
       "llm_at": "2026-11-18T03:11:02.889Z",
       "pending_summary": false,
       "first_seen": "2026-11-06T01:50:52.967Z",
-      "last_updated": "2026-11-18T03:10:43.529Z"
+      "last_updated": "2026-11-18T03:10:43.529Z",
+      "journal_if": 4.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1038/s41566-026-02041-8",
@@ -7108,7 +7278,9 @@
       "llm_at": "2026-11-05T01:52:34.661Z",
       "pending_summary": false,
       "first_seen": "2026-11-05T01:52:11.066Z",
-      "last_updated": "2026-11-18T03:10:43.529Z"
+      "last_updated": "2026-11-18T03:10:43.529Z",
+      "journal_if": 32.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acsanm.6c02454",
@@ -7167,7 +7339,9 @@
       "llm_at": "2026-11-06T01:51:13.175Z",
       "pending_summary": false,
       "first_seen": "2026-11-05T01:52:11.066Z",
-      "last_updated": "2026-11-18T03:10:43.529Z"
+      "last_updated": "2026-11-18T03:10:43.529Z",
+      "journal_if": 5.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.cej.2026.183862",
@@ -7223,7 +7397,9 @@
       "llm_at": "2026-11-05T01:52:40.475Z",
       "pending_summary": false,
       "first_seen": "2026-11-05T01:52:11.066Z",
-      "last_updated": "2026-11-18T03:10:43.529Z"
+      "last_updated": "2026-11-18T03:10:43.529Z",
+      "journal_if": 13.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acs.jpcc.6c06480",
@@ -7277,7 +7453,9 @@
       "llm_at": "2026-11-05T01:52:38.148Z",
       "pending_summary": false,
       "first_seen": "2026-11-05T01:52:11.066Z",
-      "last_updated": "2026-11-17T04:12:53.856Z"
+      "last_updated": "2026-11-17T04:12:53.856Z",
+      "journal_if": 3.3,
+      "journal_tier": 3
     },
     {
       "id": "10.1002/adma.75563",
@@ -7334,7 +7512,9 @@
       "llm_at": "2026-11-06T01:51:14.304Z",
       "pending_summary": false,
       "first_seen": "2026-11-05T01:52:11.066Z",
-      "last_updated": "2026-11-17T04:12:53.856Z"
+      "last_updated": "2026-11-17T04:12:53.856Z",
+      "journal_if": 27.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/nap2.70353",
@@ -7393,7 +7573,9 @@
       "llm_at": "2026-11-07T01:20:40.277Z",
       "pending_summary": false,
       "first_seen": "2026-11-05T01:52:11.066Z",
-      "last_updated": "2026-11-17T04:12:53.856Z"
+      "last_updated": "2026-11-17T04:12:53.856Z",
+      "journal_if": 6.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1103/4bhn-q6sj",
@@ -7509,7 +7691,9 @@
       "llm_at": "2026-11-05T01:52:40.708Z",
       "pending_summary": false,
       "first_seen": "2026-11-04T01:43:57.739Z",
-      "last_updated": "2026-11-17T04:12:53.856Z"
+      "last_updated": "2026-11-17T04:12:53.856Z",
+      "journal_if": 8,
+      "journal_tier": 2
     },
     {
       "id": "10.1088/1361-648x/aebd56",
@@ -7566,7 +7750,9 @@
       "llm_at": "2026-11-04T01:44:52.182Z",
       "pending_summary": false,
       "first_seen": "2026-11-04T01:43:57.739Z",
-      "last_updated": "2026-11-17T04:12:53.856Z"
+      "last_updated": "2026-11-17T04:12:53.856Z",
+      "journal_if": 3,
+      "journal_tier": 3
     },
     {
       "id": "10.1103/3v5w-1k38",
@@ -7682,7 +7868,9 @@
       "llm_at": "2026-11-04T01:44:53.991Z",
       "pending_summary": false,
       "first_seen": "2026-11-03T03:06:37.434Z",
-      "last_updated": "2026-11-16T01:27:08.674Z"
+      "last_updated": "2026-11-16T01:27:08.674Z",
+      "journal_if": 14.7,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.hazadv.2026.101756",
@@ -7793,7 +7981,9 @@
       "llm_at": "2026-11-14T01:53:00.100Z",
       "pending_summary": false,
       "first_seen": "2026-11-14T01:52:41.701Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-15T01:21:49.072Z",
+      "journal_if": 2.8,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.physe.2026.116684",
@@ -7849,7 +8039,9 @@
       "llm_at": "2026-11-06T01:51:14.311Z",
       "pending_summary": false,
       "first_seen": "2026-11-06T01:50:52.967Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-15T01:21:49.072Z",
+      "journal_if": 2.9,
+      "journal_tier": 3
     },
     {
       "id": "10.1109/jsen.2026.3730870",
@@ -8074,7 +8266,9 @@
       "llm_at": "2026-10-14T04:43:49.617Z",
       "pending_summary": false,
       "first_seen": "2026-10-14T00:39:56.708Z",
-      "last_updated": "2026-11-14T01:52:41.701Z"
+      "last_updated": "2026-11-14T01:52:41.701Z",
+      "journal_if": 13.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.jcis.2026.140736",
@@ -8131,7 +8325,9 @@
       "llm_at": "2026-10-13T17:49:42.323Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:48:09.761Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-15T01:21:49.072Z",
+      "journal_if": 9.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1109/jstqe.2026.3662809",
@@ -8188,7 +8384,9 @@
       "llm_at": "2026-10-14T04:43:46.270Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-15T01:21:49.072Z",
+      "journal_if": 4.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.physleta.2026.132088",
@@ -8243,7 +8441,9 @@
       "llm_at": "2026-10-13T17:44:41.913Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-15T01:21:49.072Z",
+      "journal_if": 2.3,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.aop.2026.170628",
@@ -8295,7 +8495,9 @@
       "llm_at": "2026-10-13T17:44:41.521Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-15T01:21:49.072Z",
+      "journal_if": 2.2,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.saa.2026.128045",
@@ -8351,7 +8553,9 @@
       "llm_at": "2026-10-13T17:44:41.641Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-04T01:43:57.739Z"
+      "last_updated": "2026-11-04T01:43:57.739Z",
+      "journal_if": 4.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.mssp.2026.110878",
@@ -8408,7 +8612,9 @@
       "llm_at": "2026-10-13T17:44:43.021Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-15T01:21:49.072Z",
+      "journal_if": 4.1,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.optlastec.2026.115543",
@@ -8462,7 +8668,9 @@
       "llm_at": "2026-10-13T17:44:42.952Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-15T01:21:49.072Z",
+      "journal_if": 5,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.apsusc.2026.167625",
@@ -8517,7 +8725,9 @@
       "llm_at": "2026-10-25T23:38:42.044Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-15T01:21:49.072Z",
+      "journal_if": 6.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.cej.2026.180540",
@@ -8573,7 +8783,9 @@
       "llm_at": "2026-10-13T17:44:42.974Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-15T01:21:49.072Z",
+      "journal_if": 13.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.physb.2026.419386",
@@ -8628,7 +8840,9 @@
       "llm_at": "2026-10-13T17:44:44.408Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-15T01:21:49.072Z",
+      "journal_if": 2.8,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.materresbull.2026.114210",
@@ -8684,7 +8898,9 @@
       "llm_at": "2026-10-13T17:44:44.132Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-15T01:21:49.072Z",
+      "journal_if": 5.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.nanoen.2026.112321",
@@ -8741,7 +8957,9 @@
       "llm_at": "2026-10-13T17:44:44.825Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-15T01:21:49.072Z"
+      "last_updated": "2026-11-15T01:21:49.072Z",
+      "journal_if": 17.1,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.cej.2026.181979",
@@ -8798,7 +9016,9 @@
         "semanticscholar"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 13.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.physb.2026.419349",
@@ -8850,7 +9070,9 @@
         "crossref"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 2.8,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.ijleo.2026.172897",
@@ -8905,7 +9127,9 @@
         "crossref"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 3,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.ijleo.2026.172877",
@@ -8959,7 +9183,9 @@
         "crossref"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 3,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.matlet.2026.141293",
@@ -9015,7 +9241,9 @@
         "crossref"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 2.7,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.mseb.2026.119764",
@@ -9072,7 +9300,9 @@
         "crossref"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 3.9,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.ceramint.2026.08.120",
@@ -9129,7 +9359,9 @@
         "crossref"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 5.2,
+      "journal_tier": 2
     },
     {
       "id": "10.1002/adom.71992",
@@ -9187,7 +9419,9 @@
       "llm_at": "2026-11-03T03:07:24.953Z",
       "pending_summary": false,
       "first_seen": "2026-11-02T01:04:18.102Z",
-      "last_updated": "2026-11-14T01:52:41.701Z"
+      "last_updated": "2026-11-14T01:52:41.701Z",
+      "journal_if": 8,
+      "journal_tier": 2
     },
     {
       "id": "10.62051/ijmsts.v5n5.01",
@@ -9298,7 +9532,9 @@
       "llm_at": "2026-11-08T00:57:04.451Z",
       "pending_summary": false,
       "first_seen": "2026-11-08T00:56:46.049Z",
-      "last_updated": "2026-11-13T02:11:00.383Z"
+      "last_updated": "2026-11-13T02:11:00.383Z",
+      "journal_if": 13.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acsnano.6c15005",
@@ -9355,7 +9591,9 @@
       "llm_at": "2026-11-13T02:11:26.347Z",
       "pending_summary": false,
       "first_seen": "2026-11-01T00:30:28.464Z",
-      "last_updated": "2026-11-13T02:11:00.383Z"
+      "last_updated": "2026-11-13T02:11:00.383Z",
+      "journal_if": 15.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/lpor.72151",
@@ -9412,7 +9650,9 @@
       "llm_at": "2026-11-01T00:30:50.844Z",
       "pending_summary": false,
       "first_seen": "2026-11-01T00:30:28.464Z",
-      "last_updated": "2026-11-13T02:11:00.383Z"
+      "last_updated": "2026-11-13T02:11:00.383Z",
+      "journal_if": 9.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acsami.6c16350",
@@ -9464,7 +9704,9 @@
       "llm_at": "2026-11-01T00:30:51.991Z",
       "pending_summary": false,
       "first_seen": "2026-11-01T00:30:28.464Z",
-      "last_updated": "2026-11-13T02:11:00.383Z"
+      "last_updated": "2026-11-13T02:11:00.383Z",
+      "journal_if": 8.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acsenergylett.6c01776",
@@ -9521,7 +9763,9 @@
       "llm_at": "2026-11-01T00:30:51.656Z",
       "pending_summary": false,
       "first_seen": "2026-10-31T01:07:37.189Z",
-      "last_updated": "2026-11-13T02:11:00.383Z"
+      "last_updated": "2026-11-13T02:11:00.383Z",
+      "journal_if": 19.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/smll.76483",
@@ -9578,7 +9822,9 @@
       "llm_at": "2026-11-01T00:30:53.719Z",
       "pending_summary": false,
       "first_seen": "2026-10-31T01:07:37.189Z",
-      "last_updated": "2026-11-13T02:11:00.383Z"
+      "last_updated": "2026-11-13T02:11:00.383Z",
+      "journal_if": 13,
+      "journal_tier": 1
     },
     {
       "id": "10.1088/1361-648x/aeb520",
@@ -9633,7 +9879,9 @@
       "llm_at": "2026-10-31T01:08:06.599Z",
       "pending_summary": false,
       "first_seen": "2026-10-16T10:46:30.884Z",
-      "last_updated": "2026-11-13T02:11:00.383Z"
+      "last_updated": "2026-11-13T02:11:00.383Z",
+      "journal_if": 3,
+      "journal_tier": 3
     },
     {
       "id": "10.26599/nr.2026.94909299",
@@ -9799,7 +10047,9 @@
       "llm_at": "2026-10-31T01:08:07.630Z",
       "pending_summary": false,
       "first_seen": "2026-10-31T01:07:37.189Z",
-      "last_updated": "2026-11-08T00:56:46.049Z"
+      "last_updated": "2026-11-08T00:56:46.049Z",
+      "journal_if": 15.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acs.nanolett.6c04009",
@@ -9856,7 +10106,9 @@
       "llm_at": "2026-10-31T01:08:09.069Z",
       "pending_summary": false,
       "first_seen": "2026-10-31T01:07:37.189Z",
-      "last_updated": "2026-11-12T02:34:00.760Z"
+      "last_updated": "2026-11-12T02:34:00.760Z",
+      "journal_if": 9.6,
+      "journal_tier": 1
     },
     {
       "id": "10.1088/1361-6528/aeb12c",
@@ -9912,7 +10164,9 @@
       "llm_at": "2026-10-30T01:24:04.030Z",
       "pending_summary": false,
       "first_seen": "2026-10-30T01:23:10.245Z",
-      "last_updated": "2026-11-12T02:34:00.760Z"
+      "last_updated": "2026-11-12T02:34:00.760Z",
+      "journal_if": 2.9,
+      "journal_tier": 3
     },
     {
       "id": "10.1038/s41566-026-02039-2",
@@ -9969,7 +10223,9 @@
       "llm_at": "2026-10-30T01:24:02.276Z",
       "pending_summary": false,
       "first_seen": "2026-10-30T01:23:10.245Z",
-      "last_updated": "2026-11-12T02:34:00.760Z"
+      "last_updated": "2026-11-12T02:34:00.760Z",
+      "journal_if": 32.3,
+      "journal_tier": 1
     },
     {
       "id": "10.2174/0126673878510302261018045730",
@@ -10133,7 +10389,9 @@
       "llm_at": "2026-10-30T01:24:02.238Z",
       "pending_summary": false,
       "first_seen": "2026-10-30T01:23:10.245Z",
-      "last_updated": "2026-11-11T01:30:18.323Z"
+      "last_updated": "2026-11-11T01:30:18.323Z",
+      "journal_if": 50.5,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/adpr.70297",
@@ -10249,7 +10507,9 @@
       "llm_at": "2026-10-30T01:24:03.636Z",
       "pending_summary": false,
       "first_seen": "2026-10-29T01:19:07.187Z",
-      "last_updated": "2026-11-11T01:30:18.323Z"
+      "last_updated": "2026-11-11T01:30:18.323Z",
+      "journal_if": 5.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1002/smll.76430",
@@ -10305,7 +10565,9 @@
       "llm_at": "2026-10-29T01:19:27.223Z",
       "pending_summary": false,
       "first_seen": "2026-10-29T01:19:07.187Z",
-      "last_updated": "2026-11-11T01:30:18.323Z"
+      "last_updated": "2026-11-11T01:30:18.323Z",
+      "journal_if": 13,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/lpor.72119",
@@ -10364,7 +10626,9 @@
       "llm_at": "2026-10-30T01:24:04.674Z",
       "pending_summary": false,
       "first_seen": "2026-10-29T01:19:07.187Z",
-      "last_updated": "2026-11-11T01:30:18.323Z"
+      "last_updated": "2026-11-11T01:30:18.323Z",
+      "journal_if": 9.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1103/kb91-8zd1",
@@ -10595,7 +10859,9 @@
       "llm_at": "2026-10-29T01:19:31.678Z",
       "pending_summary": false,
       "first_seen": "2026-10-28T00:47:21.428Z",
-      "last_updated": "2026-11-10T03:51:00.657Z"
+      "last_updated": "2026-11-10T03:51:00.657Z",
+      "journal_if": 16.1,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/lpor.72107",
@@ -10654,7 +10920,9 @@
       "llm_at": "2026-10-29T01:19:32.448Z",
       "pending_summary": false,
       "first_seen": "2026-10-28T00:47:21.428Z",
-      "last_updated": "2026-11-10T03:51:00.657Z"
+      "last_updated": "2026-11-10T03:51:00.657Z",
+      "journal_if": 9.8,
+      "journal_tier": 1
     },
     {
       "id": "10.3390/nano16211376",
@@ -10714,7 +10982,9 @@
       "llm_at": "2026-10-28T00:47:38.086Z",
       "pending_summary": false,
       "first_seen": "2026-10-28T00:47:21.428Z",
-      "last_updated": "2026-11-10T03:51:00.657Z"
+      "last_updated": "2026-11-10T03:51:00.657Z",
+      "journal_if": 4.4,
+      "journal_tier": 3
     },
     {
       "id": "10.1063/5.0350358",
@@ -10771,7 +11041,9 @@
       "llm_at": "2026-10-31T01:08:09.510Z",
       "pending_summary": false,
       "first_seen": "2026-10-31T01:07:37.189Z",
-      "last_updated": "2026-11-09T01:15:28.364Z"
+      "last_updated": "2026-11-09T01:15:28.364Z",
+      "journal_if": 3.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acsnano.6c07558",
@@ -10829,7 +11101,9 @@
       "llm_at": "2026-10-28T00:47:38.389Z",
       "pending_summary": false,
       "first_seen": "2026-10-28T00:47:21.428Z",
-      "last_updated": "2026-11-09T01:15:28.364Z"
+      "last_updated": "2026-11-09T01:15:28.364Z",
+      "journal_if": 15.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1364/oe.619710",
@@ -10883,7 +11157,9 @@
       "llm_at": "2026-10-28T00:47:39.266Z",
       "pending_summary": false,
       "first_seen": "2026-10-28T00:47:21.428Z",
-      "last_updated": "2026-11-09T01:15:28.364Z"
+      "last_updated": "2026-11-09T01:15:28.364Z",
+      "journal_if": 3.8,
+      "journal_tier": 2
     },
     {
       "id": "10.1186/s11671-026-05086-4",
@@ -10999,7 +11275,9 @@
       "llm_at": "2026-10-29T01:19:33.485Z",
       "pending_summary": false,
       "first_seen": "2026-10-28T00:47:21.428Z",
-      "last_updated": "2026-11-09T01:15:28.364Z"
+      "last_updated": "2026-11-09T01:15:28.364Z",
+      "journal_if": 18.5,
+      "journal_tier": 1
     },
     {
       "id": "10.1063/5.0352438",
@@ -11054,7 +11332,9 @@
       "llm_at": "2026-10-28T00:47:41.512Z",
       "pending_summary": false,
       "first_seen": "2026-10-28T00:47:21.428Z",
-      "last_updated": "2026-11-09T01:15:28.364Z"
+      "last_updated": "2026-11-09T01:15:28.364Z",
+      "journal_if": 3.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1002/adfm.79283",
@@ -11110,7 +11390,9 @@
       "llm_at": "2026-10-27T00:57:21.017Z",
       "pending_summary": false,
       "first_seen": "2026-10-27T00:57:00.437Z",
-      "last_updated": "2026-11-08T00:56:46.049Z"
+      "last_updated": "2026-11-08T00:56:46.049Z",
+      "journal_if": 18.5,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/adma.75486",
@@ -11166,7 +11448,9 @@
       "llm_at": "2026-10-24T23:49:52.439Z",
       "pending_summary": false,
       "first_seen": "2026-10-24T23:49:28.258Z",
-      "last_updated": "2026-11-07T01:20:06.089Z"
+      "last_updated": "2026-11-07T01:20:06.089Z",
+      "journal_if": 27.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.jlumin.2026.122249",
@@ -11221,7 +11505,9 @@
       "llm_at": "2026-11-01T00:30:53.002Z",
       "pending_summary": false,
       "first_seen": "2026-11-01T00:30:28.464Z",
-      "last_updated": "2026-11-06T01:50:52.967Z"
+      "last_updated": "2026-11-06T01:50:52.967Z",
+      "journal_if": 3.3,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acs.nanolett.6c04088",
@@ -11279,7 +11565,9 @@
       "llm_at": "2026-11-06T01:51:17.137Z",
       "pending_summary": false,
       "first_seen": "2026-10-24T23:49:28.258Z",
-      "last_updated": "2026-11-06T01:50:52.967Z"
+      "last_updated": "2026-11-06T01:50:52.967Z",
+      "journal_if": 9.6,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acs.jpcc.6c05580",
@@ -11337,7 +11625,9 @@
       "llm_at": "2026-10-24T00:06:40.302Z",
       "pending_summary": false,
       "first_seen": "2026-10-24T00:05:49.578Z",
-      "last_updated": "2026-11-06T01:50:52.967Z"
+      "last_updated": "2026-11-06T01:50:52.967Z",
+      "journal_if": 3.3,
+      "journal_tier": 3
     },
     {
       "id": "10.1063/5.0354212",
@@ -11395,7 +11685,9 @@
       "llm_at": "2026-10-24T00:06:40.337Z",
       "pending_summary": false,
       "first_seen": "2026-10-24T00:05:49.578Z",
-      "last_updated": "2026-11-06T01:50:52.967Z"
+      "last_updated": "2026-11-06T01:50:52.967Z",
+      "journal_if": 2.7,
+      "journal_tier": 3
     },
     {
       "id": "10.54254/2977-3903/2026.38258",
@@ -11507,7 +11799,9 @@
       "llm_at": "2026-10-24T00:06:41.073Z",
       "pending_summary": false,
       "first_seen": "2026-10-24T00:05:49.578Z",
-      "last_updated": "2026-11-06T01:50:52.967Z"
+      "last_updated": "2026-11-06T01:50:52.967Z",
+      "journal_if": 9.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acs.jpcc.6c06306",
@@ -11562,7 +11856,9 @@
       "llm_at": "2026-10-24T23:49:52.994Z",
       "pending_summary": false,
       "first_seen": "2026-10-24T00:05:49.578Z",
-      "last_updated": "2026-11-06T01:50:52.967Z"
+      "last_updated": "2026-11-06T01:50:52.967Z",
+      "journal_if": 3.3,
+      "journal_tier": 3
     },
     {
       "id": "10.1039/d6nr02375d",
@@ -11615,7 +11911,9 @@
       "llm_at": "2026-10-25T23:38:43.093Z",
       "pending_summary": false,
       "first_seen": "2026-10-25T23:38:20.620Z",
-      "last_updated": "2026-11-05T01:52:11.066Z"
+      "last_updated": "2026-11-05T01:52:11.066Z",
+      "journal_if": 6.7,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.vacuum.2026.115905",
@@ -11727,7 +12025,9 @@
       "llm_at": "2026-10-23T00:13:48.174Z",
       "pending_summary": false,
       "first_seen": "2026-10-23T00:13:24.021Z",
-      "last_updated": "2026-11-05T01:52:11.066Z"
+      "last_updated": "2026-11-05T01:52:11.066Z",
+      "journal_if": 14.7,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/adom.71968",
@@ -11783,7 +12083,9 @@
       "llm_at": "2026-10-23T00:13:48.182Z",
       "pending_summary": false,
       "first_seen": "2026-10-23T00:13:24.021Z",
-      "last_updated": "2026-11-05T01:52:11.066Z"
+      "last_updated": "2026-11-05T01:52:11.066Z",
+      "journal_if": 8,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acsami.6c18171",
@@ -11839,7 +12141,9 @@
       "llm_at": "2026-10-23T00:13:47.718Z",
       "pending_summary": false,
       "first_seen": "2026-10-23T00:13:24.021Z",
-      "last_updated": "2026-11-05T01:52:11.066Z"
+      "last_updated": "2026-11-05T01:52:11.066Z",
+      "journal_if": 8.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acsami.6c14885",
@@ -11894,7 +12198,9 @@
       "llm_at": "2026-10-24T23:49:55.636Z",
       "pending_summary": false,
       "first_seen": "2026-10-22T00:16:35.339Z",
-      "last_updated": "2026-11-05T01:52:11.066Z"
+      "last_updated": "2026-11-05T01:52:11.066Z",
+      "journal_if": 8.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acs.nanolett.6c03987",
@@ -11951,7 +12257,9 @@
       "llm_at": "2026-10-23T00:13:47.689Z",
       "pending_summary": false,
       "first_seen": "2026-10-23T00:13:24.021Z",
-      "last_updated": "2026-11-04T01:43:57.739Z"
+      "last_updated": "2026-11-04T01:43:57.739Z",
+      "journal_if": 9.6,
+      "journal_tier": 1
     },
     {
       "id": "10.1116/6.0005755",
@@ -12065,7 +12373,9 @@
       "llm_at": "2026-10-22T00:17:26.364Z",
       "pending_summary": false,
       "first_seen": "2026-10-22T00:16:35.339Z",
-      "last_updated": "2026-11-04T01:43:57.739Z"
+      "last_updated": "2026-11-04T01:43:57.739Z",
+      "journal_if": 18.5,
+      "journal_tier": 1
     },
     {
       "id": "10.1103/3vgt-28n1",
@@ -12173,7 +12483,9 @@
       "llm_at": "2026-10-30T01:24:03.579Z",
       "pending_summary": false,
       "first_seen": "2026-10-30T01:23:10.245Z",
-      "last_updated": "2026-11-03T03:06:37.434Z"
+      "last_updated": "2026-11-03T03:06:37.434Z",
+      "journal_if": 3.9,
+      "journal_tier": 3
     },
     {
       "id": "10.3390/technologies14100681",
@@ -12343,7 +12655,9 @@
       "llm_at": "2026-10-23T00:13:51.213Z",
       "pending_summary": false,
       "first_seen": "2026-10-22T00:16:35.339Z",
-      "last_updated": "2026-11-03T03:06:37.434Z"
+      "last_updated": "2026-11-03T03:06:37.434Z",
+      "journal_if": 8,
+      "journal_tier": 2
     },
     {
       "id": "10.26599/nr.2026.94909270",
@@ -12457,7 +12771,9 @@
       "llm_at": "2026-10-21T00:12:42.420Z",
       "pending_summary": false,
       "first_seen": "2026-10-21T00:11:52.103Z",
-      "last_updated": "2026-11-02T01:04:18.102Z"
+      "last_updated": "2026-11-02T01:04:18.102Z",
+      "journal_if": 15,
+      "journal_tier": 1
     },
     {
       "id": "10.3390/molecules31203746",
@@ -12568,7 +12884,9 @@
       "llm_at": "2026-10-21T00:12:41.567Z",
       "pending_summary": false,
       "first_seen": "2026-10-21T00:11:52.103Z",
-      "last_updated": "2026-11-02T01:04:18.102Z"
+      "last_updated": "2026-11-02T01:04:18.102Z",
+      "journal_if": 3.8,
+      "journal_tier": 2
     },
     {
       "id": "10.1038/s41467-026-77896-0",
@@ -12627,7 +12945,9 @@
       "llm_at": "2026-10-25T23:38:43.652Z",
       "pending_summary": false,
       "first_seen": "2026-10-21T00:11:52.103Z",
-      "last_updated": "2026-11-02T01:04:18.102Z"
+      "last_updated": "2026-11-02T01:04:18.102Z",
+      "journal_if": 14.7,
+      "journal_tier": 1
     },
     {
       "id": "10.1364/oe.615542",
@@ -12683,7 +13003,9 @@
       "llm_at": "2026-10-21T00:12:42.791Z",
       "pending_summary": false,
       "first_seen": "2026-10-21T00:11:52.103Z",
-      "last_updated": "2026-11-02T01:04:18.102Z"
+      "last_updated": "2026-11-02T01:04:18.102Z",
+      "journal_if": 3.8,
+      "journal_tier": 2
     },
     {
       "id": "10.1103/lt2l-s7bk",
@@ -12793,7 +13115,9 @@
       "llm_at": "2026-10-20T00:45:47.376Z",
       "pending_summary": false,
       "first_seen": "2026-10-20T00:45:30.263Z",
-      "last_updated": "2026-11-02T01:04:18.102Z"
+      "last_updated": "2026-11-02T01:04:18.102Z",
+      "journal_if": 3.3,
+      "journal_tier": 3
     },
     {
       "id": "10.3390/bios16100587",
@@ -12906,7 +13230,9 @@
       "llm_at": "2026-10-18T23:45:55.247Z",
       "pending_summary": false,
       "first_seen": "2026-10-17T23:31:57.724Z",
-      "last_updated": "2026-10-31T01:07:37.189Z"
+      "last_updated": "2026-10-31T01:07:37.189Z",
+      "journal_if": 9.6,
+      "journal_tier": 1
     },
     {
       "id": "10.1007/s10853-026-13950-y",
@@ -13024,7 +13350,9 @@
       "llm_at": "2026-10-17T23:32:31.371Z",
       "pending_summary": false,
       "first_seen": "2026-10-17T00:00:04.265Z",
-      "last_updated": "2026-10-30T01:23:10.245Z"
+      "last_updated": "2026-10-30T01:23:10.245Z",
+      "journal_if": 19.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acsaelm.6c00807",
@@ -13082,7 +13410,9 @@
       "llm_at": "2026-10-17T23:32:31.570Z",
       "pending_summary": false,
       "first_seen": "2026-10-17T00:00:04.265Z",
-      "last_updated": "2026-10-30T01:23:10.245Z"
+      "last_updated": "2026-10-30T01:23:10.245Z",
+      "journal_if": 4.7,
+      "journal_tier": 3
     },
     {
       "id": "10.1002/nap2.70310",
@@ -13140,7 +13470,9 @@
       "llm_at": "2026-10-17T23:32:32.747Z",
       "pending_summary": false,
       "first_seen": "2026-10-16T10:46:30.884Z",
-      "last_updated": "2026-10-30T01:23:10.245Z"
+      "last_updated": "2026-10-30T01:23:10.245Z",
+      "journal_if": 6.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1038/s41528-026-00652-3",
@@ -13255,7 +13587,9 @@
       "llm_at": "2026-10-16T10:46:58.575Z",
       "pending_summary": false,
       "first_seen": "2026-10-16T10:46:30.884Z",
-      "last_updated": "2026-10-29T01:19:07.187Z"
+      "last_updated": "2026-10-29T01:19:07.187Z",
+      "journal_if": 3.2,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acsaelm.6c01296",
@@ -13313,7 +13647,9 @@
       "llm_at": "2026-10-16T10:46:58.708Z",
       "pending_summary": false,
       "first_seen": "2026-10-16T10:46:30.884Z",
-      "last_updated": "2026-10-29T01:19:07.187Z"
+      "last_updated": "2026-10-29T01:19:07.187Z",
+      "journal_if": 4.7,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acsami.6c16069",
@@ -13370,7 +13706,9 @@
       "llm_at": "2026-10-17T23:32:33.504Z",
       "pending_summary": false,
       "first_seen": "2026-10-16T10:46:30.884Z",
-      "last_updated": "2026-10-29T01:19:07.187Z"
+      "last_updated": "2026-10-29T01:19:07.187Z",
+      "journal_if": 8.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/jacs.6c13799",
@@ -13427,7 +13765,9 @@
       "llm_at": "2026-10-16T10:47:01.599Z",
       "pending_summary": false,
       "first_seen": "2026-10-16T10:46:30.884Z",
-      "last_updated": "2026-10-27T00:57:00.437Z"
+      "last_updated": "2026-10-27T00:57:00.437Z",
+      "journal_if": 14.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1088/1402-4896/aeb192",
@@ -13481,7 +13821,9 @@
       "llm_at": "2026-10-16T10:47:01.408Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-29T01:19:07.187Z"
+      "last_updated": "2026-10-29T01:19:07.187Z",
+      "journal_if": 2.9,
+      "journal_tier": 3
     },
     {
       "id": "10.3390/inorganics14100262",
@@ -13538,7 +13880,9 @@
       "llm_at": "2026-10-16T10:47:01.366Z",
       "pending_summary": false,
       "first_seen": "2026-10-16T10:46:30.884Z",
-      "last_updated": "2026-10-28T00:47:21.428Z"
+      "last_updated": "2026-10-28T00:47:21.428Z",
+      "journal_if": 3,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.nxnano.2026.100858",
@@ -13654,7 +13998,9 @@
       "llm_at": "2026-10-13T17:44:51.417Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-25T23:38:20.620Z"
+      "last_updated": "2026-10-25T23:38:20.620Z",
+      "journal_if": 3.5,
+      "journal_tier": 2
     },
     {
       "id": "10.3390/nano16201291",
@@ -13711,7 +14057,9 @@
       "llm_at": "2026-10-13T17:44:52.526Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-25T23:38:20.620Z"
+      "last_updated": "2026-10-25T23:38:20.620Z",
+      "journal_if": 4.4,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acs.nanolett.6c03813",
@@ -13770,7 +14118,9 @@
         "semanticscholar"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 9.6,
+      "journal_tier": 1
     },
     {
       "id": "10.25073/2588-1124/vnumap.4989",
@@ -13886,7 +14236,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 9.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.mtcomm.2026.116331",
@@ -13942,7 +14294,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.8,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.cej.2026.182899",
@@ -13999,7 +14353,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 13.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/adfm.78891",
@@ -14057,7 +14413,9 @@
       "llm_at": "2026-10-13T17:44:52.501Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-22T00:16:35.339Z"
+      "last_updated": "2026-10-22T00:16:35.339Z",
+      "journal_if": 18.5,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acsnano.6c10075",
@@ -14115,7 +14473,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 15.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acs.chemmater.6c01903",
@@ -14172,7 +14532,9 @@
         "crossref"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 7.2,
+      "journal_tier": 2
     },
     {
       "id": "10.1002/anie.5306487",
@@ -14229,7 +14591,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 16.1,
+      "journal_tier": 1
     },
     {
       "id": "10.1080/09500340.2026.2743774",
@@ -14287,7 +14651,9 @@
       "llm_at": "2026-10-13T17:49:47.883Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:48:09.761Z",
-      "last_updated": "2026-10-21T00:11:52.103Z"
+      "last_updated": "2026-10-21T00:11:52.103Z",
+      "journal_if": 1.3,
+      "journal_tier": 3
     },
     {
       "id": "10.1063/5.0295810",
@@ -14343,7 +14709,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 15,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acs.jpcc.6c04042",
@@ -14396,7 +14764,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.3,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acsomega.6c09360",
@@ -14449,7 +14819,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.8,
+      "journal_tier": 3
     },
     {
       "id": "10.3390/photochem6040039",
@@ -14562,7 +14934,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 2,
+      "journal_tier": 3
     },
     {
       "id": "10.5281/zenodo.23183491",
@@ -14676,7 +15050,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 7.2,
+      "journal_tier": 2
     },
     {
       "id": "10.1002/lpor.72004",
@@ -14734,7 +15110,9 @@
       "llm_at": "2026-10-13T17:44:54.945Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-18T23:45:24.564Z"
+      "last_updated": "2026-10-18T23:45:24.564Z",
+      "journal_if": 9.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acsami.6c05348",
@@ -14791,7 +15169,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 8.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acs.nanolett.6c03669",
@@ -14847,7 +15227,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 9.6,
+      "journal_tier": 1
     },
     {
       "id": "10.37394/232017.2026.17.3",
@@ -15015,7 +15397,9 @@
       "llm_at": "2026-10-13T17:44:56.265Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-17T23:31:57.724Z"
+      "last_updated": "2026-10-17T23:31:57.724Z",
+      "journal_if": 3.8,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.optmat.2026.118561",
@@ -15071,7 +15455,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.8,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acs.jpclett.6c02118",
@@ -15126,7 +15512,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 4.8,
+      "journal_tier": 2
     },
     {
       "id": "10.1038/s41467-026-78224-2",
@@ -15183,7 +15571,9 @@
       "llm_at": "2026-10-13T17:44:55.429Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-16T10:56:53.936Z"
+      "last_updated": "2026-10-16T10:56:53.936Z",
+      "journal_if": 14.7,
+      "journal_tier": 1
     },
     {
       "id": "10.1039/d6nr02603f",
@@ -15235,7 +15625,9 @@
       "llm_at": "2026-10-13T17:44:57.353Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-16T10:56:53.936Z"
+      "last_updated": "2026-10-16T10:56:53.936Z",
+      "journal_if": 6.7,
+      "journal_tier": 2
     },
     {
       "id": "10.1103/lfkt-wbb7",
@@ -15289,7 +15681,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.7,
+      "journal_tier": 2
     },
     {
       "id": "10.1038/s41565-026-02285-z",
@@ -15342,7 +15736,9 @@
       "llm_at": "2026-10-14T00:40:17.254Z",
       "pending_summary": false,
       "first_seen": "2026-10-14T00:39:56.708Z",
-      "last_updated": "2026-10-14T04:43:12.268Z"
+      "last_updated": "2026-10-14T04:43:12.268Z",
+      "journal_if": 38.1,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.nxmate.2026.103324",
@@ -15453,7 +15849,9 @@
       "llm_at": "2026-10-13T17:44:56.569Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-14T04:43:12.268Z"
+      "last_updated": "2026-10-14T04:43:12.268Z",
+      "journal_if": 13.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1109/lpt.2026.3691133",
@@ -15510,7 +15908,9 @@
       "llm_at": "2026-10-14T04:43:48.794Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-14T04:43:12.268Z"
+      "last_updated": "2026-10-14T04:43:12.268Z",
+      "journal_if": 2.3,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.cej.2026.179852",
@@ -15567,7 +15967,9 @@
       "llm_at": "2026-10-14T04:43:46.272Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-14T04:43:12.268Z"
+      "last_updated": "2026-10-14T04:43:12.268Z",
+      "journal_if": 13.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.physleta.2026.131915",
@@ -15619,7 +16021,9 @@
       "llm_at": "2026-10-13T17:44:58.008Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-14T04:43:12.268Z"
+      "last_updated": "2026-10-14T04:43:12.268Z",
+      "journal_if": 2.3,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.physb.2026.418954",
@@ -15674,7 +16078,9 @@
       "llm_at": "2026-10-13T17:44:57.793Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-14T04:43:12.268Z"
+      "last_updated": "2026-10-14T04:43:12.268Z",
+      "journal_if": 2.8,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acs.nanolett.6c03990",
@@ -15730,7 +16136,9 @@
       "llm_at": "2026-10-13T17:44:59.767Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-14T04:43:12.268Z"
+      "last_updated": "2026-10-14T04:43:12.268Z",
+      "journal_if": 9.6,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.jlumin.2026.122073",
@@ -15786,7 +16194,9 @@
       "llm_at": "2026-10-13T17:44:59.060Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-14T04:43:12.268Z"
+      "last_updated": "2026-10-14T04:43:12.268Z",
+      "journal_if": 3.3,
+      "journal_tier": 3
     },
     {
       "id": "10.35848/1882-0786/aeaf43",
@@ -15841,7 +16251,9 @@
       "llm_at": "2026-10-13T17:45:00.104Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-14T04:43:12.268Z"
+      "last_updated": "2026-10-14T04:43:12.268Z",
+      "journal_if": 2.3,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.solmat.2026.114495",
@@ -15897,7 +16309,9 @@
       "llm_at": "2026-10-13T17:44:59.099Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-14T04:43:12.268Z"
+      "last_updated": "2026-10-14T04:43:12.268Z",
+      "journal_if": 6.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.cjph.2026.04.019",
@@ -15952,7 +16366,9 @@
       "llm_at": "2026-10-13T17:45:00.408Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-14T04:43:12.268Z"
+      "last_updated": "2026-10-14T04:43:12.268Z",
+      "journal_if": 4.6,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.aca.2026.345869",
@@ -16008,7 +16424,9 @@
       "llm_at": "2026-10-13T17:45:00.295Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-14T04:43:12.268Z"
+      "last_updated": "2026-10-14T04:43:12.268Z",
+      "journal_if": 5.7,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.bios.2026.118849",
@@ -16064,7 +16482,9 @@
       "llm_at": "2026-10-14T04:25:51.048Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-14T04:43:12.268Z"
+      "last_updated": "2026-10-14T04:43:12.268Z",
+      "journal_if": 10.7,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/jacs.6c13849",
@@ -16122,7 +16542,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 14.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/jacs.6c15357",
@@ -16180,7 +16602,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 14.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.jallcom.2026.191578",
@@ -16233,7 +16657,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 5.8,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.xcrp.2026.103569",
@@ -16292,7 +16718,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 7.9,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.jmmm.2026.174510",
@@ -16348,7 +16776,9 @@
         "crossref"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 2.7,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.nxmate.2026.103184",
@@ -16460,7 +16890,9 @@
         "crossref"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 13.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.rinp.2026.108754",
@@ -16517,7 +16949,9 @@
         "crossref"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 5.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1364/prj.608645",
@@ -16574,7 +17008,9 @@
       "llm_at": "2026-10-13T17:45:02.954Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-14T04:43:12.268Z"
+      "last_updated": "2026-10-14T04:43:12.268Z",
+      "journal_if": 7.6,
+      "journal_tier": 1
     },
     {
       "id": "10.26803/ijlter.25.9.23",
@@ -16686,7 +17122,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 4.7,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acs.jpclett.6c02515",
@@ -16742,7 +17180,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.8,
+      "journal_tier": 2
     },
     {
       "id": "10.1007/s11814-026-00820-1",
@@ -16797,7 +17237,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 2.5,
+      "journal_tier": 3
     },
     {
       "id": "10.35517/jsh-aaup.v1.02.09",
@@ -16908,7 +17350,9 @@
         "crossref"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 9.7,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acsomega.6c09500",
@@ -16963,7 +17407,9 @@
       "llm_at": "2026-10-13T17:45:04.397Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-13T18:03:17.054Z"
+      "last_updated": "2026-10-13T18:03:17.054Z",
+      "journal_if": 3.8,
+      "journal_tier": 3
     },
     {
       "id": "10.1002/admt.71360",
@@ -17020,7 +17466,9 @@
       "llm_at": "2026-10-13T17:45:04.199Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-13T18:03:17.054Z"
+      "last_updated": "2026-10-13T18:03:17.054Z",
+      "journal_if": 6.8,
+      "journal_tier": 3
     },
     {
       "id": "10.1002/smll.76045",
@@ -17076,7 +17524,9 @@
       "llm_at": "2026-10-13T17:45:05.774Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-13T18:03:17.054Z"
+      "last_updated": "2026-10-13T18:03:17.054Z",
+      "journal_if": 13,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/smll.76049",
@@ -17135,7 +17585,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 13,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acs.nanolett.6c03633",
@@ -17191,7 +17643,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 9.6,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/jacs.6c10386",
@@ -17247,7 +17701,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 14.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1117/1.apn.5.6.066010",
@@ -17304,7 +17760,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "crossref"
+      "published_source": "crossref",
+      "journal_if": 6,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acsami.6c18064",
@@ -17360,7 +17818,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 8.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/jacs.6c13682",
@@ -17416,7 +17876,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 14.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acs.nanolett.6c03767",
@@ -17473,7 +17935,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 9.6,
+      "journal_tier": 1
     },
     {
       "id": "10.1007/s42250-026-01861-z",
@@ -17584,7 +18048,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.8,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acsphotonics.6c01692",
@@ -17641,7 +18107,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 6.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1063/5.0352379",
@@ -17697,7 +18165,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acs.accounts.6c00456",
@@ -17753,7 +18223,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 16.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1007/s11814-026-00831-y",
@@ -17807,7 +18279,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 2.5,
+      "journal_tier": 3
     },
     {
       "id": "10.1002/sstr.70613",
@@ -17863,7 +18337,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 8.6,
+      "journal_tier": 2
     },
     {
       "id": "10.1038/s41467-026-77916-z",
@@ -17920,7 +18396,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 14.7,
+      "journal_tier": 1
     },
     {
       "id": "10.3390/chemosensors14100216",
@@ -17976,7 +18454,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.8,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acs.jpcc.6c05014",
@@ -18033,7 +18513,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.3,
+      "journal_tier": 3
     },
     {
       "id": "10.1002/lpor.71955",
@@ -18090,7 +18572,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 9.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/jacs.6c08553",
@@ -18146,7 +18630,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 14.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/nap2.70308",
@@ -18196,7 +18682,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 6.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acs.nanolett.6c02979",
@@ -18252,7 +18740,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 9.6,
+      "journal_tier": 1
     },
     {
       "id": "10.54254/2755-2721/2026.37158",
@@ -18360,7 +18850,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 5.9,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acs.inorgchem.6c03397",
@@ -18416,7 +18908,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1007/s11664-026-13012-8",
@@ -18471,7 +18965,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 2.1,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acsami.6c14167",
@@ -18527,7 +19023,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 8.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1002/adom.71824",
@@ -18584,7 +19082,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 8,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acs.nanolett.6c02939",
@@ -18640,7 +19140,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 9.6,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.jpcs.2026.114153",
@@ -18697,7 +19199,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/jacs.6c12687",
@@ -18754,7 +19258,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 14.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/apxr.70193",
@@ -18923,7 +19429,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 27.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acsphotonics.6c01511",
@@ -18979,7 +19487,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 6.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acs.nanolett.6c03011",
@@ -19036,7 +19546,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 9.6,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acs.nanolett.6c03525",
@@ -19092,7 +19604,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 9.6,
+      "journal_tier": 1
     },
     {
       "id": "10.1007/s13233-026-00547-2",
@@ -19204,7 +19718,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 18.5,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.microc.2026.119709",
@@ -19260,7 +19776,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.9,
+      "journal_tier": 2
     },
     {
       "id": "10.1063/5.0336942",
@@ -19316,7 +19834,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1038/s41565-026-02272-4",
@@ -19370,7 +19890,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 38.1,
+      "journal_tier": 1
     },
     {
       "id": "10.1038/s41565-026-02278-y",
@@ -19421,7 +19943,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 38.1,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acs.jpcc.6c03650",
@@ -19477,7 +20001,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.3,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acs.nanolett.6c03848",
@@ -19534,7 +20060,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 9.6,
+      "journal_tier": 1
     },
     {
       "id": "10.3390/nano16181152",
@@ -19589,7 +20117,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.4,
+      "journal_tier": 3
     },
     {
       "id": "10.1088/1361-6528/aea6e2",
@@ -19645,7 +20175,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 2.9,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acsaelm.6c01644",
@@ -19701,7 +20233,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.7,
+      "journal_tier": 3
     },
     {
       "id": "10.1002/lpor.71903",
@@ -19758,7 +20292,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 9.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acsphotonics.6c00697",
@@ -19814,7 +20350,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 6.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1007/s41605-026-00747-5",
@@ -19924,7 +20462,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 14.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1088/2752-5724/aea589",
@@ -19980,7 +20520,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 10.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1088/1674-1056/aea53a",
@@ -20036,7 +20578,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 1.7,
+      "journal_tier": 3
     },
     {
       "id": "10.82444/warw.33543361",
@@ -20256,7 +20800,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 8.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1364/optica.609872",
@@ -20313,7 +20859,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 8.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acs.jchemed.6c00577",
@@ -20368,7 +20916,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 2.5,
+      "journal_tier": 3
     },
     {
       "id": "10.1002/anie.3827650",
@@ -20425,7 +20975,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 16.1,
+      "journal_tier": 1
     },
     {
       "id": "10.1007/s13391-026-00667-y",
@@ -20481,7 +21033,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 2.3,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.matdes.2026.116983",
@@ -20537,7 +21091,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 7.6,
+      "journal_tier": 1
     },
     {
       "id": "10.1088/1555-6611/ae9ea2",
@@ -20593,7 +21149,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 1.3,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acsami.6c13325",
@@ -20649,7 +21207,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 8.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1007/s11082-026-09104-8",
@@ -20705,7 +21265,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3,
+      "journal_tier": 3
     },
     {
       "id": "10.1088/1361-6528/aea169",
@@ -20763,7 +21325,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 2.9,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.mssp.2026.111123",
@@ -20817,7 +21381,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.1,
+      "journal_tier": 2
     },
     {
       "id": "10.1007/s11814-026-00793-1",
@@ -20873,7 +21439,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 2.5,
+      "journal_tier": 3
     },
     {
       "id": "10.3390/app16178719",
@@ -20985,7 +21553,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.2,
+      "journal_tier": 3
     },
     {
       "id": "10.1002/adfm.78081",
@@ -21043,7 +21613,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 18.5,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/smll.75572",
@@ -21099,7 +21671,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 13,
+      "journal_tier": 1
     },
     {
       "id": "10.1063/5.0345760",
@@ -21156,7 +21730,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 2.7,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acsami.6c10302",
@@ -21213,7 +21789,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 8.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1002/adom.71752",
@@ -21270,7 +21848,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 8,
+      "journal_tier": 2
     },
     {
       "id": "10.1093/nsr/nwag541",
@@ -21324,7 +21904,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 16.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/cnma.70370",
@@ -21603,7 +22185,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 2.8,
+      "journal_tier": 3
     },
     {
       "id": "10.33545/27076571.2026.v7.i9.a.386",
@@ -21713,7 +22297,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4,
+      "journal_tier": 3
     },
     {
       "id": "10.1007/s12613-025-3318-0",
@@ -21827,7 +22413,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 27.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/adfm.78068",
@@ -21884,7 +22472,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 18.5,
+      "journal_tier": 1
     },
     {
       "id": "10.3390/ma19173719",
@@ -21940,7 +22530,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.1,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acsnano.6c11137",
@@ -21996,7 +22588,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 15.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acsenergylett.6c02017",
@@ -22052,7 +22646,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 19.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1093/nsr/nwag549",
@@ -22108,7 +22704,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 16.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acsnanoscienceau.6c00100",
@@ -22163,7 +22761,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.2,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.matlit.2026.100091",
@@ -22274,7 +22874,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.9,
+      "journal_tier": 3
     },
     {
       "id": "10.3390/nano16171073",
@@ -22330,7 +22932,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.4,
+      "journal_tier": 3
     },
     {
       "id": "10.1002/smll.75487",
@@ -22386,7 +22990,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 13,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acsphotonics.6c01429",
@@ -22442,7 +23048,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 6.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acsnano.6c08134",
@@ -22498,7 +23106,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 15.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.nwnano.2026.100232",
@@ -22608,7 +23218,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 2,
+      "journal_tier": 3
     },
     {
       "id": "10.1002/smll.75452",
@@ -22665,7 +23277,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 13,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acsnano.6c11819",
@@ -22720,7 +23334,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 15.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1007/s11433-026-3040-7",
@@ -22775,7 +23391,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 7,
+      "journal_tier": 2
     },
     {
       "id": "10.3390/nano16171057",
@@ -22831,7 +23449,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.4,
+      "journal_tier": 3
     },
     {
       "id": "10.3390/mi17091005",
@@ -22945,7 +23565,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 8.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/jacs.6c13023",
@@ -23001,7 +23623,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 14.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1149/2162-8777/ae9db8",
@@ -23114,7 +23738,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 9.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/adom.71700",
@@ -23170,7 +23796,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 8,
+      "journal_tier": 2
     },
     {
       "id": "10.1063/5.0348784",
@@ -23226,7 +23854,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1063/5.0338473",
@@ -23283,7 +23913,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acsphotonics.6c01579",
@@ -23340,7 +23972,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 6.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acsaelm.6c01182",
@@ -23397,7 +24031,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.7,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acs.jpclett.6c02354",
@@ -23454,7 +24090,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.8,
+      "journal_tier": 2
     },
     {
       "id": "10.1002/lpor.71804",
@@ -23512,7 +24150,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 9.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1088/2058-9565/ae9d1c",
@@ -23566,7 +24206,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 6.7,
+      "journal_tier": 2
     },
     {
       "id": "10.1002/lpor.71774",
@@ -23623,7 +24265,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 9.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.optmat.2026.118448",
@@ -23679,7 +24323,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.8,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acsnano.6c06196",
@@ -23736,7 +24382,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 15.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acs.jpclett.6c02582",
@@ -23794,7 +24442,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.8,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acs.jpclett.6c02230",
@@ -23851,7 +24501,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.8,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acs.jpcc.6c04433",
@@ -23907,7 +24559,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.3,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acsami.6c10538",
@@ -23964,7 +24618,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 8.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.optmat.2026.118435",
@@ -24020,7 +24676,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.8,
+      "journal_tier": 3
     },
     {
       "id": "10.1002/adom.71656",
@@ -24076,7 +24734,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 8,
+      "journal_tier": 2
     },
     {
       "id": "10.1002/smtd.70987",
@@ -24133,7 +24793,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 10.7,
+      "journal_tier": 2
     },
     {
       "id": "10.1007/s10118-026-3724-4",
@@ -24301,7 +24963,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.4,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.jsamd.2026.101234",
@@ -24410,7 +25074,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 7.2,
+      "journal_tier": 2
     },
     {
       "id": "10.3390/nano16161003",
@@ -24466,7 +25132,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.4,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/jacs.6c12708",
@@ -24524,7 +25192,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 14.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acs.jpcc.6c02506",
@@ -24581,7 +25251,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.3,
+      "journal_tier": 3
     },
     {
       "id": "10.1103/g8t7-my5q",
@@ -24635,7 +25307,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.7,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.optmat.2026.118401",
@@ -24691,7 +25365,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.8,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acsomega.5c12773",
@@ -24747,7 +25423,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.8,
+      "journal_tier": 3
     },
     {
       "id": "10.1364/oe.607425",
@@ -24803,7 +25481,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.8,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acs.nanolett.6c03035",
@@ -24860,7 +25540,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 9.6,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acs.jpclett.6c02093",
@@ -24917,7 +25599,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.8,
+      "journal_tier": 2
     },
     {
       "id": "10.1088/1361-6528/ae9773",
@@ -24973,7 +25657,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 2.9,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acs.jpclett.6c01698",
@@ -25029,7 +25715,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.8,
+      "journal_tier": 2
     },
     {
       "id": "10.1002/flm2.70119",
@@ -25142,7 +25830,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.8,
+      "journal_tier": 3
     },
     {
       "id": "10.1002/admt.71234",
@@ -25199,7 +25889,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 6.8,
+      "journal_tier": 3
     },
     {
       "id": "10.1088/2631-7990/ae8d60",
@@ -25253,7 +25945,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 16.1,
+      "journal_tier": 1
     },
     {
       "id": "10.13140/rg.2.2.26988.94082",
@@ -25362,7 +26056,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 18.5,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/adma.74535",
@@ -25419,7 +26115,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 27.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/jacs.6c09034",
@@ -25476,7 +26174,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 14.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1088/1361-6463/ae961f",
@@ -25532,7 +26232,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.1,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acsnanoscienceau.5c00198",
@@ -25590,7 +26292,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.2,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acsnano.6c08297",
@@ -25646,7 +26350,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 15.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/smll.74950",
@@ -25702,7 +26408,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 13,
+      "journal_tier": 1
     },
     {
       "id": "10.1103/b358-1776",
@@ -25758,7 +26466,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.7,
+      "journal_tier": 2
     },
     {
       "id": "10.1103/9nj2-4hb1",
@@ -25815,7 +26525,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.7,
+      "journal_tier": 2
     },
     {
       "id": "10.1117/1.oe.65.8.087101",
@@ -25871,7 +26583,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 1.4,
+      "journal_tier": 3
     },
     {
       "id": "10.1002/lpor.71699",
@@ -25929,7 +26643,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 9.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1088/2050-6120/ae9453",
@@ -26096,7 +26812,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.8,
+      "journal_tier": 2
     },
     {
       "id": "10.1063/5.0335893",
@@ -26152,7 +26870,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acsphotonics.6c00696",
@@ -26208,7 +26928,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 6.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1051/epjconf/202638002019/pdf",
@@ -26322,7 +27044,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.apsusc.2026.168020",
@@ -26378,7 +27102,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 6.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.mtnano.2026.100935",
@@ -26433,7 +27159,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.9,
+      "journal_tier": 3
     },
     {
       "id": "10.1002/adom.71594",
@@ -26491,7 +27219,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 8,
+      "journal_tier": 2
     },
     {
       "id": "10.1002/advs.76570",
@@ -26545,7 +27275,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 14.3,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/ente.70612",
@@ -26601,7 +27333,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.8,
+      "journal_tier": 3
     },
     {
       "id": "10.1002/adom.71559",
@@ -26658,7 +27392,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 8,
+      "journal_tier": 2
     },
     {
       "id": "10.1002/adma.74429",
@@ -26715,7 +27451,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 27.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/adpr.70263",
@@ -26942,7 +27680,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 18.5,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/adom.71417",
@@ -26999,7 +27739,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 8,
+      "journal_tier": 2
     },
     {
       "id": "10.1002/smll.74913",
@@ -27055,7 +27797,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 13,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.mtchem.2026.103895",
@@ -27112,7 +27856,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 7,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acs.chemmater.6c01124",
@@ -27169,7 +27915,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 7.2,
+      "journal_tier": 2
     },
     {
       "id": "10.1002/adma.74386",
@@ -27226,7 +27974,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 27.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acs.jpcc.6c02911",
@@ -27282,7 +28032,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.3,
+      "journal_tier": 3
     },
     {
       "id": "10.1038/s41565-026-02237-7",
@@ -27337,7 +28089,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 38.1,
+      "journal_tier": 1
     },
     {
       "id": "10.1088/1402-4896/ae9146",
@@ -27393,7 +28147,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 2.9,
+      "journal_tier": 3
     },
     {
       "id": "10.54254/2753-8818/2026.gl35727",
@@ -27505,7 +28261,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1021/acsnano.6c08987",
@@ -27562,7 +28320,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 15.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acsaelm.6c00783",
@@ -27618,7 +28378,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.7,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acsphotonics.6c00397",
@@ -27675,7 +28437,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 6.5,
+      "journal_tier": 2
     },
     {
       "id": "10.1016/j.microc.2026.119188",
@@ -27731,7 +28495,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.9,
+      "journal_tier": 2
     },
     {
       "id": "10.5445/ir/1000195555",
@@ -27845,7 +28611,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 15.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acsami.6c04525",
@@ -27902,7 +28670,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 8.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1007/s11664-026-12988-7",
@@ -27958,7 +28728,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 2.1,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acsaelm.6c00970",
@@ -28014,7 +28786,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.7,
+      "journal_tier": 3
     },
     {
       "id": "10.1016/j.xpro.2026.104712",
@@ -28173,7 +28947,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 33.7,
+      "journal_tier": 1
     },
     {
       "id": "10.3390/nano16140895",
@@ -28227,7 +29003,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.4,
+      "journal_tier": 3
     },
     {
       "id": "10.1103/cwpb-vldr",
@@ -28280,7 +29058,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.7,
+      "journal_tier": 2
     },
     {
       "id": "10.1002/lpor.71626",
@@ -28336,7 +29116,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 9.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/lpor.71612",
@@ -28393,7 +29175,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 9.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1364/oe.603545",
@@ -28449,7 +29233,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 3.8,
+      "journal_tier": 2
     },
     {
       "id": "10.1109/jstqe.2026.3714869",
@@ -28504,7 +29290,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.3,
+      "journal_tier": 2
     },
     {
       "id": "10.1007/s12541-026-01566-w",
@@ -28614,7 +29402,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 5.5,
+      "journal_tier": 2
     },
     {
       "id": "10.17586/2220-8054-2026-17-3-339-345",
@@ -28727,7 +29517,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 33.7,
+      "journal_tier": 1
     },
     {
       "id": "10.1038/s41467-026-75613-5",
@@ -28783,7 +29575,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 14.7,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/adma.74170",
@@ -28839,7 +29633,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 27.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1038/s41377-026-02356-9",
@@ -28895,7 +29691,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 20.6,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/adma.74108",
@@ -28953,7 +29751,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 27.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1002/adom.71469",
@@ -29009,7 +29809,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 8,
+      "journal_tier": 2
     },
     {
       "id": "10.1109/jlt.2026.3714307",
@@ -29065,7 +29867,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.1,
+      "journal_tier": 3
     },
     {
       "id": "10.1021/acsaelm.6c00756",
@@ -29121,7 +29925,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.7,
+      "journal_tier": 3
     },
     {
       "id": "10.1002/lpor.71591",
@@ -29178,7 +29984,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 9.8,
+      "journal_tier": 1
     },
     {
       "id": "10.1109/led.2026.3713619",
@@ -29234,7 +30042,9 @@
         "openalex"
       ],
       "published": true,
-      "published_source": "openalex"
+      "published_source": "openalex",
+      "journal_if": 4.1,
+      "journal_tier": 2
     },
     {
       "id": "10.5281/zenodo.23180263",
@@ -29347,7 +30157,9 @@
       "llm_at": "2026-10-13T17:45:06.013Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-13T17:51:33.404Z"
+      "last_updated": "2026-10-13T17:51:33.404Z",
+      "journal_if": 14.4,
+      "journal_tier": 1
     },
     {
       "id": "10.1021/acsnano.4c15912",
@@ -29405,7 +30217,9 @@
       "llm_at": "2026-10-13T17:45:06.980Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-10-13T17:51:33.404Z"
+      "last_updated": "2026-10-13T17:51:33.404Z",
+      "journal_if": 15.8,
+      "journal_tier": 1
     }
   ]
 }
