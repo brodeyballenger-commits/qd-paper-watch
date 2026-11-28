@@ -1,7 +1,7 @@
 {
   "project": "量子点器件前沿追踪",
-  "generated_at": "2026-11-27T03:50:22.549Z",
-  "count": 520,
+  "generated_at": "2026-11-28T03:35:40.123Z",
+  "count": 526,
   "window_days": 14,
   "directions": [
     {
@@ -27,20 +27,23 @@
   ],
   "highNoveltyThreshold": 4,
   "stats": {
-    "fetched": 1135,
+    "fetched": 1144,
     "deduped": 674,
     "out_of_window": 0,
-    "published": 515,
-    "published_dropped": 12,
-    "kept": 96,
-    "added": 11,
+    "published": 518,
+    "published_dropped": 13,
+    "kept": 98,
+    "added": 6,
     "updated": 3,
-    "unchanged": 82,
+    "unchanged": 89,
     "preprint_merged": 0,
-    "llm_generated": 14,
+    "llm_generated": 9,
     "llm_failed": 0,
     "pending_summary": 0,
-    "qled_focus": 148
+    "qled_focus": 148,
+    "non_research_pruned": 0,
+    "journal_metrics_hit": 407,
+    "tier1_total": 151
   },
   "source": "OpenAlex + Crossref + Semantic Scholar + arXiv",
   "sources": [
@@ -53,8 +56,8 @@
     {
       "source": "openalex",
       "ok": true,
-      "count": 217,
-      "total": 217,
+      "count": 225,
+      "total": 225,
       "dropped": 0,
       "partial": true,
       "error": null
@@ -63,7 +66,7 @@
       "source": "crossref",
       "ok": true,
       "count": 900,
-      "total": 3922,
+      "total": 3913,
       "dropped": 0,
       "partial": false,
       "error": null
@@ -71,7 +74,7 @@
     {
       "source": "semanticscholar",
       "ok": true,
-      "count": 18,
+      "count": 19,
       "total": 15,
       "dropped": 0,
       "partial": false,
@@ -88,7 +91,7 @@
     }
   ],
   "include_preprints": false,
-  "published_count": 512,
+  "published_count": 518,
   "preprint_count": 8,
   "summary_engine": "deepseek-chat",
   "must_read": {

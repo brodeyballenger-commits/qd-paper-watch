@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-27T03:50:22.549Z",
-  "count": 520,
+  "generated_at": "2026-11-28T03:35:40.123Z",
+  "count": 526,
   "papers": [
     {
       "id": "10.1016/j.jallcom.2026.192499",
@@ -56,7 +56,7 @@
       "llm_at": "2026-11-27T03:50:39.568Z",
       "pending_summary": false,
       "first_seen": "2026-11-27T03:50:22.549Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 5.8,
       "journal_tier": 2
     },
@@ -115,7 +115,7 @@
       "llm_at": "2026-11-27T03:50:40.791Z",
       "pending_summary": false,
       "first_seen": "2026-11-27T03:50:22.549Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 4.1,
       "journal_tier": 2
     },
@@ -175,7 +175,7 @@
       "llm_at": "2026-11-26T03:49:28.593Z",
       "pending_summary": false,
       "first_seen": "2026-11-26T03:48:50.102Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.1016/j.nanoms.2025.03.004",
@@ -232,7 +232,7 @@
       "llm_at": "2026-11-26T03:49:29.855Z",
       "pending_summary": false,
       "first_seen": "2026-11-26T03:48:50.102Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.1016/j.jallcom.2026.192667",
@@ -289,7 +289,7 @@
       "llm_at": "2026-11-25T04:38:24.625Z",
       "pending_summary": false,
       "first_seen": "2026-11-25T04:38:09.250Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 5.8,
       "journal_tier": 2
     },
@@ -348,7 +348,7 @@
       "llm_at": "2026-11-20T02:41:57.391Z",
       "pending_summary": false,
       "first_seen": "2026-11-20T02:41:31.477Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.1109/jiot.2026.3735420",
@@ -406,7 +406,7 @@
       "llm_at": "2026-11-22T01:43:27.785Z",
       "pending_summary": false,
       "first_seen": "2026-11-20T02:41:31.477Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.1016/j.cej.2026.183542",
@@ -462,7 +462,7 @@
       "llm_at": "2026-11-06T01:51:09.348Z",
       "pending_summary": false,
       "first_seen": "2026-11-06T01:50:52.967Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 13.3,
       "journal_tier": 1
     },
@@ -518,7 +518,7 @@
       "llm_at": "2026-11-02T01:05:11.800Z",
       "pending_summary": false,
       "first_seen": "2026-11-02T01:04:18.102Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 5,
       "journal_tier": 2
     },
@@ -577,7 +577,7 @@
       "llm_at": "2026-11-02T01:05:11.639Z",
       "pending_summary": false,
       "first_seen": "2026-11-02T01:04:18.102Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 13.3,
       "journal_tier": 1
     },
@@ -636,7 +636,7 @@
       "llm_at": "2026-10-29T01:19:25.596Z",
       "pending_summary": false,
       "first_seen": "2026-10-29T01:19:07.187Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 13.3,
       "journal_tier": 1
     },
@@ -693,7 +693,7 @@
       "llm_at": "2026-10-23T00:13:50.701Z",
       "pending_summary": false,
       "first_seen": "2026-10-22T00:16:35.339Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.1016/j.cej.2026.183143",
@@ -749,7 +749,7 @@
       "llm_at": "2026-10-20T00:45:45.005Z",
       "pending_summary": false,
       "first_seen": "2026-10-20T00:45:30.263Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 13.3,
       "journal_tier": 1
     },
@@ -807,7 +807,7 @@
       "llm_at": "2026-10-13T17:49:42.531Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:48:09.761Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 4.3,
       "journal_tier": 2
     },
@@ -866,7 +866,7 @@
       "llm_at": "2026-11-25T04:38:26.770Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:48:09.761Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 2.3,
       "journal_tier": 3
     },
@@ -925,7 +925,7 @@
       "llm_at": "2026-11-25T04:38:26.297Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 9.4,
       "journal_tier": 1
     },
@@ -985,7 +985,7 @@
       "llm_at": "2026-10-13T17:44:45.446Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 13.3,
       "journal_tier": 1
     },
@@ -1043,7 +1043,7 @@
       "llm_at": "2026-11-25T04:38:26.333Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 1.5,
       "journal_tier": 3
     },
@@ -1102,7 +1102,7 @@
       "llm_at": "2026-10-14T04:43:46.271Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 4.5,
       "journal_tier": 3
     },
@@ -1161,7 +1161,7 @@
       "llm_at": "2026-10-24T23:49:51.518Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 5,
       "journal_tier": 2
     },
@@ -1219,7 +1219,7 @@
       "llm_at": "2026-10-13T17:44:46.859Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 5,
       "journal_tier": 2
     },
@@ -1277,7 +1277,7 @@
       "llm_at": "2026-10-14T04:43:46.271Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 6,
       "journal_tier": 2
     },
@@ -1336,7 +1336,7 @@
       "llm_at": "2026-10-13T17:44:48.505Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 13.3,
       "journal_tier": 1
     },
@@ -1394,7 +1394,7 @@
       "llm_at": "2026-10-13T17:44:48.383Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 2.2,
       "journal_tier": 3
     },
@@ -1446,7 +1446,7 @@
       "llm_at": "2026-10-13T15:52:02.439Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "sources": [
         "crossref"
       ],
@@ -1505,7 +1505,7 @@
       "llm_at": "2026-10-13T15:52:12.972Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "sources": [
         "crossref"
       ],
@@ -1561,7 +1561,7 @@
       "llm_at": "2026-10-13T15:52:19.315Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "sources": [
         "crossref"
       ],
@@ -1619,7 +1619,7 @@
       "llm_at": "2026-10-14T04:43:46.271Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "sources": [
         "crossref"
       ],
@@ -1677,7 +1677,7 @@
       "llm_at": "2026-10-13T15:52:53.243Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "sources": [
         "crossref"
       ],
@@ -1733,7 +1733,7 @@
       "llm_at": "2026-10-14T04:43:46.271Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "sources": [
         "crossref"
       ],
@@ -1789,7 +1789,7 @@
       "llm_at": "2026-10-13T15:51:40.581Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "sources": [
         "crossref",
         "openalex"
@@ -1848,7 +1848,7 @@
       "llm_at": "2026-10-13T15:51:48.818Z",
       "pending_summary": false,
       "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "sources": [
         "crossref",
         "openalex"
@@ -1859,20 +1859,20 @@
       "journal_tier": 1
     },
     {
-      "id": "10.1016/j.mseb.2026.119986",
-      "doi": "10.1016/j.mseb.2026.119986",
-      "doi_url": "https://doi.org/10.1016/j.mseb.2026.119986",
-      "title": "Structural and optical properties of CuInS2-based core-shell and sequentially shelled quantum dots with high photoluminescence quantum yield for light-emitting applications",
-      "title_zh": "用于发光应用的高光致发光量子产率 CuInS2 基核壳及顺序壳层量子点的结构与光学性质",
-      "title_key": "structuralandopticalpropertiesofcuins2basedcoreshellandsequentiallyshelledquantumdotswithhighphotoluminescencequantumyieldforlightemittingapplications",
+      "id": "10.1016/j.bios.2026.119453",
+      "doi": "10.1016/j.bios.2026.119453",
+      "doi_url": "https://doi.org/10.1016/j.bios.2026.119453",
+      "title": "Activatable iron-doped silver indium zinc sulfide quantum dot fluorescent probe combined with rolling circle amplification for cancer cell imaging and treatment evaluation",
+      "title_zh": "可激活铁掺杂银铟锌硫量子点荧光探针结合滚环扩增用于癌细胞成像与疗效评估",
+      "title_key": "activatableirondopedsilverindiumzincsulfidequantumdotfluorescentprobecombinedwithrollingcircleamplificationforcancercellimagingandtreatmentevaluation",
       "authors": [
-        "Babiker M. Jaffar",
-        "Fekadu Ayele",
-        "R.M. Erasmus",
+        "Kexin Ding",
+        "Xiufeng Wang",
+        "Yuying Wang",
         "et al."
       ],
-      "venue": "Materials Science and Engineering: B",
-      "issn_l": "0921-5107",
+      "venue": "Biosensors and Bioelectronics",
+      "issn_l": "0956-5663",
       "source_type": "journal",
       "is_preprint": false,
       "sources": [
@@ -1884,38 +1884,38 @@
       "pub_date": "2027-02-01",
       "pub_year": 2027,
       "date_suspect": true,
-      "sort_date": "2026-11-27",
+      "sort_date": "2026-11-28",
       "oa_status": null,
       "pdf_url": null,
       "cited_by_count": 0,
-      "abstract": null,
-      "abstract_hash": null,
-      "abstract_source": "none",
-      "abstract_missing": true,
+      "abstract": "Integrating cancer cell imaging with therapy offers a promising strategy, yet conventional fluorescent probes suffer from autofluorescence interference and cancer drug resistance compromises therapeutic efficacy. Herein, we report a multifunctional DNA nanoplatform (Fe-AIZS QDs@SAD) based on rolling circle amplification and activatable quantum dots for targeted cancer cell discrimination and combination therapy. The synthesized zinc-doped AgInS QDs exhibit excellent photoluminescence, which is effectively quenched by Fe (III) and specifically recovered by intracellular glutathione. Through self-assembly, QDs, AS1411 aptamers, catalase small interfering RNA, and doxorubicin are integrated into a single nanoplatform. Under the dual recognition of cancer cells by multivalent aptamer functionalization and glutathione response, the uptake ability of MCF-7 cells was significantly enhanced. Upon internalization, Fe (III) mediated glutathione depletion and catalase small interfering RNA induced H2O2 accumulation synergistically amplified chemodynamic therapy. Under 808 nm laser irradiation, the platform combines chemodynamic, chemotherapy, and gene therapy, reducing the survival rate of cancer cells to 27.78% and minimizing toxicity to normal cells. This work provides a versatile strategy for targeted cancer cell discrimination and multimodal combination therapy.",
+      "abstract_hash": "8e9cb177e427e3d168082ba6523dc1831b93f305435623b713618795b09cc9b9",
+      "abstract_source": "semanticscholar",
+      "abstract_missing": false,
       "directions": [
         "display",
-        "materials",
-        "qled"
+        "detection",
+        "materials"
       ],
-      "novelty_score": 1,
-      "novelty_reason": "无摘要，无法评估创新性。",
-      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
-      "method_zh": "数据库未收录摘要，无法判断具体方法或器件结构。",
+      "novelty_score": 4,
+      "novelty_reason": "GSH 可激活的 Fe(III) 淬灭量子点探针与滚环扩增 DNA 纳米平台结合，把成像识别与化学动力学、化疗、基因治疗多模式整合，并给出明确的癌细胞存活率数据。",
+      "innovation_zh": "把 Fe(III) 掺杂的 AgInS 量子点做成 GSH 可激活荧光探针，荧光先被 Fe(III) 淬灭、进入癌细胞后被胞内 GSH 特异性恢复，从而避开自发荧光干扰并实现癌细胞识别。在此基础上用滚环扩增构建 DNA 纳米平台 Fe-AIZS QDs@SAD，把量子点、AS1411 适配体、过氧化氢酶 siRNA 和阿霉素自组装到一起，实现多价适配体与 GSH 响应的双重识别。Fe(III) 消耗 GSH 与 siRNA 抑制过氧化氢酶协同造成 H2O2 累积，放大化学动力学治疗，再叠加 808 nm 光照下的化学动力学、化疗和基因治疗，使癌细胞存活率降至 27.78%。",
+      "method_zh": "合成锌掺杂 AgInS 量子点，用 Fe(III) 淬灭其荧光并以胞内 GSH 作为恢复开关；通过滚环扩增自组装将量子点、AS1411 适配体、过氧化氢酶 siRNA 与阿霉素整合为单一纳米平台，在 MCF-7 细胞上做摄取、联合治疗与毒性评价。",
       "keywords_zh": [
-        "CuInS2",
-        "核壳量子点",
-        "顺序壳层",
-        "光致发光量子产率",
-        "发光应用"
+        "AgInS 量子点",
+        "谷胱甘肽响应",
+        "滚环扩增",
+        "化学动力学治疗",
+        "适配体靶向"
       ],
       "summary_source": "llm",
       "llm_model": "deepseek-chat",
-      "llm_at": "2026-11-27T03:50:39.656Z",
+      "llm_at": "2026-11-28T03:36:29.151Z",
       "pending_summary": false,
-      "first_seen": "2026-11-27T03:50:22.549Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
-      "journal_if": 3.9,
-      "journal_tier": 3
+      "first_seen": "2026-11-28T03:35:40.123Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
+      "journal_if": 10.7,
+      "journal_tier": 1
     },
     {
       "id": "10.1016/j.jcis.2026.142062",
@@ -1943,7 +1943,7 @@
       "pub_date": "2027-04-01",
       "pub_year": 2027,
       "date_suspect": true,
-      "sort_date": "2026-11-27",
+      "sort_date": "2026-11-28",
       "oa_status": null,
       "pdf_url": null,
       "cited_by_count": 0,
@@ -1970,7 +1970,7 @@
       "llm_at": "2026-11-27T03:50:39.492Z",
       "pending_summary": false,
       "first_seen": "2026-11-27T03:50:22.549Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 9.4,
       "journal_tier": 1
     },
@@ -1979,7 +1979,7 @@
       "doi": "10.1016/j.jcis.2026.142043",
       "doi_url": "https://doi.org/10.1016/j.jcis.2026.142043",
       "title": "Polarizable disorder-driven lattice stabilization in CsRbPbCl3 perovskite nanocrystals for violet light-emitting diodes (PeLEDs)",
-      "title_zh": "可极化无序驱动的 CsRbPbCl3 钙钛矿纳米晶晶格稳定化及其在紫光发光二极管（PeLEDs）中的应用",
+      "title_zh": "可极化无序驱动的晶格稳定化：CsRbPbCl3 钙钛矿纳米晶用于紫光发光二极管（PeLEDs）",
       "title_key": "polarizabledisorderdrivenlatticestabilizationincsrbpbcl3perovskitenanocrystalsforvioletlightemittingdiodespeleds",
       "authors": [
         "Muhammad Amin Padhiar",
@@ -2000,36 +2000,36 @@
       "pub_date": "2027-04-01",
       "pub_year": 2027,
       "date_suspect": true,
-      "sort_date": "2026-11-27",
+      "sort_date": "2026-11-28",
       "oa_status": null,
       "pdf_url": null,
       "cited_by_count": 0,
-      "abstract": null,
-      "abstract_hash": null,
-      "abstract_source": "none",
-      "abstract_missing": true,
+      "abstract": "The realization of highly efficient and stable near-ultraviolet perovskite light-emitting diodes (PeLEDs) in the (400-415 nm) spectral region remains a fundamental challenge. Cesium lead halide perovskite nanocrystals (PNCs), particularly CsPbCl3 PNCs, are natural emitters in the near-ultraviolet region, but their sub-critical Goldschmidt tolerance factor (τ ≈ 0.81) renders the lattice mechanically soft, promoting cooperative octahedral tilting, accelerated Cl- ion migration and sequential phase transitions at room temperature that collectively limit external quantum efficiencies (EQE) to below 1% and operational lifetimes. Here we report that substituting of the Cs+ with Rb+ activates a polarizable disorder stabilization (PDS) mechanism in which chemically heterogeneous A-site occupancy frustrates long-range tilt correlations, stabilizing the pseudo cubic phase across 100-400 K without perturbing the direct-gap electronic structure. The PDS mechanism raises the Cl- migration activation energy, deepens the dominant non-radiative trap from 0.155 to 0.228 eV, and reduces trap density 3.1-fold. The photoluminescence quantum yield (PLQYs) rises from 11% to 59.02%, and the average radiative lifetime extends from 8.2 to 21.4 ns. Cs0.8Rb0.2PbCl3 PeLEDs emitting at 403 nm achieve a peak EQE of 1.05%, 9.5 times that of the CsPbCl3 control, with a turn-on voltage of 3.7 V, maximum luminance of 100 cd/m2, in the near-UV spectral region. These results establish PDS as a broadly applicable compositional design principle for wide-bandgap chloride perovskite emitters.",
+      "abstract_hash": "d80d03e23358097622a46193f9165ef0b8c30880d719282c05999df185aab7bd",
+      "abstract_source": "semanticscholar",
+      "abstract_missing": false,
       "directions": [
         "display",
         "qled",
         "materials"
       ],
-      "novelty_score": 1,
-      "novelty_reason": "无摘要，无法评估创新性。",
-      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
-      "method_zh": "数据库未收录摘要，无法判断关键方法或器件结构。",
+      "novelty_score": 4,
+      "novelty_reason": "提出 PDS 这一新的组分设计机制，并用它把近紫外氯化物 PeLED 的 EQE 从约 0.11% 提升到 1.05%（9.5 倍），同时给出陷阱能级与密度的定量证据。",
+      "innovation_zh": "针对 CsPbCl3 纳米晶容差因子偏低（τ≈0.81）、晶格软、室温下易发生八面体倾转协同与 Cl⁻ 迁移、相变，导致近紫外 PeLED 的 EQE 长期低于 1% 的问题，作者用 Rb⁺ 部分取代 Cs⁺，提出「可极化无序稳定化」（PDS）机制：A 位化学占位的异质性打断长程倾转关联，在 100–400 K 范围内稳定赝立方相，同时不改变直接带隙电子结构。效果上，Cl⁻ 迁移激活能提高，主导非辐射陷阱由 0.155 eV 加深到 0.228 eV，陷阱密度降低 3.1 倍；PLQY 从 11% 提升到 59.02%，平均辐射寿命由 8.2 ns 延长到 21.4 ns。器件层面，403 nm 的 Cs0.8Rb0.2PbCl3 PeLED 峰值 EQE 达 1.05%，是 CsPbCl3 对照的 9.5 倍，开启电压 3.7 V，最大亮度 100 cd/m²。",
+      "method_zh": "在 CsPbCl3 钙钛矿纳米晶中以 Rb⁺ 部分替代 Cs⁺ 形成 Cs0.8Rb0.2PbCl3 合金化 A 位，通过 A 位无序抑制八面体倾转关联来稳定赝立方相，并以此作为发光层构筑 403 nm 近紫外 PeLED。",
       "keywords_zh": [
-        "钙钛矿纳米晶",
-        "紫光 LED",
-        "晶格稳定",
-        "可极化无序",
-        "CsRbPbCl3"
+        "近紫外 PeLED",
+        "CsPbCl3 纳米晶",
+        "Rb 掺杂",
+        "可极化无序稳定化",
+        "氯离子迁移"
       ],
       "summary_source": "llm",
       "llm_model": "deepseek-chat",
-      "llm_at": "2026-11-26T03:49:27.769Z",
+      "llm_at": "2026-11-28T03:36:29.001Z",
       "pending_summary": false,
       "first_seen": "2026-11-26T03:48:50.102Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 9.4,
       "journal_tier": 1
     },
@@ -2060,7 +2060,7 @@
       "pub_date": "2027-01-01",
       "pub_year": 2027,
       "date_suspect": true,
-      "sort_date": "2026-11-27",
+      "sort_date": "2026-11-28",
       "oa_status": "closed",
       "pdf_url": null,
       "cited_by_count": 0,
@@ -2088,7 +2088,806 @@
       "llm_at": "2026-11-25T04:38:27.447Z",
       "pending_summary": false,
       "first_seen": "2026-11-25T04:38:09.250Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
+    },
+    {
+      "id": "10.1016/j.jlumin.2026.122309",
+      "doi": "10.1016/j.jlumin.2026.122309",
+      "doi_url": "https://doi.org/10.1016/j.jlumin.2026.122309",
+      "title": "Interdot connectivity in perovskite quantum-dot optoelectronics: Electronic coupling, carrier diffusion, and recombination",
+      "title_zh": "钙钛矿量子点光电子学中的点间连通性：电子耦合、载流子扩散与复合",
+      "title_key": "interdotconnectivityinperovskitequantumdotoptoelectronicselectroniccouplingcarrierdiffusionandrecombination",
+      "authors": [
+        "Rashed Abu Hammour",
+        "Omar Fadaam",
+        "M.M. Rekha",
+        "et al."
+      ],
+      "venue": "Journal of Luminescence",
+      "issn_l": "0022-2313",
+      "source_type": "journal",
+      "is_preprint": false,
+      "sources": [
+        "crossref"
+      ],
+      "published": true,
+      "published_source": "crossref",
+      "alt_doi": null,
+      "pub_date": "2027-01-01",
+      "pub_year": 2027,
+      "date_suspect": true,
+      "sort_date": "2026-11-28",
+      "oa_status": null,
+      "pdf_url": null,
+      "cited_by_count": 0,
+      "abstract": null,
+      "abstract_hash": null,
+      "abstract_source": "none",
+      "abstract_missing": true,
+      "directions": [
+        "display",
+        "materials",
+        "detection"
+      ],
+      "novelty_score": 1,
+      "novelty_reason": "无摘要，无法评估创新性。",
+      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
+      "method_zh": "数据库未收录摘要，无法判断具体方法或器件结构。",
+      "keywords_zh": [
+        "钙钛矿量子点",
+        "点间耦合",
+        "载流子扩散",
+        "复合",
+        "光电子学"
+      ],
+      "summary_source": "llm",
+      "llm_model": "deepseek-chat",
+      "llm_at": "2026-11-15T01:22:21.882Z",
+      "pending_summary": false,
+      "first_seen": "2026-11-15T01:21:49.072Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
+      "journal_if": 3.3,
+      "journal_tier": 3
+    },
+    {
+      "id": "10.1016/j.saa.2026.129063",
+      "doi": "10.1016/j.saa.2026.129063",
+      "doi_url": "https://doi.org/10.1016/j.saa.2026.129063",
+      "title": "RCA-assisted dual-color quantum dot–graphene oxide fluorescence aptasensor for simultaneous detection of aflatoxin B1 and ochratoxin A",
+      "title_zh": "RCA辅助的双色量子点–氧化石墨烯荧光适配体传感器用于黄曲霉毒素B1和赭曲霉毒素A的同时检测",
+      "title_key": "rcaassisteddualcolorquantumdotgrapheneoxidefluorescenceaptasensorforsimultaneousdetectionofaflatoxinb1andochratoxina",
+      "authors": [
+        "Yaqi Li",
+        "Qingyue Sun",
+        "Zihan Huang",
+        "et al."
+      ],
+      "venue": "Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy",
+      "issn_l": "1386-1425",
+      "source_type": "journal",
+      "is_preprint": false,
+      "sources": [
+        "crossref"
+      ],
+      "published": true,
+      "published_source": "crossref",
+      "alt_doi": null,
+      "pub_date": "2027-02-01",
+      "pub_year": 2027,
+      "date_suspect": true,
+      "sort_date": "2026-11-28",
+      "oa_status": null,
+      "pdf_url": null,
+      "cited_by_count": 0,
+      "abstract": "A dual-color fluorescence aptasensor combining rolling circle amplification (RCA) with a graphene oxide (GO)-associated fluorescence-quenching platform was developed for the simultaneous determination of ochratoxin A (OTA) and aflatoxin B1 (AFB1) in grain samples. Blue-emitting graphitic carbon nitride quantum dots (g-CNQDs) and red-emitting CdTe QDs were conjugated to target-associated complementary DNA strands as spectrally distinguishable reporters. In target-free samples, each aptamer hybridized with its corresponding padlock probe, allowing T4 DNA ligase-mediated circularization and Phi29 DNA polymerase-driven RCA. The resulting rolling circle amplification products (RCAPs) contained tandem repeats that hybridized with the QD-cDNA probes, thereby reducing their adsorption onto GO and retaining fluorescence. When OTA or AFB1 was present, target-aptamer binding competitively reduced aptamer-padlock hybridization, padlock ligation, and subsequent RCA; consequently, a larger fraction of single-stranded QD-cDNA probes was adsorbed onto GO and quenched. Under the optimized conditions, the limits of detection were 17 pg mL-1 for OTA and 19 pg mL-1 for AFB1. The method showed satisfactory performance in grain samples. The principal contribution of this work is the integration of two spectrally separated QD reporters with a common GO quenching platform and RCA-assisted signal regulation for multiplex mycotoxin analysis.",
+      "abstract_hash": "0b02daf24c3536e36425f34e46fd724e038c80471d5a9c36b737c028d1552765",
+      "abstract_source": "semanticscholar",
+      "abstract_missing": false,
+      "directions": [
+        "detection",
+        "materials"
+      ],
+      "novelty_score": 3,
+      "novelty_reason": "将双色量子点报告、GO淬灭和RCA信号放大整合到一个多路真菌毒素检测体系中，思路清晰但各组件均为已有技术，属于新体系上的组合验证。",
+      "innovation_zh": "把两种光谱可区分的量子点报告基团（蓝色g-CNQDs和红色CdTe QDs）接到各自的cDNA上，共用一个GO荧光淬灭平台，再用RCA做信号调控，实现OTA和AFB1的双通道同时检测。关键设计是：无靶标时适配体与padlock探针杂交、环化并RCA，产物与QD-cDNA杂交后不易吸附GO、荧光保留；有靶标时竞争性抑制RCA，单链QD-cDNA被GO吸附淬灭，信号随靶标浓度下降。检测限做到OTA 17 pg/mL、AFB1 19 pg/mL，并在实际谷物样品中验证。",
+      "method_zh": "以g-CNQDs和CdTe QDs分别标记两种靶标的互补DNA作为报告探针，T4 DNA连接酶环化padlock探针、Phi29聚合酶驱动RCA，RCA产物与QD-cDNA杂交后减少其在GO上的吸附，靶标存在时竞争抑制RCA导致荧光淬灭。",
+      "keywords_zh": [
+        "量子点",
+        "氧化石墨烯",
+        "滚环扩增",
+        "荧光适配体传感器",
+        "真菌毒素检测"
+      ],
+      "summary_source": "llm",
+      "llm_model": "deepseek-chat",
+      "llm_at": "2026-11-25T04:38:29.376Z",
+      "pending_summary": false,
+      "first_seen": "2026-11-05T01:52:11.066Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
+      "journal_if": 4.3,
+      "journal_tier": 2
+    },
+    {
+      "id": "10.1016/j.optcom.2026.133919",
+      "doi": "10.1016/j.optcom.2026.133919",
+      "doi_url": "https://doi.org/10.1016/j.optcom.2026.133919",
+      "title": "All-optically tunable structural color display based on dielectric metasurfaces integrated with quantum dot photoresists",
+      "title_zh": "基于介质超表面与量子点光刻胶集成的全光可调结构色显示",
+      "title_key": "allopticallytunablestructuralcolordisplaybasedondielectricmetasurfacesintegratedwithquantumdotphotoresists",
+      "authors": [
+        "Qianyue Ge",
+        "Qi Feng",
+        "Guojian Ding",
+        "et al."
+      ],
+      "venue": "Optics Communications",
+      "issn_l": "0030-4018",
+      "source_type": "journal",
+      "is_preprint": false,
+      "sources": [
+        "crossref"
+      ],
+      "published": true,
+      "published_source": "crossref",
+      "alt_doi": null,
+      "pub_date": "2027-02-01",
+      "pub_year": 2027,
+      "date_suspect": true,
+      "sort_date": "2026-11-28",
+      "oa_status": null,
+      "pdf_url": null,
+      "cited_by_count": 0,
+      "abstract": null,
+      "abstract_hash": null,
+      "abstract_source": "none",
+      "abstract_missing": true,
+      "directions": [
+        "display",
+        "materials"
+      ],
+      "novelty_score": 1,
+      "novelty_reason": "数据库未收录摘要，无法判断创新性。",
+      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
+      "method_zh": "数据库未收录摘要，建议直接查看原文。",
+      "keywords_zh": [
+        "介质超表面",
+        "量子点光刻胶",
+        "结构色",
+        "全光可调",
+        "显示"
+      ],
+      "summary_source": "llm",
+      "llm_model": "deepseek-chat",
+      "llm_at": "2026-11-01T00:30:49.468Z",
+      "pending_summary": false,
+      "first_seen": "2026-11-01T00:30:28.464Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
+      "journal_if": 2.2,
+      "journal_tier": 3
+    },
+    {
+      "id": "10.1016/j.talanta.2026.130830",
+      "doi": "10.1016/j.talanta.2026.130830",
+      "doi_url": "https://doi.org/10.1016/j.talanta.2026.130830",
+      "title": "Leaf elemental imaging using a custom 3D-Printed slicing device following quantum dot exposure",
+      "title_zh": "利用自制3D打印切片装置结合量子点暴露进行叶片元素成像",
+      "title_key": "leafelementalimagingusingacustom3dprintedslicingdevicefollowingquantumdotexposure",
+      "authors": [
+        "Chuanji Zhong",
+        "Wenqian Kong",
+        "Dingyi Wang",
+        "et al."
+      ],
+      "venue": "Talanta",
+      "issn_l": "0039-9140",
+      "source_type": "journal",
+      "is_preprint": false,
+      "sources": [
+        "crossref",
+        "openalex"
+      ],
+      "published": true,
+      "published_source": "crossref",
+      "alt_doi": null,
+      "pub_date": "2027-04-01",
+      "pub_year": 2027,
+      "date_suspect": true,
+      "sort_date": "2026-11-28",
+      "oa_status": null,
+      "pdf_url": null,
+      "cited_by_count": 0,
+      "abstract": "Owing to the growing use of nanomaterials in botany and agriculture, nanoparticles entered into soil and water bodies may be taken up by plants and disturb their nutrient homeostasis. Here we developed a laboratory-made 3D-printed multi-well slicing device that cuts an intact leaf into a uniform grid and permits in-well acid digestion directly in the array, followed by ICP-MS, providing a low-cost approach to spatial elemental imaging for leaves. Pumpkin seedlings were exposed hydroponically for 8 days to 20 or 100 pmol mL-1 CdSe/ZnS-GSH. Neither dose caused significant root damage, as indicated by Evans Blue uptake, malondialdehyde content, and Schiff's reagent staining, whereas total leaf fresh weight increased by 16.7 ± 9.1% and 19.9 ± 5.9%, respectively. Bulk leaf analysis showed that most nutrients (Mg, Ca, B, Mn, Na, and Fe) remained unchanged; only Zn was elevated 3.75- and 5.68-fold, Cu was reduced by approximately 21.5% at the high dose, Se increased dose-dependently while Cd did not. Spatial imaging further revealed that Se and Zn redistributed along leaf veins, with Se migrating more readily than Cd. This device offers a simple techniques to quantitatively imaging for leaf elements, and the effects of quantum dots on the spatial homeostasis of plant nutrient elements also offers a new perspective on plant responses.",
+      "abstract_hash": "87e253d53565ca99b5cf49d44cdcc670520da4aa3b5a340ffcf543692a8058d8",
+      "abstract_source": "semanticscholar",
+      "abstract_missing": false,
+      "directions": [
+        "detection",
+        "materials"
+      ],
+      "novelty_score": 3,
+      "novelty_reason": "3D打印切片加孔内消解ICP-MS的成像流程有方法学新意，但整体属于在新体系上验证已有思路并做元素分布表征，性能层面无突破性指标。",
+      "innovation_zh": "工作分两部分：一是做了一个实验室自制的3D打印多孔切片装置，把整片叶子切成均匀网格，并能在阵列孔内直接酸消解后接ICP-MS，从而以低成本实现叶片元素的空间成像；二是用该装置研究CdSe/ZnS-GSH量子点水培暴露8天后的南瓜幼苗，发现20和100 pmol/mL两个剂量都不损伤根系，但叶片鲜重分别增加16.7±9.1%和19.9±5.9%，整体元素分析中只有Zn升高3.75倍和5.68倍、高剂量下Cu降约21.5%，Se随剂量升高而Cd不变，空间成像进一步显示Se和Zn沿叶脉重新分布、Se比Cd更易迁移。创新点主要在于把低成本3D打印切片与孔内消解ICP-MS结合成可定量的叶片空间元素成像流程，并用它揭示了量子点暴露下营养元素空间稳态的变化。",
+      "method_zh": "3D打印多孔切片装置将完整叶片切成均匀网格，在孔内直接酸消解后做ICP-MS；南瓜幼苗水培暴露于20或100 pmol/mL CdSe/ZnS-GSH 8天，配合Evans Blue、MDA和Schiff染色评估根系损伤。",
+      "keywords_zh": [
+        "3D打印切片装置",
+        "ICP-MS元素成像",
+        "CdSe/ZnS量子点",
+        "植物营养稳态",
+        "叶片空间分布"
+      ],
+      "summary_source": "llm",
+      "llm_model": "deepseek-chat",
+      "llm_at": "2026-11-25T04:38:29.532Z",
+      "pending_summary": false,
+      "first_seen": "2026-11-01T00:30:28.464Z",
+      "last_updated": "2026-11-28T03:35:40.123Z"
+    },
+    {
+      "id": "10.1016/j.solener.2026.115283",
+      "doi": "10.1016/j.solener.2026.115283",
+      "doi_url": "https://doi.org/10.1016/j.solener.2026.115283",
+      "title": "Lead(II) dithiocarbamate-derived PbS quantum dots for high-performance quantum dot-sensitized solar cells",
+      "title_zh": "由二硫代氨基甲酸铅(II)衍生的 PbS 量子点用于高性能量子点敏化太阳能电池",
+      "title_key": "leadiidithiocarbamatederivedpbsquantumdotsforhighperformancequantumdotsensitizedsolarcells",
+      "authors": [
+        "Inam Vulindlela",
+        "Athandwe M. Paca",
+        "Edson L. Meyer",
+        "et al."
+      ],
+      "venue": "Solar Energy",
+      "issn_l": "0038-092X",
+      "source_type": "journal",
+      "is_preprint": false,
+      "sources": [
+        "crossref",
+        "openalex"
+      ],
+      "published": true,
+      "published_source": "crossref",
+      "alt_doi": null,
+      "pub_date": "2027-01-01",
+      "pub_year": 2027,
+      "date_suspect": true,
+      "sort_date": "2026-11-28",
+      "oa_status": null,
+      "pdf_url": null,
+      "cited_by_count": 0,
+      "abstract": null,
+      "abstract_hash": null,
+      "abstract_source": "none",
+      "abstract_missing": true,
+      "directions": [
+        "detection",
+        "materials"
+      ],
+      "novelty_score": 1,
+      "novelty_reason": "无摘要，无法评估创新性。",
+      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
+      "method_zh": "数据库未收录摘要，无法判断关键方法或器件结构。",
+      "keywords_zh": [
+        "PbS 量子点",
+        "二硫代氨基甲酸铅",
+        "量子点敏化太阳能电池",
+        "前驱体"
+      ],
+      "summary_source": "llm",
+      "llm_model": "deepseek-chat",
+      "llm_at": "2026-10-31T01:08:05.132Z",
+      "pending_summary": false,
+      "first_seen": "2026-10-31T01:07:37.189Z",
+      "last_updated": "2026-11-28T03:35:40.123Z"
+    },
+    {
+      "id": "10.1016/j.optmat.2026.118573",
+      "doi": "10.1016/j.optmat.2026.118573",
+      "doi_url": "https://doi.org/10.1016/j.optmat.2026.118573",
+      "title": "Silicon-based broadband photodetector with PbS quantum dot-decorated ZnO nanowires",
+      "title_zh": "基于 PbS 量子点修饰 ZnO 纳米线的硅基宽带光电探测器",
+      "title_key": "siliconbasedbroadbandphotodetectorwithpbsquantumdotdecoratedznonanowires",
+      "authors": [
+        "Yujie Wu",
+        "Yifan Liu",
+        "Zhuolin Li",
+        "et al."
+      ],
+      "venue": "Optical Materials",
+      "issn_l": "0925-3467",
+      "source_type": "journal",
+      "is_preprint": false,
+      "sources": [
+        "crossref"
+      ],
+      "published": true,
+      "published_source": "crossref",
+      "alt_doi": null,
+      "pub_date": "2027-01-01",
+      "pub_year": 2027,
+      "date_suspect": true,
+      "sort_date": "2026-11-28",
+      "oa_status": null,
+      "pdf_url": null,
+      "cited_by_count": 0,
+      "abstract": null,
+      "abstract_hash": null,
+      "abstract_source": "none",
+      "abstract_missing": true,
+      "directions": [
+        "detection",
+        "materials"
+      ],
+      "novelty_score": 1,
+      "novelty_reason": "摘要缺失，无法评估创新性。",
+      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
+      "method_zh": "数据库未收录摘要，无法判断具体方法与器件结构。",
+      "keywords_zh": [
+        "PbS 量子点",
+        "ZnO 纳米线",
+        "硅基光电探测器",
+        "宽带探测"
+      ],
+      "summary_source": "llm",
+      "llm_model": "deepseek-chat",
+      "llm_at": "2026-10-13T17:44:45.592Z",
+      "pending_summary": false,
+      "first_seen": "2026-10-13T17:43:05.287Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
+      "journal_if": 3.8,
+      "journal_tier": 3
+    },
+    {
+      "id": "10.1016/j.physe.2026.116666",
+      "doi": "10.1016/j.physe.2026.116666",
+      "doi_url": "https://doi.org/10.1016/j.physe.2026.116666",
+      "title": "Tunable spin entanglement and topological phase transitions in a parabolically confined three-electron GaAs quantum dot",
+      "title_zh": "抛物线束缚三电子 GaAs 量子点中可调自旋纠缠与拓扑相变",
+      "title_key": "tunablespinentanglementandtopologicalphasetransitionsinaparabolicallyconfinedthreeelectrongaasquantumdot",
+      "authors": [
+        "Alemu Gurmessa Gindaba",
+        "Sampandam Elangovan"
+      ],
+      "venue": "Physica E: Low-dimensional Systems and Nanostructures",
+      "issn_l": "1386-9477",
+      "source_type": "journal",
+      "is_preprint": false,
+      "sources": [
+        "crossref"
+      ],
+      "published": true,
+      "published_source": "crossref",
+      "alt_doi": null,
+      "pub_date": "2027-01-01",
+      "pub_year": 2027,
+      "date_suspect": true,
+      "sort_date": "2026-11-28",
+      "oa_status": null,
+      "pdf_url": null,
+      "cited_by_count": 0,
+      "abstract": null,
+      "abstract_hash": null,
+      "abstract_source": "none",
+      "abstract_missing": true,
+      "directions": [
+        "quantuminfo",
+        "materials"
+      ],
+      "novelty_score": 1,
+      "novelty_reason": "无摘要，无法评估创新性。",
+      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
+      "method_zh": "数据库未收录摘要，无法判断具体方法与器件结构。",
+      "keywords_zh": [
+        "GaAs 量子点",
+        "自旋纠缠",
+        "拓扑相变",
+        "三电子",
+        "抛物线束缚"
+      ],
+      "summary_source": "llm",
+      "llm_model": "deepseek-chat",
+      "llm_at": "2026-10-13T17:44:46.693Z",
+      "pending_summary": false,
+      "first_seen": "2026-10-13T17:43:05.287Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
+      "journal_if": 2.9,
+      "journal_tier": 3
+    },
+    {
+      "id": "10.1016/j.matchemphys.2026.133204",
+      "doi": "10.1016/j.matchemphys.2026.133204",
+      "doi_url": "https://doi.org/10.1016/j.matchemphys.2026.133204",
+      "title": "Nickel chloride quantum dot–derived NiOx thin films for high-performance p–i–n perovskite solar cells",
+      "title_zh": "氯化镍量子点衍生 NiOx 薄膜用于高性能 p–i–n 钙钛矿太阳能电池",
+      "title_key": "nickelchloridequantumdotderivednioxthinfilmsforhighperformancepinperovskitesolarcells",
+      "authors": [
+        "Wakul Bumrungsan",
+        "Kritsada Hongsith",
+        "Prapasiri Phimsarn",
+        "et al."
+      ],
+      "venue": "Materials Chemistry and Physics",
+      "issn_l": "0254-0584",
+      "source_type": "journal",
+      "is_preprint": false,
+      "sources": [
+        "crossref"
+      ],
+      "published": true,
+      "published_source": "crossref",
+      "alt_doi": null,
+      "pub_date": "2027-01-01",
+      "pub_year": 2027,
+      "date_suspect": true,
+      "sort_date": "2026-11-28",
+      "oa_status": null,
+      "pdf_url": null,
+      "cited_by_count": 0,
+      "abstract": null,
+      "abstract_hash": null,
+      "abstract_source": "none",
+      "abstract_missing": true,
+      "directions": [
+        "detection",
+        "materials"
+      ],
+      "novelty_score": 1,
+      "novelty_reason": "摘要缺失，无法评估创新性。",
+      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
+      "method_zh": "数据库未收录摘要，无法判断具体方法与器件结构。",
+      "keywords_zh": [
+        "NiOx",
+        "氯化镍量子点",
+        "p–i–n 钙钛矿太阳能电池",
+        "空穴传输层",
+        "薄膜"
+      ],
+      "summary_source": "llm",
+      "llm_model": "deepseek-chat",
+      "llm_at": "2026-10-13T17:44:48.115Z",
+      "pending_summary": false,
+      "first_seen": "2026-10-13T17:43:05.287Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
+      "journal_if": 4.3,
+      "journal_tier": 2
+    },
+    {
+      "id": "10.1016/j.optcom.2026.133800",
+      "doi": "10.1016/j.optcom.2026.133800",
+      "doi_url": "https://doi.org/10.1016/j.optcom.2026.133800",
+      "title": "Design, simulation and prospective fabrication of broadband solar spectral harvesting in 2D quantum dot photovoltaic cells via hybrid tri-graded RbGeI3/BaZrSe3/Ca3SbI3 absorbers",
+      "title_zh": "通过混合三梯度 RbGeI3/BaZrSe3/Ca3SbI3 吸收层实现二维量子点光伏电池宽带太阳光谱收集的设计、模拟与前瞻性制备",
+      "title_key": "designsimulationandprospectivefabricationofbroadbandsolarspectralharvestingin2dquantumdotphotovoltaiccellsviahybridtrigradedrbgei3bazrse3ca3sbi3absorbers",
+      "authors": [
+        "Janmoni Borah",
+        "Smriti Baruah",
+        "Anurag Kumar Pandey"
+      ],
+      "venue": "Optics Communications",
+      "issn_l": "0030-4018",
+      "source_type": "journal",
+      "is_preprint": false,
+      "sources": [
+        "crossref"
+      ],
+      "published": true,
+      "published_source": "crossref",
+      "alt_doi": null,
+      "pub_date": "2027-01-01",
+      "pub_year": 2027,
+      "date_suspect": true,
+      "sort_date": "2026-11-28",
+      "oa_status": null,
+      "pdf_url": null,
+      "cited_by_count": 0,
+      "abstract": null,
+      "abstract_hash": null,
+      "abstract_source": "none",
+      "abstract_missing": true,
+      "directions": [
+        "detection",
+        "materials"
+      ],
+      "novelty_score": 1,
+      "novelty_reason": "数据库未收录摘要，无法评估创新性。",
+      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
+      "method_zh": "数据库未收录摘要，无法确认关键方法或器件结构。",
+      "keywords_zh": [
+        "量子点光伏",
+        "宽带吸收",
+        "三梯度吸收层",
+        "RbGeI3",
+        "BaZrSe3"
+      ],
+      "summary_source": "llm",
+      "llm_model": "deepseek-chat",
+      "llm_at": "2026-10-13T17:44:48.671Z",
+      "pending_summary": false,
+      "first_seen": "2026-10-13T17:43:05.287Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
+      "journal_if": 2.2,
+      "journal_tier": 3
+    },
+    {
+      "id": "10.1016/j.optmat.2026.118591",
+      "doi": "10.1016/j.optmat.2026.118591",
+      "doi_url": "https://doi.org/10.1016/j.optmat.2026.118591",
+      "title": "A surface post-treatment strategy enables synchronous ligand removal and defect passivation for efficient perovskite nanocrystal light-emitting diodes",
+      "title_zh": "一种表面后处理策略实现配体去除与缺陷钝化同步进行，用于高效钙钛矿纳米晶发光二极管",
+      "title_key": "asurfaceposttreatmentstrategyenablessynchronousligandremovalanddefectpassivationforefficientperovskitenanocrystallightemittingdiodes",
+      "authors": [
+        "Linlin Xu",
+        "Jiayi Zhang",
+        "Dalin Yang",
+        "et al."
+      ],
+      "venue": "Optical Materials",
+      "issn_l": "0925-3467",
+      "source_type": "journal",
+      "is_preprint": false,
+      "sources": [
+        "crossref"
+      ],
+      "published": true,
+      "published_source": "crossref",
+      "alt_doi": null,
+      "pub_date": "2027-01-01",
+      "pub_year": 2027,
+      "date_suspect": true,
+      "sort_date": "2026-11-28",
+      "oa_status": null,
+      "pdf_url": null,
+      "cited_by_count": 0,
+      "abstract": null,
+      "abstract_hash": null,
+      "abstract_source": "none",
+      "abstract_missing": true,
+      "directions": [
+        "display",
+        "materials",
+        "qled"
+      ],
+      "novelty_score": 1,
+      "novelty_reason": "数据库未收录摘要，无法评估创新性。",
+      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
+      "method_zh": "数据库未收录摘要，建议直接查看原文。",
+      "keywords_zh": [
+        "钙钛矿纳米晶",
+        "表面后处理",
+        "配体去除",
+        "缺陷钝化",
+        "发光二极管"
+      ],
+      "summary_source": "llm",
+      "llm_model": "deepseek-chat",
+      "llm_at": "2026-10-13T17:45:00.905Z",
+      "pending_summary": false,
+      "first_seen": "2026-10-13T17:43:05.287Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
+      "journal_if": 3.8,
+      "journal_tier": 3
+    },
+    {
+      "id": "10.1016/j.solmat.2026.114733",
+      "doi": "10.1016/j.solmat.2026.114733",
+      "doi_url": "https://doi.org/10.1016/j.solmat.2026.114733",
+      "title": "All-PbS colloidal quantum dot tandem solar cells with an ITO interlayer: A combined simulation and experimental study",
+      "title_zh": "全 PbS 胶体量子点叠层太阳能电池：ITO 中间层——模拟与实验结合研究",
+      "title_key": "allpbscolloidalquantumdottandemsolarcellswithanitointerlayeracombinedsimulationandexperimentalstudy",
+      "authors": [
+        "Yijun Gao",
+        "Beining Dong",
+        "Mengxiu Chen",
+        "et al."
+      ],
+      "venue": "Solar Energy Materials and Solar Cells",
+      "issn_l": "0927-0248",
+      "source_type": "journal",
+      "is_preprint": false,
+      "alt_doi": null,
+      "pub_date": "2027-01-01",
+      "pub_year": 2027,
+      "date_suspect": true,
+      "sort_date": "2026-11-28",
+      "oa_status": null,
+      "pdf_url": null,
+      "cited_by_count": 0,
+      "abstract": "Colloidal quantum dot (CQD) solar cells hold great promise for applications in single-junction and tandem solar cells owing to their adaptable bandgaps. However, power conversion efficiencies (PCEs) of their tandem solar cells still lag far behind their single-junction counterparts, primarily due to suboptimal thicknesses of light harvesting layers and underexplored interlayers for efficient charge recombination. In this study, Silvaco TCAD simulation is first conducted to optimize absorbing layer thickness in the front and rear sub-cells, enabling ideal photocurrent matching. Then, indium tin oxide (ITO) is introduced as an interlayer in a PbS CQD tandem solar cell to achieve efficient charge recombination. Guided by these simulation results, a two-terminal solution-processed PbS CQD tandem solar cell with an ITO interlayer is experimentally fabricated and characterized, which therefore achieved a PCE of 7.4% whereas the control device without an ITO interlayer only delivered a PCE of less than 1%. Therefore, this work offers insights into thickness optimizations of active layers and interlayer engineering for high-performance tandem solar cells, providing a theoretical and experimental guideline for optimizing CQD tandem devices.",
+      "abstract_hash": "9526c36fec5fcbe87ade92270a60228efe49d799a3f05a8a0f6f107782768cf8",
+      "abstract_source": "openalex",
+      "abstract_missing": false,
+      "directions": [
+        "detection",
+        "materials"
+      ],
+      "novelty_score": 4,
+      "novelty_reason": "把 ITO 中间层工程与厚度模拟优化结合用于全 PbS 量子点叠层电池，使 PCE 从不足 1% 提升到 7.4%，提升幅度显著但并非新机制或纪录级效率。",
+      "innovation_zh": "针对 PbS 胶体量子点叠层电池效率远落后于单结器件的问题，作者先用 Silvaco TCAD 模拟优化前后子电池吸收层厚度以实现理想的光电流匹配，再引入 ITO 作为中间层促进电荷复合。实验制备的两端溶液法 PbS CQD 叠层电池在加 ITO 中间层后 PCE 达到 7.4%，而无 ITO 中间层的对照器件 PCE 不足 1%，说明中间层是此前被忽视的关键瓶颈。",
+      "method_zh": "用 Silvaco TCAD 模拟确定前后子电池吸收层的最佳厚度，再在两端溶液法制备的 PbS CQD 叠层电池中插入 ITO 作为中间复合层，并与无 ITO 的对照器件对比。",
+      "keywords_zh": [
+        "PbS 胶体量子点",
+        "叠层太阳能电池",
+        "ITO 中间层",
+        "Silvaco TCAD 模拟",
+        "光电流匹配"
+      ],
+      "summary_source": "llm",
+      "llm_model": "deepseek-chat",
+      "llm_at": "2026-10-14T04:43:46.271Z",
+      "pending_summary": false,
+      "first_seen": "2026-10-13T15:36:21.792Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
+      "sources": [
+        "crossref"
+      ],
+      "published": true,
+      "published_source": "crossref",
+      "journal_if": 6.3,
+      "journal_tier": 2
+    },
+    {
+      "id": "10.1016/j.micrna.2026.208946",
+      "doi": "10.1016/j.micrna.2026.208946",
+      "doi_url": "https://doi.org/10.1016/j.micrna.2026.208946",
+      "title": "Defect-regulated carrier dynamics in BaZrS3-AgBiS2 dual-absorber nanostructured quantum dot solar cells for advanced lead-free photovoltaics",
+      "title_zh": "缺陷调控载流子动力学的 BaZrS3-AgBiS2 双吸收层纳米结构量子点太阳能电池：面向先进无铅光伏",
+      "title_key": "defectregulatedcarrierdynamicsinbazrs3agbis2dualabsorbernanostructuredquantumdotsolarcellsforadvancedleadfreephotovoltaics",
+      "authors": [
+        "Venkateswarlu G.",
+        "Umakanta Nanda"
+      ],
+      "venue": "Micro and Nanostructures",
+      "issn_l": "2773-0123",
+      "source_type": "journal",
+      "is_preprint": false,
+      "alt_doi": null,
+      "pub_date": "2027-01-01",
+      "pub_year": 2027,
+      "date_suspect": true,
+      "sort_date": "2026-11-28",
+      "oa_status": null,
+      "pdf_url": null,
+      "cited_by_count": 0,
+      "abstract": null,
+      "abstract_hash": null,
+      "abstract_source": "none",
+      "abstract_missing": true,
+      "directions": [
+        "detection",
+        "materials"
+      ],
+      "novelty_score": 1,
+      "novelty_reason": "摘要缺失，无法判断创新性。",
+      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
+      "method_zh": "数据库未收录摘要，无法确认具体方法与器件结构。",
+      "keywords_zh": [
+        "BaZrS3",
+        "AgBiS2",
+        "量子点太阳能电池",
+        "无铅光伏",
+        "双吸收层"
+      ],
+      "summary_source": "llm",
+      "llm_model": "deepseek-chat",
+      "llm_at": "2026-10-13T15:50:01.458Z",
+      "pending_summary": false,
+      "first_seen": "2026-10-13T15:36:21.792Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
+      "sources": [
+        "crossref",
+        "openalex"
+      ],
+      "published": true,
+      "published_source": "crossref",
+      "journal_if": 5.2,
+      "journal_tier": 2
+    },
+    {
+      "id": "10.1007/s40042-026-01761-y",
+      "doi": "10.1007/s40042-026-01761-y",
+      "doi_url": "https://doi.org/10.1007/s40042-026-01761-y",
+      "title": "Origin of the reverse dark current in solution-processed PbS quantum-dot short-wave infrared photodiodes",
+      "title_zh": "溶液法制备的 PbS 量子点短波红外光电二极管中反向暗电流的来源",
+      "title_key": "originofthereversedarkcurrentinsolutionprocessedpbsquantumdotshortwaveinfraredphotodiodes",
+      "authors": [
+        "Jinseok Youn",
+        "Jung Hoon Song"
+      ],
+      "venue": "Journal of the Korean Physical Society",
+      "issn_l": "0374-4884",
+      "source_type": "journal",
+      "is_preprint": false,
+      "sources": [
+        "crossref"
+      ],
+      "published": true,
+      "published_source": "crossref",
+      "alt_doi": null,
+      "pub_date": "2026-11-27",
+      "pub_year": 2026,
+      "date_suspect": false,
+      "sort_date": "2026-11-27",
+      "oa_status": null,
+      "pdf_url": null,
+      "cited_by_count": 0,
+      "abstract": null,
+      "abstract_hash": null,
+      "abstract_source": "none",
+      "abstract_missing": true,
+      "directions": [
+        "detection"
+      ],
+      "novelty_score": 1,
+      "novelty_reason": "无摘要，无法评估创新性。",
+      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
+      "method_zh": "数据库未收录摘要，无法判断具体方法或器件结构。",
+      "keywords_zh": [
+        "PbS 量子点",
+        "短波红外",
+        "光电二极管",
+        "暗电流",
+        "溶液法"
+      ],
+      "summary_source": "llm",
+      "llm_model": "deepseek-chat",
+      "llm_at": "2026-11-28T03:36:27.261Z",
+      "pending_summary": false,
+      "first_seen": "2026-11-28T03:35:40.123Z",
+      "last_updated": "2026-11-28T03:35:40.123Z"
+    },
+    {
+      "id": "10.3390/photonics13121123",
+      "doi": "10.3390/photonics13121123",
+      "doi_url": "https://doi.org/10.3390/photonics13121123",
+      "title": "Erbium-Doped Fiber Laser Q-Switched and Mode-Locked by Red-Fluorescent Carbon-Quantum-Dot-Based Saturable Absorber",
+      "title_zh": "基于红色荧光碳量子点可饱和吸收体的调Q与锁模掺铒光纤激光器",
+      "title_key": "erbiumdopedfiberlaserqswitchedandmodelockedbyredfluorescentcarbonquantumdotbasedsaturableabsorber",
+      "authors": [
+        "Tian-Run Liu",
+        "Xue-Peng Zhu",
+        "Jiong Liu",
+        "et al."
+      ],
+      "venue": "Photonics",
+      "issn_l": "2304-6732",
+      "source_type": "journal",
+      "is_preprint": false,
+      "sources": [
+        "crossref"
+      ],
+      "published": true,
+      "published_source": "crossref",
+      "alt_doi": null,
+      "pub_date": "2026-11-27",
+      "pub_year": 2026,
+      "date_suspect": false,
+      "sort_date": "2026-11-27",
+      "oa_status": null,
+      "pdf_url": null,
+      "cited_by_count": 0,
+      "abstract": "A pulsed erbium-doped fiber laser (EDFL) incorporating a saturable absorber (SA) based on red-fluorescent carbon quantum dots (RCQDs) is experimentally demonstrated. First, an RCQD-based, fiber-compatible sandwich-structured SA is fabricated and the nonlinear saturable absorption property (NSAP) is characterized. When the as-prepared RCQDs-SA is integrated into the EDFL with a ring cavity construction, Q-switching and conventional-soliton (CS) mode-locking operations of the laser system are achieved. Stable Q-switching and mode-locking are achieved over pump power ranges of 310–520 mW and 450–590 mW, respectively. In the pump power range of 450–520 mW, the EDFL is robust for switching between Q-switching and mode-locking regimes. The RCQDs-SA exhibits a modulation depth of 11.84% and enables passive Q-switching and passive CS mode-locking when integrated into the EDFL ring cavity. This work, together with our previous ultrafast EDFL mode-locked by green-fluorescent carbon quantum dots (GCQDs) SA, lays a solid foundation for the application and development of carbon quantum dots (CQDs) in the field of ultrafast lasers.",
+      "abstract_hash": "b87ab5fa1df78ff6e2c9c1c580a22165faa4efb0f54287c44eb4159addf69529",
+      "abstract_source": "crossref",
+      "abstract_missing": false,
+      "directions": [
+        "display",
+        "materials"
+      ],
+      "novelty_score": 3,
+      "novelty_reason": "属于把已有碳量子点可饱和吸收体思路换到红色荧光体系上验证，性能指标常规，未见新机制或纪录突破。",
+      "innovation_zh": "把红色荧光碳量子点（RCQD）做成光纤兼容的三明治结构可饱和吸收体，测得其调制深度为 11.84%，并首次（相对作者此前用绿色荧光碳量子点的工作）在同一个环形腔 EDFL 中同时实现被动调Q和常规孤子锁模。调Q在 310–520 mW 泵浦区间稳定，锁模在 450–590 mW 稳定，450–520 mW 内可在两种状态间可靠切换。创新点主要在于把 RCQD 这一新材料体系用于光纤激光器的可饱和吸收，并给出双工作区间可切换的实验演示。",
+      "method_zh": "制备 RCQD 基三明治结构、光纤兼容的可饱和吸收体，先表征其非线性可饱和吸收特性，再将其插入环形腔掺铒光纤激光器，观察调Q与常规孤子锁模运转。",
+      "keywords_zh": [
+        "碳量子点",
+        "可饱和吸收体",
+        "掺铒光纤激光器",
+        "调Q",
+        "锁模"
+      ],
+      "summary_source": "llm",
+      "llm_model": "deepseek-chat",
+      "llm_at": "2026-11-28T03:36:28.740Z",
+      "pending_summary": false,
+      "first_seen": "2026-11-28T03:35:40.123Z",
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.4028/p-v8zevb",
@@ -2140,23 +2939,23 @@
       "llm_at": "2026-11-22T01:43:28.260Z",
       "pending_summary": false,
       "first_seen": "2026-11-22T01:43:09.840Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
-      "id": "10.1016/j.jlumin.2026.122309",
-      "doi": "10.1016/j.jlumin.2026.122309",
-      "doi_url": "https://doi.org/10.1016/j.jlumin.2026.122309",
-      "title": "Interdot connectivity in perovskite quantum-dot optoelectronics: Electronic coupling, carrier diffusion, and recombination",
-      "title_zh": "钙钛矿量子点光电子学中的点间连通性：电子耦合、载流子扩散与复合",
-      "title_key": "interdotconnectivityinperovskitequantumdotoptoelectronicselectroniccouplingcarrierdiffusionandrecombination",
+      "id": "10.1088/1361-648x/aebd56",
+      "doi": "10.1088/1361-648x/aebd56",
+      "doi_url": "https://doi.org/10.1088/1361-648x/aebd56",
+      "title": "Heat generation in a quantum dot side-coupled to a Majorana bound state pair",
+      "title_zh": "侧耦合到 Majorana 束缚态对的量子点中的热产生",
+      "title_key": "heatgenerationinaquantumdotsidecoupledtoamajoranaboundstatepair",
       "authors": [
-        "Rashed Abu Hammour",
-        "Omar Fadaam",
-        "M.M. Rekha",
+        "Wanying Chen",
+        "Sheng’ao Zhang",
+        "Feng Jiang",
         "et al."
       ],
-      "venue": "Journal of Luminescence",
-      "issn_l": "0022-2313",
+      "venue": "Journal of Physics: Condensed Matter",
+      "issn_l": "0953-8984",
       "source_type": "journal",
       "is_preprint": false,
       "sources": [
@@ -2165,527 +2964,189 @@
       "published": true,
       "published_source": "crossref",
       "alt_doi": null,
-      "pub_date": "2027-01-01",
-      "pub_year": 2027,
-      "date_suspect": true,
+      "pub_date": "2026-11-27",
+      "pub_year": 2026,
+      "date_suspect": false,
       "sort_date": "2026-11-27",
       "oa_status": null,
       "pdf_url": null,
       "cited_by_count": 0,
-      "abstract": null,
-      "abstract_hash": null,
-      "abstract_source": "none",
-      "abstract_missing": true,
+      "abstract": "We employ the small polaron transformation and the nonequilibrium Green’s function method to derive an analytical expression for the heat generation in a quantum dot side-coupled to a topological superconducting loop hosting a Majorana bound state (MBS) pair. Our main findings are threefold: (i) Gate-voltage control: Under symmetric bias, the heat generation profile evolves from a double-peak to a single-peak structure as the side-coupled strength increases; under extreme asymmetric bias, a flux phase of ϕ = π induces a pronounced enhancement of heat generation at specific dot levels. (ii) Bias-voltage control: The differential electrothermal conductance ∂ Q d / ∂ V exhibits clear and well-resolved peaks, and in terms of phase control, it offers complementary information of the MBS pair signatures compared to the differential conductance ∂ I / ∂ V . (iii) Magnetic-flux control: The heat-generation signals display a robust crossover from 2 π to 4 π periodicity, tunable by the Majorana overlap energy and temperature, serving as a distinct phase fingerprint to distinguish the MBS pair from trivial ring structures. Overall, the heat generation and its derivative serve as a useful complement to conventional charge transport measurements for detecting MBSs, offering an additional probe across all three tuning dimensions.",
+      "abstract_hash": "915054af3116bf6d8aa2c46dcf5cb8d8c6bb07456507751ceb51104f103b6c97",
+      "abstract_source": "crossref",
+      "abstract_missing": false,
       "directions": [
         "display",
-        "materials",
+        "quantuminfo",
         "detection"
       ],
-      "novelty_score": 1,
-      "novelty_reason": "无摘要，无法评估创新性。",
-      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
-      "method_zh": "数据库未收录摘要，无法判断具体方法或器件结构。",
+      "novelty_score": 4,
+      "novelty_reason": "提出用热产生及其导数作为 MBS 探测的补充手段，并给出 2π/4π 周期性转变这一可区分平庸结构的相位指纹，属于明确的新探测策略。",
+      "innovation_zh": "文章用 small polaron 变换加非平衡格林函数方法，解析推导了侧耦合到含 Majorana 束缚态（MBS）对拓扑超导环的量子点中的热产生表达式。主要结论有三点：栅压调控下，对称偏压下热产生随侧耦合强度从双峰演化为单峰，极端非对称偏压下磁通相位 φ=π 会在特定能级处显著增强热产生；偏压调控下，微分电热导 ∂Qd/∂V 出现清晰可分辨的峰，且在相位控制上能提供与微分电导 ∂I/∂V 互补的 MBS 对特征信息；磁通调控下，热产生信号随 Majorana 重叠能和温度在 2π 与 4π 周期性之间发生稳健的转变，可作为区分 MBS 对与平庸环结构的相位指纹。核心创新在于把热产生及其导数作为探测 MBS 的补充探针，覆盖栅压、偏压、磁通三个调控维度。",
+      "method_zh": "采用 small polaron 变换结合非平衡格林函数方法，解析计算侧耦合到拓扑超导环（含 MBS 对）的量子点热产生，并分析其随栅压、偏压和磁通相位的依赖。",
       "keywords_zh": [
-        "钙钛矿量子点",
-        "点间耦合",
-        "载流子扩散",
-        "复合",
-        "光电子学"
+        "Majorana 束缚态",
+        "量子点",
+        "热产生",
+        "非平衡格林函数",
+        "拓扑超导"
       ],
       "summary_source": "llm",
       "llm_model": "deepseek-chat",
-      "llm_at": "2026-11-15T01:22:21.882Z",
+      "llm_at": "2026-11-28T03:36:29.775Z",
       "pending_summary": false,
-      "first_seen": "2026-11-15T01:21:49.072Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
-      "journal_if": 3.3,
+      "first_seen": "2026-11-04T01:43:57.739Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
+      "journal_if": 3,
       "journal_tier": 3
     },
     {
-      "id": "10.1016/j.saa.2026.129063",
-      "doi": "10.1016/j.saa.2026.129063",
-      "doi_url": "https://doi.org/10.1016/j.saa.2026.129063",
-      "title": "RCA-assisted dual-color quantum dot–graphene oxide fluorescence aptasensor for simultaneous detection of aflatoxin B1 and ochratoxin A",
-      "title_zh": "RCA辅助的双色量子点–氧化石墨烯荧光适配体传感器用于黄曲霉毒素B1和赭曲霉毒素A的同时检测",
-      "title_key": "rcaassisteddualcolorquantumdotgrapheneoxidefluorescenceaptasensorforsimultaneousdetectionofaflatoxinb1andochratoxina",
+      "id": "10.1021/acs.jpclett.6c02639",
+      "doi": "10.1021/acs.jpclett.6c02639",
+      "doi_url": "https://doi.org/10.1021/acs.jpclett.6c02639",
+      "title": "Alloyed CdSe/CdSe x S1– x Core/Crown Nanoplatelets as Room-Temperature Single-Photon Emitters",
+      "title_zh": "合金化 CdSe/CdSe x S1–x 核/冠纳米片作为室温单光子发射体",
+      "title_key": "alloyedcdsecdsexs1xcorecrownnanoplateletsasroomtemperaturesinglephotonemitters",
       "authors": [
-        "Yaqi Li",
-        "Qingyue Sun",
-        "Zihan Huang",
+        "Mitesh Amin",
+        "Liam Burke",
+        "Farwa Awan",
         "et al."
       ],
-      "venue": "Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy",
-      "issn_l": "1386-1425",
+      "venue": "The Journal of Physical Chemistry Letters",
+      "issn_l": "1948-7185",
       "source_type": "journal",
       "is_preprint": false,
       "sources": [
-        "crossref"
+        "openalex"
       ],
       "published": true,
-      "published_source": "crossref",
+      "published_source": "openalex",
       "alt_doi": null,
-      "pub_date": "2027-02-01",
-      "pub_year": 2027,
-      "date_suspect": true,
-      "sort_date": "2026-11-27",
-      "oa_status": null,
+      "pub_date": "2026-11-26",
+      "pub_year": 2026,
+      "date_suspect": false,
+      "sort_date": "2026-11-26",
+      "oa_status": "hybrid",
       "pdf_url": null,
       "cited_by_count": 0,
-      "abstract": "A dual-color fluorescence aptasensor combining rolling circle amplification (RCA) with a graphene oxide (GO)-associated fluorescence-quenching platform was developed for the simultaneous determination of ochratoxin A (OTA) and aflatoxin B1 (AFB1) in grain samples. Blue-emitting graphitic carbon nitride quantum dots (g-CNQDs) and red-emitting CdTe QDs were conjugated to target-associated complementary DNA strands as spectrally distinguishable reporters. In target-free samples, each aptamer hybridized with its corresponding padlock probe, allowing T4 DNA ligase-mediated circularization and Phi29 DNA polymerase-driven RCA. The resulting rolling circle amplification products (RCAPs) contained tandem repeats that hybridized with the QD-cDNA probes, thereby reducing their adsorption onto GO and retaining fluorescence. When OTA or AFB1 was present, target-aptamer binding competitively reduced aptamer-padlock hybridization, padlock ligation, and subsequent RCA; consequently, a larger fraction of single-stranded QD-cDNA probes was adsorbed onto GO and quenched. Under the optimized conditions, the limits of detection were 17 pg mL-1 for OTA and 19 pg mL-1 for AFB1. The method showed satisfactory performance in grain samples. The principal contribution of this work is the integration of two spectrally separated QD reporters with a common GO quenching platform and RCA-assisted signal regulation for multiplex mycotoxin analysis.",
-      "abstract_hash": "0b02daf24c3536e36425f34e46fd724e038c80471d5a9c36b737c028d1552765",
-      "abstract_source": "semanticscholar",
+      "abstract": "Solution-processed nanocrystals are uniquely positioned as versatile, scalable single-photon sources (SPSs) for quantum technologies with their recent advancements in synthesis control and nanophotonics integration. Here, we report spectroscopic studies of single colloidal alloyed core–crown (CC) CdSe/CdSexS1–x nanoplatelets (NPLs, 29 nm × 8 nm) with relevance to SPSs emitting in the visible. Upon passivation of the defective CdSe core–NPL edge facets that are largely responsible for nonradiative pathways, CC NPLs demonstrate enhanced optical stability, thus enabling excellent single-photon purity as low as g2(0) = 0.07 with an average g2(0) = 0.2 across several particles at ambient conditions. Small peak emission energy fluctuations (4 meV) among particles, narrow individual line widths (55 meV), and fast radiative lifetimes (∼3 ns) under strong dielectric confinement make the CC NPLs viable, large-scale quantum emitters for achieving a high degree of indistinguishability with future photonic cavity integration.",
+      "abstract_hash": "d9e7703d2c5caa54c788fe3141260bb5f17cfcf5a70ffb49f66c62667af8ed0d",
+      "abstract_source": "openalex",
       "abstract_missing": false,
       "directions": [
-        "detection",
-        "materials"
-      ],
-      "novelty_score": 3,
-      "novelty_reason": "将双色量子点报告、GO淬灭和RCA信号放大整合到一个多路真菌毒素检测体系中，思路清晰但各组件均为已有技术，属于新体系上的组合验证。",
-      "innovation_zh": "把两种光谱可区分的量子点报告基团（蓝色g-CNQDs和红色CdTe QDs）接到各自的cDNA上，共用一个GO荧光淬灭平台，再用RCA做信号调控，实现OTA和AFB1的双通道同时检测。关键设计是：无靶标时适配体与padlock探针杂交、环化并RCA，产物与QD-cDNA杂交后不易吸附GO、荧光保留；有靶标时竞争性抑制RCA，单链QD-cDNA被GO吸附淬灭，信号随靶标浓度下降。检测限做到OTA 17 pg/mL、AFB1 19 pg/mL，并在实际谷物样品中验证。",
-      "method_zh": "以g-CNQDs和CdTe QDs分别标记两种靶标的互补DNA作为报告探针，T4 DNA连接酶环化padlock探针、Phi29聚合酶驱动RCA，RCA产物与QD-cDNA杂交后减少其在GO上的吸附，靶标存在时竞争抑制RCA导致荧光淬灭。",
-      "keywords_zh": [
-        "量子点",
-        "氧化石墨烯",
-        "滚环扩增",
-        "荧光适配体传感器",
-        "真菌毒素检测"
-      ],
-      "summary_source": "llm",
-      "llm_model": "deepseek-chat",
-      "llm_at": "2026-11-25T04:38:29.376Z",
-      "pending_summary": false,
-      "first_seen": "2026-11-05T01:52:11.066Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
-      "journal_if": 4.3,
-      "journal_tier": 2
-    },
-    {
-      "id": "10.1016/j.optcom.2026.133919",
-      "doi": "10.1016/j.optcom.2026.133919",
-      "doi_url": "https://doi.org/10.1016/j.optcom.2026.133919",
-      "title": "All-optically tunable structural color display based on dielectric metasurfaces integrated with quantum dot photoresists",
-      "title_zh": "基于介质超表面与量子点光刻胶集成的全光可调结构色显示",
-      "title_key": "allopticallytunablestructuralcolordisplaybasedondielectricmetasurfacesintegratedwithquantumdotphotoresists",
-      "authors": [
-        "Qianyue Ge",
-        "Qi Feng",
-        "Guojian Ding",
-        "et al."
-      ],
-      "venue": "Optics Communications",
-      "issn_l": "0030-4018",
-      "source_type": "journal",
-      "is_preprint": false,
-      "sources": [
-        "crossref"
-      ],
-      "published": true,
-      "published_source": "crossref",
-      "alt_doi": null,
-      "pub_date": "2027-02-01",
-      "pub_year": 2027,
-      "date_suspect": true,
-      "sort_date": "2026-11-27",
-      "oa_status": null,
-      "pdf_url": null,
-      "cited_by_count": 0,
-      "abstract": null,
-      "abstract_hash": null,
-      "abstract_source": "none",
-      "abstract_missing": true,
-      "directions": [
+        "quantuminfo",
         "display",
         "materials"
       ],
-      "novelty_score": 1,
-      "novelty_reason": "数据库未收录摘要，无法判断创新性。",
-      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
-      "method_zh": "数据库未收录摘要，建议直接查看原文。",
+      "novelty_score": 4,
+      "novelty_reason": "用合金冠层钝化边缘缺陷来提升纳米片单光子纯度与稳定性，室温 g2(0) 低至 0.07，属于明确的新结构策略并带来显著性能提升。",
+      "innovation_zh": "在胶体合金化核/冠（core–crown）CdSe/CdSexS1–x 纳米片（29 nm × 8 nm）上做单粒子光谱，针对可见光波段的单光子源。关键做法是用 CdSexS1–x 冠层钝化原本主导非辐射复合的 CdSe 核纳米片边缘缺陷面，从而提升光学稳定性；室温下获得最低 g2(0) = 0.07、多粒子平均 g2(0) = 0.2 的单光子纯度。不同粒子间峰位能量涨落仅 4 meV，单线宽 55 meV，强介电限域下辐射寿命约 3 ns，作者据此认为这类核/冠纳米片有潜力做成可规模化、并可与光子腔集成以实现高不可分辨度的量子发射体。",
+      "method_zh": "溶液法合成合金化 CdSe/CdSexS1–x 核/冠胶体纳米片，通过冠层外延钝化核纳米片边缘缺陷面，再对单个纳米片做低温/室温单粒子光谱与二阶关联测量。",
       "keywords_zh": [
-        "介质超表面",
-        "量子点光刻胶",
-        "结构色",
-        "全光可调",
-        "显示"
+        "纳米片",
+        "单光子源",
+        "核冠结构",
+        "合金化",
+        "g2(0)"
       ],
       "summary_source": "llm",
       "llm_model": "deepseek-chat",
-      "llm_at": "2026-11-01T00:30:49.468Z",
+      "llm_at": "2026-11-28T03:36:31.886Z",
       "pending_summary": false,
-      "first_seen": "2026-11-01T00:30:28.464Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
-      "journal_if": 2.2,
-      "journal_tier": 3
-    },
-    {
-      "id": "10.1016/j.talanta.2026.130830",
-      "doi": "10.1016/j.talanta.2026.130830",
-      "doi_url": "https://doi.org/10.1016/j.talanta.2026.130830",
-      "title": "Leaf elemental imaging using a custom 3D-Printed slicing device following quantum dot exposure",
-      "title_zh": "利用自制3D打印切片装置结合量子点暴露进行叶片元素成像",
-      "title_key": "leafelementalimagingusingacustom3dprintedslicingdevicefollowingquantumdotexposure",
-      "authors": [
-        "Chuanji Zhong",
-        "Wenqian Kong",
-        "Dingyi Wang",
-        "et al."
-      ],
-      "venue": "Talanta",
-      "issn_l": "0039-9140",
-      "source_type": "journal",
-      "is_preprint": false,
-      "sources": [
-        "crossref",
-        "openalex"
-      ],
-      "published": true,
-      "published_source": "crossref",
-      "alt_doi": null,
-      "pub_date": "2027-04-01",
-      "pub_year": 2027,
-      "date_suspect": true,
-      "sort_date": "2026-11-27",
-      "oa_status": null,
-      "pdf_url": null,
-      "cited_by_count": 0,
-      "abstract": "Owing to the growing use of nanomaterials in botany and agriculture, nanoparticles entered into soil and water bodies may be taken up by plants and disturb their nutrient homeostasis. Here we developed a laboratory-made 3D-printed multi-well slicing device that cuts an intact leaf into a uniform grid and permits in-well acid digestion directly in the array, followed by ICP-MS, providing a low-cost approach to spatial elemental imaging for leaves. Pumpkin seedlings were exposed hydroponically for 8 days to 20 or 100 pmol mL-1 CdSe/ZnS-GSH. Neither dose caused significant root damage, as indicated by Evans Blue uptake, malondialdehyde content, and Schiff's reagent staining, whereas total leaf fresh weight increased by 16.7 ± 9.1% and 19.9 ± 5.9%, respectively. Bulk leaf analysis showed that most nutrients (Mg, Ca, B, Mn, Na, and Fe) remained unchanged; only Zn was elevated 3.75- and 5.68-fold, Cu was reduced by approximately 21.5% at the high dose, Se increased dose-dependently while Cd did not. Spatial imaging further revealed that Se and Zn redistributed along leaf veins, with Se migrating more readily than Cd. This device offers a simple techniques to quantitatively imaging for leaf elements, and the effects of quantum dots on the spatial homeostasis of plant nutrient elements also offers a new perspective on plant responses.",
-      "abstract_hash": "87e253d53565ca99b5cf49d44cdcc670520da4aa3b5a340ffcf543692a8058d8",
-      "abstract_source": "semanticscholar",
-      "abstract_missing": false,
-      "directions": [
-        "detection",
-        "materials"
-      ],
-      "novelty_score": 3,
-      "novelty_reason": "3D打印切片加孔内消解ICP-MS的成像流程有方法学新意，但整体属于在新体系上验证已有思路并做元素分布表征，性能层面无突破性指标。",
-      "innovation_zh": "工作分两部分：一是做了一个实验室自制的3D打印多孔切片装置，把整片叶子切成均匀网格，并能在阵列孔内直接酸消解后接ICP-MS，从而以低成本实现叶片元素的空间成像；二是用该装置研究CdSe/ZnS-GSH量子点水培暴露8天后的南瓜幼苗，发现20和100 pmol/mL两个剂量都不损伤根系，但叶片鲜重分别增加16.7±9.1%和19.9±5.9%，整体元素分析中只有Zn升高3.75倍和5.68倍、高剂量下Cu降约21.5%，Se随剂量升高而Cd不变，空间成像进一步显示Se和Zn沿叶脉重新分布、Se比Cd更易迁移。创新点主要在于把低成本3D打印切片与孔内消解ICP-MS结合成可定量的叶片空间元素成像流程，并用它揭示了量子点暴露下营养元素空间稳态的变化。",
-      "method_zh": "3D打印多孔切片装置将完整叶片切成均匀网格，在孔内直接酸消解后做ICP-MS；南瓜幼苗水培暴露于20或100 pmol/mL CdSe/ZnS-GSH 8天，配合Evans Blue、MDA和Schiff染色评估根系损伤。",
-      "keywords_zh": [
-        "3D打印切片装置",
-        "ICP-MS元素成像",
-        "CdSe/ZnS量子点",
-        "植物营养稳态",
-        "叶片空间分布"
-      ],
-      "summary_source": "llm",
-      "llm_model": "deepseek-chat",
-      "llm_at": "2026-11-25T04:38:29.532Z",
-      "pending_summary": false,
-      "first_seen": "2026-11-01T00:30:28.464Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
-    },
-    {
-      "id": "10.1016/j.solener.2026.115283",
-      "doi": "10.1016/j.solener.2026.115283",
-      "doi_url": "https://doi.org/10.1016/j.solener.2026.115283",
-      "title": "Lead(II) dithiocarbamate-derived PbS quantum dots for high-performance quantum dot-sensitized solar cells",
-      "title_zh": "由二硫代氨基甲酸铅(II)衍生的 PbS 量子点用于高性能量子点敏化太阳能电池",
-      "title_key": "leadiidithiocarbamatederivedpbsquantumdotsforhighperformancequantumdotsensitizedsolarcells",
-      "authors": [
-        "Inam Vulindlela",
-        "Athandwe M. Paca",
-        "Edson L. Meyer",
-        "et al."
-      ],
-      "venue": "Solar Energy",
-      "issn_l": "0038-092X",
-      "source_type": "journal",
-      "is_preprint": false,
-      "sources": [
-        "crossref",
-        "openalex"
-      ],
-      "published": true,
-      "published_source": "crossref",
-      "alt_doi": null,
-      "pub_date": "2027-01-01",
-      "pub_year": 2027,
-      "date_suspect": true,
-      "sort_date": "2026-11-27",
-      "oa_status": null,
-      "pdf_url": null,
-      "cited_by_count": 0,
-      "abstract": null,
-      "abstract_hash": null,
-      "abstract_source": "none",
-      "abstract_missing": true,
-      "directions": [
-        "detection",
-        "materials"
-      ],
-      "novelty_score": 1,
-      "novelty_reason": "无摘要，无法评估创新性。",
-      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
-      "method_zh": "数据库未收录摘要，无法判断关键方法或器件结构。",
-      "keywords_zh": [
-        "PbS 量子点",
-        "二硫代氨基甲酸铅",
-        "量子点敏化太阳能电池",
-        "前驱体"
-      ],
-      "summary_source": "llm",
-      "llm_model": "deepseek-chat",
-      "llm_at": "2026-10-31T01:08:05.132Z",
-      "pending_summary": false,
-      "first_seen": "2026-10-31T01:07:37.189Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
-    },
-    {
-      "id": "10.1016/j.optmat.2026.118573",
-      "doi": "10.1016/j.optmat.2026.118573",
-      "doi_url": "https://doi.org/10.1016/j.optmat.2026.118573",
-      "title": "Silicon-based broadband photodetector with PbS quantum dot-decorated ZnO nanowires",
-      "title_zh": "基于 PbS 量子点修饰 ZnO 纳米线的硅基宽带光电探测器",
-      "title_key": "siliconbasedbroadbandphotodetectorwithpbsquantumdotdecoratedznonanowires",
-      "authors": [
-        "Yujie Wu",
-        "Yifan Liu",
-        "Zhuolin Li",
-        "et al."
-      ],
-      "venue": "Optical Materials",
-      "issn_l": "0925-3467",
-      "source_type": "journal",
-      "is_preprint": false,
-      "sources": [
-        "crossref"
-      ],
-      "published": true,
-      "published_source": "crossref",
-      "alt_doi": null,
-      "pub_date": "2027-01-01",
-      "pub_year": 2027,
-      "date_suspect": true,
-      "sort_date": "2026-11-27",
-      "oa_status": null,
-      "pdf_url": null,
-      "cited_by_count": 0,
-      "abstract": null,
-      "abstract_hash": null,
-      "abstract_source": "none",
-      "abstract_missing": true,
-      "directions": [
-        "detection",
-        "materials"
-      ],
-      "novelty_score": 1,
-      "novelty_reason": "摘要缺失，无法评估创新性。",
-      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
-      "method_zh": "数据库未收录摘要，无法判断具体方法与器件结构。",
-      "keywords_zh": [
-        "PbS 量子点",
-        "ZnO 纳米线",
-        "硅基光电探测器",
-        "宽带探测"
-      ],
-      "summary_source": "llm",
-      "llm_model": "deepseek-chat",
-      "llm_at": "2026-10-13T17:44:45.592Z",
-      "pending_summary": false,
-      "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
-      "journal_if": 3.8,
-      "journal_tier": 3
-    },
-    {
-      "id": "10.1016/j.physe.2026.116666",
-      "doi": "10.1016/j.physe.2026.116666",
-      "doi_url": "https://doi.org/10.1016/j.physe.2026.116666",
-      "title": "Tunable spin entanglement and topological phase transitions in a parabolically confined three-electron GaAs quantum dot",
-      "title_zh": "抛物线束缚三电子 GaAs 量子点中可调自旋纠缠与拓扑相变",
-      "title_key": "tunablespinentanglementandtopologicalphasetransitionsinaparabolicallyconfinedthreeelectrongaasquantumdot",
-      "authors": [
-        "Alemu Gurmessa Gindaba",
-        "Sampandam Elangovan"
-      ],
-      "venue": "Physica E: Low-dimensional Systems and Nanostructures",
-      "issn_l": "1386-9477",
-      "source_type": "journal",
-      "is_preprint": false,
-      "sources": [
-        "crossref"
-      ],
-      "published": true,
-      "published_source": "crossref",
-      "alt_doi": null,
-      "pub_date": "2027-01-01",
-      "pub_year": 2027,
-      "date_suspect": true,
-      "sort_date": "2026-11-27",
-      "oa_status": null,
-      "pdf_url": null,
-      "cited_by_count": 0,
-      "abstract": null,
-      "abstract_hash": null,
-      "abstract_source": "none",
-      "abstract_missing": true,
-      "directions": [
-        "quantuminfo",
-        "materials"
-      ],
-      "novelty_score": 1,
-      "novelty_reason": "无摘要，无法评估创新性。",
-      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
-      "method_zh": "数据库未收录摘要，无法判断具体方法与器件结构。",
-      "keywords_zh": [
-        "GaAs 量子点",
-        "自旋纠缠",
-        "拓扑相变",
-        "三电子",
-        "抛物线束缚"
-      ],
-      "summary_source": "llm",
-      "llm_model": "deepseek-chat",
-      "llm_at": "2026-10-13T17:44:46.693Z",
-      "pending_summary": false,
-      "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
-      "journal_if": 2.9,
-      "journal_tier": 3
-    },
-    {
-      "id": "10.1016/j.matchemphys.2026.133204",
-      "doi": "10.1016/j.matchemphys.2026.133204",
-      "doi_url": "https://doi.org/10.1016/j.matchemphys.2026.133204",
-      "title": "Nickel chloride quantum dot–derived NiOx thin films for high-performance p–i–n perovskite solar cells",
-      "title_zh": "氯化镍量子点衍生 NiOx 薄膜用于高性能 p–i–n 钙钛矿太阳能电池",
-      "title_key": "nickelchloridequantumdotderivednioxthinfilmsforhighperformancepinperovskitesolarcells",
-      "authors": [
-        "Wakul Bumrungsan",
-        "Kritsada Hongsith",
-        "Prapasiri Phimsarn",
-        "et al."
-      ],
-      "venue": "Materials Chemistry and Physics",
-      "issn_l": "0254-0584",
-      "source_type": "journal",
-      "is_preprint": false,
-      "sources": [
-        "crossref"
-      ],
-      "published": true,
-      "published_source": "crossref",
-      "alt_doi": null,
-      "pub_date": "2027-01-01",
-      "pub_year": 2027,
-      "date_suspect": true,
-      "sort_date": "2026-11-27",
-      "oa_status": null,
-      "pdf_url": null,
-      "cited_by_count": 0,
-      "abstract": null,
-      "abstract_hash": null,
-      "abstract_source": "none",
-      "abstract_missing": true,
-      "directions": [
-        "detection",
-        "materials"
-      ],
-      "novelty_score": 1,
-      "novelty_reason": "摘要缺失，无法评估创新性。",
-      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
-      "method_zh": "数据库未收录摘要，无法判断具体方法与器件结构。",
-      "keywords_zh": [
-        "NiOx",
-        "氯化镍量子点",
-        "p–i–n 钙钛矿太阳能电池",
-        "空穴传输层",
-        "薄膜"
-      ],
-      "summary_source": "llm",
-      "llm_model": "deepseek-chat",
-      "llm_at": "2026-10-13T17:44:48.115Z",
-      "pending_summary": false,
-      "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
-      "journal_if": 4.3,
+      "first_seen": "2026-11-28T03:35:40.123Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
+      "journal_if": 4.8,
       "journal_tier": 2
     },
     {
-      "id": "10.1016/j.optcom.2026.133800",
-      "doi": "10.1016/j.optcom.2026.133800",
-      "doi_url": "https://doi.org/10.1016/j.optcom.2026.133800",
-      "title": "Design, simulation and prospective fabrication of broadband solar spectral harvesting in 2D quantum dot photovoltaic cells via hybrid tri-graded RbGeI3/BaZrSe3/Ca3SbI3 absorbers",
-      "title_zh": "通过混合三梯度 RbGeI3/BaZrSe3/Ca3SbI3 吸收层实现二维量子点光伏电池宽带太阳光谱收集的设计、模拟与前瞻性制备",
-      "title_key": "designsimulationandprospectivefabricationofbroadbandsolarspectralharvestingin2dquantumdotphotovoltaiccellsviahybridtrigradedrbgei3bazrse3ca3sbi3absorbers",
+      "id": "10.1002/smtd.71249",
+      "doi": "10.1002/smtd.71249",
+      "doi_url": "https://doi.org/10.1002/smtd.71249",
+      "title": "Controlling Electron‐Beam‐Induced Charging in Colloidal Quantum Dots",
+      "title_zh": "控制胶体量子点中电子束诱导的充电效应",
+      "title_key": "controllingelectronbeaminducedchargingincolloidalquantumdots",
       "authors": [
-        "Janmoni Borah",
-        "Smriti Baruah",
-        "Anurag Kumar Pandey"
+        "Sven Ebel",
+        "Alina Myslovska",
+        "Stefano Vezzoli",
+        "et al."
       ],
-      "venue": "Optics Communications",
-      "issn_l": "0030-4018",
+      "venue": "Small Methods",
+      "issn_l": "2366-9608",
       "source_type": "journal",
       "is_preprint": false,
       "sources": [
-        "crossref"
+        "openalex"
       ],
       "published": true,
-      "published_source": "crossref",
+      "published_source": "openalex",
       "alt_doi": null,
-      "pub_date": "2027-01-01",
-      "pub_year": 2027,
-      "date_suspect": true,
-      "sort_date": "2026-11-27",
-      "oa_status": null,
-      "pdf_url": null,
+      "pub_date": "2026-11-26",
+      "pub_year": 2026,
+      "date_suspect": false,
+      "sort_date": "2026-11-26",
+      "oa_status": "hybrid",
+      "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/smtd.71249",
       "cited_by_count": 0,
-      "abstract": null,
-      "abstract_hash": null,
-      "abstract_source": "none",
-      "abstract_missing": true,
+      "abstract": "Colloidal quantum dots (QDs) are attractive nanoscale emitters, yet their response to energetic electron excitation remains poorly understood and often unstable, limiting cathodoluminescence (CL) spectroscopy, radiation-detection applications, and electron-beam-based device processing. Here, we investigate the CL response of giant-shell CdSe/CdS QDs and strategies to improve its stability through combined in situ CL and photoluminescence (PL) measurements. Spectral and lifetime analysis reveals efficient multiexciton excitation, leading to blueshifted emission and faster dynamics, while charge accumulation contributes to cathodobleaching. Using indirect excitation to reach sub-pA effective currents, we demonstrate partial recovery of long-lived neutral-exciton emission and strongly reduced cathodobleaching, although biexciton emission persists even at these low currents. Furthermore, replacing long insulating ligands with shorter ones strongly suppresses biexciton emission, consistent with improved charge drainage. Our work presents two complementary methods to control the CL response of QDs under electron-beam excitation, providing a practical route toward stable CL for spectroscopy and imaging, fast scintillation, and electron-beam-compatible photonic devices.",
+      "abstract_hash": "6311dd359230822cc0e8df4cf55bc75f25e3e4c5627c34b2453b451fc7f933bb",
+      "abstract_source": "openalex",
+      "abstract_missing": false,
       "directions": [
+        "display",
         "detection",
         "materials"
       ],
-      "novelty_score": 1,
-      "novelty_reason": "数据库未收录摘要，无法评估创新性。",
-      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
-      "method_zh": "数据库未收录摘要，无法确认关键方法或器件结构。",
+      "novelty_score": 4,
+      "novelty_reason": "提出间接激发降低有效电流与短配体改善电荷排出两种可操作策略，针对电子束下量子点充电这一具体问题给出明确改善。",
+      "innovation_zh": "针对胶体量子点在电子束激发下响应不稳定、阴极荧光（CL）易漂白的问题，作者用原位 CL 与 PL 联合测量研究了 giant-shell CdSe/CdS 量子点，确认多激子激发导致发光蓝移和动力学加快，而电荷积累是阴极漂白的主因。据此提出两条互补策略：一是用间接激发把有效电流降到 sub-pA 量级，部分恢复长寿命中性激子发光并显著抑制阴极漂白；二是用短配体替换长绝缘配体，增强电荷排出，从而强烈抑制双激子发光。",
+      "method_zh": "对 giant-shell CdSe/CdS 量子点做原位阴极荧光与光致发光联合测量，结合光谱与寿命分析区分多激子激发和电荷积累的贡献，并对比不同激发方式与配体长度下的 CL 行为。",
       "keywords_zh": [
-        "量子点光伏",
-        "宽带吸收",
-        "三梯度吸收层",
-        "RbGeI3",
-        "BaZrSe3"
+        "阴极荧光",
+        "胶体量子点",
+        "电荷积累",
+        "双激子",
+        "配体工程"
       ],
       "summary_source": "llm",
       "llm_model": "deepseek-chat",
-      "llm_at": "2026-10-13T17:44:48.671Z",
+      "llm_at": "2026-11-28T03:36:31.556Z",
       "pending_summary": false,
-      "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
-      "journal_if": 2.2,
-      "journal_tier": 3
+      "first_seen": "2026-11-28T03:35:40.123Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
+      "journal_if": 10.7,
+      "journal_tier": 2
     },
     {
-      "id": "10.1016/j.optmat.2026.118591",
-      "doi": "10.1016/j.optmat.2026.118591",
-      "doi_url": "https://doi.org/10.1016/j.optmat.2026.118591",
-      "title": "A surface post-treatment strategy enables synchronous ligand removal and defect passivation for efficient perovskite nanocrystal light-emitting diodes",
-      "title_zh": "一种表面后处理策略实现配体去除与缺陷钝化同步进行，用于高效钙钛矿纳米晶发光二极管",
-      "title_key": "asurfaceposttreatmentstrategyenablessynchronousligandremovalanddefectpassivationforefficientperovskitenanocrystallightemittingdiodes",
+      "id": "10.1016/j.mseb.2026.119986",
+      "doi": "10.1016/j.mseb.2026.119986",
+      "doi_url": "https://doi.org/10.1016/j.mseb.2026.119986",
+      "title": "Structural and optical properties of CuInS2-based core-shell and sequentially shelled quantum dots with high photoluminescence quantum yield for light-emitting applications",
+      "title_zh": "用于发光应用的高光致发光量子产率 CuInS2 基核壳及顺序壳层量子点的结构与光学性质",
+      "title_key": "structuralandopticalpropertiesofcuins2basedcoreshellandsequentiallyshelledquantumdotswithhighphotoluminescencequantumyieldforlightemittingapplications",
       "authors": [
-        "Linlin Xu",
-        "Jiayi Zhang",
-        "Dalin Yang",
+        "Babiker M. Jaffar",
+        "Fekadu Ayele",
+        "R.M. Erasmus",
         "et al."
       ],
-      "venue": "Optical Materials",
-      "issn_l": "0925-3467",
+      "venue": "Materials Science and Engineering B",
+      "issn_l": "0921-5107",
       "source_type": "journal",
       "is_preprint": false,
       "sources": [
-        "crossref"
+        "crossref",
+        "openalex"
       ],
       "published": true,
       "published_source": "crossref",
       "alt_doi": null,
-      "pub_date": "2027-01-01",
-      "pub_year": 2027,
-      "date_suspect": true,
-      "sort_date": "2026-11-27",
-      "oa_status": null,
+      "pub_date": "2026-11-26",
+      "pub_year": 2026,
+      "date_suspect": false,
+      "sort_date": "2026-11-26",
+      "oa_status": "closed",
       "pdf_url": null,
       "cited_by_count": 0,
       "abstract": null,
@@ -2698,139 +3159,24 @@
         "qled"
       ],
       "novelty_score": 1,
-      "novelty_reason": "数据库未收录摘要，无法评估创新性。",
+      "novelty_reason": "无摘要，无法评估创新性。",
       "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
-      "method_zh": "数据库未收录摘要，建议直接查看原文。",
+      "method_zh": "数据库未收录摘要，无法判断具体方法或器件结构。",
       "keywords_zh": [
-        "钙钛矿纳米晶",
-        "表面后处理",
-        "配体去除",
-        "缺陷钝化",
-        "发光二极管"
+        "CuInS2",
+        "核壳量子点",
+        "顺序壳层",
+        "光致发光量子产率",
+        "发光应用"
       ],
       "summary_source": "llm",
       "llm_model": "deepseek-chat",
-      "llm_at": "2026-10-13T17:45:00.905Z",
+      "llm_at": "2026-11-27T03:50:39.656Z",
       "pending_summary": false,
-      "first_seen": "2026-10-13T17:43:05.287Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
-      "journal_if": 3.8,
+      "first_seen": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
+      "journal_if": 3.9,
       "journal_tier": 3
-    },
-    {
-      "id": "10.1016/j.solmat.2026.114733",
-      "doi": "10.1016/j.solmat.2026.114733",
-      "doi_url": "https://doi.org/10.1016/j.solmat.2026.114733",
-      "title": "All-PbS colloidal quantum dot tandem solar cells with an ITO interlayer: A combined simulation and experimental study",
-      "title_zh": "全 PbS 胶体量子点叠层太阳能电池：ITO 中间层——模拟与实验结合研究",
-      "title_key": "allpbscolloidalquantumdottandemsolarcellswithanitointerlayeracombinedsimulationandexperimentalstudy",
-      "authors": [
-        "Yijun Gao",
-        "Beining Dong",
-        "Mengxiu Chen",
-        "et al."
-      ],
-      "venue": "Solar Energy Materials and Solar Cells",
-      "issn_l": "0927-0248",
-      "source_type": "journal",
-      "is_preprint": false,
-      "alt_doi": null,
-      "pub_date": "2027-01-01",
-      "pub_year": 2027,
-      "date_suspect": true,
-      "sort_date": "2026-11-27",
-      "oa_status": null,
-      "pdf_url": null,
-      "cited_by_count": 0,
-      "abstract": "Colloidal quantum dot (CQD) solar cells hold great promise for applications in single-junction and tandem solar cells owing to their adaptable bandgaps. However, power conversion efficiencies (PCEs) of their tandem solar cells still lag far behind their single-junction counterparts, primarily due to suboptimal thicknesses of light harvesting layers and underexplored interlayers for efficient charge recombination. In this study, Silvaco TCAD simulation is first conducted to optimize absorbing layer thickness in the front and rear sub-cells, enabling ideal photocurrent matching. Then, indium tin oxide (ITO) is introduced as an interlayer in a PbS CQD tandem solar cell to achieve efficient charge recombination. Guided by these simulation results, a two-terminal solution-processed PbS CQD tandem solar cell with an ITO interlayer is experimentally fabricated and characterized, which therefore achieved a PCE of 7.4% whereas the control device without an ITO interlayer only delivered a PCE of less than 1%. Therefore, this work offers insights into thickness optimizations of active layers and interlayer engineering for high-performance tandem solar cells, providing a theoretical and experimental guideline for optimizing CQD tandem devices.",
-      "abstract_hash": "9526c36fec5fcbe87ade92270a60228efe49d799a3f05a8a0f6f107782768cf8",
-      "abstract_source": "openalex",
-      "abstract_missing": false,
-      "directions": [
-        "detection",
-        "materials"
-      ],
-      "novelty_score": 4,
-      "novelty_reason": "把 ITO 中间层工程与厚度模拟优化结合用于全 PbS 量子点叠层电池，使 PCE 从不足 1% 提升到 7.4%，提升幅度显著但并非新机制或纪录级效率。",
-      "innovation_zh": "针对 PbS 胶体量子点叠层电池效率远落后于单结器件的问题，作者先用 Silvaco TCAD 模拟优化前后子电池吸收层厚度以实现理想的光电流匹配，再引入 ITO 作为中间层促进电荷复合。实验制备的两端溶液法 PbS CQD 叠层电池在加 ITO 中间层后 PCE 达到 7.4%，而无 ITO 中间层的对照器件 PCE 不足 1%，说明中间层是此前被忽视的关键瓶颈。",
-      "method_zh": "用 Silvaco TCAD 模拟确定前后子电池吸收层的最佳厚度，再在两端溶液法制备的 PbS CQD 叠层电池中插入 ITO 作为中间复合层，并与无 ITO 的对照器件对比。",
-      "keywords_zh": [
-        "PbS 胶体量子点",
-        "叠层太阳能电池",
-        "ITO 中间层",
-        "Silvaco TCAD 模拟",
-        "光电流匹配"
-      ],
-      "summary_source": "llm",
-      "llm_model": "deepseek-chat",
-      "llm_at": "2026-10-14T04:43:46.271Z",
-      "pending_summary": false,
-      "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
-      "sources": [
-        "crossref"
-      ],
-      "published": true,
-      "published_source": "crossref",
-      "journal_if": 6.3,
-      "journal_tier": 2
-    },
-    {
-      "id": "10.1016/j.micrna.2026.208946",
-      "doi": "10.1016/j.micrna.2026.208946",
-      "doi_url": "https://doi.org/10.1016/j.micrna.2026.208946",
-      "title": "Defect-regulated carrier dynamics in BaZrS3-AgBiS2 dual-absorber nanostructured quantum dot solar cells for advanced lead-free photovoltaics",
-      "title_zh": "缺陷调控载流子动力学的 BaZrS3-AgBiS2 双吸收层纳米结构量子点太阳能电池：面向先进无铅光伏",
-      "title_key": "defectregulatedcarrierdynamicsinbazrs3agbis2dualabsorbernanostructuredquantumdotsolarcellsforadvancedleadfreephotovoltaics",
-      "authors": [
-        "Venkateswarlu G.",
-        "Umakanta Nanda"
-      ],
-      "venue": "Micro and Nanostructures",
-      "issn_l": "2773-0123",
-      "source_type": "journal",
-      "is_preprint": false,
-      "alt_doi": null,
-      "pub_date": "2027-01-01",
-      "pub_year": 2027,
-      "date_suspect": true,
-      "sort_date": "2026-11-27",
-      "oa_status": null,
-      "pdf_url": null,
-      "cited_by_count": 0,
-      "abstract": null,
-      "abstract_hash": null,
-      "abstract_source": "none",
-      "abstract_missing": true,
-      "directions": [
-        "detection",
-        "materials"
-      ],
-      "novelty_score": 1,
-      "novelty_reason": "摘要缺失，无法判断创新性。",
-      "innovation_zh": "数据库未收录摘要，建议直接查看原文。",
-      "method_zh": "数据库未收录摘要，无法确认具体方法与器件结构。",
-      "keywords_zh": [
-        "BaZrS3",
-        "AgBiS2",
-        "量子点太阳能电池",
-        "无铅光伏",
-        "双吸收层"
-      ],
-      "summary_source": "llm",
-      "llm_model": "deepseek-chat",
-      "llm_at": "2026-10-13T15:50:01.458Z",
-      "pending_summary": false,
-      "first_seen": "2026-10-13T15:36:21.792Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
-      "sources": [
-        "crossref",
-        "openalex"
-      ],
-      "published": true,
-      "published_source": "crossref",
-      "journal_if": 5.2,
-      "journal_tier": 2
     },
     {
       "id": "10.3390/nano16231540",
@@ -2840,7 +3186,7 @@
       "title_zh": "面向可制造显示器的量子点发光二极管",
       "title_key": "quantumdotlightemittingdiodestowardmanufacturabledisplays",
       "authors": [
-        "Huu Tuan Nguyen",
+        "Hữu Tuấn Nguyễn",
         "Anh Tuan Duong",
         "Changjo Kim"
       ],
@@ -2849,7 +3195,8 @@
       "source_type": "journal",
       "is_preprint": false,
       "sources": [
-        "crossref"
+        "crossref",
+        "openalex"
       ],
       "published": true,
       "published_source": "crossref",
@@ -2858,12 +3205,12 @@
       "pub_year": 2026,
       "date_suspect": false,
       "sort_date": "2026-11-26",
-      "oa_status": null,
+      "oa_status": "gold",
       "pdf_url": null,
       "cited_by_count": 0,
       "abstract": "Quantum-dot light-emitting diodes offer spectrally narrow emission and solution-processable emissive layers, but display integration requires simultaneous control of efficiency, voltage, color, lifetime, and pixel fabrication. This critical narrative review examines selected literature available by 8 October 2026 and connects emitter composition, shell and ligand chemistry, charge-transport interfaces, degradation, optical architecture, and red, green, and blue patterning. InP and ZnSeTeS devices demonstrate substantial progress in cadmium-free electroluminescence, while top-emitting and tandem structures expand the options for photon extraction and current management. Their reported performance remains conditional on the emission color, optical-collection, device area, preconditioning, and lifetime extrapolation. We therefore distinguish reported device performance from evidence supporting its proposed mechanism, and distinguish pattern density from electroluminescent-array density and independently addressed display resolution. The synthesis identifies five interconnected priorities: assessing efficiency, voltage, and color at the intended operating luminance; improving blue-emitter and buried-interface reliability; discriminating degradation and positive-aging mechanisms; evaluating reliability after RGB patterning and electrical addressing; and establishing reproducibility through coupled electrical, optical, and fabrication design. Progress toward manufacturable displays depends on preserving these properties across device populations and integrated arrays rather than demonstrating them separately in champion devices.",
       "abstract_hash": "66064a38bbe5583be1a686a8ead1804c57a181f83408ffe3dc60de4f50188dd7",
-      "abstract_source": "crossref",
+      "abstract_source": "openalex",
       "abstract_missing": false,
       "directions": [
         "display",
@@ -2886,7 +3233,7 @@
       "llm_at": "2026-11-27T03:50:42.964Z",
       "pending_summary": false,
       "first_seen": "2026-11-27T03:50:22.549Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 4.4,
       "journal_tier": 3
     },
@@ -2899,16 +3246,17 @@
       "title_key": "moleculardipoleengineeringofnioholeinjectionlayersforsuppressedexcitonquenchingandhighperformancequantumdotlightemittingdiodes",
       "authors": [
         "Jae-Hyeon Ahn",
-        "Sang-Hyeon Lee",
+        "Sang‐Hyeon Lee",
         "Namji Lee",
         "et al."
       ],
-      "venue": "ACS Applied Materials &amp; Interfaces",
+      "venue": "ACS Applied Materials & Interfaces",
       "issn_l": "1944-8244",
       "source_type": "journal",
       "is_preprint": false,
       "sources": [
-        "crossref"
+        "crossref",
+        "openalex"
       ],
       "published": true,
       "published_source": "crossref",
@@ -2917,12 +3265,12 @@
       "pub_year": 2026,
       "date_suspect": false,
       "sort_date": "2026-11-26",
-      "oa_status": null,
+      "oa_status": "closed",
       "pdf_url": null,
       "cited_by_count": 0,
       "abstract": "Conventional poly(3,4-ethylenedioxythiophene)(styrene sulfonate) (PEDOT), the most widely used hole injection layer (HIL) in quantum dot light-emitting diodes (QLEDs), suffers from intrinsic acidity and hygroscopicity, limiting device stability and long-term performance. To address these limitations, inorganic nickel oxide (NiO) nanoparticles (NPs) have emerged as a promising alternative HIL owing to their superior chemical robustness and favorable energy levels. However, the practical performance of NiO-based QLEDs remains constrained by surface defect states, including Ni3+ species and oxygen vacancies, which induce interfacial non-radiative recombination and hinder efficient hole injection. Here, we report a self-assembled monolayer (SAM)-assisted interfacial engineering strategy using 4-bromomethyl benzoic acid (4-BMBA) to passivate NiO NP surfaces and optimize the NiO/quantum dot interface. The 4-BMBA SAM simultaneously suppresses defect-mediated exciton quenching, improves energy-level alignment, and facilitates hole injection, resulting in significantly enhanced charge balance. Photoluminescence and time-resolved photoluminescence measurements reveal suppressed non-radiative recombination and prolonged exciton lifetime, while impedance spectroscopy demonstrates reduced interfacial resistance and a lower charge injection barrier. Consequently, the optimized QLEDs exhibit a low turn-on voltage of 2.2 V, a maximum luminance of 54,660 cd m–2, an external quantum efficiency (EQE) of 20.34%, and a current efficiency (CE) of 28.89 cd A–1. These results represent one of the highest reported performances among QLEDs employing inorganic HILs for II–VI and III–V colloidal quantum dots. This work establishes SAM-mediated defect passivation as an effective strategy for simultaneously regulating interfacial chemistry and charge injection in inorganic HIL-based QLEDs, providing a versatile platform for next-generation high-efficiency and stable quantum dot optoelectronic devices.",
       "abstract_hash": "5c10e9f10a1c54353e620f01865c67b1ac16a2bd30d9b8cf47de0088e0faa806",
-      "abstract_source": "crossref",
+      "abstract_source": "openalex",
       "abstract_missing": false,
       "directions": [
         "display",
@@ -2945,9 +3293,125 @@
       "llm_at": "2026-11-27T03:50:41.645Z",
       "pending_summary": false,
       "first_seen": "2026-11-27T03:50:22.549Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 8.3,
       "journal_tier": 2
+    },
+    {
+      "id": "10.1088/1361-6528/aec2fe",
+      "doi": "10.1088/1361-6528/aec2fe",
+      "doi_url": "https://doi.org/10.1088/1361-6528/aec2fe",
+      "title": "Ab initio study on the surface effects of 1.5 nm Ge 71 H 60–x Y x nanocrystals",
+      "title_zh": "1.5 nm Ge71H60–xYx 纳米晶表面效应的第一性原理研究",
+      "title_key": "abinitiostudyonthesurfaceeffectsof15nmge71h60xyxnanocrystals",
+      "authors": [
+        "Shanawer Niaz",
+        "Muhammad Aslam Khan",
+        "S. Hussain",
+        "et al."
+      ],
+      "venue": "Nanotechnology",
+      "issn_l": "0957-4484",
+      "source_type": "journal",
+      "is_preprint": false,
+      "sources": [
+        "openalex"
+      ],
+      "published": true,
+      "published_source": "openalex",
+      "alt_doi": null,
+      "pub_date": "2026-11-26",
+      "pub_year": 2026,
+      "date_suspect": false,
+      "sort_date": "2026-11-26",
+      "oa_status": "bronze",
+      "pdf_url": "https://iopscience.iop.org/article/10.1088/1361-6528/aec2fe/pdf",
+      "cited_by_count": 0,
+      "abstract": "Density functional theory-based structural, electronic and cohesive properties investigation of 1.5 nm germanium nanocrystals (GeNCs) with composition Ge 71 H 60− x Y x (x = 0, 12, 24, 36, 48, 60; Y = NH 2, Br, Cl, C 2 H 5, F, OH, CH 3) is systematically presented at the B3LYP/def2-SVP and M06/def2-SVP theoretical levels to assess the effect of seven surface passivants having distinctly different chemical reactivity on surface coverage of 0%, 20%, 40%, 60%, 80%, and 100%. Structural analysis reveals that the Ge–Ge bond length varies significantly due to the steric and electronic properties of each ligand, but the Ge–Y bond lengths are consistent with experimental bulk values. The energy gap between the HOMO and LUMO frontier molecular orbitals in the case of the un-passivated GeNC reference material with the hydride ligand, Ge 71 H 60, is found to be 4.10 eV (B3LYP) and 4.24 eV (M06). While alkyl passivants (–CH 3, –C 2 H 5) leave this gap unchanged, other passivants (halides and heteroatoms) progressively decrease this value with increasing surface coverage, resulting in the smallest gap of 2.39 eV (B3LYP) in the case of 100% bromide passivation. TD-B3LYP/def2-SVP computations also provide additional demonstration of optical gap dependance, where optical gap decreases from 3.61 eV in hydrogen-terminated Ge 71 H 60 structure down to 2.43 eV after total Br substitution, while total methylation results in higher optical gap value of 3.48 eV. The cohesive energy shows an increase with the percent coverage of the surface in all cases, reaching the maximum at 100% fluorination, giving the value of 3.64 eV per atom (B3LYP) and 3.84 eV per atom (M06). Partial density of states analyses confirm that the contribution of the ligands becomes increasingly important close to the Fermi level with increasing surface passivation coverage in the case of electronegative halogens. The results presented above unambiguously demonstrate the great potentiality of tuning GeNC electrical characteristics via deliberate surface engineering and suggest a comprehensive computational approach for designing GeNC-based optoelectronics and photovoltaic devices.",
+      "abstract_hash": "47d246022f0e552b8995396bcf1afac3ad4db77f919b94c9a1b4b5d3799374b7",
+      "abstract_source": "openalex",
+      "abstract_missing": false,
+      "directions": [
+        "detection",
+        "materials"
+      ],
+      "novelty_score": 3,
+      "novelty_reason": "系统比较了七种钝化剂与六档覆盖度对 Ge 纳米晶电子结构的调控规律，但属于已有表面化学思路在 Ge 纳米晶体系上的计算验证，无新机制或器件。",
+      "innovation_zh": "用 DFT（B3LYP 和 M06，def2-SVP）系统计算了 1.5 nm 氢终止 Ge 纳米晶（Ge71H60）上七种不同化学性质的表面钝化剂（NH2、Br、Cl、C2H5、F、OH、CH3）在 0–100% 覆盖度下的结构与电子性质。核心发现是钝化剂种类和覆盖度能大幅调控带隙：烷基（–CH3、–C2H5）几乎不改变 HOMO–LUMO 带隙（4.10 eV，B3LYP），而卤素和杂原子随覆盖度增加使带隙逐步下降，100% Br 钝化时降到 2.39 eV；TD-B3LYP 光学带隙也从 Ge71H60 的 3.61 eV 降到全 Br 取代的 2.43 eV，全甲基化反而升到 3.48 eV。内聚能随覆盖度单调上升，100% 氟化时最大（3.64 eV/atom，B3LYP；3.84 eV/atom，M06）。",
+      "method_zh": "对 Ge71H60–xYx（x = 0–60）系列做 B3LYP 和 M06 几何与电子结构优化，用 TD-B3LYP 算光学带隙，并结合分波态密度分析配体在费米面附近的贡献。",
+      "keywords_zh": [
+        "Ge 纳米晶",
+        "表面钝化",
+        "密度泛函理论",
+        "带隙调控",
+        "配体效应"
+      ],
+      "summary_source": "llm",
+      "llm_model": "deepseek-chat",
+      "llm_at": "2026-11-28T03:36:32.169Z",
+      "pending_summary": false,
+      "first_seen": "2026-11-19T02:51:33.170Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
+      "journal_if": 2.9,
+      "journal_tier": 3
+    },
+    {
+      "id": "10.1039/d6mh02173e",
+      "doi": "10.1039/d6mh02173e",
+      "doi_url": "https://doi.org/10.1039/d6mh02173e",
+      "title": "Facet-selective fluoride engineering enables the fabrication of weakly confined nanocrystals for eco-friendly deep-blue electroluminescence",
+      "title_zh": "晶面选择性氟化物工程实现弱限域纳米晶的制备，用于环保型深蓝电致发光",
+      "title_key": "facetselectivefluorideengineeringenablesthefabricationofweaklyconfinednanocrystalsforecofriendlydeepblueelectroluminescence",
+      "authors": [
+        "Haiyang Li",
+        "Jing Zhou",
+        "Jiayu Li",
+        "et al."
+      ],
+      "venue": "Materials Horizons",
+      "issn_l": "2051-6347",
+      "source_type": "journal",
+      "is_preprint": false,
+      "sources": [
+        "openalex",
+        "semanticscholar"
+      ],
+      "published": true,
+      "published_source": "semanticscholar",
+      "alt_doi": null,
+      "pub_date": "2026-11-25",
+      "pub_year": 2026,
+      "date_suspect": false,
+      "sort_date": "2026-11-25",
+      "oa_status": "closed",
+      "pdf_url": null,
+      "cited_by_count": 0,
+      "abstract": "For cadmium-free deep-blue quantum-dots, it is challenging to combine ultra-narrow spectra, efficient radiative recombination, and resistance to multicarrier losses. Here, we introduce ZnF2 during seed-mediated growth of weakly confined ZnSe nanocrystals. Fluoride preferentially stabilizes (100)-related surfaces, limits zinc blende/wurtzite stacking competition, and preserves quasi-cubic morphology during prolonged high-temperature growth. After identical ZnS shelling, fluoride-assisted ZnSe/ZnS nanocrystals show near 100% photoluminescence quantum yield, an ∼11 nm linewidth, reduced structural disorder, and an amplified spontaneous emission (ASE) threshold of approximately 35 µJ cm-2. Quantum-dot light-emitting diodes (LED) emit at 446 nm with 18.8% peak external quantum efficiency, which is a record for solution-processed deep-blue LEDs (≤450 nm). Additionally, a T50 lifetime more than 5200 h at 100 cd m-2 is achieved. These results connect facet-selective fluoride chemistry with polymorph control, defect suppression, optical gain, and efficient deep-blue electroluminescence. Our work opens a new avenue for developing eco-friendly deep-blue optoelectronic materials and devices.",
+      "abstract_hash": "dc898f22b05f6531cc0132f0c15ad5bdf805c6d1606e5d7723436496151c9158",
+      "abstract_source": "semanticscholar",
+      "abstract_missing": false,
+      "directions": [
+        "display",
+        "qled",
+        "materials"
+      ],
+      "novelty_score": 5,
+      "novelty_reason": "用晶面选择性氟化物化学同时实现晶相控制、缺陷抑制和光学增益，并给出溶液法深蓝 LED 的 EQE 纪录与长寿命数据。",
+      "innovation_zh": "针对无镉深蓝量子点难以同时兼顾窄光谱、高辐射复合和抗多载流子损耗的问题，作者在种子介导生长弱限域 ZnSe 纳米晶时引入 ZnF2。氟化物优先稳定 (100) 相关表面，抑制闪锌矿/纤锌矿堆垛竞争，使长时间高温生长后仍保持准立方形貌。经相同 ZnS 壳层包覆后，ZnSe/ZnS 纳米晶的 PLQY 接近 100%，线宽约 11 nm，结构无序降低，ASE 阈值约 35 µJ cm-2；QLED 在 446 nm 处峰值 EQE 达 18.8%，作者称这是溶液法深蓝（≤450 nm）LED 的纪录，100 cd m-2 下 T50 超过 5200 h。",
+      "method_zh": "在弱限域 ZnSe 纳米晶的种子介导生长阶段加入 ZnF2，利用氟化物对 (100) 晶面的选择性稳定来控制晶相与形貌，再包覆 ZnS 壳层并构筑深蓝 QLED。",
+      "keywords_zh": [
+        "无镉量子点",
+        "深蓝电致发光",
+        "ZnSe/ZnS",
+        "晶面选择性",
+        "氟化物工程"
+      ],
+      "summary_source": "llm",
+      "llm_model": "deepseek-chat",
+      "llm_at": "2026-11-28T03:36:32.707Z",
+      "pending_summary": false,
+      "first_seen": "2026-11-28T03:35:40.123Z",
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.1016/j.nantod.2026.103244",
@@ -3002,7 +3466,7 @@
       "llm_at": "2026-11-27T03:50:40.683Z",
       "pending_summary": false,
       "first_seen": "2026-11-27T03:50:22.549Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.1021/acsami.6c15825",
@@ -3059,7 +3523,7 @@
       "llm_at": "2026-11-27T03:50:42.989Z",
       "pending_summary": false,
       "first_seen": "2026-11-27T03:50:22.549Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 8.3,
       "journal_tier": 2
     },
@@ -3117,7 +3581,7 @@
       "llm_at": "2026-11-27T03:50:41.969Z",
       "pending_summary": false,
       "first_seen": "2026-11-27T03:50:22.549Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.1002/flm2.70179",
@@ -3174,7 +3638,7 @@
       "llm_at": "2026-11-27T03:50:45.582Z",
       "pending_summary": false,
       "first_seen": "2026-11-27T03:50:22.549Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.1016/j.mseb.2026.120033",
@@ -3232,7 +3696,7 @@
       "llm_at": "2026-11-26T03:49:28.196Z",
       "pending_summary": false,
       "first_seen": "2026-11-26T03:48:50.102Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 3.9,
       "journal_tier": 3
     },
@@ -3290,7 +3754,7 @@
       "llm_at": "2026-11-26T03:49:32.088Z",
       "pending_summary": false,
       "first_seen": "2026-11-26T03:48:50.102Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 5.5,
       "journal_tier": 2
     },
@@ -3349,7 +3813,7 @@
       "llm_at": "2026-11-26T03:49:31.439Z",
       "pending_summary": false,
       "first_seen": "2026-11-26T03:48:50.102Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 3.8,
       "journal_tier": 3
     },
@@ -3406,7 +3870,7 @@
       "llm_at": "2026-11-26T03:49:31.650Z",
       "pending_summary": false,
       "first_seen": "2026-11-26T03:48:50.102Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.1021/acs.nanolett.6c04729",
@@ -3464,7 +3928,7 @@
       "llm_at": "2026-11-25T04:38:28.845Z",
       "pending_summary": false,
       "first_seen": "2026-11-25T04:38:09.250Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 9.6,
       "journal_tier": 1
     },
@@ -3523,7 +3987,7 @@
       "llm_at": "2026-11-25T04:38:30.411Z",
       "pending_summary": false,
       "first_seen": "2026-11-25T04:38:09.250Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.35848/1347-4065/aebf3f",
@@ -3581,7 +4045,7 @@
       "llm_at": "2026-11-25T04:38:31.219Z",
       "pending_summary": false,
       "first_seen": "2026-11-07T01:20:06.089Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.1016/j.surfin.2026.111374",
@@ -3635,7 +4099,7 @@
       "llm_at": "2026-11-27T03:50:45.248Z",
       "pending_summary": false,
       "first_seen": "2026-11-27T03:50:22.549Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.1080/14786435.2026.2761979",
@@ -3692,7 +4156,7 @@
       "llm_at": "2026-11-25T04:38:32.072Z",
       "pending_summary": false,
       "first_seen": "2026-11-25T04:38:09.250Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.1021/acsaelm.6c01245",
@@ -3749,7 +4213,7 @@
       "llm_at": "2026-11-25T04:38:32.228Z",
       "pending_summary": false,
       "first_seen": "2026-11-25T04:38:09.250Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 4.7,
       "journal_tier": 3
     },
@@ -3808,7 +4272,7 @@
       "llm_at": "2026-11-24T05:37:44.856Z",
       "pending_summary": false,
       "first_seen": "2026-11-24T05:37:10.355Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 3.5,
       "journal_tier": 2
     },
@@ -3865,7 +4329,7 @@
       "llm_at": "2026-11-27T03:50:45.989Z",
       "pending_summary": false,
       "first_seen": "2026-11-24T05:37:10.355Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.1063/5.0353167",
@@ -3921,7 +4385,7 @@
       "llm_at": "2026-11-24T05:37:47.636Z",
       "pending_summary": false,
       "first_seen": "2026-11-24T05:37:10.355Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 3.5,
       "journal_tier": 2
     },
@@ -3981,7 +4445,7 @@
       "llm_at": "2026-11-24T05:37:46.015Z",
       "pending_summary": false,
       "first_seen": "2026-11-24T05:37:10.355Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 3.5,
       "journal_tier": 2
     },
@@ -4042,7 +4506,7 @@
       "llm_at": "2026-11-25T04:38:32.505Z",
       "pending_summary": false,
       "first_seen": "2026-11-25T04:38:09.250Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.1016/j.cap.2026.11.009",
@@ -4096,7 +4560,7 @@
       "llm_at": "2026-11-26T03:49:31.350Z",
       "pending_summary": false,
       "first_seen": "2026-11-26T03:48:50.102Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.1002/adma.75803",
@@ -4154,7 +4618,7 @@
       "llm_at": "2026-11-21T02:52:55.427Z",
       "pending_summary": false,
       "first_seen": "2026-11-21T02:52:32.057Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 27.4,
       "journal_tier": 1
     },
@@ -4215,7 +4679,7 @@
       "llm_at": "2026-11-20T02:41:56.638Z",
       "pending_summary": false,
       "first_seen": "2026-11-20T02:41:31.477Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 6.5,
       "journal_tier": 2
     },
@@ -4275,7 +4739,7 @@
       "llm_at": "2026-11-21T02:52:55.048Z",
       "pending_summary": false,
       "first_seen": "2026-11-20T02:41:31.477Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 8.3,
       "journal_tier": 2
     },
@@ -4334,7 +4798,7 @@
       "llm_at": "2026-11-21T02:52:55.963Z",
       "pending_summary": false,
       "first_seen": "2026-11-21T02:52:32.057Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.1002/advs.78804",
@@ -4390,7 +4854,7 @@
       "llm_at": "2026-11-26T03:49:33.797Z",
       "pending_summary": false,
       "first_seen": "2026-11-20T02:41:31.477Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 14.3,
       "journal_tier": 1
     },
@@ -4448,7 +4912,7 @@
       "llm_at": "2026-11-20T02:41:58.117Z",
       "pending_summary": false,
       "first_seen": "2026-11-20T02:41:31.477Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.1134/s1063782626603560",
@@ -4501,7 +4965,7 @@
       "llm_at": "2026-11-21T02:52:57.903Z",
       "pending_summary": false,
       "first_seen": "2026-11-20T02:41:31.477Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.1002/smll.76731",
@@ -4560,7 +5024,7 @@
       "llm_at": "2026-11-21T02:52:58.321Z",
       "pending_summary": false,
       "first_seen": "2026-11-19T02:51:33.170Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 13,
       "journal_tier": 1
     },
@@ -4619,7 +5083,7 @@
       "llm_at": "2026-11-20T02:42:02.009Z",
       "pending_summary": false,
       "first_seen": "2026-11-19T02:51:33.170Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 8.3,
       "journal_tier": 2
     },
@@ -4676,65 +5140,7 @@
       "llm_at": "2026-11-19T02:51:54.724Z",
       "pending_summary": false,
       "first_seen": "2026-11-19T02:51:33.170Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
-    },
-    {
-      "id": "10.1088/1361-6528/aec2fe",
-      "doi": "10.1088/1361-6528/aec2fe",
-      "doi_url": "https://doi.org/10.1088/1361-6528/aec2fe",
-      "title": "Ab Initio Study on the Surface Effects of 1.5 nm Ge₇₁H₆₀₋ₓYₓ Nanocrystals",
-      "title_zh": "1.5 nm Ge₇₁H₆₀₋ₓYₓ 纳米晶表面效应的从头算研究",
-      "title_key": "abinitiostudyonthesurfaceeffectsof15nmge71h60xyxnanocrystals",
-      "authors": [
-        "Shanawer Niaz",
-        "Muhammad Aslam Khan",
-        "S. Hussain",
-        "et al."
-      ],
-      "venue": "Nanotechnology",
-      "issn_l": "0957-4484",
-      "source_type": "journal",
-      "is_preprint": false,
-      "sources": [
-        "openalex"
-      ],
-      "published": true,
-      "published_source": "openalex",
-      "alt_doi": null,
-      "pub_date": "2026-11-17",
-      "pub_year": 2026,
-      "date_suspect": false,
-      "sort_date": "2026-11-17",
-      "oa_status": "bronze",
-      "pdf_url": "https://iopscience.iop.org/article/10.1088/1361-6528/aec2fe/pdf",
-      "cited_by_count": 0,
-      "abstract": "Density functional theory (DFT)-based structural, electronic and cohesive properties investigation of 1.5 nm germanium nanocrystals (GeNCs) with composition Ge71H60-xYx (x = 0, 12, 24, 36, 48, 60; Y = NH2, Br, Cl, C2H5, F, OH, CH3) is systematically presented at the B3LYP/def2-SVP and M06/def2-SVP theoretical levels to assess the effect of seven surface passivants having distinctly different chemical reactivity on surface coverage of 0%, 20%, 40%, 60%, 80%, and 100%. Structural analysis reveals that the Ge-Ge bond length varies significantly due to the steric and electronic properties of each ligand, but the Ge-Y bond lengths are consistent with experimental bulk values. The energy gap between the HOMO and LUMO frontier molecular orbitals in the case of the un-passivated GeNC reference material with the hydride ligand, Ge71H60, is found to be 4.10 eV (B3LYP) and 4.24 eV (M06). While alkyl passivants (-CH3, -C2H5) leave this gap unchanged, other passivants (halides and heteroatoms) progressively decrease this value with increasing surface coverage, resulting in the smallest gap of 2.39 eV (B3LYP) in the case of 100% bromide passivation. TD-B3LYP/def2-SVP computations also provide additional demonstration of optical gap dependance, where optical gap decreases from 3.61 eV in hydrogen-terminated Ge71H60 structure down to 2.43 eV after total Br substitution, while total methylation results in higher optical gap value of 3.48 eV. The cohesive energy shows an increase with the percent coverage of the surface in all cases, reaching the maximum at 100% fluorination, giving the value of 3.64 eV per atom (B3LYP) and 3.84 eV per atom (M06). Partial density of states analyses confirm that the contribution of the ligands becomes increasingly important close to the Fermi level with increasing surface passivation coverage in the case of electronegative halogens. The results presented above unambiguously demonstrate the great potentiality of tuning GeNC electrical characteristics via deliberate surface engineering and suggest a comprehensive computational approach for designing GeNC-based optoelectronics and photovoltaic devices.",
-      "abstract_hash": "6eea5cc1f34b93fe2d611e3292d5c73c4b6edc5264876883d2a2d7470ab3e4e1",
-      "abstract_source": "openalex",
-      "abstract_missing": false,
-      "directions": [
-        "detection",
-        "materials"
-      ],
-      "novelty_score": 3,
-      "novelty_reason": "系统比较七种钝化剂与六档覆盖度对 Ge 纳米晶能隙和内聚能的调控规律，但方法和体系属于已有 DFT 钝化研究的延伸，且无实验支撑。",
-      "innovation_zh": "用 DFT（B3LYP 和 M06，def2-SVP 基组）系统计算了 1.5 nm 氢钝化 Ge 纳米晶 Ge₇₁H₆₀ 在七种表面钝化剂（NH₂、Br、Cl、C₂H₅、F、OH、CH₃）和 0–100% 覆盖度下的结构与电子性质。核心发现是钝化剂化学性质决定带隙调控方向：烷基（-CH₃、-C₂H₅）基本不改变 HOMO-LUMO 带隙，而卤素和杂原子随覆盖度增加逐步压窄带隙，100% Br 钝化时降至 2.39 eV（B3LYP），TD-B3LYP 光学带隙也从氢终止的 3.61 eV 降到 2.43 eV；全甲基化反而使光学带隙升到 3.48 eV。内聚能随覆盖度单调上升，100% 氟化时最大（3.64 eV/atom，B3LYP）。工作给出了按配体种类和覆盖度定量调 Ge 纳米晶能隙的计算路线，但属于纯理论预测，没有实验验证。",
-      "method_zh": "构建 Ge₇₁H₆₀₋ₓYₓ 球形纳米晶模型，在 B3LYP/def2-SVP 与 M06/def2-SVP 水平做几何优化和电子结构计算，并用 TD-B3LYP 算光学带隙、用分波态密度分析配体对费米面附近态的贡献。",
-      "keywords_zh": [
-        "Ge 纳米晶",
-        "表面钝化",
-        "DFT",
-        "带隙调控",
-        "配体效应"
-      ],
-      "summary_source": "llm",
-      "llm_model": "deepseek-chat",
-      "llm_at": "2026-11-20T02:42:03.424Z",
-      "pending_summary": false,
-      "first_seen": "2026-11-19T02:51:33.170Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
-      "journal_if": 2.9,
-      "journal_tier": 3
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.1002/adom.72041",
@@ -4850,7 +5256,7 @@
       "llm_at": "2026-11-19T02:51:58.349Z",
       "pending_summary": false,
       "first_seen": "2026-11-19T02:51:33.170Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.1142/s1793292026501870",
@@ -4909,7 +5315,7 @@
       "llm_at": "2026-11-18T03:10:59.837Z",
       "pending_summary": false,
       "first_seen": "2026-11-08T00:56:46.049Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.1103/physics.19.155",
@@ -4961,7 +5367,7 @@
       "llm_at": "2026-11-19T02:51:57.558Z",
       "pending_summary": false,
       "first_seen": "2026-11-19T02:51:33.170Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.1002/lpor.72243",
@@ -5021,7 +5427,7 @@
       "llm_at": "2026-11-21T02:52:58.602Z",
       "pending_summary": false,
       "first_seen": "2026-11-18T03:10:43.529Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 9.8,
       "journal_tier": 1
     },
@@ -5083,7 +5489,7 @@
       "llm_at": "2026-11-18T03:11:00.026Z",
       "pending_summary": false,
       "first_seen": "2026-11-17T04:12:53.856Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 8.3,
       "journal_tier": 2
     },
@@ -5140,7 +5546,7 @@
       "llm_at": "2026-11-16T01:28:01.561Z",
       "pending_summary": false,
       "first_seen": "2026-11-16T01:27:08.674Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 14.7,
       "journal_tier": 1
     },
@@ -5201,7 +5607,7 @@
       "llm_at": "2026-11-21T02:53:01.032Z",
       "pending_summary": false,
       "first_seen": "2026-11-15T01:21:49.072Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 4.7,
       "journal_tier": 3
     },
@@ -5256,7 +5662,7 @@
       "llm_at": "2026-11-25T04:38:33.702Z",
       "pending_summary": false,
       "first_seen": "2026-11-15T01:21:49.072Z",
-      "last_updated": "2026-11-27T03:50:22.549Z"
+      "last_updated": "2026-11-28T03:35:40.123Z"
     },
     {
       "id": "10.1016/j.jlumin.2026.122308",
@@ -5313,7 +5719,7 @@
       "llm_at": "2026-11-25T04:38:35.006Z",
       "pending_summary": false,
       "first_seen": "2026-11-15T01:21:49.072Z",
-      "last_updated": "2026-11-27T03:50:22.549Z",
+      "last_updated": "2026-11-28T03:35:40.123Z",
       "journal_if": 3.3,
       "journal_tier": 3
     },
@@ -7639,65 +8045,6 @@
       "last_updated": "2026-11-17T04:12:53.856Z",
       "journal_if": 8,
       "journal_tier": 2
-    },
-    {
-      "id": "10.1088/1361-648x/aebd56",
-      "doi": "10.1088/1361-648x/aebd56",
-      "doi_url": "https://doi.org/10.1088/1361-648x/aebd56",
-      "title": "Heat generation in a quantum dot side-coupled to a Majorana bound state pair",
-      "title_zh": "侧耦合到 Majorana 束缚态对的量子点中的热产生",
-      "title_key": "heatgenerationinaquantumdotsidecoupledtoamajoranaboundstatepair",
-      "authors": [
-        "Wanying Chen",
-        "Sheng ' Ao Zhang",
-        "Feng Jiang",
-        "et al."
-      ],
-      "venue": "Journal of Physics: Condensed Matter",
-      "issn_l": "0953-8984",
-      "source_type": "journal",
-      "is_preprint": false,
-      "sources": [
-        "crossref"
-      ],
-      "published": true,
-      "published_source": "crossref",
-      "alt_doi": null,
-      "pub_date": "2026-11-03",
-      "pub_year": 2026,
-      "date_suspect": false,
-      "sort_date": "2026-11-03",
-      "oa_status": null,
-      "pdf_url": null,
-      "cited_by_count": 0,
-      "abstract": "We employ the small polaron transformation and the nonequilibrium Green’s function method to&#xD;derive an analytical expression for the heat generation in a quantum dot side-coupled to a topological&#xD;superconducting loop hosting a Majorana bound state pair. Our main findings are threefold: (i)&#xD;Gate-voltage control: Under symmetric bias, the heat generation profile evolves from a double-peak&#xD;to a single-peak structure as the side-coupled strength increases; under extreme asymmetric bias, a&#xD;flux phase of ϕ = π induces a pronounced enhancement of heat generation at specific dot levels. (ii)&#xD;Bias-voltage control: The differential electrothermal conductance ∂Qd/∂V exhibits clear and well-&#xD;resolved peaks, and in terms of phase control, it offers complementary information of the Majorana&#xD;bound state pair signatures compared to the differential conductance ∂I/∂V . (iii) Magnetic-flux&#xD;control: The heat-generation signals display a robust crossover from 2π to 4π periodicity, tunable by&#xD;the Majorana overlap energy and temperature, serving as a distinct phase fingerprint to distinguish&#xD;the Majorana bound state pair from trivial ring structures. Overall, the heat generation and its&#xD;derivative serve as a useful complement to conventional charge transport measurements for detecting&#xD;Majorana bound states, offering an additional probe across all three tuning dimensions.",
-      "abstract_hash": "9bfb342b14f3d047db2e2f73e69b280e762697a5313fc2affdd9817dd866e191",
-      "abstract_source": "crossref",
-      "abstract_missing": false,
-      "directions": [
-        "display",
-        "quantuminfo",
-        "detection"
-      ],
-      "novelty_score": 3,
-      "novelty_reason": "在已有 MBSP 输运探测框架下引入热产生作为补充探针，属于新观测量验证而非新机制或新器件。",
-      "innovation_zh": "文章用 small polaron 变换加非平衡格林函数方法，解析推导了侧耦合到含 Majorana 束缚态对（MBSP）的拓扑超导环的量子点中的热产生表达式。主要结论有三点：在对称偏压下，热产生谱随侧耦合强度增大从双峰演化为单峰；在极端非对称偏压下，磁通相位 φ=π 会在特定量子点能级处显著增强热产生；微分电热导 ∂Qd/∂V 出现清晰可分辨的峰，且与微分电导 ∂I/∂V 在相位控制上提供互补的 MBSP 信息；热产生信号随 Majorana 重叠能和温度出现从 2π 到 4π 周期的稳健转变，可作为区分 MBSP 与平庸环结构的相位指纹。创新点在于把热产生及其导数作为探测 Majorana 束缚态的新探针，补充常规电荷输运测量。",
-      "method_zh": "采用 small polaron 变换结合非平衡格林函数方法，解析计算侧耦合到拓扑超导环（含 MBSP）的量子点热产生，并分析栅压、偏压和磁通三个调控维度下的响应。",
-      "keywords_zh": [
-        "Majorana 束缚态",
-        "量子点",
-        "热产生",
-        "非平衡格林函数",
-        "电热导"
-      ],
-      "summary_source": "llm",
-      "llm_model": "deepseek-chat",
-      "llm_at": "2026-11-04T01:44:52.182Z",
-      "pending_summary": false,
-      "first_seen": "2026-11-04T01:43:57.739Z",
-      "last_updated": "2026-11-17T04:12:53.856Z",
-      "journal_if": 3,
-      "journal_tier": 3
     },
     {
       "id": "10.1103/3v5w-1k38",
